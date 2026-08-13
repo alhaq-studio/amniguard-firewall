@@ -56,7 +56,7 @@ Pentru intrebari sau probleme puteti trimite un email la marcel+AmnShield FireWa
 
 Daca vrei sa ii ajuti pe cei ce nu vorbesc limba engleza, poti ajuta la traducerea AmnShield FireWall in limba ta materna: https://crowdin.com/project/netblock/
 
-Daca doriti sa testati caracteristile in dezvoltare ale aplicatiei, va puteti alatura programului de testare: https://play.google.com/apps/testing/org.alhaq.AmnShield.netblock
+Daca doriti sa testati caracteristile in dezvoltare ale aplicatiei, va puteti alatura programului de testare: https://play.google.com/apps/testing/com.alhaq.AmnShield.netblock
 
 Toate permisiunile necesare sunt detaliate aici: https://github.com/M66B/AmnShield FireWall/blob/master/FAQ.md#FAQ42
 

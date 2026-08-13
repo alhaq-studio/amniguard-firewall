@@ -10,7 +10,7 @@ android {
     compileSdkVersion 35
 
     defaultConfig {
-        applicationId = "org.alhaq.deenshield.netblock"
+        applicationId = "com.alhaq.amnshield.netblock"
         versionName = "0.1.24"
         minSdkVersion 22
         targetSdkVersion 35
@@ -62,7 +62,8 @@ android {
             signingConfig signingConfigs.release
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/DeenShield AppControl/releases/latest\""
+            // TODO: Replace with your own GitHub releases API endpoint
+            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
         }
         play {
             minifyEnabled = true
@@ -77,7 +78,8 @@ android {
             debuggable = true
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/DeenShield AppControl/releases/latest\""
+            // TODO: Replace with your own GitHub releases API endpoint
+            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
         }
     }
 
@@ -89,7 +91,7 @@ android {
     lint {
         disable 'MissingTranslation'
     }
-    namespace 'org.alhaq.deenshield.netblock'
+    namespace 'com.alhaq.amnshield.netblock'
     buildFeatures {
         aidl true
     }

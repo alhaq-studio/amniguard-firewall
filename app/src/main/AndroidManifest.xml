@@ -23,12 +23,12 @@
     </queries>
 
     <permission
-        android:name="org.alhaq.deenshield.netblock.permission.ADMIN"
+        android:name="com.alhaq.amnshield.netblock.permission.ADMIN"
         android:description="@string/app_description"
         android:label="@string/app_name"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="org.alhaq.deenshield.netblock.permission.ADMIN" />
+    <uses-permission android:name="com.alhaq.amnshield.netblock.permission.ADMIN" />
 
     <uses-feature
         android:name="android.hardware.wifi"
@@ -44,7 +44,7 @@
         android:required="false" />
 
     <application
-        android:name="org.alhaq.deenshield.netblock.ApplicationEx"
+        android:name="com.alhaq.amnshield.netblock.ApplicationEx"
         android:allowBackup="false"
         android:appCategory="productivity"
         android:debuggable="true"
@@ -62,7 +62,7 @@
             android:value="2.1" />
 
         <activity
-            android:name="org.alhaq.deenshield.netblock.ActivityMain"
+            android:name="com.alhaq.amnshield.netblock.ActivityMain"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:label="@string/app_name"
@@ -94,7 +94,7 @@
         </activity>
 
         <activity
-            android:name="org.alhaq.deenshield.netblock.ActivitySettings"
+            android:name="com.alhaq.amnshield.netblock.ActivitySettings"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:label="@string/menu_settings"
@@ -113,7 +113,7 @@
         </activity>
 
         <activity
-            android:name="org.alhaq.deenshield.netblock.ActivityLog"
+            android:name="com.alhaq.amnshield.netblock.ActivityLog"
             android:configChanges="orientation|screenSize"
             android:label="@string/menu_log"
             android:parentActivityName=".ActivityMain">
@@ -123,7 +123,7 @@
         </activity>
 
         <activity
-            android:name="org.alhaq.deenshield.netblock.ActivityPro"
+            android:name="com.alhaq.amnshield.netblock.ActivityPro"
             android:configChanges="orientation|screenSize"
             android:label="@string/title_pro"
             android:parentActivityName=".ActivityMain">
@@ -133,7 +133,7 @@
         </activity>
 
         <activity
-            android:name="org.alhaq.deenshield.netblock.ActivityDns"
+            android:name="com.alhaq.amnshield.netblock.ActivityDns"
             android:configChanges="orientation|screenSize"
             android:label="@string/setting_show_resolved"
             android:parentActivityName=".ActivitySettings">
@@ -143,7 +143,7 @@
         </activity>
 
         <activity
-            android:name="org.alhaq.deenshield.netblock.ActivityForwarding"
+            android:name="com.alhaq.amnshield.netblock.ActivityForwarding"
             android:configChanges="orientation|screenSize"
             android:label="@string/setting_forwarding"
             android:parentActivityName=".ActivitySettings">
@@ -153,7 +153,7 @@
         </activity>
 
         <activity
-            android:name="org.alhaq.deenshield.netblock.ActivityHelp"
+            android:name="com.alhaq.amnshield.netblock.ActivityHelp"
             android:configChanges="orientation|screenSize"
             android:label="@string/help_title"
             android:parentActivityName=".ActivityMain">
@@ -163,7 +163,7 @@
         </activity>
 
         <activity
-            android:name="org.alhaq.deenshield.netblock.ActivityFAQ"
+            android:name="com.alhaq.amnshield.netblock.ActivityFAQ"
             android:configChanges="orientation|screenSize"
             android:label="@string/faq_title"
             android:parentActivityName=".ActivityMain">
@@ -173,19 +173,19 @@
         </activity>
 
         <activity
-            android:name="org.alhaq.deenshield.netblock.ActivityForwardApproval"
+            android:name="com.alhaq.amnshield.netblock.ActivityForwardApproval"
             android:configChanges="orientation|screenSize"
             android:exported="true"
             android:label="@string/app_name"
             android:theme="@style/AppDialog">
             <intent-filter>
-                <action android:name="org.alhaq.deenshield.netblock.START_PORT_FORWARD" />
-                <action android:name="org.alhaq.deenshield.netblock.STOP_PORT_FORWARD" />
+                <action android:name="com.alhaq.amnshield.netblock.START_PORT_FORWARD" />
+                <action android:name="com.alhaq.amnshield.netblock.STOP_PORT_FORWARD" />
             </intent-filter>
         </activity>
 
         <service
-            android:name="org.alhaq.deenshield.netblock.ServiceSinkhole"
+            android:name="com.alhaq.amnshield.netblock.ServiceSinkhole"
             android:exported="true"
             android:foregroundServiceType="specialUse"
             android:label="@string/app_name"
@@ -199,7 +199,7 @@
         </service>
 
         <service
-            android:name="org.alhaq.deenshield.netblock.ServiceExternal"
+            android:name="com.alhaq.amnshield.netblock.ServiceExternal"
             android:exported="true"
             android:foregroundServiceType="specialUse"
             android:label="@string/app_name">
@@ -207,12 +207,12 @@
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
                 android:value="AmnShield FireWall is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
             <intent-filter>
-                <action android:name="org.alhaq.deenshield.netblock.DOWNLOAD_HOSTS_FILE" />
+                <action android:name="com.alhaq.amnshield.netblock.DOWNLOAD_HOSTS_FILE" />
             </intent-filter>
         </service>
 
         <service
-            android:name="org.alhaq.deenshield.netblock.ServiceTileMain"
+            android:name="com.alhaq.amnshield.netblock.ServiceTileMain"
             android:exported="true"
             android:icon="@drawable/ic_security_white_24dp"
             android:label="@string/app_name"
@@ -223,7 +223,7 @@
         </service>
 
         <service
-            android:name="org.alhaq.deenshield.netblock.ServiceTileGraph"
+            android:name="com.alhaq.amnshield.netblock.ServiceTileGraph"
             android:exported="true"
             android:icon="@drawable/ic_equalizer_white_24dp"
             android:label="@string/setting_stats_category"
@@ -234,7 +234,7 @@
         </service>
 
         <service
-            android:name="org.alhaq.deenshield.netblock.ServiceTileFilter"
+            android:name="com.alhaq.amnshield.netblock.ServiceTileFilter"
             android:exported="true"
             android:icon="@drawable/ic_filter_list_white_24dp"
             android:label="@string/setting_filter"
@@ -245,7 +245,7 @@
         </service>
 
         <service
-            android:name="org.alhaq.deenshield.netblock.ServiceTileLockdown"
+            android:name="com.alhaq.amnshield.netblock.ServiceTileLockdown"
             android:exported="true"
             android:icon="@drawable/ic_lock_outline_white_24dp"
             android:label="@string/setting_lockdown"
@@ -256,7 +256,7 @@
         </service>
 
         <receiver
-            android:name="org.alhaq.deenshield.netblock.ReceiverAutostart"
+            android:name="com.alhaq.amnshield.netblock.ReceiverAutostart"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter android:priority="999">
@@ -266,7 +266,7 @@
         </receiver>
 
         <receiver
-            android:name="org.alhaq.deenshield.netblock.ReceiverPackageRemoved"
+            android:name="com.alhaq.amnshield.netblock.ReceiverPackageRemoved"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.PACKAGE_FULLY_REMOVED" />
@@ -275,7 +275,7 @@
         </receiver>
 
         <receiver
-            android:name="org.alhaq.deenshield.netblock.WidgetMain"
+            android:name="com.alhaq.amnshield.netblock.WidgetMain"
             android:exported="true"
             android:label="@string/app_name">
             <intent-filter>
@@ -287,7 +287,7 @@
         </receiver>
 
         <receiver
-            android:name="org.alhaq.deenshield.netblock.WidgetLockdown"
+            android:name="com.alhaq.amnshield.netblock.WidgetLockdown"
             android:exported="true"
             android:label="@string/setting_lockdown">
             <intent-filter>
@@ -299,25 +299,25 @@
         </receiver>
 
         <receiver
-            android:name="org.alhaq.deenshield.netblock.WidgetAdmin"
+            android:name="com.alhaq.amnshield.netblock.WidgetAdmin"
             android:exported="true"
             android:label="@string/app_name"
-            android:permission="org.alhaq.deenshield.netblock.permission.ADMIN">
+            android:permission="com.alhaq.amnshield.netblock.permission.ADMIN">
             <intent-filter>
-                <action android:name="org.alhaq.deenshield.netblock.ON" />
-                <action android:name="org.alhaq.deenshield.netblock.OFF" />
-                <action android:name="org.alhaq.deenshield.netblock.LOCKDOWN_ON" />
-                <action android:name="org.alhaq.deenshield.netblock.LOCKDOWN_OFF" />
+                <action android:name="com.alhaq.amnshield.netblock.ON" />
+                <action android:name="com.alhaq.amnshield.netblock.OFF" />
+                <action android:name="com.alhaq.amnshield.netblock.LOCKDOWN_ON" />
+                <action android:name="com.alhaq.amnshield.netblock.LOCKDOWN_OFF" />
             </intent-filter>
         </receiver>
 
         <!-- AmnShield Sync Service & Broadcast Receiver -->
         <service
-            android:name="org.alhaq.deenshield.netblock.AmnShieldSyncService"
+            android:name="com.alhaq.amnshield.netblock.AmnShieldSyncService"
             android:exported="false" />
 
         <receiver
-            android:name="org.alhaq.deenshield.netblock.AmnShieldSyncReceiver"
+            android:name="com.alhaq.amnshield.netblock.AmnShieldSyncReceiver"
             android:exported="true">
             <intent-filter>
                 <action android:name="amnshield.refresh.appblocker" />

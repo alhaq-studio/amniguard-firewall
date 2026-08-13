@@ -1,6 +1,6 @@
-# AmnShield AmnShield FireWall
+# AmnGuard Firewall
 
-*AmnShield AmnShield FireWall* provides simple and advanced ways to block access to the internet - no root required.
+*AmnGuard Firewall* provides simple and advanced ways to block access to the internet - no root required.
 Applications and addresses can individually be allowed or denied access to your Wi-Fi and/or mobile connection.
 
 
@@ -11,7 +11,7 @@ Blocking access to the internet can help:
 * save your battery
 * increase your privacy
 
-AmnShield FireWall is the first free and open source no-root firewall for Android.
+AmnGuard Firewall is a powerful free and open source no-root firewall for Android, developed by Alhaq Initiative as part of the AmnShield ecosystem.
 
 Features:
 
@@ -36,7 +36,7 @@ PRO features:
 
 * Log all outgoing traffic; search and filter access attempts; export PCAP files to analyze traffic
 * Allow/block individual addresses per application
-* New application notifications; configure AmnShield FireWall directly from the notification
+* New application notifications; configure AmnGuard Firewall directly from the notification
 * Display network speed graph in a status bar notification
 * Select from five additional themes in both light and dark version
 

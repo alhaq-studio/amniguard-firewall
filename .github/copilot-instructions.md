@@ -153,7 +153,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 - **Guardian Core:** `app/src/main/java/com/AmnShield/blocker/{service,viewmodel,ui,data}/`
 - **Guardian Config:** App-level dependencies in `app/build.gradle.kts` (Hilt, Room, Compose)
 - **AmnShield FireWall Legacy:** `app/src/main/java/netblock/` (Java packages); native code in `app/jni/`
-- **Shared:** Both use same application ID `org.alhaq.AmnShield.*`; separate build types (debug/release/play)
+- **Shared:** Both use same application ID `com.alhaq.AmnShield.*`; separate build types (debug/release/play)
 
 ## Critical Safety Guidelines
 

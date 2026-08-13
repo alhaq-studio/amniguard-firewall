@@ -14,3 +14,14 @@
 keystore.properties
 crowdin.properties
 app/.cxx/
+
+# Stale build artifacts
+build_output.txt
+build_run.log
+*.log
+
+# Security — never commit secrets
+*.pem
+*.key
+.env
+.env.*
