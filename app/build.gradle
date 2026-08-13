@@ -10,12 +10,12 @@ android {
     compileSdkVersion 35
 
     defaultConfig {
-        applicationId = "com.alhaq.amnshield.netblock"
+        applicationId = "com.alhaq.amguard"
         versionName = "0.1.24"
         minSdkVersion 22
         targetSdkVersion 35
         versionCode = 20260124
-        archivesBaseName = "Deenshield NetBlock-v$versionName"
+        archivesBaseName = "AmnGuard Firewall-v$versionName"
 
         externalNativeBuild {
             cmake {
@@ -91,7 +91,7 @@ android {
     lint {
         disable 'MissingTranslation'
     }
-    namespace 'com.alhaq.amnshield.netblock'
+    namespace 'com.alhaq.amguard'
     buildFeatures {
         aidl true
     }
