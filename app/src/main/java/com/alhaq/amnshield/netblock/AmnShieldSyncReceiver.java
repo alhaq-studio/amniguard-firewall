@@ -6,7 +6,7 @@ import android.content.Intent;
 import android.util.Log;
 
 public class AmnShieldSyncReceiver extends BroadcastReceiver {
-    private static final String TAG = "DeenShield.SyncReceiver";
+    private static final String TAG = "AmnGuard.SyncReceiver";
     
     @Override
     public void onReceive(Context context, Intent intent) {

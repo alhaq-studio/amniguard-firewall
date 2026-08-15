@@ -10,10 +10,10 @@
 
     <wifi
         blocked="false"
-        package="guardpro.deenshield.ads" />
+        package="com.alhaq.amnguard" />
     <other
         blocked="false"
-        package="guardpro.deenshield.ads"
+        package="com.alhaq.amnguard"
         roaming="false" />
 
     <wifi

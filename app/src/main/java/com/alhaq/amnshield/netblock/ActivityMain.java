@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of DeenShield AppControl.
+    This file is part of AmnGuard Firewall.
 
-    DeenShield AppControl is free software: you can redistribute it and/or modify
+    AmnGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    DeenShield AppControl is distributed in the hope that it will be useful,
+    AmnGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with DeenShield AppControl.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -79,7 +79,7 @@ import java.net.URL;
 import java.util.List;
 
 public class ActivityMain extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
-    private static final String TAG = "DeenShield AppControl.Main";
+    private static final String TAG = "AmnGuard Firewall.Main";
 
     private boolean running = false;
     private ImageView ivIcon;
@@ -104,8 +104,8 @@ public class ActivityMain extends AppCompatActivity implements SharedPreferences
 
     private static final int MIN_SDK = Build.VERSION_CODES.LOLLIPOP_MR1;
 
-    public static final String ACTION_RULES_CHANGED = "com.alhaq.deenshield.AmnShield.ACTION_RULES_CHANGED";
-    public static final String ACTION_QUEUE_CHANGED = "com.alhaq.deenshield.AmnShield.ACTION_QUEUE_CHANGED";
+    public static final String ACTION_RULES_CHANGED = "com.alhaq.amnguard.ACTION_RULES_CHANGED";
+    public static final String ACTION_QUEUE_CHANGED = "com.alhaq.amnguard.ACTION_QUEUE_CHANGED";
     public static final String EXTRA_REFRESH = "Refresh";
     public static final String EXTRA_SEARCH = "Search";
     public static final String EXTRA_RELATED = "Related";
@@ -1349,7 +1349,7 @@ public class ActivityMain extends AppCompatActivity implements SharedPreferences
 
     private static Intent getIntentSupport() {
         Intent intent = new Intent(Intent.ACTION_VIEW);
-        intent.setData(Uri.parse("https://github.com/M66B/DeenShield AppControl/blob/master/FAQ.md"));
+        intent.setData(Uri.parse("https://github.com/M66B/AmnGuard Firewall/blob/master/FAQ.md"));
         return intent;
     }
 }

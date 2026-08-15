@@ -2,20 +2,20 @@ package com.alhaq.amnshield.netblock;
 
 
 /*
-    This file is part of DeenShield AppControl.
+    This file is part of AmnGuard Firewall.
 
-    DeenShield AppControl is free software: you can redistribute it and/or modify
+    AmnGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    DeenShield AppControl is distributed in the hope that it will be useful,
+    AmnGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with DeenShield AppControl.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -31,9 +31,9 @@ import android.widget.TextView;
 import java.net.InetAddress;
 
 public class ActivityForwardApproval extends Activity {
-    private static final String TAG = "DeenShield AppControl.Forward";
-    private static final String ACTION_START_PORT_FORWARD = "com.alhaq.deenshield.AmnShield.START_PORT_FORWARD";
-    private static final String ACTION_STOP_PORT_FORWARD = "com.alhaq.deenshield.AmnShield.STOP_PORT_FORWARD";
+    private static final String TAG = "AmnGuard Firewall.Forward";
+    private static final String ACTION_START_PORT_FORWARD = "com.alhaq.amnguard.START_PORT_FORWARD";
+    private static final String ACTION_STOP_PORT_FORWARD = "com.alhaq.amnguard.STOP_PORT_FORWARD";
 
     static {
         try {
@@ -88,8 +88,8 @@ public class ActivityForwardApproval extends Activity {
             public void onClick(View view) {
                 if (ACTION_START_PORT_FORWARD.equals(getIntent().getAction())) {
 /*
-am start -a com.alhaq.deenshield.AmnShield.START_PORT_FORWARD \
--n com.alhaq.amnshield.netblock/com.alhaq.deenshield.AmnShield.ActivityForwardApproval \
+am start -a com.alhaq.amnguard.START_PORT_FORWARD \
+-n com.alhaq.amnshield.netblock/com.alhaq.amnguard.ActivityForwardApproval \
 --ei protocol 17 \
 --ei dport 53 \
 --es raddr 8.8.4.4 \
@@ -104,8 +104,8 @@ am start -a com.alhaq.deenshield.AmnShield.START_PORT_FORWARD \
 
                 } else if (ACTION_STOP_PORT_FORWARD.equals(getIntent().getAction())) {
 /*
-am start -a com.alhaq.deenshield.AmnShield.STOP_PORT_FORWARD \
--n com.alhaq.amnshield.netblock/com.alhaq.deenshield.AmnShield.ActivityForwardApproval \
+am start -a com.alhaq.amnguard.STOP_PORT_FORWARD \
+-n com.alhaq.amnshield.netblock/com.alhaq.amnguard.ActivityForwardApproval \
 --ei protocol 17 \
 --ei dport 53 \
 --user 0

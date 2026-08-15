@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of DeenShield AppControl.
+    This file is part of AmnGuard Firewall.
 
-    DeenShield AppControl is free software: you can redistribute it and/or modify
+    AmnGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    DeenShield AppControl is distributed in the hope that it will be useful,
+    AmnGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with DeenShield AppControl.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -34,13 +34,13 @@ import androidx.preference.PreferenceManager;
 import java.util.Date;
 
 public class WidgetAdmin extends ReceiverAutostart {
-    private static final String TAG = "DeenShield AppControl.Widget";
+    private static final String TAG = "AmnGuard Firewall.Widget";
 
-    public static final String INTENT_ON = "com.alhaq.deenshield.AmnShield.ON";
-    public static final String INTENT_OFF = "com.alhaq.deenshield.AmnShield.OFF";
+    public static final String INTENT_ON = "com.alhaq.amnguard.ON";
+    public static final String INTENT_OFF = "com.alhaq.amnguard.OFF";
 
-    public static final String INTENT_LOCKDOWN_ON = "com.alhaq.deenshield.AmnShield.LOCKDOWN_ON";
-    public static final String INTENT_LOCKDOWN_OFF = "com.alhaq.deenshield.AmnShield.LOCKDOWN_OFF";
+    public static final String INTENT_LOCKDOWN_ON = "com.alhaq.amnguard.LOCKDOWN_ON";
+    public static final String INTENT_LOCKDOWN_OFF = "com.alhaq.amnguard.LOCKDOWN_OFF";
 
     @Override
     public void onReceive(Context context, Intent intent) {

@@ -21,7 +21,7 @@ import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 
 public class AmnShieldSyncService extends IntentService {
-    private static final String TAG = "DeenShield.SyncService";
+    private static final String TAG = "AmnGuard.SyncService";
     
     public AmnShieldSyncService() {
         super("AmnShieldSyncService");

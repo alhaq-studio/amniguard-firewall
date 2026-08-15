@@ -1,18 +1,18 @@
 /*
-    This file is part of DeenShield AppControl.
+    This file is part of AmnGuard Firewall.
 
-    DeenShield AppControl is free software: you can redistribute it and/or modify
+    AmnGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    DeenShield AppControl is distributed in the hope that it will be useful,
+    AmnGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with DeenShield AppControl.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -55,19 +55,19 @@ jint JNI_OnLoad(JavaVM *vm, void *reserved) {
         return -1;
     }
 
-    const char *packet = "org/alhaq/deenshield/netblock/Packet";
+    const char *packet = "com/alhaq/amnshield/netblock/Packet";
     clsPacket = jniGlobalRef(env, jniFindClass(env, packet));
     ng_add_alloc(clsPacket, "clsPacket");
 
-    const char *allowed = "org/alhaq/deenshield/netblock/Allowed";
+    const char *allowed = "com/alhaq/amnshield/netblock/Allowed";
     clsAllowed = jniGlobalRef(env, jniFindClass(env, allowed));
     ng_add_alloc(clsAllowed, "clsAllowed");
 
-    const char *rr = "org/alhaq/deenshield/netblock/ResourceRecord";
+    const char *rr = "com/alhaq/amnshield/netblock/ResourceRecord";
     clsRR = jniGlobalRef(env, jniFindClass(env, rr));
     ng_add_alloc(clsRR, "clsRR");
 
-    const char *usage = "org/alhaq/deenshield/netblock/Usage";
+    const char *usage = "com/alhaq/amnshield/netblock/Usage";
     clsUsage = jniGlobalRef(env, jniFindClass(env, usage));
     ng_add_alloc(clsUsage, "clsUsage");
 
@@ -108,7 +108,7 @@ void JNI_OnUnload(JavaVM *vm, void *reserved) {
 // JNI ServiceSinkhole
 
 JNIEXPORT jlong JNICALL
-Java_eu_faircode_netblock_ServiceSinkhole_jni_1init(
+Java_com_alhaq_amnshield_netblock_ServiceSinkhole_jni_1init(
         JNIEnv *env, jobject instance, jint sdk) {
     struct context *ctx = ng_calloc(1, sizeof(struct context), "init");
     ctx->sdk = sdk;
@@ -139,7 +139,7 @@ Java_eu_faircode_netblock_ServiceSinkhole_jni_1init(
 }
 
 JNIEXPORT void JNICALL
-Java_eu_faircode_netblock_ServiceSinkhole_jni_1start(
+Java_com_alhaq_amnshield_netblock_ServiceSinkhole_jni_1start(
         JNIEnv *env, jobject instance, jlong context, jint loglevel_) {
     struct context *ctx = (struct context *) context;
 
@@ -152,7 +152,7 @@ Java_eu_faircode_netblock_ServiceSinkhole_jni_1start(
 }
 
 JNIEXPORT void JNICALL
-Java_eu_faircode_netblock_ServiceSinkhole_jni_1run(
+Java_com_alhaq_amnshield_netblock_ServiceSinkhole_jni_1run(
         JNIEnv *env, jobject instance, jlong context, jint tun, jboolean fwd53, jint rcode) {
     struct context *ctx = (struct context *) context;
 
@@ -176,7 +176,7 @@ Java_eu_faircode_netblock_ServiceSinkhole_jni_1run(
 }
 
 JNIEXPORT void JNICALL
-Java_eu_faircode_netblock_ServiceSinkhole_jni_1stop(
+Java_com_alhaq_amnshield_netblock_ServiceSinkhole_jni_1stop(
         JNIEnv *env, jobject instance, jlong context) {
     struct context *ctx = (struct context *) context;
     ctx->stopping = 1;
@@ -187,19 +187,19 @@ Java_eu_faircode_netblock_ServiceSinkhole_jni_1stop(
 }
 
 JNIEXPORT void JNICALL
-Java_eu_faircode_netblock_ServiceSinkhole_jni_1clear(
+Java_com_alhaq_amnshield_netblock_ServiceSinkhole_jni_1clear(
         JNIEnv *env, jobject instance, jlong context) {
     struct context *ctx = (struct context *) context;
     clear(ctx);
 }
 
 JNIEXPORT jint JNICALL
-Java_eu_faircode_netblock_ServiceSinkhole_jni_1get_1mtu(JNIEnv *env, jobject instance) {
+Java_com_alhaq_amnshield_netblock_ServiceSinkhole_jni_1get_1mtu(JNIEnv *env, jobject instance) {
     return get_mtu();
 }
 
 JNIEXPORT jintArray JNICALL
-Java_eu_faircode_netblock_ServiceSinkhole_jni_1get_1stats(
+Java_com_alhaq_amnshield_netblock_ServiceSinkhole_jni_1get_1stats(
         JNIEnv *env, jobject instance, jlong context) {
     struct context *ctx = (struct context *) context;
 
@@ -247,7 +247,7 @@ Java_eu_faircode_netblock_ServiceSinkhole_jni_1get_1stats(
 }
 
 JNIEXPORT void JNICALL
-Java_eu_faircode_netblock_ServiceSinkhole_jni_1pcap(
+Java_com_alhaq_amnshield_netblock_ServiceSinkhole_jni_1pcap(
         JNIEnv *env, jclass type,
         jstring name_, jint record_size, jint file_size) {
 
@@ -305,7 +305,7 @@ Java_eu_faircode_netblock_ServiceSinkhole_jni_1pcap(
 }
 
 JNIEXPORT void JNICALL
-Java_eu_faircode_netblock_ServiceSinkhole_jni_1socks5(JNIEnv *env, jobject instance, jstring addr_,
+Java_com_alhaq_amnshield_netblock_ServiceSinkhole_jni_1socks5(JNIEnv *env, jobject instance, jstring addr_,
                                                       jint port, jstring username_,
                                                       jstring password_) {
     const char *addr = (*env)->GetStringUTFChars(env, addr_, 0);
@@ -332,7 +332,7 @@ Java_eu_faircode_netblock_ServiceSinkhole_jni_1socks5(JNIEnv *env, jobject insta
 }
 
 JNIEXPORT void JNICALL
-Java_eu_faircode_netblock_ServiceSinkhole_jni_1done(
+Java_com_alhaq_amnshield_netblock_ServiceSinkhole_jni_1done(
         JNIEnv *env, jobject instance, jlong context) {
     struct context *ctx = (struct context *) context;
     log_android(ANDROID_LOG_INFO, "Done");
@@ -357,7 +357,7 @@ Java_eu_faircode_netblock_ServiceSinkhole_jni_1done(
 // JNI Util
 
 JNIEXPORT jstring JNICALL
-Java_eu_faircode_netblock_Util_jni_1getprop(JNIEnv *env, jclass type, jstring name_) {
+Java_com_alhaq_amnshield_netblock_Util_jni_1getprop(JNIEnv *env, jclass type, jstring name_) {
     const char *name = (*env)->GetStringUTFChars(env, name_, 0);
     ng_add_alloc(name, "name");
 
@@ -371,7 +371,7 @@ Java_eu_faircode_netblock_Util_jni_1getprop(JNIEnv *env, jclass type, jstring na
 }
 
 JNIEXPORT jboolean JNICALL
-Java_eu_faircode_netblock_Util_is_1numeric_1address(JNIEnv *env, jclass type, jstring ip_) {
+Java_com_alhaq_amnshield_netblock_Util_is_1numeric_1address(JNIEnv *env, jclass type, jstring ip_) {
     jboolean numeric = 0;
     const char *ip = (*env)->GetStringUTFChars(env, ip_, 0);
     ng_add_alloc(ip, "ip");
@@ -552,7 +552,7 @@ void log_packet(const struct arguments *args, jobject jpacket) {
     jclass clsService = (*args->env)->GetObjectClass(args->env, args->instance);
     ng_add_alloc(clsService, "clsService");
 
-    const char *signature = "(Lorg/alhaq/deenshield/netblock/Packet;)V";
+    const char *signature = "(Lcom/alhaq/amnshield/netblock/Packet;)V";
     if (midLogPacket == NULL)
         midLogPacket = jniGetMethodID(args->env, clsService, "logPacket", signature);
 
@@ -593,11 +593,11 @@ void dns_resolved(const struct arguments *args,
     jclass clsService = (*args->env)->GetObjectClass(args->env, args->instance);
     ng_add_alloc(clsService, "clsService");
 
-    const char *signature = "(Lorg/alhaq/deenshield/netblock/ResourceRecord;)V";
+    const char *signature = "(Lcom/alhaq/amnshield/netblock/ResourceRecord;)V";
     if (midDnsResolved == NULL)
         midDnsResolved = jniGetMethodID(args->env, clsService, "dnsResolved", signature);
 
-    const char *rr = "org/alhaq/deenshield/netblock/ResourceRecord";
+    const char *rr = "com/alhaq/amnshield/netblock/ResourceRecord";
     if (midInitRR == NULL)
         midInitRR = jniGetMethodID(args->env, clsRR, "<init>", "()V");
 
@@ -753,7 +753,7 @@ struct allowed *is_address_allowed(const struct arguments *args, jobject jpacket
     jclass clsService = (*args->env)->GetObjectClass(args->env, args->instance);
     ng_add_alloc(clsService, "clsService");
 
-    const char *signature = "(Lorg/alhaq/deenshield/netblock/Packet;)Lorg/alhaq/deenshield/netblock/Allowed;";
+    const char *signature = "(Lcom/alhaq/amnshield/netblock/Packet;)Lcom/alhaq/amnshield/netblock/Allowed;";
     if (midIsAddressAllowed == NULL)
         midIsAddressAllowed = jniGetMethodID(args->env, clsService, "isAddressAllowed", signature);
 
@@ -844,7 +844,7 @@ jobject create_packet(const struct arguments *args,
         env->SetByteArrayRegion (ret, 0, 3, b);
      */
 
-    const char *packet = "org/alhaq/deenshield/netblock/Packet";
+    const char *packet = "com/alhaq/amnshield/netblock/Packet";
     if (midInitPacket == NULL)
         midInitPacket = jniGetMethodID(env, clsPacket, "<init>", "()V");
     jobject jpacket = jniNewObject(env, clsPacket, midInitPacket, packet);
@@ -932,11 +932,11 @@ void account_usage(const struct arguments *args, jint version, jint protocol,
     jclass clsService = (*args->env)->GetObjectClass(args->env, args->instance);
     ng_add_alloc(clsService, "clsService");
 
-    const char *signature = "(Lorg/alhaq/deenshield/netblock/Usage;)V";
+    const char *signature = "(Lcom/alhaq/amnshield/netblock/Usage;)V";
     if (midAccountUsage == NULL)
         midAccountUsage = jniGetMethodID(args->env, clsService, "accountUsage", signature);
 
-    const char *usage = "org/alhaq/deenshield/netblock/Usage";
+    const char *usage = "com/alhaq/amnshield/netblock/Usage";
     if (midInitUsage == NULL)
         midInitUsage = jniGetMethodID(args->env, clsUsage, "<init>", "()V");
 
@@ -1100,7 +1100,7 @@ void ng_dump() {
 }
 
 JNIEXPORT void JNICALL
-Java_eu_faircode_netblock_Util_dump_1memory_1profile(JNIEnv *env, jclass type) {
+Java_com_alhaq_amnshield_netblock_Util_dump_1memory_1profile(JNIEnv *env, jclass type) {
 #ifdef PROFILE_MEMORY
     log_android(ANDROID_LOG_DEBUG, "Dump memory profile");
 

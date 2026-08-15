@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of DeenShield AppControl.
+    This file is part of AmnGuard Firewall.
 
-    DeenShield AppControl is free software: you can redistribute it and/or modify
+    AmnGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    DeenShield AppControl is distributed in the hope that it will be useful,
+    AmnGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with DeenShield AppControl.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -51,7 +51,7 @@ import androidx.core.app.NavUtils;
 import static android.content.ClipDescription.MIMETYPE_TEXT_PLAIN;
 
 public class ActivityPro extends AppCompatActivity {
-    private static final String TAG = "DeenShield AppControl.Pro";
+    private static final String TAG = "AmnGuard Firewall.Pro";
 
     private IAB iab;
 
@@ -301,7 +301,7 @@ public class ActivityPro extends AppCompatActivity {
 
         String android_id = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
         final String challenge = (Build.VERSION.SDK_INT < Build.VERSION_CODES.O ? Build.SERIAL : "O3" + android_id);
-        String seed = (Build.VERSION.SDK_INT < Build.VERSION_CODES.O ? "DeenShield AppControl2" : "DeenShield AppControl3");
+        String seed = (Build.VERSION.SDK_INT < Build.VERSION_CODES.O ? "AmnGuard Firewall2" : "AmnGuard Firewall3");
 
         // Challenge
         TextView tvChallenge = view.findViewById(R.id.tvChallenge);

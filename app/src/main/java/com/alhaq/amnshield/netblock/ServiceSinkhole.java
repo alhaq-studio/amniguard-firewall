@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of DeenShield AppControl.
+    This file is part of AmnGuard Firewall.
 
-    DeenShield AppControl is free software: you can redistribute it and/or modify
+    AmnGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    DeenShield AppControl is distributed in the hope that it will be useful,
+    AmnGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with DeenShield AppControl.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -117,7 +117,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import javax.net.ssl.HttpsURLConnection;
 
 public class ServiceSinkhole extends VpnService implements SharedPreferences.OnSharedPreferenceChangeListener {
-    private static final String TAG = "DeenShield AppControl.Service";
+    private static final String TAG = "AmnGuard Firewall.Service";
 
     private boolean registeredUser = false;
     private boolean registeredIdleState = false;
@@ -200,9 +200,9 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
 
     private ExecutorService executor = Executors.newCachedThreadPool();
 
-    private static final String ACTION_HOUSE_HOLDING = "com.alhaq.deenshield.AmnShield.HOUSE_HOLDING";
-    private static final String ACTION_SCREEN_OFF_DELAYED = "com.alhaq.deenshield.AmnShield.SCREEN_OFF_DELAYED";
-    private static final String ACTION_WATCHDOG = "com.alhaq.deenshield.AmnShield.WATCHDOG";
+    private static final String ACTION_HOUSE_HOLDING = "com.alhaq.amnguard.HOUSE_HOLDING";
+    private static final String ACTION_SCREEN_OFF_DELAYED = "com.alhaq.amnguard.SCREEN_OFF_DELAYED";
+    private static final String ACTION_WATCHDOG = "com.alhaq.amnguard.WATCHDOG";
 
     private native long jni_init(int sdk);
 
@@ -2258,7 +2258,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
     };
 
     ConnectivityManager.NetworkCallback networkMonitorCallback = new ConnectivityManager.NetworkCallback() {
-        private String TAG = "DeenShield AppControl.Monitor";
+        private String TAG = "AmnGuard Firewall.Monitor";
 
         private Map<Network, Long> validated = new HashMap<>();
 
