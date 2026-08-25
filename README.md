@@ -1,6 +1,6 @@
 # AmniGuard Firewall 🛡️
 
-[![Android CI / CD](https://github.com/alhaq-studio/amnshield-firewall/actions/workflows/ci.yml/badge.svg)](https://github.com/alhaq-studio/amnshield-firewall/actions/workflows/ci.yml)
+[![Android CI / CD](https://github.com/alhaq-studio/amnishield-firewall/actions/workflows/ci.yml/badge.svg)](https://github.com/alhaq-studio/amnishield-firewall/actions/workflows/ci.yml)
 [![License: GPL v3](https://img.shields.io/badge/License-GPLv3-blue.svg)](LICENSE)
 [![Platform](https://img.shields.io/badge/Platform-Android%205.1%2B-green.svg)](https://android.com)
 [![Privacy First](https://img.shields.io/badge/Privacy-100%25%20On--Device-success.svg)](README.md)
@@ -52,7 +52,7 @@
 
 Clone the repository:
 ```bash
-git clone https://github.com/alhaq-studio/amnshield-firewall.git
+git clone https://github.com/alhaq-studio/amnishield-firewall.git
 cd amnshield-firewall
 ```
 
