@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of AmnGuard Firewall.
+    This file is part of AmniGuard Firewall.
 
-    AmnGuard Firewall is free software: you can redistribute it and/or modify
+    AmniGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    AmnGuard Firewall is distributed in the hope that it will be useful,
+    AmniGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmniGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -33,7 +33,7 @@ import androidx.preference.PreferenceManager;
 
 @TargetApi(Build.VERSION_CODES.N)
 public class ServiceTileFilter extends TileService implements SharedPreferences.OnSharedPreferenceChangeListener {
-    private static final String TAG = "AmnGuard Firewall.TileFilter";
+    private static final String TAG = "AmniGuard Firewall.TileFilter";
 
     public void onStartListening() {
         Log.i(TAG, "Start listening");
@@ -50,7 +50,7 @@ public class ServiceTileFilter extends TileService implements SharedPreferences.
 
     private void update() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        boolean filter = prefs.getBoolean("filter", false);
+        boolean filter = prefs.getBoolean("filter", true);
         Tile tile = getQsTile();
         if (tile != null) {
             tile.setState(filter ? Tile.STATE_ACTIVE : Tile.STATE_INACTIVE);
@@ -71,7 +71,7 @@ public class ServiceTileFilter extends TileService implements SharedPreferences.
         if (Util.canFilter(this)) {
             if (IAB.isPurchased(ActivityPro.SKU_FILTER, this)) {
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-                prefs.edit().putBoolean("filter", !prefs.getBoolean("filter", false)).apply();
+                prefs.edit().putBoolean("filter", !prefs.getBoolean("filter", true)).apply();
                 ServiceSinkhole.reload("tile", this, false);
             } else
                 Toast.makeText(this, R.string.title_pro_feature, Toast.LENGTH_SHORT).show();

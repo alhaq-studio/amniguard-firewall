@@ -1,15 +1,15 @@
 <resources>
-    <string name="app_name" translatable="false">AmnGuard Firewall</string>
-    <string name="app_description">AmnGuard Firewall provides simple and advanced ways to monitor and control internet access per app, no root required. Apps and addresses can individually be allowed or monitored for your Wi-Fi and/or mobile connection. Developed by Alhaq Initiative, part of the AmnShield ecosystem.</string>
-    <string name="app_copyright" translatable="false">Copyright © 2026 Alhaq Initiative. Alrights reserved.</string>
-    <string name="app_android">AmnGuard Firewall requires Android 5.1 or later</string>
-    <string name="app_xposed">Xposed causes too many crashes, which might result in AmnGuard Firewall being removed from the Google Play Store; therefore AmnGuard Firewall is not supported while Xposed is installed</string>
+    <string name="app_name" translatable="false">AmniGuard Firewall</string>
+    <string name="app_description">AmniGuard Firewall provides simple and advanced ways to monitor and control internet access per app, no root required. Apps and addresses can individually be allowed or monitored for your Wi-Fi and/or mobile connection. Developed by Alhaq Initiative, part of the AmnShield ecosystem.</string>
+    <string name="app_copyright" translatable="false">Copyright © 2026 Alhaq Initiative. All rights reserved.</string>
+    <string name="app_android">AmniGuard Firewall requires Android 5.1 or later</string>
+    <string name="app_xposed">Xposed causes too many crashes, which might result in AmniGuard Firewall being removed from the Google Play Store; therefore AmniGuard Firewall is not supported while Xposed is installed</string>
     <string name="app_eula" translatable="false">THIS SOFTWARE IS PROVIDED BY THE AUTHOR \'\'AS IS\'\' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</string>
     <string name="app_privacy"><a href="https://www.alhaq-initiative.org/privacy/">Privacy policy</a></string>
-    <string name="app_first">AmnGuard Firewall is an independent app developed by Alhaq Initiative. Great care has been taken to develop and test it; however it is impossible to guarantee it will work correctly on every device.</string>
+    <string name="app_first">AmniGuard Firewall is an independent app developed by Alhaq Initiative. Great care has been taken to develop and test it; however it is impossible to guarantee it will work correctly on every device.</string>
     <string name="app_agree">I agree</string>
     <string name="app_disagree">I disagree</string>
-    <string name="app_support">AmnGuard Firewall is free and open source. Tap to support development.</string>
+    <string name="app_support">AmniGuard Firewall is free and open source. Tap to support development.</string>
     <string name="app_qap">
         Google was going to remove the app from the Play Store because it requested permission to query all apps.
         Five appeals and providing a good justification about why this permission is needed were rejected.
@@ -423,7 +423,30 @@ Your internet traffic is not being sent to a remote VPN server.</string>
     <string name="thursday">Thursday</string>
     <string name="friday">Friday</string>
     <string name="saturday">Saturday</string>
-    <string name="sunday">Sunday</string>
     <string name="msg_schedule_active">Schedule active: %s</string>
     
+    <!-- Website & Domain Blocker -->
+    <string name="setting_domain_filter">Website &amp; Domain Blocker</string>
+    <string name="summary_domain_filter">Block adult content, social media, and manage custom domain rules</string>
+    <string name="setting_domain_blocker_enabled">Enable Domain Blocker</string>
+    <string name="summary_domain_blocker_enabled">Master switch — turn off to disable all domain blocking</string>
+    <string name="setting_block_adult">Block Adult Content (80,000+ sites)</string>
+    <string name="summary_block_adult">Local zero-latency blocking of explicit adult portals and subdomains</string>
+    <string name="setting_block_social">Block Social Media &amp; Streaming</string>
+    <string name="summary_block_social">Block social networks, video streaming portals, and distraction hubs</string>
+    <string name="setting_custom_blacklist">Custom Blacklist (Block Domains)</string>
+    <string name="summary_custom_blacklist">Add specific domains or wildcards (*.example.com) to block</string>
+    <string name="setting_custom_whitelist">Custom Whitelist (Always Allow)</string>
+    <string name="summary_custom_whitelist">Exclude specific domains from all filters and always allow</string>
+    <string name="title_add_domain">Add Domain</string>
+    <string name="title_remove_domain">Remove Domain</string>
+    <string name="hint_enter_domain">e.g. example.com or *.example.com</string>
+    <string name="msg_domain_added">Domain added: %s</string>
+    <string name="msg_domain_removed">Domain removed: %s</string>
+    <string name="msg_invalid_domain">Invalid domain name</string>
+    <string name="title_manage_blacklist">Manage Custom Blacklist</string>
+    <string name="title_manage_whitelist">Manage Custom Whitelist</string>
+    <string name="msg_no_domains_configured">No custom domains added yet</string>
+    <string name="btn_add">Add</string>
+    <string name="btn_close">Close</string>
 </resources>

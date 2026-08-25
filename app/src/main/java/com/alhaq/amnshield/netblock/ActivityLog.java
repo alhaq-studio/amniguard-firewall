@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of AmnGuard Firewall.
+    This file is part of AmniGuard Firewall.
 
-    AmnGuard Firewall is free software: you can redistribute it and/or modify
+    AmniGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    AmnGuard Firewall is distributed in the hope that it will be useful,
+    AmniGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmniGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -59,7 +59,7 @@ import java.text.SimpleDateFormat;
 import java.util.Date;
 
 public class ActivityLog extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
-    private static final String TAG = "AmnGuard Firewall.Log";
+    private static final String TAG = "AmniGuard Firewall.Log";
 
     private boolean running = false;
     private ListView lvLog;
@@ -214,7 +214,7 @@ public class ActivityLog extends AppCompatActivity implements SharedPreferences.
                 else
                     popup.getMenu().findItem(R.id.menu_port).setTitle(getString(R.string.title_log_port, port));
 
-                if (prefs.getBoolean("filter", false)) {
+                if (prefs.getBoolean("filter", true)) {
                     if (uid <= 0) {
                         popup.getMenu().removeItem(R.id.menu_allow);
                         popup.getMenu().removeItem(R.id.menu_block);
@@ -388,7 +388,7 @@ public class ActivityLog extends AppCompatActivity implements SharedPreferences.
         menu.findItem(R.id.menu_protocol_udp).setChecked(prefs.getBoolean("proto_udp", true));
         menu.findItem(R.id.menu_protocol_tcp).setChecked(prefs.getBoolean("proto_tcp", true));
         menu.findItem(R.id.menu_protocol_other).setChecked(prefs.getBoolean("proto_other", true));
-        menu.findItem(R.id.menu_traffic_allowed).setEnabled(prefs.getBoolean("filter", false));
+        menu.findItem(R.id.menu_traffic_allowed).setEnabled(prefs.getBoolean("filter", true));
         menu.findItem(R.id.menu_traffic_allowed).setChecked(prefs.getBoolean("traffic_allowed", true));
         menu.findItem(R.id.menu_traffic_blocked).setChecked(prefs.getBoolean("traffic_blocked", true));
 
@@ -507,7 +507,7 @@ public class ActivityLog extends AppCompatActivity implements SharedPreferences.
 
             case R.id.menu_log_support:
                 Intent intent = new Intent(Intent.ACTION_VIEW);
-                intent.setData(Uri.parse("https://github.com/M66B/AmnGuard Firewall/blob/master/FAQ.md#user-content-faq27"));
+                intent.setData(Uri.parse("https://github.com/M66B/AmniGuard Firewall/blob/master/FAQ.md#user-content-faq27"));
                 if (getPackageManager().resolveActivity(intent, 0) != null)
                     startActivity(intent);
                 return true;

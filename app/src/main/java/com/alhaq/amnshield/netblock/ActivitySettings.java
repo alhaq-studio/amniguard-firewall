@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of AmnGuard Firewall.
+    This file is part of AmniGuard Firewall.
 
-    AmnGuard Firewall is free software: you can redistribute it and/or modify
+    AmniGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    AmnGuard Firewall is distributed in the hope that it will be useful,
+    AmniGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmniGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -85,18 +85,23 @@ import java.net.URL;
 import java.net.UnknownHostException;
 import java.text.SimpleDateFormat;
 import java.util.ArrayList;
+import java.util.Collections;
 import java.util.Date;
 import java.util.HashMap;
 import java.util.HashSet;
 import java.util.List;
 import java.util.Map;
 import java.util.Set;
+import android.widget.ArrayAdapter;
+import android.widget.EditText;
+import android.widget.FrameLayout;
+import android.text.InputType;
 
 import javax.xml.parsers.ParserConfigurationException;
 import javax.xml.parsers.SAXParserFactory;
 
 public class ActivitySettings extends AppCompatActivity implements SharedPreferences.OnSharedPreferenceChangeListener {
-    private static final String TAG = "AmnGuard Firewall.Settings";
+    private static final String TAG = "AmniGuard Firewall.Settings";
 
     private boolean running = false;
 
@@ -442,6 +447,29 @@ public class ActivitySettings extends AppCompatActivity implements SharedPrefere
         pref_technical_network.setOnPreferenceClickListener(listener);
         updateTechnicalInfo();
 
+        // Domain Blocker Preferences
+        Preference pref_blacklist = screen.findPreference("manage_blacklist");
+        if (pref_blacklist != null) {
+            pref_blacklist.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                @Override
+                public boolean onPreferenceClick(Preference preference) {
+                    showDomainManagementDialog(R.string.title_manage_blacklist, "custom_blocked_domains");
+                    return true;
+                }
+            });
+        }
+
+        Preference pref_whitelist = screen.findPreference("manage_whitelist");
+        if (pref_whitelist != null) {
+            pref_whitelist.setOnPreferenceClickListener(new Preference.OnPreferenceClickListener() {
+                @Override
+                public boolean onPreferenceClick(Preference preference) {
+                    showDomainManagementDialog(R.string.title_manage_whitelist, "custom_allowed_domains");
+                    return true;
+                }
+            });
+        }
+
         markPro(screen.findPreference("theme"), ActivityPro.SKU_THEME);
         markPro(screen.findPreference("install"), ActivityPro.SKU_NOTIFY);
         markPro(screen.findPreference("show_stats"), ActivityPro.SKU_SPEED);
@@ -546,6 +574,9 @@ public class ActivitySettings extends AppCompatActivity implements SharedPrefere
             ServiceSinkhole.reload("changed " + name, this, false);
 
         else if ("whitelist_roaming".equals(name))
+            ServiceSinkhole.reload("changed " + name, this, false);
+
+        else if ("domain_blocker_enabled".equals(name) || "block_adult".equals(name) || "block_social".equals(name))
             ServiceSinkhole.reload("changed " + name, this, false);
 
         else if ("auto_enable".equals(name))
@@ -1470,5 +1501,90 @@ public class ActivitySettings extends AppCompatActivity implements SharedPrefere
             else
                 return getPackageManager().getApplicationInfo(pkg, 0).uid;
         }
+    }
+
+    private void showDomainManagementDialog(final int titleRes, final String prefKey) {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        Set<String> set = prefs.getStringSet(prefKey, new HashSet<String>());
+        final List<String> domainList = new ArrayList<>(set);
+        Collections.sort(domainList);
+
+        final ArrayAdapter<String> adapter = new ArrayAdapter<String>(this, android.R.layout.simple_list_item_1, domainList);
+
+        AlertDialog.Builder builder = new AlertDialog.Builder(this);
+        builder.setTitle(titleRes);
+
+        if (domainList.isEmpty()) {
+            builder.setMessage(R.string.msg_no_domains_configured);
+        } else {
+            builder.setAdapter(adapter, new DialogInterface.OnClickListener() {
+                @Override
+                public void onClick(DialogInterface dialog, final int which) {
+                    final String domain = domainList.get(which);
+                    new AlertDialog.Builder(ActivitySettings.this)
+                            .setTitle(R.string.title_remove_domain)
+                            .setMessage(getString(R.string.msg_domain_removed, domain))
+                            .setPositiveButton(android.R.string.ok, new DialogInterface.OnClickListener() {
+                                @Override
+                                public void onClick(DialogInterface d, int w) {
+                                    Set<String> current = new HashSet<>(prefs.getStringSet(prefKey, new HashSet<String>()));
+                                    current.remove(domain);
+                                    prefs.edit().putStringSet(prefKey, current).apply();
+                                    Toast.makeText(ActivitySettings.this, getString(R.string.msg_domain_removed, domain), Toast.LENGTH_SHORT).show();
+                                    ServiceSinkhole.reload("domain list updated", ActivitySettings.this, false);
+                                    showDomainManagementDialog(titleRes, prefKey);
+                                }
+                            })
+                            .setNegativeButton(android.R.string.cancel, null)
+                            .show();
+                }
+            });
+        }
+
+        builder.setPositiveButton(R.string.btn_add, new DialogInterface.OnClickListener() {
+            @Override
+            public void onClick(DialogInterface dialog, int which) {
+                showAddDomainDialog(titleRes, prefKey);
+            }
+        });
+
+        builder.setNegativeButton(R.string.btn_close, null);
+        builder.show();
+    }
+
+    private void showAddDomainDialog(final int parentTitleRes, final String prefKey) {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
+        final EditText input = new EditText(this);
+        input.setHint(R.string.hint_enter_domain);
+        input.setSingleLine(true);
+        input.setInputType(InputType.TYPE_TEXT_VARIATION_URI);
+
+        FrameLayout container = new FrameLayout(this);
+        int padding = Util.dips2pixels(16, this);
+        container.setPadding(padding, padding / 2, padding, padding / 2);
+        container.addView(input);
+
+        new AlertDialog.Builder(this)
+                .setTitle(R.string.title_add_domain)
+                .setView(container)
+                .setPositiveButton(R.string.btn_add, new DialogInterface.OnClickListener() {
+                    @Override
+                    public void onClick(DialogInterface dialog, int which) {
+                        String domain = input.getText().toString().trim().toLowerCase();
+                        if (domain.startsWith("*.")) domain = domain.substring(2);
+                        if (domain.length() < 3 || !domain.contains(".")) {
+                            Toast.makeText(ActivitySettings.this, R.string.msg_invalid_domain, Toast.LENGTH_SHORT).show();
+                            return;
+                        }
+                        Set<String> current = new HashSet<>(prefs.getStringSet(prefKey, new HashSet<String>()));
+                        current.add(domain);
+                        prefs.edit().putStringSet(prefKey, current).apply();
+                        Toast.makeText(ActivitySettings.this, getString(R.string.msg_domain_added, domain), Toast.LENGTH_SHORT).show();
+                        ServiceSinkhole.reload("domain added", ActivitySettings.this, false);
+                        showDomainManagementDialog(parentTitleRes, prefKey);
+                    }
+                })
+                .setNegativeButton(android.R.string.cancel, null)
+                .show();
     }
 }

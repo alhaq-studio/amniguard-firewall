@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of AmnGuard Firewall.
+    This file is part of AmniGuard Firewall.
 
-    AmnGuard Firewall is free software: you can redistribute it and/or modify
+    AmniGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    AmnGuard Firewall is distributed in the hope that it will be useful,
+    AmniGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmniGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -117,7 +117,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import javax.net.ssl.HttpsURLConnection;
 
 public class ServiceSinkhole extends VpnService implements SharedPreferences.OnSharedPreferenceChangeListener {
-    private static final String TAG = "AmnGuard Firewall.Service";
+    private static final String TAG = "AmniGuard Firewall.Service";
 
     private boolean registeredUser = false;
     private boolean registeredIdleState = false;
@@ -152,6 +152,15 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
     private long last_malware_modified = 0;
     private Map<String, Boolean> mapHostsBlocked = new HashMap<>();
     private Map<String, Boolean> mapMalware = new HashMap<>();
+    private final Set<String> setAdultDomains = new HashSet<>();
+    private final Set<String> setSocialDomains = new HashSet<>();
+    private final Set<String> setCustomBlacklist = new HashSet<>();
+    private final Set<String> setCustomWhitelist = new HashSet<>();
+    private volatile boolean domainBlockerEnabled = true;
+    private volatile boolean blockAdult = true;
+    private volatile boolean blockSocial = false;
+    private volatile boolean blocklistsLoaded = false;
+    private static final ExecutorService sBlocklistExecutor = Executors.newSingleThreadExecutor();
     private Map<Integer, Boolean> mapUidAllowed = new HashMap<>();
     private Map<Integer, Integer> mapUidKnown = new HashMap<>();
     private final Map<IPKey, Map<InetAddress, IPRule>> mapUidIPFilters = new HashMap<>();
@@ -200,9 +209,9 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
 
     private ExecutorService executor = Executors.newCachedThreadPool();
 
-    private static final String ACTION_HOUSE_HOLDING = "com.alhaq.amnguard.HOUSE_HOLDING";
-    private static final String ACTION_SCREEN_OFF_DELAYED = "com.alhaq.amnguard.SCREEN_OFF_DELAYED";
-    private static final String ACTION_WATCHDOG = "com.alhaq.amnguard.WATCHDOG";
+    private static final String ACTION_HOUSE_HOLDING = "com.alhaq.amniguard.HOUSE_HOLDING";
+    private static final String ACTION_SCREEN_OFF_DELAYED = "com.alhaq.amniguard.SCREEN_OFF_DELAYED";
+    private static final String ACTION_WATCHDOG = "com.alhaq.amniguard.WATCHDOG";
 
     private native long jni_init(int sdk);
 
@@ -451,7 +460,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
 
                 if (cmd == Command.start || cmd == Command.reload) {
                     if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.Q) {
-                        boolean filter = prefs.getBoolean("filter", false);
+                        boolean filter = prefs.getBoolean("filter", true);
                         if (filter && isLockdownEnabled())
                             showLockdownNotification();
                         else
@@ -581,7 +590,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
                 vpn = startVPN(last_builder);
 
             } else {
-                if (vpn != null && prefs.getBoolean("filter", false) && builder.equals(last_builder)) {
+                if (vpn != null && prefs.getBoolean("filter", true) && builder.equals(last_builder)) {
                     Log.i(TAG, "Native restart");
                     stopNative(vpn);
 
@@ -843,7 +852,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         private void usage(Usage usage) {
             if (usage.Uid >= 0 && !(usage.Uid == 0 && usage.Protocol == 17 && usage.DPort == 53)) {
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ServiceSinkhole.this);
-                boolean filter = prefs.getBoolean("filter", false);
+                boolean filter = prefs.getBoolean("filter", true);
                 boolean log_app = prefs.getBoolean("log_app", false);
                 boolean track_usage = prefs.getBoolean("track_usage", false);
                 if (filter && log_app && track_usage) {
@@ -933,7 +942,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
             SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ServiceSinkhole.this);
             long frequency = Long.parseLong(prefs.getString("stats_frequency", "1000"));
             long samples = Long.parseLong(prefs.getString("stats_samples", "90"));
-            boolean filter = prefs.getBoolean("filter", false);
+            boolean filter = prefs.getBoolean("filter", true);
             boolean show_top = prefs.getBoolean("show_top", false);
             int loglevel = Integer.parseInt(prefs.getString("loglevel", Integer.toString(Log.WARN)));
 
@@ -1149,7 +1158,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         // Get custom DNS servers
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean ip6 = prefs.getBoolean("ip6", true);
-        boolean filter = prefs.getBoolean("filter", false);
+        boolean filter = prefs.getBoolean("filter", true);
         String vpnDns1 = prefs.getString("dns", null);
         String vpnDns2 = prefs.getString("dns2", null);
         Log.i(TAG, "DNS system=" + TextUtils.join(",", sysDns) + " config=" + vpnDns1 + "," + vpnDns2);
@@ -1267,7 +1276,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         boolean tethering = prefs.getBoolean("tethering", false);
         boolean lan = prefs.getBoolean("lan", false);
         boolean ip6 = prefs.getBoolean("ip6", true);
-        boolean filter = prefs.getBoolean("filter", false);
+        boolean filter = prefs.getBoolean("filter", true);
         boolean system = prefs.getBoolean("manage_system", false);
 
         // Build VPN service
@@ -1288,13 +1297,12 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         }
 
         // DNS address
-        if (filter)
-            for (InetAddress dns : getDns(ServiceSinkhole.this)) {
-                if (ip6 || dns instanceof Inet4Address) {
-                    Log.i(TAG, "Using DNS=" + dns);
-                    builder.addDnsServer(dns);
-                }
+        for (InetAddress dns : getDns(ServiceSinkhole.this)) {
+            if (ip6 || dns instanceof Inet4Address) {
+                Log.i(TAG, "Using DNS=" + dns);
+                builder.addDnsServer(dns);
             }
+        }
 
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.M)
             try {
@@ -1467,40 +1475,19 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
 
         // Add list of allowed applications
         if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP) {
-            if (last_connected && !filter) {
-                Map<String, Rule> mapDisallowed = new HashMap<>();
-                for (Rule rule : listRule)
-                    mapDisallowed.put(rule.packageName, rule);
-                for (Rule rule : listAllowed)
-                    mapDisallowed.remove(rule.packageName);
-                for (String packageName : mapDisallowed.keySet())
-                    try {
-                        builder.addAllowedApplication(packageName);
-                        Log.i(TAG, "Sinkhole " + packageName);
-                    } catch (PackageManager.NameNotFoundException ex) {
-                        Log.e(TAG, ex.toString() + "\n" + Log.getStackTraceString(ex));
-                    }
-                if (mapDisallowed.size() == 0)
-                    try {
-                        builder.addAllowedApplication(getPackageName());
-                    } catch (PackageManager.NameNotFoundException ex) {
-                        Log.e(TAG, ex.toString() + "\n" + Log.getStackTraceString(ex));
-                    }
-            } else if (filter) {
-                try {
-                    builder.addDisallowedApplication(getPackageName());
-                } catch (PackageManager.NameNotFoundException ex) {
-                    Log.e(TAG, ex.toString() + "\n" + Log.getStackTraceString(ex));
-                }
-                for (Rule rule : listRule)
-                    if (!rule.apply || (!system && rule.system))
-                        try {
-                            Log.i(TAG, "Not routing " + rule.packageName);
-                            builder.addDisallowedApplication(rule.packageName);
-                        } catch (PackageManager.NameNotFoundException ex) {
-                            Log.e(TAG, ex.toString() + "\n" + Log.getStackTraceString(ex));
-                        }
+            try {
+                builder.addDisallowedApplication(getPackageName());
+            } catch (PackageManager.NameNotFoundException ex) {
+                Log.e(TAG, ex.toString() + "\n" + Log.getStackTraceString(ex));
             }
+            for (Rule rule : listRule)
+                if (!rule.apply || (!system && rule.system))
+                    try {
+                        Log.i(TAG, "Not routing " + rule.packageName);
+                        builder.addDisallowedApplication(rule.packageName);
+                    } catch (PackageManager.NameNotFoundException ex) {
+                        Log.e(TAG, ex.toString() + "\n" + Log.getStackTraceString(ex));
+                    }
         }
 
         // Build configure intent
@@ -1515,7 +1502,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ServiceSinkhole.this);
         boolean log = prefs.getBoolean("log", false);
         boolean log_app = prefs.getBoolean("log_app", false);
-        boolean filter = prefs.getBoolean("filter", false);
+        boolean filter = prefs.getBoolean("filter", true);
 
         Log.i(TAG, "Start native log=" + log + "/" + log_app + " filter=" + filter);
 
@@ -1524,6 +1511,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
             prepareUidAllowed(listAllowed, listRule);
             prepareHostsBlocked();
             prepareMalwareList();
+            prepareDomainBlocklists();
             prepareUidIPFilters(null);
             prepareForwarding();
         } else {
@@ -1535,6 +1523,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
             mapUidIPFilters.clear();
             mapForward.clear();
             lock.writeLock().unlock();
+            prepareDomainBlocklists();
         }
 
         if (log_app)
@@ -1613,6 +1602,8 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         mapUidIPFilters.clear();
         mapForward.clear();
         mapNotify.clear();
+        setCustomBlacklist.clear();
+        setCustomWhitelist.clear();
         lock.writeLock().unlock();
     }
 
@@ -1632,7 +1623,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
 
     private void prepareHostsBlocked() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ServiceSinkhole.this);
-        boolean use_hosts = prefs.getBoolean("filter", false) && prefs.getBoolean("use_hosts", false);
+        boolean use_hosts = prefs.getBoolean("filter", true) && prefs.getBoolean("use_hosts", false);
         File hosts = new File(getFilesDir(), "hosts.txt");
         if (!use_hosts || !hosts.exists() || !hosts.canRead()) {
             Log.i(TAG, "Hosts file use=" + use_hosts + " exists=" + hosts.exists());
@@ -1690,7 +1681,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
 
     private void prepareMalwareList() {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ServiceSinkhole.this);
-        boolean malware = prefs.getBoolean("filter", false) && prefs.getBoolean("malware", false);
+        boolean malware = prefs.getBoolean("filter", true) && prefs.getBoolean("malware", false);
         File file = new File(getFilesDir(), "malware.txt");
         if (!malware || !file.exists() || !file.canRead()) {
             Log.i(TAG, "Malware use=" + malware + " exists=" + file.exists());
@@ -1743,6 +1734,95 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         }
 
         lock.writeLock().unlock();
+    }
+
+    private void prepareDomainBlocklists() {
+        final SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(ServiceSinkhole.this);
+        domainBlockerEnabled = prefs.getBoolean("domain_blocker_enabled", true);
+        blockAdult = prefs.getBoolean("block_adult", true);
+        blockSocial = prefs.getBoolean("block_social", false);
+
+        Set<String> savedBlacklist = prefs.getStringSet("custom_blocked_domains", null);
+        Set<String> savedWhitelist = prefs.getStringSet("custom_allowed_domains", null);
+
+        lock.writeLock().lock();
+        try {
+            setCustomBlacklist.clear();
+            if (savedBlacklist != null) {
+                for (String d : savedBlacklist) {
+                    if (d != null && !d.trim().isEmpty()) {
+                        String s = d.trim().toLowerCase();
+                        if (s.startsWith("*.")) s = s.substring(2);
+                        setCustomBlacklist.add(s);
+                    }
+                }
+            }
+
+            setCustomWhitelist.clear();
+            if (savedWhitelist != null) {
+                for (String d : savedWhitelist) {
+                    if (d != null && !d.trim().isEmpty()) {
+                        String s = d.trim().toLowerCase();
+                        if (s.startsWith("*.")) s = s.substring(2);
+                        setCustomWhitelist.add(s);
+                    }
+                }
+            }
+        } finally {
+            lock.writeLock().unlock();
+        }
+
+        if (!blocklistsLoaded) {
+            loadAssetBlocklists();
+        }
+    }
+
+    private void loadAssetBlocklists() {
+        Log.i(TAG, "Loading domain blocklists from assets...");
+        Set<String> adult = new HashSet<>();
+        Set<String> social = new HashSet<>();
+
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("blocklists/adult_domains.txt")))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                line = line.trim().toLowerCase();
+                if (line.startsWith("*.")) line = line.substring(2);
+                if (!line.isEmpty() && !line.startsWith("#")) {
+                    adult.add(line);
+                }
+            }
+            Log.i(TAG, "Loaded " + adult.size() + " adult domains from assets");
+        } catch (IOException e) {
+            Log.w(TAG, "Could not load adult_domains.txt from assets: " + e.getMessage());
+        }
+
+        try (BufferedReader br = new BufferedReader(new InputStreamReader(getAssets().open("blocklists/social_media_domains.txt")))) {
+            String line;
+            while ((line = br.readLine()) != null) {
+                line = line.trim().toLowerCase();
+                if (line.startsWith("*.")) line = line.substring(2);
+                if (!line.isEmpty() && !line.startsWith("#")) {
+                    social.add(line);
+                }
+            }
+            Log.i(TAG, "Loaded " + social.size() + " social domains from assets");
+        } catch (IOException e) {
+            Log.w(TAG, "Could not load social_media_domains.txt from assets: " + e.getMessage());
+        }
+
+        lock.writeLock().lock();
+        try {
+            setAdultDomains.clear();
+            setAdultDomains.addAll(adult);
+
+            setSocialDomains.clear();
+            setSocialDomains.addAll(social);
+
+            blocklistsLoaded = true;
+            Log.i(TAG, "Domain blocklists successfully initialized in memory (" + setAdultDomains.size() + " adult, " + setSocialDomains.size() + " social).");
+        } finally {
+            lock.writeLock().unlock();
+        }
     }
 
     private void prepareUidIPFilters(String dname) {
@@ -1832,7 +1912,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         mapForward.clear();
 
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
-        if (prefs.getBoolean("filter", false)) {
+        if (prefs.getBoolean("filter", true)) {
             try (Cursor cursor = DatabaseHelper.getInstance(ServiceSinkhole.this).getForwarding()) {
                 int colProtocol = cursor.getColumnIndex("protocol");
                 int colDPort = cursor.getColumnIndex("dport");
@@ -1895,7 +1975,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         boolean national = prefs.getBoolean("national_roaming", false);
         boolean eu = prefs.getBoolean("eu_roaming", false);
         boolean tethering = prefs.getBoolean("tethering", false);
-        boolean filter = prefs.getBoolean("filter", false);
+        boolean filter = prefs.getBoolean("filter", true);
 
         // Update connected state
         last_connected = Util.isConnected(ServiceSinkhole.this);
@@ -2014,10 +2094,62 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
 
     // Called from native code
     private boolean isDomainBlocked(String name) {
+        // Global domain blocker toggle
+        if (!domainBlockerEnabled)
+            return false;
+
+        if (name == null || name.isEmpty())
+            return false;
+
+        name = name.toLowerCase().trim();
+        if (name.endsWith("."))
+            name = name.substring(0, name.length() - 1);
+
         lock.readLock().lock();
-        boolean blocked = (mapHostsBlocked.containsKey(name) && mapHostsBlocked.get(name));
-        lock.readLock().unlock();
-        return blocked;
+        try {
+            // 1. Whitelist takes highest precedence
+            if (setCustomWhitelist.contains(name) || hasParentDomainMatch(setCustomWhitelist, name)) {
+                return false;
+            }
+
+            boolean blocked = false;
+            // 2. Custom Blacklist
+            if (setCustomBlacklist.contains(name) || hasParentDomainMatch(setCustomBlacklist, name)) {
+                blocked = true;
+            }
+            // 3. Adult Content Protection (80,000+ domains & all subdomains)
+            else if (blockAdult && (setAdultDomains.contains(name) || hasParentDomainMatch(setAdultDomains, name))) {
+                blocked = true;
+            }
+            // 4. Social Media & Streaming Filtering
+            else if (blockSocial && (setSocialDomains.contains(name) || hasParentDomainMatch(setSocialDomains, name))) {
+                blocked = true;
+            }
+            // 5. Legacy hosts file map
+            else if (mapHostsBlocked.containsKey(name) && mapHostsBlocked.get(name)) {
+                blocked = true;
+            }
+
+            if (blocked) {
+                Log.w(TAG, "isDomainBlocked: BLOCKING domain=" + name);
+            }
+            return blocked;
+        } finally {
+            lock.readLock().unlock();
+        }
+    }
+
+    private static boolean hasParentDomainMatch(Set<String> domainSet, String domain) {
+        if (domainSet == null || domainSet.isEmpty() || domain == null)
+            return false;
+        int dotIndex = domain.indexOf('.');
+        while (dotIndex > 0 && dotIndex < domain.length() - 1) {
+            domain = domain.substring(dotIndex + 1);
+            if (domainSet.contains(domain))
+                return true;
+            dotIndex = domain.indexOf('.');
+        }
+        return false;
     }
 
     // Called from native code
@@ -2050,59 +2182,12 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
     private Allowed isAddressAllowed(Packet packet) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(this);
 
+        // AmniGuard: allow ALL app/IP traffic unconditionally.
+        // Domain blocking is enforced separately in native code
+        // (DNS NXDOMAIN in dns.c + TLS SNI RST in ip.c).
+        packet.allowed = true;
+
         lock.readLock().lock();
-
-        packet.allowed = false;
-        if (prefs.getBoolean("filter", false)) {
-            // https://android.googlesource.com/platform/system/core/+/master/include/private/android_filesystem_config.h
-            if (packet.protocol == 17 /* UDP */ && !prefs.getBoolean("filter_udp", false)) {
-                // Allow unfiltered UDP
-                packet.allowed = true;
-                Log.i(TAG, "Allowing UDP " + packet);
-            } else if (packet.uid < 2000 &&
-                    !last_connected && isSupported(packet.protocol) && false) {
-                // Allow system applications in disconnected state
-                packet.allowed = true;
-                Log.w(TAG, "Allowing disconnected system " + packet);
-            } else if ((packet.uid < 2000 || BuildConfig.PLAY_STORE_RELEASE) &&
-                    !mapUidKnown.containsKey(packet.uid) && isSupported(packet.protocol)) {
-                // Allow unknown (system) traffic
-                packet.allowed = true;
-                Log.w(TAG, "Allowing unknown system " + packet);
-            } else if (packet.uid == Process.myUid()) {
-                // Allow self
-                packet.allowed = true;
-                Log.w(TAG, "Allowing self " + packet);
-            } else {
-                boolean filtered = false;
-                IPKey key = new IPKey(packet.version, packet.protocol, packet.dport, packet.uid);
-                if (mapUidIPFilters.containsKey(key))
-                    try {
-                        InetAddress iaddr = InetAddress.getByName(packet.daddr);
-                        Map<InetAddress, IPRule> map = mapUidIPFilters.get(key);
-                        if (map != null && map.containsKey(iaddr)) {
-                            IPRule rule = map.get(iaddr);
-                            if (rule.isExpired())
-                                Log.i(TAG, "DNS expired " + packet + " rule " + rule);
-                            else {
-                                filtered = true;
-                                packet.allowed = !rule.isBlocked();
-                                Log.i(TAG, "Filtering " + packet +
-                                        " allowed=" + packet.allowed + " rule " + rule);
-                            }
-                        }
-                    } catch (UnknownHostException ex) {
-                        Log.w(TAG, "Allowed " + ex.toString() + "\n" + Log.getStackTraceString(ex));
-                    }
-
-                if (!filtered)
-                    if (mapUidAllowed.containsKey(packet.uid))
-                        packet.allowed = mapUidAllowed.get(packet.uid);
-                    else
-                        Log.w(TAG, "No rules for " + packet);
-            }
-        }
-
         Allowed allowed = null;
         if (packet.allowed) {
             if (mapForward.containsKey(packet.dport)) {
@@ -2116,7 +2201,6 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
             } else
                 allowed = new Allowed();
         }
-
         lock.readLock().unlock();
 
         if (prefs.getBoolean("log", false) || prefs.getBoolean("log_app", false))
@@ -2258,7 +2342,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
     };
 
     ConnectivityManager.NetworkCallback networkMonitorCallback = new ConnectivityManager.NetworkCallback() {
-        private String TAG = "AmnGuard Firewall.Monitor";
+        private String TAG = "AmniGuard Firewall.Monitor";
 
         private Map<Network, Long> validated = new HashMap<>();
 
@@ -2491,8 +2575,8 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
             // Get defaults
             SharedPreferences prefs_wifi = getSharedPreferences("wifi", Context.MODE_PRIVATE);
             SharedPreferences prefs_other = getSharedPreferences("other", Context.MODE_PRIVATE);
-            boolean wifi = prefs_wifi.getBoolean(packages[0], prefs.getBoolean("whitelist_wifi", true));
-            boolean other = prefs_other.getBoolean(packages[0], prefs.getBoolean("whitelist_other", true));
+            boolean wifi = prefs_wifi.getBoolean(packages[0], prefs.getBoolean("whitelist_wifi", false));
+            boolean other = prefs_other.getBoolean(packages[0], prefs.getBoolean("whitelist_other", false));
 
             // Build Wi-Fi action
             Intent riWifi = new Intent(this, ServiceSinkhole.class);
@@ -2908,8 +2992,8 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
 
         // Get defaults
         SharedPreferences settings = PreferenceManager.getDefaultSharedPreferences(ServiceSinkhole.this);
-        boolean default_wifi = settings.getBoolean("whitelist_wifi", true);
-        boolean default_other = settings.getBoolean("whitelist_other", true);
+        boolean default_wifi = settings.getBoolean("whitelist_wifi", false);
+        boolean default_other = settings.getBoolean("whitelist_other", false);
 
         // Update setting
         SharedPreferences prefs = getSharedPreferences(network, Context.MODE_PRIVATE);

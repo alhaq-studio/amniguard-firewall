@@ -74,6 +74,41 @@
     </PreferenceScreen>
 
     <PreferenceScreen
+        android:key="screen_domain_filter"
+        android:summary="@string/summary_domain_filter"
+        android:title="@string/setting_domain_filter">
+        <PreferenceCategory
+            android:key="category_domain_filter"
+            android:title="@string/setting_domain_filter">
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="domain_blocker_enabled"
+                android:summary="@string/summary_domain_blocker_enabled"
+                android:title="@string/setting_domain_blocker_enabled" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:dependency="domain_blocker_enabled"
+                android:key="block_adult"
+                android:summary="@string/summary_block_adult"
+                android:title="@string/setting_block_adult" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:dependency="domain_blocker_enabled"
+                android:key="block_social"
+                android:summary="@string/summary_block_social"
+                android:title="@string/setting_block_social" />
+            <Preference
+                android:key="manage_blacklist"
+                android:summary="@string/summary_custom_blacklist"
+                android:title="@string/setting_custom_blacklist" />
+            <Preference
+                android:key="manage_whitelist"
+                android:summary="@string/summary_custom_whitelist"
+                android:title="@string/setting_custom_whitelist" />
+        </PreferenceCategory>
+    </PreferenceScreen>
+
+    <PreferenceScreen
         android:key="screen_network_options"
         android:title="@string/setting_network_options">
         <PreferenceCategory
@@ -173,7 +208,7 @@
                 android:summary="@string/summary_access"
                 android:title="@string/setting_access" />
             <CheckBoxPreference
-                android:defaultValue="false"
+                android:defaultValue="true"
                 android:key="filter"
                 android:summary="@string/summary_filter"
                 android:title="@string/setting_filter" />

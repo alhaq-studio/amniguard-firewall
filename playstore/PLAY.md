@@ -3,7 +3,7 @@ Play store
 
 Title
 -----
-AmnGuard Firewall — internet access blocker
+AmniGuard Firewall — internet access blocker
 
 
 Short description
@@ -13,7 +13,7 @@ Block internet per app; privacy-first, part of AmnShield
 
 Long description
 ----------------
-AmnGuard Firewall provides simple and advanced ways to block access to the internet — no root required.
+AmniGuard Firewall provides simple and advanced ways to block access to the internet — no root required.
 
 Applications and addresses can individually be allowed or denied access to your Wi‑Fi and/or mobile connection.
 
@@ -46,7 +46,7 @@ PRO features:
 
 &bull; Log all outgoing traffic; search and filter access attempts; export PCAP files to analyze traffic
 &bull; Allow/block individual addresses per application
-&bull; New application notifications; configure AmnGuard Firewall directly from the notification
+&bull; New application notifications; configure AmniGuard Firewall directly from the notification
 &bull; Display network speed graph in a status bar notification
 &bull; Select from five additional themes in both light and dark version
 

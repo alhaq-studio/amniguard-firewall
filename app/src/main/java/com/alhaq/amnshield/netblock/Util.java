@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of AmnGuard Firewall.
+    This file is part of AmniGuard Firewall.
 
-    AmnGuard Firewall is free software: you can redistribute it and/or modify
+    AmniGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    AmnGuard Firewall is distributed in the hope that it will be useful,
+    AmniGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmniGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -82,7 +82,7 @@ import java.util.Map;
 import java.util.Set;
 
 public class Util {
-    private static final String TAG = "AmnGuard Firewall.Util";
+    private static final String TAG = "AmniGuard Firewall.Util";
 
     // Roam like at home
     private static final List<String> listEU = Arrays.asList(
@@ -127,8 +127,8 @@ public class Util {
     static {
         try {
             System.loadLibrary("netblock");
-        } catch (UnsatisfiedLinkError ignored) {
-            System.exit(1);
+        } catch (UnsatisfiedLinkError ex) {
+            Log.e(TAG, "Failed to load netblock library: " + ex.getMessage());
         }
     }
 
@@ -762,18 +762,18 @@ public class Util {
                 06-14 13:02:41.332 19703 19703 W ircode.netguar: Accessing hidden method Landroid/view/ViewGroup;->makeOptionalFitsSystemWindows()V (greylist, reflection, allowed)
                 06-14 13:02:41.495 19703 19703 I TetheringManager: registerTetheringEventCallback:com.alhaq.amnshield.netblock
                 06-14 13:02:41.518 19703 19703 E AndroidRuntime: Process: com.alhaq.amnshield.netblock, PID: 19703
-                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at com.alhaq.amnguard.Util.getGeneralInfo(SourceFile:744)
-                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at com.alhaq.amnguard.ActivitySettings.updateTechnicalInfo(SourceFile:858)
-                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at com.alhaq.amnguard.ActivitySettings.onPostCreate(SourceFile:425)
-                06-14 13:02:41.520 19703 19703 W AmnGuard Firewall.App: java.lang.SecurityException: getDataNetworkTypeForSubscriber
-                06-14 13:02:41.520 19703 19703 W AmnGuard Firewall.App: java.lang.SecurityException: getDataNetworkTypeForSubscriber
-                06-14 13:02:41.520 19703 19703 W AmnGuard Firewall.App:  at android.os.Parcel.createExceptionOrNull(Parcel.java:2373)
-                06-14 13:02:41.520 19703 19703 W AmnGuard Firewall.App:  at android.os.Parcel.createException(Parcel.java:2357)
-                06-14 13:02:41.520 19703 19703 W AmnGuard Firewall.App:  at android.os.Parcel.readException(Parcel.java:2340)
-                06-14 13:02:41.520 19703 19703 W AmnGuard Firewall.App:  at android.os.Parcel.readException(Parcel.java:2282)
-                06-14 13:02:41.520 19703 19703 W AmnGuard Firewall.App:  at com.android.internal.telephony.ITelephony$Stub$Proxy.getNetworkTypeForSubscriber(ITelephony.java:8711)
-                06-14 13:02:41.520 19703 19703 W AmnGuard Firewall.App:  at android.telephony.TelephonyManager.getNetworkType(TelephonyManager.java:2945)
-                06-14 13:02:41.520 19703 19703 W AmnGuard Firewall.App:  at android.telephony.TelephonyManager.getNetworkType(TelephonyManager.java:2909)
+                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at com.alhaq.amniguard.Util.getGeneralInfo(SourceFile:744)
+                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at com.alhaq.amniguard.ActivitySettings.updateTechnicalInfo(SourceFile:858)
+                06-14 13:02:41.518 19703 19703 E AndroidRuntime:        at com.alhaq.amniguard.ActivitySettings.onPostCreate(SourceFile:425)
+                06-14 13:02:41.520 19703 19703 W AmniGuard Firewall.App: java.lang.SecurityException: getDataNetworkTypeForSubscriber
+                06-14 13:02:41.520 19703 19703 W AmniGuard Firewall.App: java.lang.SecurityException: getDataNetworkTypeForSubscriber
+                06-14 13:02:41.520 19703 19703 W AmniGuard Firewall.App:  at android.os.Parcel.createExceptionOrNull(Parcel.java:2373)
+                06-14 13:02:41.520 19703 19703 W AmniGuard Firewall.App:  at android.os.Parcel.createException(Parcel.java:2357)
+                06-14 13:02:41.520 19703 19703 W AmniGuard Firewall.App:  at android.os.Parcel.readException(Parcel.java:2340)
+                06-14 13:02:41.520 19703 19703 W AmniGuard Firewall.App:  at android.os.Parcel.readException(Parcel.java:2282)
+                06-14 13:02:41.520 19703 19703 W AmniGuard Firewall.App:  at com.android.internal.telephony.ITelephony$Stub$Proxy.getNetworkTypeForSubscriber(ITelephony.java:8711)
+                06-14 13:02:41.520 19703 19703 W AmniGuard Firewall.App:  at android.telephony.TelephonyManager.getNetworkType(TelephonyManager.java:2945)
+                06-14 13:02:41.520 19703 19703 W AmniGuard Firewall.App:  at android.telephony.TelephonyManager.getNetworkType(TelephonyManager.java:2909)
              */
         }
 

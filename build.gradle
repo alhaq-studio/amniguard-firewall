@@ -3,37 +3,17 @@
 buildscript {
     repositories {
         google()
-        jcenter()
+        mavenCentral()
     }
     dependencies {
-        // http://tools.android.com/tech-docs/new-build-system/gradle-experimental
-        // https://bintray.com/android/android-tools/com.android.tools.build.gradle-experimental/view
-        // https://bintray.com/android/android-tools/com.google.gms.google-services/view
-        classpath 'com.android.tools.build:gradle:8.1.1'
-
-        // NOTE: Do not place your application dependencies here; they belong
-        // in the individual module build.gradle files
+        classpath 'com.android.tools.build:gradle:8.13.2'
     }
 }
 
 allprojects {
     repositories {
-        jcenter()
+        google()
         mavenCentral()
-        maven {
-            url 'https://maven.google.com'
-        }
-    }
-}
-
-subprojects {
-    project.configurations.all {
-        resolutionStrategy.eachDependency { details ->
-            if (details.requested.group == 'com.android.support'
-                    && !details.requested.name.contains('multidex')) {
-                details.useVersion "27.1.1"
-            }
-        }
     }
 }
 

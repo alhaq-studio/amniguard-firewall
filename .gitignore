@@ -1,27 +1,63 @@
-*.iml
-.gradle
-/local.properties
-/.idea
-/.idea/workspace.xml
-/.idea/libraries
-.DS_Store
+# Built application files
+*.apk
+*.aar
+*.aab
+*.ap_
+
+# Files for the ART/Dalvik VM
+*.dex
+
+# Java class files
+*.class
+
+# Generated files
+bin/
+gen/
+out/
 /build
-/captures
-/tools/config.sh
-/app/.externalNativeBuild
+/*/build
 /app/release
 /app/play
+/app/.externalNativeBuild
+/app/.cxx
+.cxx/
+captures/
+
+# Gradle files
+.gradle/
+build/
+*.iml
+.idea/
+.vscode/
+NetBlock.code-workspace
+
+# Local configuration file (sdk location, etc)
+local.properties
 keystore.properties
 crowdin.properties
-app/.cxx/
 
-# Stale build artifacts
+# Log files
+*.log
 build_output.txt
 build_run.log
-*.log
 
-# Security — never commit secrets
+# Android Studio Navigation editor temp files
+.navigation/
+
+# Android Studio OS and Editor temp files
+.DS_Store
+Thumbs.db
+temp_icon/
+
+# Security & Secrets — NEVER commit private keys or sensitive credentials
+*.jks
+*.keystore
 *.pem
 *.key
+*.p12
+*.pfx
 .env
 .env.*
+secrets.json
+google-services.json
+GoogleService-Info.plist

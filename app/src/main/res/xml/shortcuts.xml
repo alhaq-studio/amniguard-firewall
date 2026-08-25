@@ -9,7 +9,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:targetClass="com.alhaq.amnshield.netblock.ActivitySettings"
-               android:targetPackage="com.alhaq.amnguard" />
+               android:targetPackage="com.alhaq.amniguard" />
         <categories android:name="android.shortcut.settings" />
     </shortcut>
     <shortcut
@@ -22,8 +22,7 @@
         <intent
             android:action="android.intent.action.VIEW"
             android:targetClass="com.alhaq.amnshield.netblock.ActivityLog"
-               android:targetPackage="com.alhaq.amnguard" />
+               android:targetPackage="com.alhaq.amniguard" />
         <categories android:name="android.shortcut.log" />
     </shortcut>
 </shortcuts>
-

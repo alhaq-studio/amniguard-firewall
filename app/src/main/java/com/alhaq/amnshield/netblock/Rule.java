@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of AmnGuard Firewall.
+    This file is part of AmniGuard Firewall.
 
-    AmnGuard Firewall is free software: you can redistribute it and/or modify
+    AmniGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    AmnGuard Firewall is distributed in the hope that it will be useful,
+    AmniGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmniGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -45,7 +45,7 @@ import java.util.Locale;
 import java.util.Map;
 
 public class Rule {
-    private static final String TAG = "AmnGuard Firewall.Rule";
+    private static final String TAG = "AmniGuard Firewall.Rule";
 
     public int uid;
     public String packageName;
@@ -213,11 +213,11 @@ public class Rule {
             SharedPreferences notify = context.getSharedPreferences("notify", Context.MODE_PRIVATE);
 
             // Get settings
-            boolean default_wifi = prefs.getBoolean("whitelist_wifi", true);
-            boolean default_other = prefs.getBoolean("whitelist_other", true);
+            boolean default_wifi = prefs.getBoolean("whitelist_wifi", false);
+            boolean default_other = prefs.getBoolean("whitelist_other", false);
             boolean default_screen_wifi = prefs.getBoolean("screen_wifi", false);
             boolean default_screen_other = prefs.getBoolean("screen_other", false);
-            boolean default_roaming = prefs.getBoolean("whitelist_roaming", true);
+            boolean default_roaming = prefs.getBoolean("whitelist_roaming", false);
 
             boolean manage_system = prefs.getBoolean("manage_system", false);
             boolean screen_on = prefs.getBoolean("screen_on", true);
@@ -439,9 +439,9 @@ public class Rule {
     public void updateChanged(Context context) {
         SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
         boolean screen_on = prefs.getBoolean("screen_on", false);
-        boolean default_wifi = prefs.getBoolean("whitelist_wifi", true) && screen_on;
-        boolean default_other = prefs.getBoolean("whitelist_other", true) && screen_on;
-        boolean default_roaming = prefs.getBoolean("whitelist_roaming", true);
+        boolean default_wifi = prefs.getBoolean("whitelist_wifi", false) && screen_on;
+        boolean default_other = prefs.getBoolean("whitelist_other", false) && screen_on;
+        boolean default_roaming = prefs.getBoolean("whitelist_roaming", false);
         updateChanged(default_wifi, default_other, default_roaming);
     }
 

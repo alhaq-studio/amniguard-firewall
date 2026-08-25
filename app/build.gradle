@@ -10,12 +10,12 @@ android {
     compileSdkVersion 35
 
     defaultConfig {
-        applicationId = "com.alhaq.amnguard"
-        versionName = "0.1.24"
+        applicationId = "com.alhaq.amniguard"
+        versionName = "0.0.1"
         minSdkVersion 22
         targetSdkVersion 35
-        versionCode = 20260124
-        archivesBaseName = "AmnGuard Firewall-v$versionName"
+        versionCode = 1
+        archivesBaseName = "AmniGuard Firewall-v$versionName"
 
         externalNativeBuild {
             cmake {
@@ -31,9 +31,9 @@ android {
             abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
         }
 
-        packagingOptions {
+        packaging {
             jniLibs {
-                useLegacyPackaging true
+                useLegacyPackaging false
             }
         }
     }
@@ -59,7 +59,11 @@ android {
         release {
             minifyEnabled = true
             proguardFiles.add(file('proguard-rules.pro'))
-            signingConfig signingConfigs.release
+            if (keystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            } else {
+                signingConfig signingConfigs.debug
+            }
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
             // TODO: Replace with your own GitHub releases API endpoint
@@ -67,7 +71,11 @@ android {
         }
         play {
             minifyEnabled = true
-            signingConfig signingConfigs.release
+            if (keystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            } else {
+                signingConfig signingConfigs.debug
+            }
             proguardFiles.add(file('proguard-rules.pro'))
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "true"
             buildConfigField "String", "HOSTS_FILE_URI", "\"\""

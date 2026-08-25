@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of AmnGuard Firewall.
+    This file is part of AmniGuard Firewall.
 
-    AmnGuard Firewall is free software: you can redistribute it and/or modify
+    AmniGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    AmnGuard Firewall is distributed in the hope that it will be useful,
+    AmniGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmniGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -34,13 +34,18 @@ import androidx.preference.PreferenceManager;
 import java.util.Date;
 
 public class WidgetAdmin extends ReceiverAutostart {
-    private static final String TAG = "AmnGuard Firewall.Widget";
+    private static final String TAG = "AmniGuard Firewall.Widget";
 
-    public static final String INTENT_ON = "com.alhaq.amnguard.ON";
-    public static final String INTENT_OFF = "com.alhaq.amnguard.OFF";
+    public static final String INTENT_ON = "com.alhaq.amnshield.netblock.ON";
+    public static final String INTENT_OFF = "com.alhaq.amnshield.netblock.OFF";
 
-    public static final String INTENT_LOCKDOWN_ON = "com.alhaq.amnguard.LOCKDOWN_ON";
-    public static final String INTENT_LOCKDOWN_OFF = "com.alhaq.amnguard.LOCKDOWN_OFF";
+    public static final String INTENT_LOCKDOWN_ON = "com.alhaq.amnshield.netblock.LOCKDOWN_ON";
+    public static final String INTENT_LOCKDOWN_OFF = "com.alhaq.amnshield.netblock.LOCKDOWN_OFF";
+
+    public static final String INTENT_ON_ALT = "com.alhaq.amniguard.ON";
+    public static final String INTENT_OFF_ALT = "com.alhaq.amniguard.OFF";
+    public static final String INTENT_LOCKDOWN_ON_ALT = "com.alhaq.amniguard.LOCKDOWN_ON";
+    public static final String INTENT_LOCKDOWN_OFF_ALT = "com.alhaq.amniguard.LOCKDOWN_OFF";
 
     @Override
     public void onReceive(Context context, Intent intent) {
@@ -56,7 +61,8 @@ public class WidgetAdmin extends ReceiverAutostart {
         Intent i = new Intent(INTENT_ON);
         i.setPackage(context.getPackageName());
         PendingIntent pi = PendingIntentCompat.getBroadcast(context, 0, i, PendingIntent.FLAG_UPDATE_CURRENT);
-        if (INTENT_ON.equals(intent.getAction()) || INTENT_OFF.equals(intent.getAction()))
+        if (INTENT_ON.equals(intent.getAction()) || INTENT_OFF.equals(intent.getAction()) ||
+            INTENT_ON_ALT.equals(intent.getAction()) || INTENT_OFF_ALT.equals(intent.getAction()))
             am.cancel(pi);
 
         // Vibrate
@@ -68,8 +74,9 @@ public class WidgetAdmin extends ReceiverAutostart {
                 vs.vibrate(50);
 
         try {
-            if (INTENT_ON.equals(intent.getAction()) || INTENT_OFF.equals(intent.getAction())) {
-                boolean enabled = INTENT_ON.equals(intent.getAction());
+            if (INTENT_ON.equals(intent.getAction()) || INTENT_OFF.equals(intent.getAction()) ||
+                INTENT_ON_ALT.equals(intent.getAction()) || INTENT_OFF_ALT.equals(intent.getAction())) {
+                boolean enabled = INTENT_ON.equals(intent.getAction()) || INTENT_ON_ALT.equals(intent.getAction());
                 prefs.edit().putBoolean("enabled", enabled).apply();
                 if (enabled)
                     ServiceSinkhole.start("widget", context);
@@ -86,8 +93,9 @@ public class WidgetAdmin extends ReceiverAutostart {
                         am.setAndAllowWhileIdle(AlarmManager.RTC_WAKEUP, new Date().getTime() + auto * 60 * 1000L, pi);
                 }
 
-            } else if (INTENT_LOCKDOWN_ON.equals(intent.getAction()) || INTENT_LOCKDOWN_OFF.equals(intent.getAction())) {
-                boolean lockdown = INTENT_LOCKDOWN_ON.equals(intent.getAction());
+            } else if (INTENT_LOCKDOWN_ON.equals(intent.getAction()) || INTENT_LOCKDOWN_OFF.equals(intent.getAction()) ||
+                       INTENT_LOCKDOWN_ON_ALT.equals(intent.getAction()) || INTENT_LOCKDOWN_OFF_ALT.equals(intent.getAction())) {
+                boolean lockdown = INTENT_LOCKDOWN_ON.equals(intent.getAction()) || INTENT_LOCKDOWN_ON_ALT.equals(intent.getAction());
                 prefs.edit().putBoolean("lockdown", lockdown).apply();
                 ServiceSinkhole.reload("widget", context, false);
                 WidgetLockdown.updateWidgets(context);

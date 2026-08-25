@@ -1,20 +1,20 @@
 package com.alhaq.amnshield.netblock;
 
 /*
-    This file is part of AmnGuard Firewall.
+    This file is part of AmniGuard Firewall.
 
-    AmnGuard Firewall is free software: you can redistribute it and/or modify
+    AmniGuard Firewall is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
     the Free Software Foundation, either version 3 of the License, or
     (at your option) any later version.
 
-    AmnGuard Firewall is distributed in the hope that it will be useful,
+    AmniGuard Firewall is distributed in the hope that it will be useful,
     but WITHOUT ANY WARRANTY; without even the implied warranty of
     MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
     GNU General Public License for more details.
 
     You should have received a copy of the GNU General Public License
-    along with AmnGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
+    along with AmniGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
     Copyright 2015-2025 by Marcel Bokhorst (M66B)
 */
@@ -31,7 +31,7 @@ import androidx.preference.PreferenceManager;
 import java.util.Map;
 
 public class ReceiverAutostart extends BroadcastReceiver {
-    private static final String TAG = "AmnGuard Firewall.Receiver";
+    private static final String TAG = "AmniGuard Firewall.Receiver";
 
     @Override
     public void onReceive(final Context context, Intent intent) {
@@ -98,17 +98,12 @@ public class ReceiverAutostart extends BroadcastReceiver {
                 editor.putBoolean("filter_udp", true);
                 editor.putBoolean("whitelist_wifi", false);
                 editor.putBoolean("whitelist_other", false);
-                if (Build.VERSION.SDK_INT == Build.VERSION_CODES.LOLLIPOP)
-                    editor.putBoolean("filter", true); // Optional
+                editor.putBoolean("filter", true);
+                editor.putBoolean("domain_blocker_enabled", true);
+                editor.putBoolean("block_adult", true);
             }
 
-            if (Build.VERSION.SDK_INT < Build.VERSION_CODES.LOLLIPOP)
-                editor.putBoolean("filter", true); // Mandatory
-
-            if (!Util.canFilter(context)) {
-                editor.putBoolean("log_app", false);
-                editor.putBoolean("filter", false);
-            }
+            editor.putBoolean("filter", true);
 
             if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N) {
                 editor.remove("show_top");
