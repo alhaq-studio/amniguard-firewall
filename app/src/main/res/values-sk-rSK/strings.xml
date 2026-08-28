@@ -1,12 +1,12 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl poskytuje jednoduché a pokročilé spôsoby blokovania prístupu na internet - nevyžadujúcich root prístup. Aplikáciám a adresám môže byť individuálne povolený alebo odmietnutý prístup k Wi-Fi alebo mobilnému pripojeniu.</string>
-    <string name="app_android">AmnShield AppControl vyžaduje Android vo verzii 5.1 alebo novšej</string>
-    <string name="app_xposed">Xposed spôsobuje veľa spadnutí, ktoré môžu viesť k tomu, že AmnShield AppControl by mohol byť odstránený z Google Play Obchodu. Z tohto dôvodu AmnShield AppControl nieje podporovaný ak Xposed je nainštalovaný.</string>
-    <string name="app_first">Skvelá starostlivosť bola venovaná pri vývoji a testovaní AmnShield AppControlu, avšak je nemožné garantovať, že AmnShield AppControl bude pracovať správne na každom jednom zariadení.</string>
+    <string name="app_description">AmniGuard AppControl poskytuje jednoduché a pokročilé spôsoby blokovania prístupu na internet - nevyžadujúcich root prístup. Aplikáciám a adresám môže byť individuálne povolený alebo odmietnutý prístup k Wi-Fi alebo mobilnému pripojeniu.</string>
+    <string name="app_android">AmniGuard AppControl vyžaduje Android vo verzii 5.1 alebo novšej</string>
+    <string name="app_xposed">Xposed spôsobuje veľa spadnutí, ktoré môžu viesť k tomu, že AmniGuard AppControl by mohol byť odstránený z Google Play Obchodu. Z tohto dôvodu AmniGuard AppControl nieje podporovaný ak Xposed je nainštalovaný.</string>
+    <string name="app_first">Skvelá starostlivosť bola venovaná pri vývoji a testovaní AmniGuard AppControlu, avšak je nemožné garantovať, že AmniGuard AppControl bude pracovať správne na každom jednom zariadení.</string>
     <string name="app_agree">Súhlasím</string>
     <string name="app_disagree">Odmietam</string>
-    <string name="app_support">AmnShield AppControl potrebuje tvoju pomoc. Klikni na zakúpiť pro vymoženosti, aby projekt mohol ďalej fungovať.</string>
+    <string name="app_support">AmniGuard AppControl potrebuje tvoju pomoc. Klikni na zakúpiť pro vymoženosti, aby projekt mohol ďalej fungovať.</string>
     <string name="channel_notify">Všeobecné notifikácie</string>
     <string name="channel_access">Prístupové notifikácie</string>
     <string name="menu_search">Hľadať aplikáciu</string>
@@ -108,13 +108,13 @@
     <string name="setting_technical_networks">Siete</string>
     <string name="setting_technical_subscription">Odbery</string>
     <string name="summary_install">Zobraziť oznámenie v stavovom riadku na priame nastavenie novonainštalovaných aplikácií (pro funkcia)</string>
-    <string name="summary_auto">Po vypnutí pomocou miniaplikácie znovu spustiť AmnShield AppControl po vybratom počte minút (zadajte nulu pre vypnutie tejto možnosti)</string>
+    <string name="summary_auto">Po vypnutí pomocou miniaplikácie znovu spustiť AmniGuard AppControl po vybratom počte minút (zadajte nulu pre vypnutie tejto možnosti)</string>
     <string name="summary_delay">Ponechať po vypnutí obrazovky pravidlá zapnutia obrazovky aktívne na vybratý počet minút (zadajte nulu pre vypnutie tejto možnosti)</string>
     <string name="summary_update">Kontrolovať nové vydania na GitHube dvakrát denne</string>
     <string name="summary_tethering">V závislosti na verziu systému Android, zdieľanie internetu môže alebo nemusí fungovať. Zdieľaný prenos nie je možné filtrovať.</string>
     <string name="summary_subnet">Povoliť podsieťové presmerovanie; môže umožniť Wi-Fi volania, ale môže tiež vyvolať chyby v Androide a zvýšiť spotrebu batérie</string>
     <string name="summary_lan">Povoliť aplikáciam pripojenie na adresy miestnej sieti, ako 10.0.0.0/8, 172.16.0.0/12 a 192.168.0.0/16</string>
-    <string name="summary_ip6">Smerovať IPv6 prenos do AmnShield AppControl, takže môžete selektívne povolený alebo blokovaný</string>
+    <string name="summary_ip6">Smerovať IPv6 prenos do AmniGuard AppControl, takže môžete selektívne povolený alebo blokovaný</string>
     <string name="summary_wifi_home">Použiť pravidlá Wi-Fi sietí len na vybrané siete (použite pravidlá mobilných sietí pre ostatné Wi-Fi siete)</string>
     <string name="summary_metered">Použiť pravidlá mobilných sietí na merané (platené, zdieľané) Wi-Fi siete</string>
     <string name="summary_metered_2g">Použiť pravidlá Wi-Fi sietí na 2G dátové pripojenia</string>
@@ -131,18 +131,18 @@
     <string name="msg_packages">Povolené: %1$d, blokované: %2$d</string>
     <string name="msg_hosts">Povolené: %1$d, blokované: %2$d, hostitelia: %3$d</string>
     <string name="msg_waiting">Čaká na udalosť</string>
-    <string name="msg_disabled">AmnShield AppControl je vypnutý, použite prepínač vyššie na zapnutie AmnShield AppControl</string>
-    <string name="msg_revoked">AmnShield AppControl bol zakázaný, pravdepodobne použitím inej aplikácie založenej na VPN</string>
+    <string name="msg_disabled">AmniGuard AppControl je vypnutý, použite prepínač vyššie na zapnutie AmniGuard AppControl</string>
+    <string name="msg_revoked">AmniGuard AppControl bol zakázaný, pravdepodobne použitím inej aplikácie založenej na VPN</string>
     <string name="msg_installed">Aplikácia \'%1$s\' bola nainštalovaná</string>
     <string name="msg_installed_n">Nainštalované</string>
     <string name="msg_access">Aplikácia %1$s sa pokúsila o prístup k internetu</string>
     <string name="msg_access_n">Pokus o pripojenie na internet</string>
     <string name="msg_completed">Akcia bola dokončená</string>
-    <string name="msg_vpn">AmnShield AppControl používa miestne VPN pripojenie na filtrovanie internetového prenosu. 
+    <string name="msg_vpn">AmniGuard AppControl používa miestne VPN pripojenie na filtrovanie internetového prenosu. 
 Z tohto dôvodu povoľte VPN pripojenie v ďalšom dialógovom okne. Váš internetový prenos nie je zasielaný na vzdialený VPN server.</string>
-    <string name="msg_autostart">Aplikácii AmnShield AppControl sa nepodarilo spustiť automaticky. To je pravdepodobne spôsobené z dôvodu chyby vo vašej verzii systému Android.</string>
+    <string name="msg_autostart">Aplikácii AmniGuard AppControl sa nepodarilo spustiť automaticky. To je pravdepodobne spôsobené z dôvodu chyby vo vašej verzii systému Android.</string>
     <string name="msg_error">Vyskytla sa neočakávaná chyba: \'%s\'</string>
-    <string name="msg_try">Skúsiť AmnShield AppControl</string>
+    <string name="msg_try">Skúsiť AmniGuard AppControl</string>
     <string name="msg_terms">Darovaním súhlasíte s <a href="http://www.netblock.me/#terms">podmienkami služby</a></string>
     <string name="msg_dimming">Ak nemôžete stlačiť tlačidlo OK na ďalšom okne, tak iná aplikácia (na ovladanie jasu) prekrýva obrazovkou.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/deň</string>
@@ -160,7 +160,7 @@ Z tohto dôvodu povoľte VPN pripojenie v ďalšom dialógovom okne. Váš inter
     <string name="msg_start_forward">Zastaviť presmerovanie z %1$s port %2$d na %3$s:%4$d z \'%5$s\'?</string>
     <string name="msg_stop_forward">Zastaviť presmerovanie z %1$s port %2$d?</string>
     <string name="msg_metered">Meraná sieť</string>
-    <string name="msg_queue">AmnShield AppControl je zaneprázdnený</string>
+    <string name="msg_queue">AmniGuard AppControl je zaneprázdnený</string>
     <string name="msg_update">K dispozícii je aktualizácia, dotykom ju stiahnite</string>
     <string name="msg_whitelist">Prístup k internetu je povolený v predvolenom nastavení, túto možnosť môžete zmeniť v nastaveniach</string>
     <string name="msg_push">Push správy sú väčšinou riadené systémovou súčasťou Služby Google Play, ktorej je povolený prístup k internetu v predvolenom nastavení</string>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl oferă modalități simple și avansate de a bloca accesul la internet, ce nu necesită acces root. Accesul aplicațiilor la conexiunile Wi-Fi și/sau mobile poate fi permis sau blocat atât la nivel individual cât și la nivel de adresă.</string>
-    <string name="app_android">AmnShield AppControl necesită Android 5.1 sau mai nou</string>
-    <string name="app_xposed">Xposed cauzează prea multe erori care ar putea duce la ștergerea AmnShield AppControl din Google Play Store, prin urmare AmnShield AppControl nu este suportat atâta timp cât Xposed este instalat</string>
+    <string name="app_description">AmniGuard AppControl oferă modalități simple și avansate de a bloca accesul la internet, ce nu necesită acces root. Accesul aplicațiilor la conexiunile Wi-Fi și/sau mobile poate fi permis sau blocat atât la nivel individual cât și la nivel de adresă.</string>
+    <string name="app_android">AmniGuard AppControl necesită Android 5.1 sau mai nou</string>
+    <string name="app_xposed">Xposed cauzează prea multe erori care ar putea duce la ștergerea AmniGuard AppControl din Google Play Store, prin urmare AmniGuard AppControl nu este suportat atâta timp cât Xposed este instalat</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Politica de confidențialitate</a></string>
-    <string name="app_first">AmnShield AppControl este dezvoltat și testat cu mare atenție, cu toate acestea este imposibil de garantat că va funcționa corect pe oricare dispozitiv.</string>
+    <string name="app_first">AmniGuard AppControl este dezvoltat și testat cu mare atenție, cu toate acestea este imposibil de garantat că va funcționa corect pe oricare dispozitiv.</string>
     <string name="app_agree">Accept</string>
     <string name="app_disagree">Nu accept</string>
-    <string name="app_support">AmnShield AppControl are nevoie de ajutorul dumneavoastră. Atingeți pentru a achiziționa funcții Pro și a susține proiectul.</string>
+    <string name="app_support">AmniGuard AppControl are nevoie de ajutorul dumneavoastră. Atingeți pentru a achiziționa funcții Pro și a susține proiectul.</string>
     <string name="app_qap">        Google avea de gând să elimine aplicația din Play Store, deoarece aceasta solicita permisiunea de a interoga lista de aplicații.
         Cinci apeluri și furnizarea unei justificări bune despre motivul pentru care este nevoie de această permisiune au fost respinse.
         Această versiune a aplicației nu mai solicită această permisiune,
@@ -132,13 +132,13 @@
     <string name="setting_technical_networks">Reţele</string>
     <string name="setting_technical_subscription">Abonamente</string>
     <string name="summary_install">Arată o notificare în bara de stare pentru a configura aplicațiile noi instalate (versiune pro)</string>
-    <string name="summary_auto">După dezactivarea din widget, activează automat AmnShield AppControl după numărul selectat de minute (valoarea zero dezactivează opțiunea)</string>
+    <string name="summary_auto">După dezactivarea din widget, activează automat AmniGuard AppControl după numărul selectat de minute (valoarea zero dezactivează opțiunea)</string>
     <string name="summary_delay">După oprirea ecranului, păstrează regulile ecran pornit pentru numărul selectat de minute (valoarea zero dezactivează opțiunea)</string>
     <string name="summary_update">De două ori pe zi se va verifica dacă a fost publicată pe GitHub o nouă versiune</string>
     <string name="summary_tethering">În funcție de versiunea de Android, partajarea conexiunii (tethering/hotspot) ar putea funcționa sau nu. Traficul partajat nu poate fi filtrat.</string>
     <string name="summary_subnet">Ar putea ajuta la apelurile prin Wi-Fi, dar la fel de bine ar putea declanșa erori prezente în Android și ar putea crește consumul de baterie</string>
     <string name="summary_lan">Permite aplicațiilor să se conecteze la adresele de rețea locală precum 10.0.0.0/8, 172.16.0.0/12 și 192.168.0.0/16</string>
-    <string name="summary_ip6">Rutează traficul IPv6 în AmnShield AppControl pentru a putea fi permis sau blocat selectiv</string>
+    <string name="summary_ip6">Rutează traficul IPv6 în AmniGuard AppControl pentru a putea fi permis sau blocat selectiv</string>
     <string name="summary_wifi_home">Aplică regulile de rețea Wi-Fi numai pentru conexiunile selectate (pentru alte rețele Wi-Fi se aplică regulile de date mobile)</string>
     <string name="summary_metered">Trateaza conexiunile Wi-Fi contorizate (cu plata, hot-spot) precum date mobile</string>
     <string name="summary_metered_2g">Aplică regulile Wi-Fi pentru conexiunile de date 2G</string>
@@ -146,7 +146,7 @@
     <string name="summary_metered_4g">Aplică regulile Wi-Fi pentru conexiunile de date 4G/LTE</string>
     <string name="summary_national_roaming">Nu folosi regulile de roaming atunci când țara de origine a SIM-ului și țara rețelei mobile sunt identice</string>
     <string name="summary_eu_roaming">Nu se aplică regulile de roaming atunci când atât SIM-ul cât si reţeaua de telefonie sunt din si în Europa</string>
-    <string name="summary_call">Atunci când efectuați sau primiți un apel AmnShield AppControl se dezactivează temporar. Aceasta ar putea rezolva problemele legate de apelurile IP/Wi-Fi.</string>
+    <string name="summary_call">Atunci când efectuați sau primiți un apel AmniGuard AppControl se dezactivează temporar. Aceasta ar putea rezolva problemele legate de apelurile IP/Wi-Fi.</string>
     <string name="summary_system">Definește reguli pentru aplicațiile de sistem (pentru experți)</string>
     <string name="summary_log_app">Înregistrează în jurnal încercările de acces la internet ale aplicațiilor. Aceasta poate duce la un consum mai mare al bateriei.</string>
     <string name="summary_access">Arată o notificare în bara de stare atunci când o aplicație încearcă să acceseze o nouă adresă de internet (când filtrarea este dezactivată, numai accesul internet blocat va apărea în notificare)</string>
@@ -156,27 +156,27 @@
     <string name="summary_rcode">Valoarea implicită este 3 (NXDOMAIN), ceea ce înseamnă \"domeniu inexistent\".</string>
     <string name="summary_validate">Numele domeniului folosit la validarea conexiunii de internet pe portul 443 (https).</string>
     <string name="summary_socks5_enabled">Dar traficul de date TCP va fi rutat spre serverul proxy</string>
-    <string name="summary_watchdog">Verifică periodic dacă AmnShield AppControl rulează (introdu zero pentru a dezactiva). Această opțiune poate duce la un consum ridicat al bateriei.</string>
+    <string name="summary_watchdog">Verifică periodic dacă AmniGuard AppControl rulează (introdu zero pentru a dezactiva). Această opțiune poate duce la un consum ridicat al bateriei.</string>
     <string name="summary_stats">Arată graficul de viteză al rețelei în bara de notificări</string>
     <string name="msg_sure">Ești sigur(ă)?</string>
     <string name="msg_started">Limitări activate</string>
     <string name="msg_packages">%1$d permise, %2$d blocate</string>
     <string name="msg_hosts">%1$d permise, %2$d blocate, %3$d domenii blocate</string>
     <string name="msg_waiting">Așteptare eveniment</string>
-    <string name="msg_disabled">AmnShield AppControl este momentan dezactivat, folosește comutatorul de mai sus pentru a îl activa</string>
+    <string name="msg_disabled">AmniGuard AppControl este momentan dezactivat, folosește comutatorul de mai sus pentru a îl activa</string>
     <string name="msg_notifications">Atinge pentru a acorda permisiuni de notificare (pentru notificări de acces, mesaje de eroare, etc.)</string>
-    <string name="msg_revoked">AmnShield AppControl a fost dezactivat, probabil de o altă aplicație ce folosește o conexiune VPN</string>
+    <string name="msg_revoked">AmniGuard AppControl a fost dezactivat, probabil de o altă aplicație ce folosește o conexiune VPN</string>
     <string name="msg_installed">\'%1$s\' instalat</string>
     <string name="msg_installed_n">A fost instalat</string>
     <string name="msg_access">%1$s a încercat să acceseze internetul</string>
     <string name="msg_access_n">Tentativă de acces la internet</string>
     <string name="msg_completed">Acțiune realizată</string>
-    <string name="msg_vpn">AmnShield AppControl utilizează o conexiune VPN locală pentru a filtra traficul pe internet.
+    <string name="msg_vpn">AmniGuard AppControl utilizează o conexiune VPN locală pentru a filtra traficul pe internet.
 Din acest motiv, va rugăm să permiteți conexiunea VPN în caseta de dialog următoare. Traficul de internet nu este trimis la un server VPN extern.</string>
-    <string name="msg_autostart">AmnShield AppControl nu a putut fi pornit automat după repornirea dispozitivului din cauza unei erori din această versiune de Android.</string>
+    <string name="msg_autostart">AmniGuard AppControl nu a putut fi pornit automat după repornirea dispozitivului din cauza unei erori din această versiune de Android.</string>
     <string name="msg_error">A intervenit o eroare neașteptată: \'%s\'</string>
     <string name="msg_start_failed">Sistemul Android a refuzat să pornească serviciul VPN în acest moment. Cel mai probabil din cauza unei erori din această versiune de Android.</string>
-    <string name="msg_try">Încearcă AmnShield AppControl</string>
+    <string name="msg_try">Încearcă AmniGuard AppControl</string>
     <string name="msg_terms">Donand esti de acord cu <a href="http://www.netblock.me/#terms">termenii si conditiile</a></string>
     <string name="msg_dimming">Dacă în următoarea fereastră de dialog nu puteți apasă OK înseamnă că o aplicație ce manipulează ecranul (luminozitatea sau nuanță) blochează interacțiunea.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/zi</string>
@@ -184,11 +184,11 @@ Din acest motiv, va rugăm să permiteți conexiunea VPN în caseta de dialog ur
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">Pentru o funcționare consistentă, optimizările Android de baterie trebuie dezactivate pentru AmnShield AppControl.
-\n\nÎn următoarea fereastră de dialog selectați de sus \"Toate aplicațiile\" apoi selectați AmnShield AppControl în listă și confirmați \"Nu se optimizează\".</string>
-    <string name="msg_datasaving">Pentru rezultate consecvente, opțiunile Android de economisire a datelor ar trebui dezactivate pentru AmnShield AppControl
+    <string name="msg_doze">Pentru o funcționare consistentă, optimizările Android de baterie trebuie dezactivate pentru AmniGuard AppControl.
+\n\nÎn următoarea fereastră de dialog selectați de sus \"Toate aplicațiile\" apoi selectați AmniGuard AppControl în listă și confirmați \"Nu se optimizează\".</string>
+    <string name="msg_datasaving">Pentru rezultate consecvente, opțiunile Android de economisire a datelor ar trebui dezactivate pentru AmniGuard AppControl
 \n\nÎn caseta de dialog următoare, activați opțiunile \"Date de fundal\" și \"Utilizare de date nelimitată\"</string>
-    <string name="msg_filter">Android va asocia consumul de baterie și date lui AmnShield AppControl atunci când activați filtrarea. De fapt aplicațiile ce accesează internetul consumă</string>
+    <string name="msg_filter">Android va asocia consumul de baterie și date lui AmniGuard AppControl atunci când activați filtrarea. De fapt aplicațiile ce accesează internetul consumă</string>
     <string name="msg_filter4">Android 4 necesită filtrul de trafic activat</string>
     <string name="msg_log_disabled">Înregistrarea traficului în jurnal este dezactivată, utilizați butonul de mai sus pentru a o activa. Opțiunea de înregistrare ar putea duce la un consum suplimentar al bateriei.</string>
     <string name="msg_clear_rules">Se vor reseta regulile și condițiile la valorile implicite</string>
@@ -201,20 +201,20 @@ Din acest motiv, va rugăm să permiteți conexiunea VPN în caseta de dialog ur
     <string name="msg_stop_forward">Oprește redirecționarea %1$s port %2$d?</string>
     <string name="msg_metered">Rețeaua este contorizată</string>
     <string name="msg_inactive">Nu există conexiune la internet</string>
-    <string name="msg_queue">AmnShield AppControl este ocupat</string>
+    <string name="msg_queue">AmniGuard AppControl este ocupat</string>
     <string name="msg_update">Actualizare disponibilă, atingeți pentru a descărca</string>
     <string name="msg_usage">Puteți permite (verzui) sau bloca (roșiatic) accesul la internet prin Wi-Fi sau date mobile atingând iconițele din dreptul unei aplicații</string>
-    <string name="msg_fairemail">Dacă ați instalat AmnShield AppControl pentru a vă proteja intimitatea, poate vă interesează și <a href="https://email.faircode.eu/">FairEmail</a>, o aplicație client de e-mail cu sursă deschisă, prietenoasă cu intimitatea</string>
+    <string name="msg_fairemail">Dacă ați instalat AmniGuard AppControl pentru a vă proteja intimitatea, poate vă interesează și <a href="https://email.faircode.eu/">FairEmail</a>, o aplicație client de e-mail cu sursă deschisă, prietenoasă cu intimitatea</string>
     <string name="msg_whitelist">Accesul la internet este permis în mod implicit (modul listă neagră), acest lucru poate fi schimbat în meniul setări</string>
     <string name="msg_push">Mesajele \"push\" sunt de obicei gestionate de componentele de sistem ale serviciilor Google Play. cărora le este permis în mod implicit accesul la internet</string>
     <string name="msg_system">Gestionarea aplicațiilor de sistem se activează din opțiunile avansate</string>
     <string name="msg_issue">Vă rog să descrieți problema și să indicați momentul când s-a produs:</string>
     <string name="msg_vpn_cancelled">Conexiunea VPN a fost anulată\nS-a configurat cumva un alt VPN ca activat permanent?</string>
-    <string name="msg_on">Oprind dispozitivul atunci când AmnShield AppControl este pornit va face ca AmnShield AppControl să pornească automat la repornirea lui</string>
+    <string name="msg_on">Oprind dispozitivul atunci când AmniGuard AppControl este pornit va face ca AmniGuard AppControl să pornească automat la repornirea lui</string>
     <string name="msg_unavailable">Această caracteristică nu este disponibilă în această versiune de Android</string>
     <string name="msg_always_on">O altă rețea VPN este setată ca activată permanent</string>
-    <string name="msg_always_on_lockdown">Opriți \"Blocare conexiuni fără VPN\" în setările VPN ale sistemului Android pentru a putea folosi filtrul în AmnShield AppControl</string>
-    <string name="msg_private_dns">Opriți modul \"DNS privat\" în setările de rețea Android pentru a putea folosi AmnShield AppControl în modul filtrare</string>
+    <string name="msg_always_on_lockdown">Opriți \"Blocare conexiuni fără VPN\" în setările VPN ale sistemului Android pentru a putea folosi filtrul în AmniGuard AppControl</string>
+    <string name="msg_private_dns">Opriți modul \"DNS privat\" în setările de rețea Android pentru a putea folosi AmniGuard AppControl în modul filtrare</string>
     <string name="title_lockdown_enabled">Traficul este închis</string>
     <string name="title_unmetered_allowed">Traficul de date necontorizat este permis</string>
     <string name="title_unmetered_blocked">Traficul de date necontorizat este blocat</string>

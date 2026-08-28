@@ -1,8 +1,9 @@
-# AmnShield Testing Guide
+# AmniGuard Testing Guide
 
 ## Quick Start Testing
 
 ### Step 1: Build and Install
+
 ```powershell
 # Build the app
 .\gradlew.bat :app:assembleDebug --no-daemon --stacktrace
@@ -14,7 +15,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 ### Step 2: Initial Setup
 
 1. **Launch the App**
-   - Open AmnShield from your app drawer
+   - Open AmniGuard from your app drawer
    - You should see the Blocks screen (empty initially)
 
 2. **Navigate to Settings**
@@ -26,6 +27,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 ## Test Scenario 1: VPN-Based Website Blocking
 
 ### Enable VPN Protection
+
 1. In Settings, look for "VPN Protection" card
 2. Should show "Inactive" in RED
 3. Tap "Enable VPN" button
@@ -34,6 +36,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 6. Card should turn GREEN showing "Active - Filtering network traffic"
 
 ### Test Website Blocking
+
 1. Enable toggle "Block social media" in Settings
 2. Open your browser (Chrome, Firefox, etc.)
 3. Try to visit: `https://facebook.com`
@@ -42,8 +45,9 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 6. **Expected:** Should work normally (not blocked)
 
 ### Verify Blocking
+
 - VPN status should remain GREEN
-- You should see a notification "AmnShield Protection Active"
+- You should see a notification "AmniGuard Protection Active"
 - Notification shows packet statistics when you pull down notification shade
 
 ---
@@ -51,15 +55,17 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 ## Test Scenario 2: App Blocking
 
 ### Enable Accessibility Service
+
 1. In Settings, look for "App Blocking" card
 2. Should show "Inactive" in RED
 3. Tap "Open Accessibility Settings"
-4. Find "AmnShield Blocker" or "Accessibility Blocker"
+4. Find "AmniGuard Blocker" or "Accessibility Blocker"
 5. Enable the service
-6. Return to AmnShield app
+6. Return to AmniGuard app
 7. Card should now show GREEN "Active - Blocking apps"
 
 ### Block an App
+
 1. In Settings, tap "Manage blocked apps"
 2. Search for an app (e.g., type "instagram")
 3. Select checkbox next to Instagram
@@ -68,12 +74,13 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 6. Dialog closes, apps are now in blocked list
 
 ### Test App Blocking
-1. Exit AmnShield app (press home)
+
+1. Exit AmniGuard app (press home)
 2. Try to open Instagram (or any blocked app)
-3. **Expected:** 
+3. **Expected:**
    - App starts to open
    - Immediately redirects to home screen
-   - Toast message: "App blocked by AmnShield"
+   - Toast message: "App blocked by AmniGuard"
 4. Try again - same result with 2-second cooldown
 
 ---
@@ -81,6 +88,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 ## Test Scenario 3: Create Custom Blocks
 
 ### Create a Block
+
 1. Go to Blocks screen (bottom nav)
 2. Tap the "+" floating action button
 3. Fill in block details:
@@ -90,15 +98,19 @@ adb install app\build\outputs\apk\debug\app-debug.apk
    - **Keywords:** Add words to block in URLs
 
 ### Add Websites in Bulk
+
 1. In the Websites section, paste:
+
    ```
    youtube.com, reddit.com, twitter.com, netflix.com
    ```
+
 2. Tap "Add" button
 3. All valid domains should appear as chips below
 4. Invalid ones will show error message
 
 ### Save and Verify
+
 1. Scroll down and tap "Save Block" button
 2. Block appears in Blocks screen
 3. **Automatic:** VPN service configuration updates immediately
@@ -110,6 +122,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 ## Test Scenario 4: Service Status Monitoring
 
 ### Watch Real-Time Updates
+
 1. Open Settings screen
 2. Note the service status cards
 3. **Test VPN:**
@@ -120,13 +133,14 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 
 4. **Test Accessibility:**
    - Go to Android Settings → Accessibility
-   - Disable AmnShield Blocker
+   - Disable AmniGuard Blocker
    - Return to app
    - Card turns RED
    - Re-enable service
    - Card turns GREEN
 
 ### Status Indicators
+
 - ✅ **GREEN (Primary Container)** = Service Active
 - ❌ **RED (Error Container)** = Service Inactive
 - 🟢 **Online Icon** = Active
@@ -137,6 +151,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 ## Test Scenario 5: Settings Toggles
 
 ### Global Blocking Toggles
+
 1. In Settings, you'll see toggles:
    - ✅ Enable blocking globally
    - ✅ Block harmful keywords
@@ -156,24 +171,30 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 ## Troubleshooting Common Issues
 
 ### VPN Won't Enable
+
 **Symptoms:** VPN permission dialog doesn't appear
-**Fix:** 
+**Fix:**
+
 - Check if another VPN is running
 - Disable other VPNs first
 - Grant permission when prompted
 
 ### App Blocking Not Working
+
 **Symptoms:** Blocked apps still open
 **Fix:**
+
 1. Verify Accessibility Service is enabled:
-   - Settings → Accessibility → AmnShield Blocker → ON
+   - Settings → Accessibility → AmniGuard Blocker → ON
 2. Check if app is in blocked list:
    - Settings → Blocked Apps section
 3. Try blocking again from "Manage blocked apps"
 
 ### Website Not Blocked
+
 **Symptoms:** Blocked website still loads
 **Fix:**
+
 1. Verify VPN is active (GREEN status)
 2. Check if domain is in block list
 3. Clear browser cache
@@ -181,8 +202,10 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 5. Remember: HTTPS sites may bypass some DNS filtering
 
 ### Status Cards Not Updating
+
 **Symptoms:** Cards stay RED even when service is on
 **Fix:**
+
 - Wait 2-3 seconds (auto-refresh cycle)
 - Close and reopen Settings screen
 - Restart the app
@@ -192,7 +215,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 ## Expected Behavior Summary
 
 | Feature | Expected Behavior |
-|---------|------------------|
+| --------- | ------------------ |
 | VPN Blocking | Websites in block list won't resolve via DNS |
 | App Blocking | Blocked apps redirect to home immediately |
 | Service Status | Updates every 2 seconds, color-coded |
@@ -216,6 +239,7 @@ adb install app\build\outputs\apk\debug\app-debug.apk
 ## Advanced Testing
 
 ### Test with adb logcat
+
 ```powershell
 # Monitor VPN service logs
 adb logcat | Select-String "BlockingVpnService"
@@ -223,11 +247,12 @@ adb logcat | Select-String "BlockingVpnService"
 # Monitor Accessibility service logs
 adb logcat | Select-String "AccessibilityBlocker"
 
-# Monitor all AmnShield logs
-adb logcat | Select-String "AmnShield"
+# Monitor all AmniGuard logs
+adb logcat | Select-String "AmniGuard"
 ```
 
 ### Test Network Traffic
+
 ```powershell
 # Check VPN interface
 adb shell ip addr show tun0
@@ -267,6 +292,7 @@ adb shell tcpdump -i any port 53
 ## Reporting Issues
 
 If you find bugs, please note:
+
 1. **Steps to reproduce**
 2. **Expected behavior**
 3. **Actual behavior**

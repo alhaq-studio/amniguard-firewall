@@ -2,7 +2,7 @@
 <resources>
     <string name="app_agree">ကျွန်ုပ်သဘောတူတယ်</string>
     <string name="app_disagree">ကျွန်ုပ်သဘောမတူပါ</string>
-    <string name="app_support">AmnShield AppControl မှ သင်တို့ရဲ့ အကူအညီကို လိုအပ်တယ်။ စီမံကိန်းဆက်လက် လုပ်ဆောင်နိုင်ရန် အထူးပြုလုပ်ထားသော Pro လုပ်ဆောင်ချက်များကို ၀ယ်ယူဖို့
+    <string name="app_support">AmniGuard AppControl မှ သင်တို့ရဲ့ အကူအညီကို လိုအပ်တယ်။ စီမံကိန်းဆက်လက် လုပ်ဆောင်နိုင်ရန် အထူးပြုလုပ်ထားသော Pro လုပ်ဆောင်ချက်များကို ၀ယ်ယူဖို့
 ခလုတ်ကို နှိပ်ပါ။</string>
     <string name="channel_foreground">လည်ပတ်နေသောဝန်ဆောင်မှုများ</string>
     <string name="channel_notify">အထွေထွေအသိပေးချက်များ</string>

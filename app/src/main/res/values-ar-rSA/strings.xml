@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl يوفر طرق بسيطة ومتقدمة لمنع الوصول إلى شبكة الإنترنت - لا يلزم الجذر. يمكن السماح أو الرفض بشكل فردي للتطبيقات والعناوين النفاذ إلى الواي فاي أو الإتصال عبر الجوال.</string>
-    <string name="app_android">AmnShield AppControl requires Android 5.1 or later</string>
-    <string name="app_xposed">يسبب Xposed الكثير من الأعطال ، مما قد يؤدي إلى إزالة AmnShield AppControl من متجر Google Play ، لذلك لا يتم دعم AmnShield AppControl إن تم تثبيت Xposed</string>
+    <string name="app_description">AmniGuard AppControl يوفر طرق بسيطة ومتقدمة لمنع الوصول إلى شبكة الإنترنت - لا يلزم الجذر. يمكن السماح أو الرفض بشكل فردي للتطبيقات والعناوين النفاذ إلى الواي فاي أو الإتصال عبر الجوال.</string>
+    <string name="app_android">AmniGuard AppControl requires Android 5.1 or later</string>
+    <string name="app_xposed">يسبب Xposed الكثير من الأعطال ، مما قد يؤدي إلى إزالة AmniGuard AppControl من متجر Google Play ، لذلك لا يتم دعم AmniGuard AppControl إن تم تثبيت Xposed</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">سياسة الخصوصية</a></string>
-    <string name="app_first">تم تطوير وتجربة AmnShield AppControl بعناية فائقة ولكن من الممكن ألّا يعمل AmnShield AppControl بشكل جيد في بعض الاجهزة.</string>
+    <string name="app_first">تم تطوير وتجربة AmniGuard AppControl بعناية فائقة ولكن من الممكن ألّا يعمل AmniGuard AppControl بشكل جيد في بعض الاجهزة.</string>
     <string name="app_agree">أنا أوافق</string>
     <string name="app_disagree">لا أوافق</string>
-    <string name="app_support">AmnShield AppControl يحتاج لدعمكم. اضغط لشراء الخصائص المتقدمة ودعم استمرارية المشروع.</string>
+    <string name="app_support">AmniGuard AppControl يحتاج لدعمكم. اضغط لشراء الخصائص المتقدمة ودعم استمرارية المشروع.</string>
     <string name="app_qap">.</string>
     <string name="channel_foreground">الخدمات قيد التشغيل</string>
     <string name="channel_notify">الإشعارات العامة</string>
@@ -125,13 +125,13 @@
     <string name="setting_technical_networks">الشبكات</string>
     <string name="setting_technical_subscription">الإشتراكات</string>
     <string name="summary_install">إظهار إعلام في شريط المعلومات للتطبيقات المثبتة حديثا (ميزة برو)</string>
-    <string name="summary_auto">بعد تعطيل AmnShield AppControl باستخدام الويدجت، فعل AmnShield AppControl تلقائيا مرة أخرى بعد عدد محدد من الدقائق  (ادخل صفر لتعطيل هذا الخيار)</string>
+    <string name="summary_auto">بعد تعطيل AmniGuard AppControl باستخدام الويدجت، فعل AmniGuard AppControl تلقائيا مرة أخرى بعد عدد محدد من الدقائق  (ادخل صفر لتعطيل هذا الخيار)</string>
     <string name="summary_delay">بعد إغلاق الشاشة، إبقاء الشاشة على القواعد نشطة لعدد محدد من الدقائق (ادخل صفر لتعطيل هذا الخيار)</string>
     <string name="summary_update">التحقق من وجود إصدارات جديدة في GitHub مرتين يوميا</string>
     <string name="summary_tethering">وفقا لاصدار الأندرويد، ربط الانترنت قد يعمل وقد لا يعمل، الانترنت المربوط(المشارك) لا يمكن تصفيتة.</string>
     <string name="summary_subnet">يُمكّن توجيه الشبكة الفرعية؛ و قد يُمكّن اتصال Wi-Fi ، ولكن قد يؤدي أيضًا إلى ظهور أخطاء في Android وزيادة استخدام البطارية</string>
     <string name="summary_lan">السماح للتطبيقات بالاتصال بعناوين شبكة الاتصال المحلية ، مثل 10.0.0.0/8، 172.16.0.0/12 و 192.168.0.0/16</string>
-    <string name="summary_ip6">توجيه حركة مرور IP الإصدار 6 إلى AmnShield AppControl حيث يمكن بشكل انتقائي السماح بها أو المنع</string>
+    <string name="summary_ip6">توجيه حركة مرور IP الإصدار 6 إلى AmniGuard AppControl حيث يمكن بشكل انتقائي السماح بها أو المنع</string>
     <string name="summary_wifi_home">تطبيق قواعد الشبكة اللاسلكية للشبكة المحددة فقط (تطبيق قواعد شبكة الجوال لباقي الشبكات اللاسلكية)</string>
     <string name="summary_metered">تطبيق قواعد شبكة الهاتف النقال للشبكات اللاسلكية المقاسة (مدفوعة الأجر، المربوطة)</string>
     <string name="summary_metered_2g">تطبيق قواعد الشبكة اللاسلكية لاتصالات شبكات 2G</string>
@@ -139,7 +139,7 @@
     <string name="summary_metered_4g">تطبيق قواعد الشبكة اللاسلكية لاتصالات شبكات LTE</string>
     <string name="summary_national_roaming">لا تطبق قواعد التجوال عندما تكون الشريحة ودولة شبكـة المحمول هي نفسها</string>
     <string name="summary_eu_roaming">لا تـفعل الـتـجـوال عـنـدمـا تـكـون الشريحة من نفس دولة شـبـكـة الـمـحـمـول</string>
-    <string name="summary_call">تعطيل AmnShield AppControl على المكالمات الهاتفية الواردة أو الصادرة. يمكن استخدام هذا حل مشاكل الاتصال حول IP/Wi-Fi.</string>
+    <string name="summary_call">تعطيل AmniGuard AppControl على المكالمات الهاتفية الواردة أو الصادرة. يمكن استخدام هذا حل مشاكل الاتصال حول IP/Wi-Fi.</string>
     <string name="summary_system">تحديد القواعد لتطبيقات النظام (للخبراء)</string>
     <string name="summary_log_app">تسجل محاولات وصول التطبيقات إلى الإنترنت. قد ينتج عن هذا استخدام إضافي للبطارية.</string>
     <string name="summary_access">إظهار إعلام شريط المعلومات عندما يحاول تطبيق الوصول إلى عنوان إنترنت جديد (عند التصفية معطل، إلا محاولات الوصول إلى الإنترنت المحظورة فسيتم الإخطار)</string>
@@ -149,7 +149,7 @@
     <string name="summary_rcode">الـقيمة الافتراضية هي 3 (NXDOMAIN)، وهذا يعني \'أنّ اسم النطاق غير موجود\'.</string>
     <string name="summary_validate">اسم النطاق المستخدم للتحقق من صحة اتصال الإنترنت عن طريق منفذ 443 (https).</string>
     <string name="summary_socks5_enabled">يـــتـــم إرســال حــركـــة مـــرور TCP فـــقـــط إلـــى الـــمـــلـــقـــم الـــوكــيـــل</string>
-    <string name="summary_watchdog">الــفـــحـــص الــدوري إذا كــان قـــيـــد تـــشـــغـــيـــل AmnShield AppControl (فــأدخـــل صـــفـــر لـــتـــعـــطـــيـــل هـــذا الــخـــيـــار). قـــد يـــســـتـــلـــزم هـــذا إســـتـــخـــدام أكـــثـــر لـلـــبـــطــاريـــة.</string>
+    <string name="summary_watchdog">الــفـــحـــص الــدوري إذا كــان قـــيـــد تـــشـــغـــيـــل AmniGuard AppControl (فــأدخـــل صـــفـــر لـــتـــعـــطـــيـــل هـــذا الــخـــيـــار). قـــد يـــســـتـــلـــزم هـــذا إســـتـــخـــدام أكـــثـــر لـلـــبـــطــاريـــة.</string>
     <string name="summary_stats">إظهار الرسم البياني لسرعة الشبكة على شريط حالة الإشعارات</string>
     <string name="msg_sure">هل أنت متأكد؟</string>
     <string name="msg_started">فرض الـقـواعد</string>
@@ -158,17 +158,17 @@
     <string name="msg_waiting">في انتظار حدث</string>
     <string name="msg_disabled">التطبيق غير مُفعّل، قم بتنشيط نات غارد بالضغط على الزر في الأعلى</string>
     <string name="msg_notifications">انقر لمنح أذونات الإشعارات (لإشعارات محاولة الوصول، رسائل الخطأ، إلخ)</string>
-    <string name="msg_revoked">تم تعطيل AmnShield AppControl، يُحتمل أنّ السبب راجع إلى استخدام تطبيق VPN آخر في آن واحد</string>
+    <string name="msg_revoked">تم تعطيل AmniGuard AppControl، يُحتمل أنّ السبب راجع إلى استخدام تطبيق VPN آخر في آن واحد</string>
     <string name="msg_installed">\'%1$s\' مثبت</string>
     <string name="msg_installed_n">تم تثبيته</string>
     <string name="msg_access">لقد حاول %1$s الوصول إلى الإنترنت</string>
     <string name="msg_access_n">حاوَلَ الوصول إلى الإنترنت</string>
     <string name="msg_completed">اكتمل الإجراء</string>
-    <string name="msg_vpn">يستخدم AmnShield AppControl شبكة VPN محلية لتصفية حركة الانترنت. لهذا، يرجى السماح لاتصال VPN في مربع الحوار القادم. حركة الانترنت الخاصة بك لا يتم ارسالها الى خادم VPN بعيد.</string>
-    <string name="msg_autostart">لا يمكن بدء AmnShield AppControl بشكل تلقائي عند التشغيل بسبب وجود خلل في إصدار الاندرويد الخاص بك</string>
+    <string name="msg_vpn">يستخدم AmniGuard AppControl شبكة VPN محلية لتصفية حركة الانترنت. لهذا، يرجى السماح لاتصال VPN في مربع الحوار القادم. حركة الانترنت الخاصة بك لا يتم ارسالها الى خادم VPN بعيد.</string>
+    <string name="msg_autostart">لا يمكن بدء AmniGuard AppControl بشكل تلقائي عند التشغيل بسبب وجود خلل في إصدار الاندرويد الخاص بك</string>
     <string name="msg_error">حدث خطأ غير متوقع: \'%s\'</string>
     <string name="msg_start_failed">أنـــدرويـــت رفـــض أن تـــبـــدأ خـــدمـــة VPN فـــي هـــذه اللـــحـــظـــة. مـــن الـــمـــحـــتـــمـــل بـــســـبـــب عـــطـــل فـــي نـــســـخـــة أنـــدرويــت الـــخـــاص بـــك.</string>
-    <string name="msg_try">جـرّب AmnShield AppControl</string>
+    <string name="msg_try">جـرّب AmniGuard AppControl</string>
     <string name="msg_terms">عند تبرعك فهذا يعني انك مواقق على الشروط والاحكام. <a href="http://www.netblock.me/#terms">احكام &amp; شروط</a></string>
     <string name="msg_dimming">إن لم تستطع الضغط على زر الموافقة في مربع الحوار القادم فهذا معناه أنه يوجد برنامج آخر يتحكم في الشاشة.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ ميغابيت/يوم</string>
@@ -176,9 +176,9 @@
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ ميجا بايت</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ جيجابايت</string>
     <string name="msg_count">%dس</string>
-    <string name="msg_doze">للحصول على نتائج متناسقة، يجب تعطيل تحسينات البطارية للاندرويد لـ AmnShield AppControl. عن طريق \n\n ، حدد \"جميع التطبيقات\" في الجزء العلوي، انقر على AmnShield AppControl في القائمة وتحديد وتأكيد \"تعطيل تحسينات البطارية\".</string>
-    <string name="msg_datasaving">للحصول على نتائج متسقة، يجب تعطيل البيانات الروبوت توفير خيارات ل AmnShield AppControl \n\nIn مربع الحوار التالي، تمكين خيارات \"بيانات أساسية\" و \"استخدام البيانات غير المقيد\"</string>
-    <string name="msg_filter">استخدام التصفية سيتسبب بأن ينسب الأندرويد استخدام البيانات والطاقة الى AmnShield AppControl - يفترض الأندرويد أن البيانات والطاقة تستخدمان من قبل AmnShield AppControl بدلاً من التطبيقات الأصلية</string>
+    <string name="msg_doze">للحصول على نتائج متناسقة، يجب تعطيل تحسينات البطارية للاندرويد لـ AmniGuard AppControl. عن طريق \n\n ، حدد \"جميع التطبيقات\" في الجزء العلوي، انقر على AmniGuard AppControl في القائمة وتحديد وتأكيد \"تعطيل تحسينات البطارية\".</string>
+    <string name="msg_datasaving">للحصول على نتائج متسقة، يجب تعطيل البيانات الروبوت توفير خيارات ل AmniGuard AppControl \n\nIn مربع الحوار التالي، تمكين خيارات \"بيانات أساسية\" و \"استخدام البيانات غير المقيد\"</string>
+    <string name="msg_filter">استخدام التصفية سيتسبب بأن ينسب الأندرويد استخدام البيانات والطاقة الى AmniGuard AppControl - يفترض الأندرويد أن البيانات والطاقة تستخدمان من قبل AmniGuard AppControl بدلاً من التطبيقات الأصلية</string>
     <string name="msg_filter4">أنـــدرويـــد 4 يـــتـــطـــلــَّــب إجــراء تـــصـــفـــيـــة لـلـتـــمـــكـــيـــن</string>
     <string name="msg_log_disabled">تسجيل الحركة معطل، استخدم رمز التبديل أعلاه لتمكين التسجيل. قد يؤدي تسجيل الحركة الى استخدام إضافي للبطارية.</string>
     <string name="msg_clear_rules">هذا سوف يعيد تعيين القواعد والشروط إلى قيمها الافتراضية</string>
@@ -191,20 +191,20 @@
     <string name="msg_stop_forward">إيقاف إعادة توجيه %1$s منفذ %2$d؟</string>
     <string name="msg_metered">الشبكة مقاسة</string>
     <string name="msg_inactive">لا يوجد اتصال إنترنت نشط</string>
-    <string name="msg_queue">AmnShield AppControl مشغول</string>
+    <string name="msg_queue">AmniGuard AppControl مشغول</string>
     <string name="msg_update">هناك تحديث متوفر، اضغط لتنزيله</string>
     <string name="msg_usage">يــمــكــنــك الــســمــاح (مــخــضــر) أو الــرفــض (الــمــحــمــر) واي فاي أو دخــول شــبــكــة الــمــحــمــول بــواســطــة الـــضـــغـــط عــلــى الــرمــوز الــمــوجــودة بــجــانــب الــتــطــبــيــق</string>
-    <string name="msg_fairemail">إذا قمت بتثبيت AmnShield AppControl لحماية خصوصيتك، فقد تكون مهتمًا ب<a href="https://email.faircode.eu/">FairEmail</a>، تطبيق بريد إلكتروني مفتوح المصدر ومناسب للخصوصية أيضًا</string>
+    <string name="msg_fairemail">إذا قمت بتثبيت AmniGuard AppControl لحماية خصوصيتك، فقد تكون مهتمًا ب<a href="https://email.faircode.eu/">FairEmail</a>، تطبيق بريد إلكتروني مفتوح المصدر ومناسب للخصوصية أيضًا</string>
     <string name="msg_whitelist">الدخول للإنترنت مسموح بشكل إفتراضي، وهذا يمكن تغييرة في الإعدادات</string>
     <string name="msg_push">معظم الرسائل يتم معالجتها بواسطة خدمات النظام المتاحة، وهي التى مسموحة بدخول الإنترنت بشكل إفتراضي</string>
     <string name="msg_system">يمكنك تمكين إدارة تطبيقات النظام في الخيارات المتقدمة</string>
     <string name="msg_issue">الرجاء أوصف المشكلة وبيّن وقت المشكلة</string>
     <string name="msg_vpn_cancelled">لــقــد ألـغــي الإتــصــال عــن طــريــق n/ VPN هــل تــريــد تــكــويــن VPN آخــر حــتــى تــكــون عـلـى إتــصــال دائــم عــن طــريــق VPN ؟</string>
-    <string name="msg_on">إيقاف جهازك مع تشغيل AmnShield AppControl، سؤدي لعمل AmnShield AppControl تلقائياً عند تشغيل الجهاز</string>
+    <string name="msg_on">إيقاف جهازك مع تشغيل AmniGuard AppControl، سؤدي لعمل AmniGuard AppControl تلقائياً عند تشغيل الجهاز</string>
     <string name="msg_unavailable">هذه الوظيفة غير متوفرة في هذا الاصدار</string>
     <string name="msg_always_on">يتم تعيين VPN آخر دوماً على VPN</string>
-    <string name="msg_always_on_lockdown">اوقف \"حجب الاتصلات التي لا تستخدم VPN\" في اعدادات VPN الخاص باندرويد لتتمكن من استخدام AmnShield AppControl في وضع التصفية</string>
-    <string name="msg_private_dns">اوقف \"DNS شخصي\" في اعدادات الشبكة الخاصة باندرويد لتتمكن من استخدام AmnShield AppControl في وضع التصفية</string>
+    <string name="msg_always_on_lockdown">اوقف \"حجب الاتصلات التي لا تستخدم VPN\" في اعدادات VPN الخاص باندرويد لتتمكن من استخدام AmniGuard AppControl في وضع التصفية</string>
+    <string name="msg_private_dns">اوقف \"DNS شخصي\" في اعدادات الشبكة الخاصة باندرويد لتتمكن من استخدام AmniGuard AppControl في وضع التصفية</string>
     <string name="title_lockdown_enabled">تم تأمين مرور المعلومات</string>
     <string name="title_unmetered_allowed">الحركة الغير مقاسة مسموحة</string>
     <string name="title_unmetered_blocked">الحركة الغير مقاسة محظورة</string>

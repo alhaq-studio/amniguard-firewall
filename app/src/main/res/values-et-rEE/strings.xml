@@ -78,7 +78,7 @@
     <string name="msg_waiting">Sündmuse ootel</string>
     <string name="msg_installed">\'%1$s\' paigaldatud</string>
     <string name="msg_installed_n">On paigaldatud</string>
-    <string name="msg_try">Proovi AmnShield AppControli</string>
+    <string name="msg_try">Proovi AmniGuard AppControli</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/päevas</string>
     <string name="msg_kb">%1$7.3f▲ %2$7.3f▼ KB</string>
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>

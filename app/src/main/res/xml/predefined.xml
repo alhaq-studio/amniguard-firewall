@@ -6,8 +6,8 @@
     <wifi blocked="false" package="com.alhaq.amniguard" />
     <other blocked="false" package="com.alhaq.amniguard" roaming="false" />
 
-    <wifi blocked="false" package="com.alhaq.amnshield" />
-    <other blocked="false" package="com.alhaq.amnshield" roaming="false" />
+    <wifi blocked="false" package="com.alhaq.amnishield" />
+    <other blocked="false" package="com.alhaq.amnishield" roaming="false" />
 
     <wifi blocked="false" package="com.alhaq.amnishield" />
     <other blocked="false" package="com.alhaq.amnishield" roaming="false" />

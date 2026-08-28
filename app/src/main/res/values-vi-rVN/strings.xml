@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl cung cấp những cách đơn giản và nâng cao để chặn quyền truy cập vào internet - không yêu cầu root. Ứng dụng và địa chỉ có thể được cá nhân cho phép hoặc từ chối truy cập Wi-Fi và/hoặc kết nối di động của bạn.</string>
-    <string name="app_android">AmnShield AppControl yêu cầu Android 5.1 hoặc cao hơn</string>
-    <string name="app_xposed">Xposed gây ra quá nhiều lỗi, mà có ảnh hưởng đến AmnShield AppControl bị gỡ bỏ khỏicửa hàng Google Play; Do đó, AmnShield AppControl sẽ không được hỗ trợ nếu Xposed được cài đặt.</string>
+    <string name="app_description">AmniGuard AppControl cung cấp những cách đơn giản và nâng cao để chặn quyền truy cập vào internet - không yêu cầu root. Ứng dụng và địa chỉ có thể được cá nhân cho phép hoặc từ chối truy cập Wi-Fi và/hoặc kết nối di động của bạn.</string>
+    <string name="app_android">AmniGuard AppControl yêu cầu Android 5.1 hoặc cao hơn</string>
+    <string name="app_xposed">Xposed gây ra quá nhiều lỗi, mà có ảnh hưởng đến AmniGuard AppControl bị gỡ bỏ khỏicửa hàng Google Play; Do đó, AmniGuard AppControl sẽ không được hỗ trợ nếu Xposed được cài đặt.</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Chính sách riêng tư</a></string>
-    <string name="app_first">Tôi đã rất cẩn thận để phát triển và thử nghiệm AmnShield AppControl, tuy nhiên không thể đảm bảo AmnShield AppControl sẽ làm việc chính xác trên mọi thiết bị.</string>
+    <string name="app_first">Tôi đã rất cẩn thận để phát triển và thử nghiệm AmniGuard AppControl, tuy nhiên không thể đảm bảo AmniGuard AppControl sẽ làm việc chính xác trên mọi thiết bị.</string>
     <string name="app_agree">Tôi đồng ý</string>
     <string name="app_disagree">Tôi không đồng ý</string>
-    <string name="app_support">AmnShield AppControl cần sự giúp đỡ của bạn. Nhấn để mua các tính năng Pro để giữ cho dự án hoạt động.</string>
+    <string name="app_support">AmniGuard AppControl cần sự giúp đỡ của bạn. Nhấn để mua các tính năng Pro để giữ cho dự án hoạt động.</string>
     <string name="channel_foreground">Các dịch vụ đang chạy</string>
     <string name="channel_notify">Thông báo chung</string>
     <string name="channel_access">Truy cập thông báo</string>
@@ -124,13 +124,13 @@
     <string name="setting_technical_networks">Mạng</string>
     <string name="setting_technical_subscription">Câu hỏi thường gặp</string>
     <string name="summary_install">Hiển thị thanh thông báo trạng thái trực tiếp cấu hình ứng dụng mới được cài đặt (tính năng pro)</string>
-    <string name="summary_auto">Sau khi vô hiệu hóa bằng cách sử dụng các widget, tự động bật AmnShield AppControl một lần nữa sau số phút được chọn (nhập 0 để tắt tùy chọn này)</string>
+    <string name="summary_auto">Sau khi vô hiệu hóa bằng cách sử dụng các widget, tự động bật AmniGuard AppControl một lần nữa sau số phút được chọn (nhập 0 để tắt tùy chọn này)</string>
     <string name="summary_delay">Sau khi màn hình tắt, giữ cho các quy tắc khi màn hình bật hoạt động trong số phút được chọn (nhập 0 để tắt tùy chọn này)</string>
     <string name="summary_update">Kiểm tra các phiên bản mới trên GitHub hai lần mỗi ngày</string>
     <string name="summary_tethering">Tùy thuộc vào phiên bản Android, việc giới hạn có thể làm việc hoặc có thể không làm việc. Giới hạn lưu lượng truy cập không thể được lọc.</string>
     <string name="summary_subnet">Kích hoạt định tuyến mạng con; có thể bật Wi-Fi calling, nhưng có thể cũng gây ra lỗi trong Android và làm tăng việc sử dụng pin</string>
     <string name="summary_lan">Cho phép các ứng dụng kết nối với địa chỉ mạng nội bộ, như 10.0.0.0/8, 172.16.0.0/12 và 192.168.0.0/16</string>
-    <string name="summary_ip6">Định tuyến IPv6 lưu lượng truy cập đến AmnShield AppControl vì vậy nó có chọn lọc có thể được cho phép hoặc chặn</string>
+    <string name="summary_ip6">Định tuyến IPv6 lưu lượng truy cập đến AmniGuard AppControl vì vậy nó có chọn lọc có thể được cho phép hoặc chặn</string>
     <string name="summary_wifi_home">Áp dụng quy tắc mạng Wi-Fi cho mạng đã chọn (áp dụng quy tắc mạng di động cho các mạng Wi-Fi khác)</string>
     <string name="summary_metered">Áp dụng quy tắc mạng di động cho mạng Wi-Fi có trả phí (có thể mất phí)</string>
     <string name="summary_metered_2g">Áp dụng quy tắc mạng Wi-Fi cho kết nối dữ liệu 2G</string>
@@ -138,7 +138,7 @@
     <string name="summary_metered_4g">Áp dụng quy tắc mạng Wi-Fi cho kết nối dữ liệu LTE</string>
     <string name="summary_national_roaming">Không áp dụng quy tắc chuyển vùng khi SIM và mạng di động mạng quốc gia giống nhau</string>
     <string name="summary_eu_roaming">Không áp dụng quy tắc chuyển vùng khi SIM và mạng di động mạng quốc gia giống nhau</string>
-    <string name="summary_call">Vô hiệu hóa AmnShield AppControl khi có cuộc gọi đến hoặc đi. Điều này có thể được sử dụng để khắc phục các sự cố gọi IP / Wi-Fi.</string>
+    <string name="summary_call">Vô hiệu hóa AmniGuard AppControl khi có cuộc gọi đến hoặc đi. Điều này có thể được sử dụng để khắc phục các sự cố gọi IP / Wi-Fi.</string>
     <string name="summary_system">Định nghĩa quy tắc cho các ứng dụng hệ thống (đối với các chuyên gia)</string>
     <string name="summary_log_app">Thông báo cố gắng truy cập internet cho các ứng dụng. Điều này có thể dẫn đến việc hao pin.</string>
     <string name="summary_access">Hiển thị một thanh thông báo trạng thái khi một ứng dụng cố gắng để truy cập vào một địa chỉ internet mới (khi lọc bị tắt, chỉ cố gắng truy cập internet bị chặn được thông báo)</string>
@@ -148,25 +148,25 @@
     <string name="summary_rcode">Giá trị mặc định là 3 (NXDOMAIN), có nghĩa là \'không tồn tại tên miền\'.</string>
     <string name="summary_validate">Tên miền được sử dụng để xác thực kết nối internet tại cổng 443 (https).</string>
     <string name="summary_socks5_enabled">Lưu lượng TCP sẽ được gửi đến máy chủ proxy</string>
-    <string name="summary_watchdog">Định kỳ kiểm tra nếu AmnShield AppControl vẫn chạy (nhập 0 để tắt tùy chọn này). Điều này có thể dẫn đến việc hao pin.</string>
+    <string name="summary_watchdog">Định kỳ kiểm tra nếu AmniGuard AppControl vẫn chạy (nhập 0 để tắt tùy chọn này). Điều này có thể dẫn đến việc hao pin.</string>
     <string name="summary_stats">Hiển thị đồ thị tốc độ mạng trên thanh thông báo trạng thái</string>
     <string name="msg_sure">Bạn có chắc không?</string>
     <string name="msg_started">Đang thực thi các quy tắc</string>
     <string name="msg_packages">%1$d cho phép, %2$d bị chặn</string>
     <string name="msg_hosts">%1$d cho phép, %2$d chặn, %3$d hosts</string>
     <string name="msg_waiting">Đang chờ đợi sự kiện</string>
-    <string name="msg_disabled">AmnShield AppControl bị vô hiệu hóa, sử dụng nút gạt bên trên để kích hoạt AmnShield AppControl</string>
-    <string name="msg_revoked">AmnShield AppControl đã bị vô hiệu hóa, rất có thể do đang sử dụng một ứng dụng dựa trên VPN khác</string>
+    <string name="msg_disabled">AmniGuard AppControl bị vô hiệu hóa, sử dụng nút gạt bên trên để kích hoạt AmniGuard AppControl</string>
+    <string name="msg_revoked">AmniGuard AppControl đã bị vô hiệu hóa, rất có thể do đang sử dụng một ứng dụng dựa trên VPN khác</string>
     <string name="msg_installed">\'%1$s\' được cài đặt</string>
     <string name="msg_installed_n">Đã được cài đặt</string>
     <string name="msg_access">%1$s cố gắng truy cập internet</string>
     <string name="msg_access_n">Cố gắng truy cập internet</string>
     <string name="msg_completed">Hoàn tất hành động</string>
-    <string name="msg_vpn">AmnShield AppControl sử dụng một local VPN để lọc lưu lượng truy cập internet. Vì lý do này, xin vui lòng cho phép một kết nối VPN trong hộp thoại tiếp theo. Lưu lượng truy cập internet của bạn không được gửi đến một máy chủ VPN từ xa.</string>
-    <string name="msg_autostart">AmnShield AppControl không thể tự động khởi động. Điều này có khả năng là do một lỗi trong phiên bản Android của bạn.</string>
+    <string name="msg_vpn">AmniGuard AppControl sử dụng một local VPN để lọc lưu lượng truy cập internet. Vì lý do này, xin vui lòng cho phép một kết nối VPN trong hộp thoại tiếp theo. Lưu lượng truy cập internet của bạn không được gửi đến một máy chủ VPN từ xa.</string>
+    <string name="msg_autostart">AmniGuard AppControl không thể tự động khởi động. Điều này có khả năng là do một lỗi trong phiên bản Android của bạn.</string>
     <string name="msg_error">Lỗi không xác định đã xảy ra: \'%s\'</string>
     <string name="msg_start_failed">Đã từ chối để kết nối dịch vụ VPN tại. Điều này có khả năng do một lỗi trong phiên bản Android của bạn.</string>
-    <string name="msg_try">Thử AmnShield AppControl</string>
+    <string name="msg_try">Thử AmniGuard AppControl</string>
     <string name="msg_terms">Bằng cách tặng, bạn đồng ý với các <a href="http://www.netblock.me/#terms"> điều khoản &amp; điều kiện</a></string>
     <string name="msg_dimming">Nếu bạn không thể nhấn OK trong hộp thoại kế tiếp, rất có thể một ứng dụng khác (màn hình mờ) đang thao tác với màn hình.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/ngày</string>
@@ -174,9 +174,9 @@
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">Để có kết quả phù hợp, tối ưu hóa pin Android nên bị vô hiệu hóa cho AmnShield AppControl. \n\nTrong hộp thoại kế tiếp, chọn \"Tất cả ứng dụng\" ở phía trên cùng, bấm vào AmnShield AppControl trong danh sách và chọn và xác nhận \"Don\'t optimize\".</string>
-    <string name="msg_datasaving">Để có kết quả phù hợp, tùy chọn tiết kiệm dữ liệu Android nên được vô hiệu hóa cho AmnShield AppControl \n\nTrong trong hộp thoại kế tiếp, cho phép tùy chọn \"Background data\" và \"Unrestricted data usage\"</string>
-    <string name="msg_filter">Sử dụng bộ lọc sẽ làm cho Android hiểu lầm AmnShield AppControl sử dụng dữ liệu và năng lượng - Android giả định dữ liệu và năng lượng đang được sử dụng bởi AmnShield AppControl, chứ không phải là các ứng dụng ban đầu</string>
+    <string name="msg_doze">Để có kết quả phù hợp, tối ưu hóa pin Android nên bị vô hiệu hóa cho AmniGuard AppControl. \n\nTrong hộp thoại kế tiếp, chọn \"Tất cả ứng dụng\" ở phía trên cùng, bấm vào AmniGuard AppControl trong danh sách và chọn và xác nhận \"Don\'t optimize\".</string>
+    <string name="msg_datasaving">Để có kết quả phù hợp, tùy chọn tiết kiệm dữ liệu Android nên được vô hiệu hóa cho AmniGuard AppControl \n\nTrong trong hộp thoại kế tiếp, cho phép tùy chọn \"Background data\" và \"Unrestricted data usage\"</string>
+    <string name="msg_filter">Sử dụng bộ lọc sẽ làm cho Android hiểu lầm AmniGuard AppControl sử dụng dữ liệu và năng lượng - Android giả định dữ liệu và năng lượng đang được sử dụng bởi AmniGuard AppControl, chứ không phải là các ứng dụng ban đầu</string>
     <string name="msg_filter4">Android 4 yêu cầu lọc phải được kích hoạt</string>
     <string name="msg_log_disabled">Thông báo lưu lượng truy cập bị vô hiệu hóa, sử dụng nút gạt bên trên để cho phép thông báo. Thông báo lưu lượng truy cập có thể dẫn đến việc sử dụng pin phụ.</string>
     <string name="msg_clear_rules">Điều này sẽ đặt lại các quy tắc và trạng thái về giá trị mặc định</string>
@@ -189,20 +189,20 @@
     <string name="msg_stop_forward">Dừng chuyển tiếp %1$s cổng %2$d?</string>
     <string name="msg_metered">Mạng có trả phí</string>
     <string name="msg_inactive">Không có kết nối internet</string>
-    <string name="msg_queue">AmnShield AppControl đang bận</string>
+    <string name="msg_queue">AmniGuard AppControl đang bận</string>
     <string name="msg_update">Đã có phiên bản mới, bấm vào để tải về</string>
     <string name="msg_usage">Bạn có thể cho phép (xanh lục) hoặc từ chối (màu đỏ) truy cập internet Wi-Fi hoặc mạng di động bằng cách bấm vào biểu tượng bên cạnh ứng dụng</string>
-    <string name="msg_fairemail">Nếu bạn cài đặt AmnShield AppControl để bảo vệ riêng tư của bạn, bạn có thể quan tâm đến <a href="https://email.faircode.eu/">FairEmail</a>, một mã nguồn mở, các ứng dụng thân thiện với email bảo mật...</string>
+    <string name="msg_fairemail">Nếu bạn cài đặt AmniGuard AppControl để bảo vệ riêng tư của bạn, bạn có thể quan tâm đến <a href="https://email.faircode.eu/">FairEmail</a>, một mã nguồn mở, các ứng dụng thân thiện với email bảo mật...</string>
     <string name="msg_whitelist">Truy cập Internet mặc định được cho phép, điều này có thể thay đổi trong cài đặt</string>
     <string name="msg_push">Đưa tin nhắn chủ yếu được xử lý bởi các thành phần Play services của hệ thống, mà mặc định cho phép truy cập internet</string>
     <string name="msg_system">Quản lý ứng dụng hệ thống có thể được kích hoạt trong cài đặt</string>
     <string name="msg_issue">Xin vui lòng mô tả các vấn đề và cho biết thời gian của vấn đề:</string>
     <string name="msg_vpn_cancelled">Đã hủy kết nối VPN \nBạn đã đặt cấu hình VPN thành luôn bật chưa?</string>
-    <string name="msg_on">AmnShield AppControl sẽ tự động khởi động khi bật nguồn thiết bị</string>
+    <string name="msg_on">AmniGuard AppControl sẽ tự động khởi động khi bật nguồn thiết bị</string>
     <string name="msg_unavailable">Tính năng này không được cung cấp trong phiên bản này.</string>
     <string name="msg_always_on">Một VPN khác đã được bật, vui lòng tắt đi</string>
-    <string name="msg_always_on_lockdown">Tắt \"Chặn các kết nối mà không cần VPN\" trong cài đặt Android VPN sử dụng AmnShield AppControl của chế độ lọc</string>
-    <string name="msg_private_dns">Tắt \"DNS riêng\" trong cài đặt mạng Android để sử dụng AmnShield AppControl ở chế độ lọc</string>
+    <string name="msg_always_on_lockdown">Tắt \"Chặn các kết nối mà không cần VPN\" trong cài đặt Android VPN sử dụng AmniGuard AppControl của chế độ lọc</string>
+    <string name="msg_private_dns">Tắt \"DNS riêng\" trong cài đặt mạng Android để sử dụng AmniGuard AppControl ở chế độ lọc</string>
     <string name="title_lockdown_enabled">Lưu lượng bị khóa</string>
     <string name="title_unmetered_allowed">Lưu lượng truy cập không trả phí được cho phép</string>
     <string name="title_unmetered_blocked">Lưu lượng truy cập không trả phí bị chặn</string>

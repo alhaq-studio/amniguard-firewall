@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl предоставя прост, а също така и по-задълбочен начини за блокиране достъпа до интернет - без нужда от ROOT права. Достъпът на приложенията и адресите чрез Wi-Fi или мобилни данни, могат да се разрешават и забраняват по отделно.</string>
-    <string name="app_android">AmnShield AppControl изисква Android 5.1 или по-нова версия</string>
-    <string name="app_xposed">Xposed причинява твърде много сривове, което може да доведе до премахване на AmnShield AppControl от Google Play Store, поради което AmnShield AppControl не се поддържа, докато е инсталиран Xposed</string>
+    <string name="app_description">AmniGuard AppControl предоставя прост, а също така и по-задълбочен начини за блокиране достъпа до интернет - без нужда от ROOT права. Достъпът на приложенията и адресите чрез Wi-Fi или мобилни данни, могат да се разрешават и забраняват по отделно.</string>
+    <string name="app_android">AmniGuard AppControl изисква Android 5.1 или по-нова версия</string>
+    <string name="app_xposed">Xposed причинява твърде много сривове, което може да доведе до премахване на AmniGuard AppControl от Google Play Store, поради което AmniGuard AppControl не се поддържа, докато е инсталиран Xposed</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Политика за личните данни</a></string>
-    <string name="app_first">AmnShield AppControl се разраборва и изпитва с голямо внимание, но е невъзможно да бъде дадена гаранция, че ще функционира правилно на всяко устройство.</string>
+    <string name="app_first">AmniGuard AppControl се разраборва и изпитва с голямо внимание, но е невъзможно да бъде дадена гаранция, че ще функционира правилно на всяко устройство.</string>
     <string name="app_agree">Съгласявам се</string>
     <string name="app_disagree">Не съм съгласен</string>
     <string name="app_support">FairEmail се нуждае от вашата подкрепа. Докоснете, за да закупите допълнителните възможности така проектът ще продължи да се развива.</string>
@@ -125,13 +125,13 @@
     <string name="setting_technical_networks">Мрежи</string>
     <string name="setting_technical_subscription">Абонаменти</string>
     <string name="summary_install">Показва се известие за настройка на новто инсталирано приложение (платена функция)</string>
-    <string name="summary_auto">След изключване на активна притурка, автоматично активиране на AmnShield AppControl отново след избрания брой минути (въведете 0 за деактивиране на опцията)</string>
+    <string name="summary_auto">След изключване на активна притурка, автоматично активиране на AmniGuard AppControl отново след избрания брой минути (въведете 0 за деактивиране на опцията)</string>
     <string name="summary_delay">След изключване на екрана, влизат в сила правилата при включен екран за избрания брой минути (въведете 0 за деактивиране на опцията)</string>
     <string name="summary_update">Проверка за нови версии в GitHub два пъти дневно</string>
     <string name="summary_tethering">Според версията на Android, привързването може да работи или не. Трафикът от привързване не може да се филтрира.</string>
     <string name="summary_subnet">Разрешаване на подмрежово маршрутизиране; може да активира Wi-Fi обаждане, но може да предизвика грешки в Android и да увеличи използването на батерията</string>
     <string name="summary_lan">Разрешаване на приложенията да се свързват към адреси в локалната мрежа, като 10.0.0.0/8, 172.16.0.0/12 и 192.168.0.0/16</string>
-    <string name="summary_ip6">Маршрутизиране на IP V6 трафикa към AmnShield AppControl, дава възможност избирателно да бъде разрешаван или блокиран</string>
+    <string name="summary_ip6">Маршрутизиране на IP V6 трафикa към AmniGuard AppControl, дава възможност избирателно да бъде разрешаван или блокиран</string>
     <string name="summary_wifi_home">Прилагане на правилата за Wi-Fi мрежа само за избраната мрежа (прилагане на правилата за мобилни данни за други Wi-Fi мрежи)</string>
     <string name="summary_metered">Прилагане на правилата за мобилни данни при мрежи на Wi-Fi с ограничен трафик (платен, привързан)</string>
     <string name="summary_metered_2g">Прилагане на правилата за Wi-Fi при връзка за мобилни данни на 2G</string>
@@ -139,7 +139,7 @@
     <string name="summary_metered_4g">Прилагане на правилата за Wi-Fi при връзка за мобилни данни на LTE</string>
     <string name="summary_national_roaming">Да не се прилагат правилата при роуминг, когато СИМ картата и операторът са от една и съща държава</string>
     <string name="summary_eu_roaming">Да не се прилагат правилата при роуминг, когато СИМ картата и операторът са в ЕС</string>
-    <string name="summary_call">Деактивиране на AmnShield AppControl при входящо или изходящо телефонно повикване. Това може да се използва за заобикаляне на проблеми с IP/Wi-Fi разговори.</string>
+    <string name="summary_call">Деактивиране на AmniGuard AppControl при входящо или изходящо телефонно повикване. Това може да се използва за заобикаляне на проблеми с IP/Wi-Fi разговори.</string>
     <string name="summary_system">Задаване на правила за системни приложения (за напреднали потребители)</string>
     <string name="summary_log_app">Регистриране на опитите за достъп до интернет на приложенията. Това може да доведе до допълнително използване на батерията.</string>
     <string name="summary_access">Показва се известие при опит на приложение за достъп до нов интернет адрес (при изключено филтриране, ще се показват само блокираните опити)</string>
@@ -149,28 +149,28 @@
     <string name="summary_rcode">Подразбираната стойност е 3 (NXDOMAIN), което означава „несъществуващ домейн“.</string>
     <string name="summary_validate">Домейн, използван за проверка на връзката с интернет на порт 443 (https).</string>
     <string name="summary_socks5_enabled">Само TCP трафикът ще бъде изпратен към прокси сървъра</string>
-    <string name="summary_watchdog">Периодично проверява дали AmnShield AppControl е активен (въведете 0 за деазктивиране на опцията). Това може да доведе до допълнителен разход на батерията.</string>
+    <string name="summary_watchdog">Периодично проверява дали AmniGuard AppControl е активен (въведете 0 за деазктивиране на опцията). Това може да доведе до допълнителен разход на батерията.</string>
     <string name="summary_stats">Показва се графика със скоростите на пренос в лентата за известия</string>
     <string name="msg_sure">Сигурни ли сте?</string>
     <string name="msg_started">Строги правила</string>
     <string name="msg_packages">%1$d, разрешени, %2$d блокирани</string>
     <string name="msg_hosts">%1$d разрешени, %2$d забранени, %3$d хостове</string>
     <string name="msg_waiting">Изчакване за събитие</string>
-    <string name="msg_disabled">AmnShield AppControl е изключен, използвайте превключвателя горе, за да включите AmnShield AppControl</string>
+    <string name="msg_disabled">AmniGuard AppControl е изключен, използвайте превключвателя горе, за да включите AmniGuard AppControl</string>
     <string name="msg_notifications">За да разрешите известията, докоснете (за питане за достъп, съобщения за грешка и др.)</string>
-    <string name="msg_revoked">AmnShield AppControl се изключи, най-вероятно използвате друго VPN базирано приложение</string>
+    <string name="msg_revoked">AmniGuard AppControl се изключи, най-вероятно използвате друго VPN базирано приложение</string>
     <string name="msg_installed">\"%1$s\" инсталирани</string>
     <string name="msg_installed_n">Е инсталиран</string>
     <string name="msg_access">%1$s опита за достъп до интернет</string>
     <string name="msg_access_n">Опитвал достъп до интернет</string>
     <string name="msg_completed">Действието е завършено</string>
-    <string name="msg_vpn">AmnShield AppControl използва местен VPN за филтриране на трафика.
+    <string name="msg_vpn">AmniGuard AppControl използва местен VPN за филтриране на трафика.
 Поради тази причина в следващия диалогов прозорец разрешете връзката през VPN.
 Трафик към интернет не се изпраща към отдалечен сървър на VPN.</string>
-    <string name="msg_autostart">AmnShield AppControl не може да се стартира автоматично при стартиране на системата поради грешка в Android версията</string>
+    <string name="msg_autostart">AmniGuard AppControl не може да се стартира автоматично при стартиране на системата поради грешка в Android версията</string>
     <string name="msg_error">Възникна неочаквана грешка: \"%s\"</string>
     <string name="msg_start_failed">Андроид отказва за момента да стартира услугата за ВЧМ. Най-вероятно се дължи на дефект в изданието на Андроид.</string>
-    <string name="msg_try">Опитайте AmnShield AppControl</string>
+    <string name="msg_try">Опитайте AmniGuard AppControl</string>
     <string name="msg_terms">Чрез даряването, вие се съгласявате с <a href="http://www.netblock.me/#terms"> общите условия</a></string>
     <string name="msg_dimming">Ако не можете да натиснете OK в следващия диалогов прозорец, то вероятно друго приложение манипулира екрана (затъмняване на екрана).</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ Мб/ден</string>
@@ -178,9 +178,9 @@
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ Мб</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ Гб</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">За правилната работа на приложението моля, не активирайте оптимизация на батерията за AmnShield AppControl. \n\nв следващия диалогов прозорец, изберете \"Всички приложения\" в горната част, докоснете върху AmnShield AppControl в списъка. Изберете и потвърдете \"Не оптимизирай\".</string>
-    <string name="msg_datasaving">За постоянни резултати трябва да изключите \"Android data saving\" за AmnShield AppControl \n\nВ следващия диалогов прозорец, разрешете \"Background data\" и \"Unrestricted data usage\"</string>
-    <string name="msg_filter">Филтрирането на трафика ще накара Android да причисли използвания трафик и консумация на батерия към AmnShield AppControl, а не към приложенията, които реално са извършили консумацията им</string>
+    <string name="msg_doze">За правилната работа на приложението моля, не активирайте оптимизация на батерията за AmniGuard AppControl. \n\nв следващия диалогов прозорец, изберете \"Всички приложения\" в горната част, докоснете върху AmniGuard AppControl в списъка. Изберете и потвърдете \"Не оптимизирай\".</string>
+    <string name="msg_datasaving">За постоянни резултати трябва да изключите \"Android data saving\" за AmniGuard AppControl \n\nВ следващия диалогов прозорец, разрешете \"Background data\" и \"Unrestricted data usage\"</string>
+    <string name="msg_filter">Филтрирането на трафика ще накара Android да причисли използвания трафик и консумация на батерия към AmniGuard AppControl, а не към приложенията, които реално са извършили консумацията им</string>
     <string name="msg_filter4">Андроид 4 изисква филтрирането да бъде включено</string>
     <string name="msg_log_disabled">Rегистрирането на трафика е изключено, използвайте опцията по-горе за да разрешите регистрирането. Регистрирането на трафика може да доведе до допълнителна употреба на батерията.</string>
     <string name="msg_clear_rules">Това ще се нулира правилата и условията към стойностите им по подразбиране</string>
@@ -193,20 +193,20 @@
     <string name="msg_stop_forward">Спиране пренасочването на %1$s порт %2$d?</string>
     <string name="msg_metered">Мрежа с ограничен трафик</string>
     <string name="msg_inactive">Няма връзка с интернет</string>
-    <string name="msg_queue">AmnShield AppControl е зает</string>
+    <string name="msg_queue">AmniGuard AppControl е зает</string>
     <string name="msg_update">Налична е актуализация, докоснете за сваляне</string>
     <string name="msg_usage">Можете да разрешите (зеленикаво) или забраните (червеникаво) достъп през безжични мрежи или мобилни данни, като докосвате иконите до приложението</string>
-    <string name="msg_fairemail">Ако сте инсталирали AmnShield AppControl, за да подобрите неприкосновеността на личните си данни, вероятно също ще бъдете заинтересовани от <a href="https://email.faircode.eu/">FairEmail</a>, приложение за електронна поща с отворен код, съобразено с поверителността</string>
+    <string name="msg_fairemail">Ако сте инсталирали AmniGuard AppControl, за да подобрите неприкосновеността на личните си данни, вероятно също ще бъдете заинтересовани от <a href="https://email.faircode.eu/">FairEmail</a>, приложение за електронна поща с отворен код, съобразено с поверителността</string>
     <string name="msg_whitelist">Достъпът до интернет е разрешен по подразбиране (като черен списък), това може да се промени в настройките</string>
     <string name="msg_push">\"Push\" съобщенията се обработват предимно от системния комонент \"Play services\", който по подразбиране е с разрешен достъп до интернет</string>
     <string name="msg_system">Управляване на всички (системни) приложения може да бъде включено в настройките</string>
     <string name="msg_issue">Моля, опишете проблема и отбележете часа на възникването му:</string>
     <string name="msg_vpn_cancelled">VPN връзката е отменена\nКонфигурирали ли сте друга VPN услуга като \"Винаги включена VPN услуга\"?</string>
-    <string name="msg_on">Ако изключите устройството докато AmnShield AppControl е включен, когато го включите AmnShield AppControl автоматично ще стартира</string>
+    <string name="msg_on">Ако изключите устройството докато AmniGuard AppControl е включен, когато го включите AmniGuard AppControl автоматично ще стартира</string>
     <string name="msg_unavailable">Тази възможност не се поддържа от това издание на Андроид</string>
     <string name="msg_always_on">Друга VPN услуга е настроена като \"Винаги включена VPN услуга\"</string>
-    <string name="msg_always_on_lockdown">Изключете \"Блокиране на връзки без VPN\" в настройките на Android VPN, за да използвате AmnShield AppControl в режим на филтриране</string>
-    <string name="msg_private_dns">Изключете \"Private DNS\" в мрежовите настройки на Android, за да използвате AmnShield AppControl в режим на филтриране</string>
+    <string name="msg_always_on_lockdown">Изключете \"Блокиране на връзки без VPN\" в настройките на Android VPN, за да използвате AmniGuard AppControl в режим на филтриране</string>
+    <string name="msg_private_dns">Изключете \"Private DNS\" в мрежовите настройки на Android, за да използвате AmniGuard AppControl в режим на филтриране</string>
     <string name="title_lockdown_enabled">Трафикът е заключен</string>
     <string name="title_unmetered_allowed">Неограниченият трафик е разрешен</string>
     <string name="title_unmetered_blocked">Неограниченият трафик е блокиран</string>

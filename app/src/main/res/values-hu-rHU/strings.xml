@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">A AmnShield AppControl egyszerűen és speciálisan blokkolja az internet hozzáférést - nem szükséges root jogosultság hozzá. Az alkalmazásokat és a címeket külön-külön lehet engedélyezni vagy letiltani a Wi-Fi és/vagy a mobil kapcsolatokon.</string>
-    <string name="app_android">A AmnShield AppControl használatához Android 5.1 vagy újabb szükséges</string>
-    <string name="app_xposed">Az Xposed túl sokszor összeomlik, ami a AmnShield AppControl eltávolítását eredményezheti a Google Play Áruházból, ezért a AmnShield AppControl nem támogatott amikor az Xposed telepítve van</string>
+    <string name="app_description">A AmniGuard AppControl egyszerűen és speciálisan blokkolja az internet hozzáférést - nem szükséges root jogosultság hozzá. Az alkalmazásokat és a címeket külön-külön lehet engedélyezni vagy letiltani a Wi-Fi és/vagy a mobil kapcsolatokon.</string>
+    <string name="app_android">A AmniGuard AppControl használatához Android 5.1 vagy újabb szükséges</string>
+    <string name="app_xposed">Az Xposed túl sokszor összeomlik, ami a AmniGuard AppControl eltávolítását eredményezheti a Google Play Áruházból, ezért a AmniGuard AppControl nem támogatott amikor az Xposed telepítve van</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Adatvédelmi irányelvek</a></string>
-    <string name="app_first">Nagy figyelmet fordítanak arra, hogy fejlesszék és teszteljék AmnShield AppControl-ot, de arra lehetetlen garanciát vállalni, hogy a AmnShield AppControl minden eszközön jól fog működni.</string>
+    <string name="app_first">Nagy figyelmet fordítanak arra, hogy fejlesszék és teszteljék AmniGuard AppControl-ot, de arra lehetetlen garanciát vállalni, hogy a AmniGuard AppControl minden eszközön jól fog működni.</string>
     <string name="app_agree">Elfogadom</string>
     <string name="app_disagree">Nem fogadom el</string>
-    <string name="app_support">A AmnShield AppControl-nak szüksége van a segítségére. Koppintson a pro szolgáltatások megvásárlásához, hogy a projekt fennmaradhasson.</string>
+    <string name="app_support">A AmniGuard AppControl-nak szüksége van a segítségére. Koppintson a pro szolgáltatások megvásárlásához, hogy a projekt fennmaradhasson.</string>
     <string name="channel_foreground">Futó szolgáltatások</string>
     <string name="channel_notify">Általános értesítések</string>
     <string name="channel_access">Hozzáférés az értesítésekhez</string>
@@ -124,13 +124,13 @@
     <string name="setting_technical_networks">Hálózatok</string>
     <string name="setting_technical_subscription">Előfizetések</string>
     <string name="summary_install">Mutassa az értesítési sávon az újonan telepített alkalmazás közvetlen konfigurálási lehetőségét (Pro szolgáltatás)</string>
-    <string name="summary_auto">A widget használat után automatikusan engedélyezze a AmnShield AppControl használatát a beírt perc eltelte után (a nulla beírása letiltja ezt az opciót)</string>
+    <string name="summary_auto">A widget használat után automatikusan engedélyezze a AmniGuard AppControl használatát a beírt perc eltelte után (a nulla beírása letiltja ezt az opciót)</string>
     <string name="summary_delay">A képernyő kikapcsolása után a szabályok a megadott perc időtartamig aktívak maradnak (a nulla beírása letiltja ezt az opciót)</string>
     <string name="summary_update">Ellenőrizze naponta kétszer a GitHub-on az új kiadásokat</string>
     <string name="summary_tethering">Az Android verziótól függően a Tethering vagy működik vagy nem. A Tethering forgalom nem szűrhető.</string>
     <string name="summary_subnet">Engedélyezi a alhálózati útválasztót; lehet, hogy engedélyezi a Wi-Fi hívást, de lehet hogy hibát okoz az Androidban és növeli az akkumulátor használatot</string>
     <string name="summary_lan">Engedélyezi az alkalmazások kapcsolódását a LAN hálózati címekhez, mint pl. 10.0.0.0/8, 172.16.0.0/12 és 192.168.0.0/16</string>
-    <string name="summary_ip6">Az IP v6 forgalmat a AmnShield AppControl szelektíven tudja tiltani vagy engedélyezni</string>
+    <string name="summary_ip6">Az IP v6 forgalmat a AmniGuard AppControl szelektíven tudja tiltani vagy engedélyezni</string>
     <string name="summary_wifi_home">Wi-Fi hálózat szabályok alkalmazása csak a kiválasztott hálózatokra (a többi Wi-Fi hálózatra a Mobil hálózati szabályokat alkalmazza)</string>
     <string name="summary_metered">Mobil hálózati szabályok alkalmazása a mért (fizetős, kábeles) Wi-Fi hálózatokra</string>
     <string name="summary_metered_2g">Wi-Fi hálózat szabályok alkalmazása a 2G adatátviteli kapcsolatokra</string>
@@ -138,7 +138,7 @@
     <string name="summary_metered_4g">Wi-Fi hálózat szabályok alkalmazása az LTE adatátviteli kapcsolatokra</string>
     <string name="summary_national_roaming">Ne alkalmazza roaming szabályokat, ha a SIM és a mobil hálózat országa azonos</string>
     <string name="summary_eu_roaming">Ne alkalmazza a roaming szabályokat, amikor a SIM-kártya és a mobilhálózat országa az EU-n belül van (roam like at home)</string>
-    <string name="summary_call">A AmnShield AppControl letiltása a bejövő vagy kimenő telefonhívás alatt. Ez használható IP / Wi-Fi hívási problémák megoldására.</string>
+    <string name="summary_call">A AmniGuard AppControl letiltása a bejövő vagy kimenő telefonhívás alatt. Ez használható IP / Wi-Fi hívási problémák megoldására.</string>
     <string name="summary_system">Szabályok megállapítása a rendszer alkalmazásokra (szakértő)</string>
     <string name="summary_log_app">Naplózza az alkalmazások internet elérési kísérleteit. Emiatt kicsit magasabb lehet az akkumulátor használat.</string>
     <string name="summary_access">Mutassa az értesítés sávban, amikor egy alkalmazás megpróbál hozzáférni egy új internet címhez (amikor a szűrés le van tiltva, csak zárolt internet hozzáférési kísérletekről küld értesítést)</string>
@@ -148,27 +148,27 @@
     <string name="summary_rcode">Az alapértelmezett érték 3 (NXDOMAIN), ami azt jelenti: \'nem létező domain\'.</string>
     <string name="summary_validate">A használt domain név az internetkapcsolat ellenőrzéséhez a 443 (https) porton.</string>
     <string name="summary_socks5_enabled">Csak a TCP forgalom küldése a proxy szerverre</string>
-    <string name="summary_watchdog">Rendszeresen ellenőrzi ha a AmnShield AppControl fut (a 0 beírása letiltja azt az opciót). Ez extra akkumulátor használattal járhat.</string>
+    <string name="summary_watchdog">Rendszeresen ellenőrzi ha a AmniGuard AppControl fut (a 0 beírása letiltja azt az opciót). Ez extra akkumulátor használattal járhat.</string>
     <string name="summary_stats">Mutassa a hálózat sebesség grafikont az értesítés sávon</string>
     <string name="msg_sure">Biztos benne?</string>
     <string name="msg_started">Szabályok érvényesítése</string>
     <string name="msg_packages">%1$d engedélyezve, %2$d letiltva</string>
     <string name="msg_hosts">%1$d engedélyezve, %2$d letiltva, %3$d hosts</string>
     <string name="msg_waiting">Várakozás eseményre</string>
-    <string name="msg_disabled">A AmnShield AppControl letiltva. Használja a kapcsolót a AmnShield AppControl engedélyezéshez</string>
-    <string name="msg_revoked">A AmnShield AppControl letiltva. Valószínűleg egy másik VPN alapú alkalmazással</string>
+    <string name="msg_disabled">A AmniGuard AppControl letiltva. Használja a kapcsolót a AmniGuard AppControl engedélyezéshez</string>
+    <string name="msg_revoked">A AmniGuard AppControl letiltva. Valószínűleg egy másik VPN alapú alkalmazással</string>
     <string name="msg_installed">\'%1$s\' telepítve</string>
     <string name="msg_installed_n">Telepítve van</string>
     <string name="msg_access">%1$s internet hozzáférési kísérlet</string>
     <string name="msg_access_n">Internet hozzáférési kísérlet</string>
     <string name="msg_completed">Művelet befejezve</string>
-    <string name="msg_vpn">A AmnShield AppControl helyi VPN-t használ az internetes forgalom szűréséhez.
+    <string name="msg_vpn">A AmniGuard AppControl helyi VPN-t használ az internetes forgalom szűréséhez.
 Ezért kérjük, hogy engedélyezze a VPN kapcsolatot a következő párbeszéd ablakban.
 Az internetes forgalom nem érkezik meg a távoli VPN kiszolgálóhoz.</string>
-    <string name="msg_autostart">A AmnShield AppControl nem indul el automatikusan a rendszer indításakor, mert egy hiba van ebben az Android verzióban</string>
+    <string name="msg_autostart">A AmniGuard AppControl nem indul el automatikusan a rendszer indításakor, mert egy hiba van ebben az Android verzióban</string>
     <string name="msg_error">Váratlan hiba történt: \'%s\'</string>
     <string name="msg_start_failed">Jelenleg az Android nem kezeli a VPN szolgáltatást. Ennek az oka valószínűleg egy Android bug.</string>
-    <string name="msg_try">AmnShield AppControl kipróbálása</string>
+    <string name="msg_try">AmniGuard AppControl kipróbálása</string>
     <string name="msg_terms">A támogató elfogadja a <a href="http://www.netblock.me/#terms">felhasználási feltételeket</a></string>
     <string name="msg_dimming">Ha nem nyomja meg az OK gombot a következő párbeszédablakban, a másik (a képernyő fényerő) alkalmazás valószínűleg módosul a képernyőn.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/nap</string>
@@ -176,9 +176,9 @@ Az internetes forgalom nem érkezik meg a távoli VPN kiszolgálóhoz.</string>
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">A következetes eredményekhez az Androidos akkumulátor optimalizálásban a AmnShield AppControl-ot kivétellé kell tenni.\n\nA következő párbeszédablakban válassza felül az \"Összes alkalmazás\", érintse meg a AmnShield AppControl feliratot és válassza a \"Ne optimalizálja\" részt.</string>
-    <string name="msg_datasaving">A következetes eredmény érdekében az Android adat mentés opciót le kell tiltani a AmnShield AppControl-ban\n\nA következő párbeszédablakban engedélyezni kell a \"Háttér adat\" és \"Korlátlan adat használat\" opciót.</string>
-    <string name="msg_filter">A szűrés használatával az adat és az energia használat attributumait a AmnShield AppControl-hoz sorolja. Az Android azt feltételezi, hogy ezeket a AmnShield AppControl használta fel és nem az eredeti alkalmazás</string>
+    <string name="msg_doze">A következetes eredményekhez az Androidos akkumulátor optimalizálásban a AmniGuard AppControl-ot kivétellé kell tenni.\n\nA következő párbeszédablakban válassza felül az \"Összes alkalmazás\", érintse meg a AmniGuard AppControl feliratot és válassza a \"Ne optimalizálja\" részt.</string>
+    <string name="msg_datasaving">A következetes eredmény érdekében az Android adat mentés opciót le kell tiltani a AmniGuard AppControl-ban\n\nA következő párbeszédablakban engedélyezni kell a \"Háttér adat\" és \"Korlátlan adat használat\" opciót.</string>
+    <string name="msg_filter">A szűrés használatával az adat és az energia használat attributumait a AmniGuard AppControl-hoz sorolja. Az Android azt feltételezi, hogy ezeket a AmniGuard AppControl használta fel és nem az eredeti alkalmazás</string>
     <string name="msg_filter4">A szűrés engedélyezéséhez legalább Android 4 szükséges</string>
     <string name="msg_log_disabled">Forgalom naplózása le van tiltva, a fenti kapcsoló segítségével engedélyezheti a naplózást. A forgalom naplózása extra akkumulátor használattal jár.</string>
     <string name="msg_clear_rules">Ez alaphelyzetbe állítja a szabályok és feltételek értékeit</string>
@@ -191,20 +191,20 @@ Az internetes forgalom nem érkezik meg a távoli VPN kiszolgálóhoz.</string>
     <string name="msg_stop_forward">Port forward leállítás %1$s port %2$d?</string>
     <string name="msg_metered">Ez mért hálózat</string>
     <string name="msg_inactive">Nincs aktív internetkapcsolat</string>
-    <string name="msg_queue">A AmnShield AppControl elfoglalt</string>
+    <string name="msg_queue">A AmniGuard AppControl elfoglalt</string>
     <string name="msg_update">Frissítés érhető el, érintse meg a letöltéshez</string>
     <string name="msg_usage">Engedélyezni (zöldes) vagy tiltani (vöröses) tudja a Wi-Fi vagy mobil internet hozzáférést, ha megérinti az alkalmazás melleti ikont</string>
-    <string name="msg_fairemail">Ha a AmnShield AppControl-ot az adatvédelmed érdekében telepítetted, akkor érdekelhet a <a href="https://email.faircode.eu/">FairEmail</a>, egy nyilt forráskódú, adatvédelem-barát alkalmazás is téged</string>
+    <string name="msg_fairemail">Ha a AmniGuard AppControl-ot az adatvédelmed érdekében telepítetted, akkor érdekelhet a <a href="https://email.faircode.eu/">FairEmail</a>, egy nyilt forráskódú, adatvédelem-barát alkalmazás is téged</string>
     <string name="msg_whitelist">Az internet hozzáférés alapértelmezésként engedélyezve van, ezt meg lehet változtatni a beállításokban</string>
     <string name="msg_push">A Push üzeneteket többnyire a rendszer Play szolgáltatások komponense kezeli, aminek alapértelmezésben engedélyezve van az internet hozzáférés</string>
     <string name="msg_system">A speciális beállítások engedélyezve a rendszer alkalmazások kezeléséhez</string>
     <string name="msg_issue">Kérjük, írja le a problémát, és a probléma időpontját:</string>
     <string name="msg_vpn_cancelled">VPN kapcsolat megszüntetve\nBeállít másik VPN kapcsolatot, hogy állandó legyen a VPN?</string>
-    <string name="msg_on">A készülék kikapcsolásakor a AmnShield AppControl engedélyezve van, akkor automatikusan elindul a AmnShield AppControl a készülék bekapcsolásakor</string>
+    <string name="msg_on">A készülék kikapcsolásakor a AmniGuard AppControl engedélyezve van, akkor automatikusan elindul a AmniGuard AppControl a készülék bekapcsolásakor</string>
     <string name="msg_unavailable">Ez a funkció nem érhető el ezen az Android verzión</string>
     <string name="msg_always_on">Másik VPN beállítása állandóra</string>
-    <string name="msg_always_on_lockdown">Kapcsold ki a \"A VPN nélküli kapcsolatok blokkolása\"-t az Android VPN beállításaiban hogy a AmnShield AppControl-ot használhasd szűrés módban</string>
-    <string name="msg_private_dns">Kapcsold ki a \"Privát DNS\"-t az Android Hálózati beállításaiban hogy a AmnShield AppControl-ot használhasd szűrés módban</string>
+    <string name="msg_always_on_lockdown">Kapcsold ki a \"A VPN nélküli kapcsolatok blokkolása\"-t az Android VPN beállításaiban hogy a AmniGuard AppControl-ot használhasd szűrés módban</string>
+    <string name="msg_private_dns">Kapcsold ki a \"Privát DNS\"-t az Android Hálózati beállításaiban hogy a AmniGuard AppControl-ot használhasd szűrés módban</string>
     <string name="title_lockdown_enabled">A forgalom lezárva</string>
     <string name="title_unmetered_allowed">Méretlen forgalom engedélyezve</string>
     <string name="title_unmetered_blocked">Méretlen forgalom letiltva</string>

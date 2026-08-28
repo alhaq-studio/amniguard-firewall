@@ -1,11 +1,13 @@
 <resources>
     <string name="app_name" translatable="false">AmniGuard Firewall</string>
-    <string name="app_description">AmniGuard Firewall provides simple and advanced ways to monitor and control internet access per app, no root required. Apps and addresses can individually be allowed or monitored for your Wi-Fi and/or mobile connection. Developed by Alhaq Initiative, part of the AmnShield ecosystem.</string>
+    <string name="app_description">AmniGuard is a privacy-first, no-root firewall and local website/domain blocker. Control internet access per app, block trackers, ads, adult content, and social media distractions locally on-device with zero data collection.</string>
     <string name="app_copyright" translatable="false">Copyright © 2026 Alhaq Initiative. All rights reserved.</string>
     <string name="app_android">AmniGuard Firewall requires Android 5.1 or later</string>
     <string name="app_xposed">Xposed causes too many crashes, which might result in AmniGuard Firewall being removed from the Google Play Store; therefore AmniGuard Firewall is not supported while Xposed is installed</string>
     <string name="app_eula" translatable="false">THIS SOFTWARE IS PROVIDED BY THE AUTHOR \'\'AS IS\'\' AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE AUTHOR BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</string>
-    <string name="app_privacy"><a href="https://www.alhaq-initiative.org/privacy/">Privacy policy</a></string>
+    <string name="app_privacy">
+        <a href="https://www.alhaq.uk/legal/privacy-policy">Privacy policy</a>
+    </string>
     <string name="app_first">AmniGuard Firewall is an independent app developed by Alhaq Initiative. Great care has been taken to develop and test it; however it is impossible to guarantee it will work correctly on every device.</string>
     <string name="app_agree">I agree</string>
     <string name="app_disagree">I disagree</string>
@@ -155,14 +157,14 @@
     <string name="setting_technical_subscription">Subscriptions</string>
 
     <string name="summary_install">Show status bar notification to directly configure newly installed apps (pro feature)</string>
-    <string name="summary_auto">After disabling using the widget, automatically enable AmnShield FireWall again after the selected number of minutes (enter zero to disable this option)</string>
+    <string name="summary_auto">After disabling using the widget, automatically enable AmniGuard Firewall again after the selected number of minutes (enter zero to disable this option)</string>
     <string name="summary_delay">After turning the screen off, keep screen on rules active for the selected number of minutes (enter zero to disable this option)</string>
     <string name="summary_update">Check for new releases on GitHub twice daily</string>
 
     <string name="summary_tethering">Depending on the Android version, tethering may work or may not work. Tethered traffic cannot be filtered.</string>
     <string name="summary_subnet">Enable subnet routing; might enable Wi-Fi calling, but might also trigger bugs in Android and increase battery usage</string>
     <string name="summary_lan">Allow apps to connect to local area network addresses, like 10.0.0.0/8, 172.16.0.0/12 and 192.168.0.0/16</string>
-    <string name="summary_ip6">Route IP version 6 traffic to AmnShield FireWall so it can selectively be allowed or blocked</string>
+    <string name="summary_ip6">Route IP version 6 traffic to AmniGuard Firewall so it can selectively be allowed or blocked</string>
     <string name="summary_wifi_home">Apply Wi-Fi network rules for selected network only (apply mobile network rules for other Wi-Fi networks)</string>
     <string name="summary_metered">Apply mobile network rules to metered (paid, tethered) Wi-Fi networks</string>
     <string name="summary_metered_2g">Apply Wi-Fi network rules for 2G data connections</string>
@@ -170,7 +172,7 @@
     <string name="summary_metered_4g">Apply Wi-Fi network rules for LTE data connections</string>
     <string name="summary_national_roaming">Do not apply roaming rules when the SIM and mobile network country are the same</string>
     <string name="summary_eu_roaming">Do not apply roaming rules when the SIM and mobile network country are within the EU (roam like at home)</string>
-    <string name="summary_call">Disable AmnShield FireWall on incoming or outgoing telephone call. This can be used to work around IP/Wi-Fi calling problems.</string>
+    <string name="summary_call">Disable AmniGuard Firewall on incoming or outgoing telephone call. This can be used to work around IP/Wi-Fi calling problems.</string>
 
     <string name="summary_system">Define rules for system apps (for experts)</string>
     <string name="summary_log_app">Log attempts to access the internet for apps. This might result in extra battery usage.</string>
@@ -182,7 +184,7 @@
     <!-- string name="summary_rcode">The default value is 3 (NXDOMAIN), which means \'non-existent domain\'.</string -->
     <string name="summary_validate">Domain name used to validate the internet connection at port 443 (https).</string>
     <string name="summary_socks5_enabled">Only TCP traffic will be sent to the proxy server</string>
-    <string name="summary_watchdog">Periodically check if AmnShield FireWall is still running (enter zero to disable this option). This might result in extra battery usage.</string>
+    <string name="summary_watchdog">Periodically check if AmniGuard Firewall is still running (enter zero to disable this option). This might result in extra battery usage.</string>
 
     <string name="summary_stats">Show network speed graph in status bar notification</string>
 
@@ -193,23 +195,24 @@
     <string name="msg_packages">%1$d allowed, %2$d blocked</string>
     <!-- string name="msg_hosts">%1$d allowed, %2$d blocked, %3$d hosts</string -->
     <string name="msg_waiting">Waiting for event</string>
-    <string name="msg_disabled">AmnShield FireWall is disabled, use the switch above to enable AmnShield FireWall</string>
+    <string name="msg_disabled">AmniGuard Firewall is disabled, use the switch above to enable AmniGuard Firewall</string>
     <string name="msg_notifications">Tap to grant notification permissions (for access attempt notifications, error messages, etc.)</string>
-    <string name="msg_revoked">AmnShield FireWall has been disabled, likely by using another VPN based app</string>
+    <string name="msg_revoked">AmniGuard Firewall has been disabled, likely by using another VPN based app</string>
     <string name="msg_installed">\'%1$s\' installed</string>
     <string name="msg_installed_n">Has been installed</string>
     <string name="msg_malware" translatable="false">Possible malware: \'%1$s\'</string>
     <string name="msg_access">%1$s attempted internet access</string>
     <string name="msg_access_n">Attempted internet access</string>
     <string name="msg_completed">Action completed</string>
-    <string name="msg_vpn">AmnShield FireWall uses a local VPN to filter internet traffic.
+    <string name="msg_vpn">AmniGuard Firewall uses a local VPN to filter internet traffic.
 For this reason, please allow a VPN connection in the next dialog.
 Your internet traffic is not being sent to a remote VPN server.</string>
-    <string name="msg_autostart">AmnShield FireWall could not start automatically. This is likely because of a bug in your Android version.</string>
+    <string name="msg_autostart">AmniGuard Firewall could not start automatically. This is likely because of a bug in your Android version.</string>
     <string name="msg_error">An unexpected error has occurred: \'%s\'</string>
     <string name="msg_start_failed">Android refused to start the VPN service at this moment. This is likely because of a bug in your Android version.</string>
-    <string name="msg_try">Try AmnShield FireWall</string>
-    <string name="msg_terms">By donating you agree to the <a href="https://www.alhaq-initiative.org/terms/">terms &amp; conditions</a></string>
+    <string name="msg_try">Try AmniGuard Firewall</string>
+    <string name="msg_terms">By donating you agree to the <a href="https://www.alhaq-initiative.org/terms/">terms &amp; conditions</a>
+    </string>
     <string name="msg_dimming">If you cannot press OK in the next dialog, another (screen dimming) app is likely manipulating the screen.</string>
     <string name="msg_mbday">&#177; %1$.3f&#9650; %2$.3f&#9660; MB/day</string>
     <string name="msg_kbsec">%7.3f KB/s</string>
@@ -218,11 +221,11 @@ Your internet traffic is not being sent to a remote VPN server.</string>
     <string name="msg_mb">%1$7.3f&#9650; %2$7.3f&#9660; MB</string>
     <string name="msg_gb">%1$7.3f&#9650; %2$7.3f&#9660; GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">For consistent results, the Android battery optimizations should be disabled for AmnShield FireWall.
-\n\nIn the next dialog, select \"All apps\" at the top, tap on AmnShield FireWall in the list and select and confirm \"Don\'t optimize\".</string>
-    <string name="msg_datasaving">For consistent results, the Android data saving options should be disabled for AmnShield FireWall
+    <string name="msg_doze">For consistent results, the Android battery optimizations should be disabled for AmniGuard Firewall.
+\n\nIn the next dialog, select \"All apps\" at the top, tap on AmniGuard Firewall in the list and select and confirm \"Don\'t optimize\".</string>
+    <string name="msg_datasaving">For consistent results, the Android data saving options should be disabled for AmniGuard Firewall
 \n\nIn the next dialog, enable the options \"Background data\" and \"Unrestricted data usage\"</string>
-    <string name="msg_filter">Using filtering will cause Android to attribute data and power usage to AmnShield FireWall - Android assumes the data and power are being used by AmnShield FireWall, rather than the original apps</string>
+    <string name="msg_filter">Using filtering will cause Android to attribute data and power usage to AmniGuard Firewall - Android assumes the data and power are being used by AmniGuard Firewall, rather than the original apps</string>
     <string name="msg_filter4">Android 4 requires filtering to be enabled</string>
     <string name="msg_log_disabled">Traffic logging is disabled, use the switch above to enable logging. Traffic logging might result in extra battery usage.</string>
     <string name="msg_clear_rules">This will reset the rules and conditions to their default values</string>
@@ -235,20 +238,20 @@ Your internet traffic is not being sent to a remote VPN server.</string>
     <string name="msg_stop_forward">Stop forwarding of %1$s port %2$d?</string>
     <string name="msg_metered">Network is metered</string>
     <string name="msg_inactive">No active internet connection</string>
-    <string name="msg_queue">AmnShield FireWall is busy</string>
+    <string name="msg_queue">AmniGuard Firewall is busy</string>
     <string name="msg_update">Update available, tap to download</string>
     <string name="msg_usage">You can allow (greenish) or deny (reddish) Wi-Fi or mobile internet access by tapping on the icons next to an app</string>
-    <string name="msg_fairemail">If you installed AmnShield FireWall to protect your privacy, you might be interested in <a href="https://email.faircode.eu/">FairEmail</a>, an open source, privacy friendly email app, too</string>
+    <string name="msg_fairemail">If you installed AmniGuard Firewall to protect your privacy, you might be interested in <a href="https://email.faircode.eu/">FairEmail</a>, an open source, privacy friendly email app, too</string>
     <string name="msg_whitelist">Internet access is allowed by default (blacklist mode), this can be changed in the settings</string>
     <string name="msg_push">Incoming (push) messages are mostly handled by the system component Play services, which is allowed internet access by default</string>
     <string name="msg_system">Managing all (system) apps can be enabled in the settings</string>
     <string name="msg_issue">Please describe the problem and indicate the time of the problem:</string>
     <string name="msg_vpn_cancelled">VPN connection cancelled\nDid you configure another VPN to be an always-on VPN?</string>
-    <string name="msg_on">Powering down your device with AmnShield FireWall enabled, will automatically start AmnShield FireWall on powering up your device</string>
+    <string name="msg_on">Powering down your device with AmniGuard Firewall enabled, will automatically start AmniGuard Firewall on powering up your device</string>
     <string name="msg_unavailable">This feature is not available on this Android version</string>
     <string name="msg_always_on">Another VPN is set as Always-on VPN</string>
-    <string name="msg_always_on_lockdown">Turn off "Block connections without VPN" in Android VPN settings to use AmnShield FireWall in filtering mode</string>
-    <string name="msg_private_dns">Turn off "Private DNS" in Android network settings to use AmnShield FireWall in filtering mode</string>
+    <string name="msg_always_on_lockdown">Turn off "Block connections without VPN" in Android VPN settings to use AmniGuard Firewall in filtering mode</string>
+    <string name="msg_private_dns">Turn off "Private DNS" in Android network settings to use AmniGuard Firewall in filtering mode</string>
 
     <string name="title_lockdown_enabled">Traffic is locked down</string>
     <string name="title_unmetered_allowed">Unmetered traffic is allowed</string>
@@ -384,7 +387,7 @@ Your internet traffic is not being sent to a remote VPN server.</string>
     <string name="fingerprint" translatable="false">ef46f813d2c8a064d72c936b9b96d1cccc989378</string>
 
     <!-- Help & FAQ - menu items -->
-    
+
     <!-- Password Protection -->
     <string name="setting_password_app">App password</string>
     <string name="summary_password_app">Require password to open the app</string>
@@ -401,7 +404,7 @@ Your internet traffic is not being sent to a remote VPN server.</string>
     <string name="msg_password_removed">Password has been removed</string>
     <string name="msg_password_incorrect">Incorrect password</string>
     <string name="msg_password_required">Password required</string>
-    
+
     <!-- Scheduled Blocks -->
     <string name="setting_schedule">Scheduled blocks</string>
     <string name="summary_schedule">Block apps during specific times</string>
@@ -424,7 +427,7 @@ Your internet traffic is not being sent to a remote VPN server.</string>
     <string name="friday">Friday</string>
     <string name="saturday">Saturday</string>
     <string name="msg_schedule_active">Schedule active: %s</string>
-    
+
     <!-- Website & Domain Blocker -->
     <string name="setting_domain_filter">Website &amp; Domain Blocker</string>
     <string name="summary_domain_filter">Block adult content, social media, and manage custom domain rules</string>
@@ -449,4 +452,121 @@ Your internet traffic is not being sent to a remote VPN server.</string>
     <string name="msg_no_domains_configured">No custom domains added yet</string>
     <string name="btn_add">Add</string>
     <string name="btn_close">Close</string>
+
+    <!-- Amni Brand UI Navigation & Dashboard -->
+    <string name="tab_apps">Apps</string>
+    <string name="tab_domains">Domains</string>
+    <string name="tab_logs">Logs</string>
+    <string name="tab_settings">Settings</string>
+
+    <string name="title_apps">Firewall Rules</string>
+    <string name="title_domains">Website &amp; Domain Blocker</string>
+    <string name="title_logs">Traffic Logs</string>
+    <string name="title_settings">Settings</string>
+
+    <string name="drawer_firewall_rules">Firewall Rules</string>
+    <string name="drawer_domain_blocker">Website &amp; Domain Blocker</string>
+    <string name="drawer_traffic_logs">Traffic Logs</string>
+    <string name="drawer_settings">Settings</string>
+
+    <string name="drawer_category_tools">Network Tools &amp; Info</string>
+    <string name="drawer_speed_graph">Live Speed Graph</string>
+    <string name="drawer_port_forwarding">Port Forwarding</string>
+    <string name="drawer_legend">Traffic Rules Legend</string>
+
+    <string name="drawer_category_about">About &amp; Community</string>
+    <string name="drawer_faq">FAQ &amp; Help</string>
+    <string name="drawer_github">Source Code (GitHub)</string>
+    <string name="drawer_about">About AmniGuard</string>
+
+    <string name="app_tagline">On-Device Privacy &amp; Firewall</string>
+    <string name="app_initiative">Al-Haq Initiative</string>
+
+    <!-- Domain Blocker Cards UI -->
+    <string name="card_domain_master_title">Master Domain Blocker</string>
+    <string name="card_domain_master_desc">Zero-latency, privacy-first local DNS interception and filtering</string>
+    <string name="card_adult_title">Adult Content Protection</string>
+    <string name="card_adult_desc">Blocks 80,000+ explicit websites, adult portals, and all their subdomains</string>
+    <string name="badge_80k_domains">80,000+ Sites</string>
+    <string name="card_social_title">Social Media &amp; Streaming</string>
+    <string name="card_social_desc">Blocks 1,200+ major social networks, short-video hubs, and distraction portals</string>
+    <string name="badge_1200_domains">1,200+ Sites</string>
+    <string name="card_blacklist_title">Custom Blacklist</string>
+    <string name="card_blacklist_desc">Block specific custom domains and wildcard patterns (*.example.com)</string>
+    <string name="card_whitelist_title">Custom Whitelist</string>
+    <string name="card_whitelist_desc">Exclude specific domains from all filters and always allow them</string>
+    <string name="btn_manage_rules">Manage Rules</string>
+    <string name="card_dns_security_title">DNS Bypass Protection</string>
+    <string name="card_dns_security_desc">Port 853 (DNS-over-TLS) blocked to enforce local on-device filtering</string>
+    <string name="badge_active">Active</string>
+    <string name="badge_disabled">Disabled</string>
+
+    <!-- Filter & Sort Bar -->
+    <string name="chip_all">All</string>
+    <string name="chip_user">User</string>
+    <string name="chip_system">System</string>
+    <string name="chip_no_internet">No Internet</string>
+    <string name="chip_disabled">Disabled</string>
+    <string name="btn_sort">Sort</string>
+
+    <!-- Logs Screen & Utilities -->
+    <string name="title_log_live">Live Traffic Logging</string>
+    <string name="title_delete">Delete</string>
+    <string name="msg_copied">Copied to clipboard</string>
+
+    <!-- Settings Hub -->
+    <string name="summary_options">Theme, language, notifications, system apps</string>
+    <string name="summary_network_options">Subnet, IPv6, tethering, LAN, MTU</string>
+    <string name="summary_advanced_options">Private DNS, filter UDP, drop ICMP, PCAP capture</string>
+    <string name="summary_backup">Export and import firewall settings</string>
+    <string name="summary_defaults">Default Wi-Fi, Mobile, Screen On, and Roaming rules</string>
+    <string name="summary_stats_card">Speed notification, sampling frequency, and top apps</string>
+    <string name="summary_technical">Network interfaces, routing table, and system diagnosis</string>
+    <string name="menu_clear_logs">Clear all logs</string>
+    <string name="menu_log_retention">Log retention</string>
+    <string name="msg_confirm_clear_logs">Are you sure you want to permanently clear all traffic and DNS logs?</string>
+    <string name="msg_confirm_clear_app_logs">Are you sure you want to clear all logs for %1$s?</string>
+    <string name="msg_logs_cleared">Logs cleared successfully</string>
+    <string name="setting_log_retention">Log Retention Period</string>
+    <string name="retention_1_day">24 Hours (1 Day)</string>
+    <string name="retention_3_days">3 Days (Recommended)</string>
+    <string name="retention_7_days">7 Days (1 Week)</string>
+    <string name="retention_30_days">30 Days (1 Month)</string>
+    <string name="retention_forever">Keep Forever (Unlimited)</string>
+    <string name="menu_export_logs">Export &amp; Copy logs</string>
+    <string name="title_copy_full_log">Copy Full Log</string>
+    <string name="title_export_dialog">Export / Copy Traffic Logs</string>
+    <string name="option_copy_clipboard">Copy All to Clipboard</string>
+    <string name="option_share_logs">Share Logs (Text)</string>
+    <string name="option_export_csv">Share Logs (CSV)</string>
+    <string name="msg_logs_copied_count">%1$d log entries copied to clipboard</string>
+    <string name="msg_no_logs_to_export">No log entries available</string>
+    <string name="msg_detail_log_copied">Packet details copied to clipboard</string>
+    <string name="menu_log_filter">Filter traffic logs</string>
+    <string name="filter_all">All</string>
+    <string name="filter_blocked">Blocked</string>
+    <string name="filter_allowed">Allowed</string>
+    <string name="filter_udp">UDP / DNS</string>
+    <string name="filter_tcp">TCP</string>
+    <string name="filter_other">Other</string>
+    <string name="title_log_filter_dialog">Traffic Log Filters</string>
+    <string name="header_status_filter">Traffic Status</string>
+    <string name="header_protocol_filter">Network Protocols</string>
+    <string name="header_display_options">Display &amp; Capture Options</string>
+    <string name="setting_logging_settings">Traffic &amp; DNS Logging</string>
+    <string name="summary_logging_settings">Logging switches, protocol filters, domain resolution, and retention</string>
+    <string name="setting_proto_udp">Log UDP &amp; DNS traffic</string>
+    <string name="setting_proto_tcp">Log TCP traffic</string>
+    <string name="setting_proto_other">Log other protocols (ICMP, Hop)</string>
+    <string name="setting_traffic_allowed">Show allowed connections</string>
+    <string name="setting_traffic_blocked">Show blocked connections</string>
+    <string name="btn_reset_filters">Reset All</string>
+    <string name="btn_apply_filters">Apply</string>
+    <string name="setting_resolve">Resolve domain names</string>
+    <string name="summary_resolve">Perform reverse DNS lookup for remote IP addresses</string>
+    <string name="setting_organization">Show organizations &amp; ISPs</string>
+    <string name="summary_organization">Query and display ISP / ASN organization</string>
+    <string name="setting_pcap">PCAP packet capture</string>
+    <string name="summary_pcap">Record network packets to a PCAP dump file</string>
+    <string name="msg_pro_blacklist_feature">Custom domain blacklist rules require AmniGuard Pro (One-Time Lifetime License). Unlock custom domain blocking, real-time PCAP traffic exports, speed notifications, and premium themes.</string>
 </resources>

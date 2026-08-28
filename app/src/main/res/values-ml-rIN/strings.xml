@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl ഇന്റർനെറ്റിലേക്കുള്ള ആക്സസ് തടയുന്നതിന് ലളിതവും നൂതനവുമായ മാർഗ്ഗങ്ങൾ നൽകുന്നു - റൂട്ട് ആവശ്യമില്ല. അപ്ലിക്കേഷനുകൾക്കും വിലാസങ്ങൾക്കും നിങ്ങളുടെ വൈഫൈ/മൊബൈൽ കണക്ഷനിലേക്ക് വ്യക്തിഗതമായി പ്രവേശനം അനുവദിക്കുകയോ നിരസിക്കുകയോ ചെയ്യാം.</string>
-    <string name="app_android">AmnShield AppControl- ന് Android 5.1 അല്ലെങ്കിൽ അതിനുശേഷമുള്ളത് ആവശ്യമാണ്</string>
+    <string name="app_description">AmniGuard AppControl ഇന്റർനെറ്റിലേക്കുള്ള ആക്സസ് തടയുന്നതിന് ലളിതവും നൂതനവുമായ മാർഗ്ഗങ്ങൾ നൽകുന്നു - റൂട്ട് ആവശ്യമില്ല. അപ്ലിക്കേഷനുകൾക്കും വിലാസങ്ങൾക്കും നിങ്ങളുടെ വൈഫൈ/മൊബൈൽ കണക്ഷനിലേക്ക് വ്യക്തിഗതമായി പ്രവേശനം അനുവദിക്കുകയോ നിരസിക്കുകയോ ചെയ്യാം.</string>
+    <string name="app_android">AmniGuard AppControl- ന് Android 5.1 അല്ലെങ്കിൽ അതിനുശേഷമുള്ളത് ആവശ്യമാണ്</string>
     <string name="app_agree">ഞാൻ അംഗീകരിക്കുന്നു</string>
     <string name="app_disagree">ഞാൻ വിയോജിക്കുന്നു</string>
     <string name="app_support">നിങ്ങളുടെ സഹായം ആവശ്യമാണ്. ഈ പ്രോജക്റ്റിനെ പിന്തുണയ്ക്കുന്നതിനായി പ്രോ സവിശേഷതകൾ വാങ്ങുക.</string>
@@ -76,7 +76,7 @@
     <string name="msg_started">നിയമങ്ങൾ നടപ്പിലാക്കുന്നു</string>
     <string name="msg_packages">%1$d അനുവദിച്ചു, %2$d തടഞ്ഞു</string>
     <string name="msg_hosts">%1$d അനുവദിച്ചു, %2$d തടഞ്ഞു, %3$d ഹോസ്റ്റുകൾ</string>
-    <string name="msg_disabled">AmnShield AppControl പ്രവർത്തനരഹിതമാണ്, AmnShield AppControl പ്രവർത്തനക്ഷമമാക്കാൻ മുകളിലേ സ്വിച്ച് ഉപയോഗിക്കുക</string>
+    <string name="msg_disabled">AmniGuard AppControl പ്രവർത്തനരഹിതമാണ്, AmniGuard AppControl പ്രവർത്തനക്ഷമമാക്കാൻ മുകളിലേ സ്വിച്ച് ഉപയോഗിക്കുക</string>
     <string name="msg_installed">\'%1$s\' ഇൻസ്റ്റാളുചെയ്‌തു</string>
     <string name="msg_access">%1$s ഇന്റർനെറ്റ് ആക്‌സസ് ചെയ്യാൻ ശ്രമിച്ചു</string>
     <string name="msg_access_n">ഇന്റർനെറ്റ് ആക്‌സസ് ചെയ്യാൻ ശ്രമിച്ചു</string>
@@ -89,7 +89,7 @@
     <string name="msg_downloading">ഡൗൺലോഡുചെയ്യുന്നു\n%1s</string>
     <string name="msg_download_last">അവസാന ഡൗൺലോഡ്: %s</string>
     <string name="msg_inactive">സജീവ ഇന്റർനെറ്റ് കണക്ഷനില്ല</string>
-    <string name="msg_queue">AmnShield AppControl തിരക്കിലാണ്</string>
+    <string name="msg_queue">AmniGuard AppControl തിരക്കിലാണ്</string>
     <string name="msg_update">അപ്‌ഡേറ്റ് ലഭ്യമാണ്, ഡൗൺലോഡുചെയ്യാൻ ടാപ്പുചെയ്യുക</string>
     <string name="title_internet">ഇന്റർനെറ്റ് അനുമതിയില്ല</string>
     <string name="title_disabled">പ്രവർത്തനരഹിതമാണ്</string>

@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl इंटरनेट तक पहुंच को अवरुद्ध करने के लिए सरल और उन्नत तरीके प्रदान करता है - कोई रूट आवश्यक नहीं है। ऐप्स और पते व्यक्तिगत रूप से आपके वाई-फाई और/या मोबाइल कनेक्शन तक पहुंच की अनुमति या अस्वीकार किए जा सकते हैं।</string>
-    <string name="app_android">AmnShield AppControl को Android 5.1 या बाद के संस्करण की आवश्यकता है</string>
-    <string name="app_xposed">Xposed बहुत से दुर्घटनाओं का कारण बनता है, जिसके परिणामस्वरूप Google Play Store से AmnShield AppControl को हटाया जा सकता है, इसलिए AmnShield AppControl समर्थित नहीं है, जब तक Xposed स्थापित है</string>
+    <string name="app_description">AmniGuard AppControl इंटरनेट तक पहुंच को अवरुद्ध करने के लिए सरल और उन्नत तरीके प्रदान करता है - कोई रूट आवश्यक नहीं है। ऐप्स और पते व्यक्तिगत रूप से आपके वाई-फाई और/या मोबाइल कनेक्शन तक पहुंच की अनुमति या अस्वीकार किए जा सकते हैं।</string>
+    <string name="app_android">AmniGuard AppControl को Android 5.1 या बाद के संस्करण की आवश्यकता है</string>
+    <string name="app_xposed">Xposed बहुत से दुर्घटनाओं का कारण बनता है, जिसके परिणामस्वरूप Google Play Store से AmniGuard AppControl को हटाया जा सकता है, इसलिए AmniGuard AppControl समर्थित नहीं है, जब तक Xposed स्थापित है</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">गोपनीयता नीति</a></string>
     <string name="app_first">नेटगार्ड को विकसित करने और परीक्षण करने के लिए बहुत सावधानी बरती गई है, हालांकि यह गारंटी देना असंभव है कि नेटगार्ड हर डिवाइस पर सही ढंग से काम करेगा।</string>
     <string name="app_agree">मैं सहमत हूँ</string>
@@ -130,7 +130,7 @@
     <string name="summary_tethering">Android संस्करण के आधार पर, टेदरिंग काम कर सकती है और नहीं भी। टेथर्ड ट्रैफ़िक को फ़िल्टर नहीं किया जा सकता है।</string>
     <string name="summary_subnet">सबनेट रूटिंग सक्षम; और हो सकता है Wi-Fi कॉलिंग, सक्षम करें लेकिन हो सकता है एंड्रॉयड में कीड़े भी ट्रिगर बैटरी उपयोग बढ़ाएँ</string>
     <string name="summary_lan">स्थानीय क्षेत्र नेटवर्क पते, 10.0.0.0/8, 172.16.0.0/12 और 192.168.0.0/16 की तरह करने के लिए कनेक्ट करने के लिए अनुप्रयोग की अनुमति दें</string>
-    <string name="summary_ip6">IP संस्करण 6 यातायात रूट करने के लिए AmnShield AppControl तो यह चुनिंदा की अनुमति प्रतिबंधित कर सकते हो या</string>
+    <string name="summary_ip6">IP संस्करण 6 यातायात रूट करने के लिए AmniGuard AppControl तो यह चुनिंदा की अनुमति प्रतिबंधित कर सकते हो या</string>
     <string name="summary_wifi_home">केवल चयनित नेटवर्क के लिए Wi-Fi नेटवर्क नियम लागू होते हैं (अन्य Wi-Fi नेटवर्क के लिए मोबाइल नेटवर्क नियम लागू)</string>
     <string name="summary_metered">मीटर्ड (भुगतान किया है, सीमित) करने के लिए Wi-Fi नेटवर्क मोबाइल नेटवर्क नियम लागू करें</string>
     <string name="summary_metered_2g">2 जी डेटा कनेक्शन के लिए वाई-फाई नेटवर्क नियम लागू करें</string>
@@ -138,7 +138,7 @@
     <string name="summary_metered_4g">2 जी डेटा कनेक्शन के लिए वाई-फाई नेटवर्क नियम लागू करें</string>
     <string name="summary_national_roaming">रोमिंग नियम लागू नहीं होते हैं, जब सिम और मोबाइल नेटवर्क देश ही हैं</string>
     <string name="summary_eu_roaming">जब सिम और मोबाइल नेटवर्क देश यूरोपीय संघ के भीतर हैं रोमिंग नियम लागू न करें (घर पर तरह घूमते रहें)</string>
-    <string name="summary_call">आने वाले या जावक टेलीफोन कॉल पर AmnShield AppControl अक्षम करें। इसका उपयोग IP/ Wi-Fi कॉलिंग समस्याओं के काम करने के लिए किया जा सकता है।</string>
+    <string name="summary_call">आने वाले या जावक टेलीफोन कॉल पर AmniGuard AppControl अक्षम करें। इसका उपयोग IP/ Wi-Fi कॉलिंग समस्याओं के काम करने के लिए किया जा सकता है।</string>
     <string name="summary_system">(विशेषज्ञों) के लिए सिस्टम अनुप्रयोगों के लिए नियमों को परिभाषित</string>
     <string name="summary_log_app">ऐप्स के लिए इंटरनेट एक्सेस करने के प्रयास लॉग करें। इसके परिणामस्वरूप अतिरिक्त बैटरी का उपयोग हो सकता है।</string>
     <string name="summary_access">एक नए इंटरनेट पते तक पहुँचने के लिए कोई अनुप्रयोग का प्रयास करता है, जब एक स्थिति बार सूचना दिखाएँ (फ़िल्टरिंग अक्षम किया गया है, जब केवल अवरुद्ध इंटरनेट का उपयोग प्रयास को सूचित किया जाएगा)</string>
@@ -148,25 +148,25 @@
     <string name="summary_rcode">डिफ़ॉल्ट मान 3 (NXDOMAIN) है, जिसका अर्थ है \'गैर-मौजूद डोमेन\'।</string>
     <string name="summary_validate">डोमेन नेम का उपयोग पोर्ट 443 (https) पर इंटरनेट कनेक्शन को मान्य करने के लिए किया जाता है।</string>
     <string name="summary_socks5_enabled">केवल TCP यातायात प्रॉक्सी सर्वर से भेजा जाएगा</string>
-    <string name="summary_watchdog">समय-समय पर AmnShield AppControl अभी भी चल रहा है या नहीं की जाँच करें (इस विकल्प को अक्षम करने के लिए शून्य दर्ज करें)। यह अतिरिक्त बैटरी उपयोग में परिणाम हो सकता है।</string>
+    <string name="summary_watchdog">समय-समय पर AmniGuard AppControl अभी भी चल रहा है या नहीं की जाँच करें (इस विकल्प को अक्षम करने के लिए शून्य दर्ज करें)। यह अतिरिक्त बैटरी उपयोग में परिणाम हो सकता है।</string>
     <string name="summary_stats">स्थिति पट्टी में सूचना नेटवर्क गति ग्राफ़ दिखाएँ</string>
     <string name="msg_sure">क्या आपको यकीन है?</string>
     <string name="msg_started">नियमों को लागू करने के</string>
     <string name="msg_packages">अनुमति, %2$d अवरुद्ध %1$d</string>
     <string name="msg_hosts">%1$d की अनुमति दी, %2$d ब्लॉक, %3$d होस्ट्स</string>
     <string name="msg_waiting">घटना के लिए प्रतीक्षा कर रहा है</string>
-    <string name="msg_disabled">AmnShield AppControl अक्षम है, AmnShield AppControl को सक्षम करने के लिए ऊपर दिए गए स्विच का उपयोग करें</string>
-    <string name="msg_revoked">AmnShield AppControl, होने की संभावना द्वारा किसी अन्य VPN आधारित अनुप्रयोग का उपयोग करके अक्षम कर दिया गया है</string>
+    <string name="msg_disabled">AmniGuard AppControl अक्षम है, AmniGuard AppControl को सक्षम करने के लिए ऊपर दिए गए स्विच का उपयोग करें</string>
+    <string name="msg_revoked">AmniGuard AppControl, होने की संभावना द्वारा किसी अन्य VPN आधारित अनुप्रयोग का उपयोग करके अक्षम कर दिया गया है</string>
     <string name="msg_installed">\'%1$s\' स्थापित</string>
     <string name="msg_installed_n">स्थापित किया गया है</string>
     <string name="msg_access">%1$s इंटरनेट का उपयोग करने का प्रयास किया</string>
     <string name="msg_access_n">इंटरनेट का उपयोग करने का प्रयास किया</string>
     <string name="msg_completed">क्रिया पूर्ण</string>
-    <string name="msg_vpn">AmnShield AppControl इंटरनेट ट्रैफ़िक को फ़िल्टर करने के लिए एक स्थानीय वीपीएन का उपयोग करता है। इस कारण के लिए, कृपया अगले संवाद में एक VPN कनेक्शन की अनुमति दें। अपने इंटरनेट यातायात एक दूरस्थ VPN सर्वर को नहीं भेजा जा रहा है।</string>
-    <string name="msg_autostart">AmnShield AppControl स्वचालित रूप से प्रारंभ नहीं हो सका। यह आपके Android संस्करण में बग के कारण होने की संभावना है।</string>
+    <string name="msg_vpn">AmniGuard AppControl इंटरनेट ट्रैफ़िक को फ़िल्टर करने के लिए एक स्थानीय वीपीएन का उपयोग करता है। इस कारण के लिए, कृपया अगले संवाद में एक VPN कनेक्शन की अनुमति दें। अपने इंटरनेट यातायात एक दूरस्थ VPN सर्वर को नहीं भेजा जा रहा है।</string>
+    <string name="msg_autostart">AmniGuard AppControl स्वचालित रूप से प्रारंभ नहीं हो सका। यह आपके Android संस्करण में बग के कारण होने की संभावना है।</string>
     <string name="msg_error">कोई अनपेक्षित त्रुटि उत्पन्न हुई: \'%s\'</string>
     <string name="msg_start_failed">एंड्रायड ने इस समय वीपीएन सेवा शुरू करने से इनकार कर दिया । यह आपके एंड्रॉयड संस्करण में एक बग के कारण होने की संभावना है.</string>
-    <string name="msg_try">AmnShield AppControl को आज़माएं</string>
+    <string name="msg_try">AmniGuard AppControl को आज़माएं</string>
     <string name="msg_terms">दान करने से आप <a href="http://www.netblock.me/#terms"> &amp; नियम और शर्तों के लिए सहमत हैं </a></string>
     <string name="msg_dimming">यदि आप अगले संवाद में ओके नहीं दबा सकते हैं, तो एक किसी (स्क्रीन डिमिंग) ऐप से स्क्रीन के हेरफेर होने की संभावना है।</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/दिन</string>
@@ -174,9 +174,9 @@
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ KB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">एकरूप परिणाम के लिए, के लिए AmnShield AppControl Android बैटरी ऑप्टिमाइजेशन अक्षम किया जाना चाहिए। \n\nIn अगले संवाद, \"सभी apps\" शीर्ष पर का चयन करें, का चयन करें और सूची में AmnShield AppControl पर टैप करें और \"ऑप्टिमाइज़ नहीं\" की पुष्टि करें।</string>
-    <string name="msg_datasaving">AmnShield AppControl \n\nIn अगले संवाद, सक्षम करें के लिए विकल्प \"पृष्ठभूमि डेटा\" और \"अप्रतिबंधित डेटा उपयोग\" संगत परिणामों के लिए, Android डेटा बचत विकल्प निष्क्रिय किया जाना चाहिए</string>
-    <string name="msg_filter">फ़िल्टरिंग का उपयोग कर Android विशेषता डेटा और पावर AmnShield AppControl करने के लिए उपयोग करने के लिए कारण होगा - डेटा और पावर AmnShield AppControl, बजाय द्वारा मूल अनुप्रयोग उपयोग किया जा रहा हैं Android मानता है</string>
+    <string name="msg_doze">एकरूप परिणाम के लिए, के लिए AmniGuard AppControl Android बैटरी ऑप्टिमाइजेशन अक्षम किया जाना चाहिए। \n\nIn अगले संवाद, \"सभी apps\" शीर्ष पर का चयन करें, का चयन करें और सूची में AmniGuard AppControl पर टैप करें और \"ऑप्टिमाइज़ नहीं\" की पुष्टि करें।</string>
+    <string name="msg_datasaving">AmniGuard AppControl \n\nIn अगले संवाद, सक्षम करें के लिए विकल्प \"पृष्ठभूमि डेटा\" और \"अप्रतिबंधित डेटा उपयोग\" संगत परिणामों के लिए, Android डेटा बचत विकल्प निष्क्रिय किया जाना चाहिए</string>
+    <string name="msg_filter">फ़िल्टरिंग का उपयोग कर Android विशेषता डेटा और पावर AmniGuard AppControl करने के लिए उपयोग करने के लिए कारण होगा - डेटा और पावर AmniGuard AppControl, बजाय द्वारा मूल अनुप्रयोग उपयोग किया जा रहा हैं Android मानता है</string>
     <string name="msg_filter4">एंड्रॉयड 4 सक्षम होने के लिए फ़िल्टरिंग की आवश्यकता है</string>
     <string name="msg_log_disabled">ट्रैफ़िक लॉगिंग अक्षम है, लॉगिंग सक्षम करने के लिए ऊपर दिए गए स्विच का उपयोग करें। ट्रैफ़िक लॉगिंग के परिणामस्वरूप अतिरिक्त बैटरी उपयोग हो सकता है।</string>
     <string name="msg_clear_rules">यह नियमों और शर्तों को उनके डिफ़ॉल्ट मानों के लिए रीसेट करेगा</string>
@@ -189,19 +189,19 @@
     <string name="msg_stop_forward">%1$s पोर्ट %2$d का अग्रेषण रोकना?</string>
     <string name="msg_metered">नेटवर्क मीटर है</string>
     <string name="msg_inactive">कोई इंटरनेट कनेक्शन नहीं</string>
-    <string name="msg_queue">AmnShield AppControl व्यस्त है</string>
+    <string name="msg_queue">AmniGuard AppControl व्यस्त है</string>
     <string name="msg_update">उपलब्ध अद्यतन के लिए, डाउनलोड करने के लिए टैप करें</string>
     <string name="msg_usage">आप कर सकते हैं या (हरा) की अनुमति दें (लाल) Wi-Fi या मोबाइल इंटरनेट का उपयोग करने के लिए किसी अनुप्रयोग के आगे चिह्न पर दोहन द्वारा इनकार</string>
-    <string name="msg_fairemail">यदि आपने अपनी निजता की रक्षा के लिए AmnShield AppControl स्थापित किया है, तो आप एक ओपन सोर्स, प्राइवेसी के अनुकूल ईमेल ऐप, <a href="https://email.faircode.eu/"> FairEmail </a> में भी रुचि रख सकते हैं,</string>
+    <string name="msg_fairemail">यदि आपने अपनी निजता की रक्षा के लिए AmniGuard AppControl स्थापित किया है, तो आप एक ओपन सोर्स, प्राइवेसी के अनुकूल ईमेल ऐप, <a href="https://email.faircode.eu/"> FairEmail </a> में भी रुचि रख सकते हैं,</string>
     <string name="msg_whitelist">इंटरनेट का उपयोग की अनुमति दी है डिफ़ॉल्ट रूप से, यह सेटिंग में परिवर्तित किया जा सकता</string>
     <string name="msg_push">पुश संदेश ज्यादातर सिस्टम घटक प्ले सेवाओं द्वारा, जो डिफ़ॉल्ट रूप से इंटरनेट तक पहुँच की अनुमति दी है नियंत्रित किया जाता है</string>
     <string name="msg_system">सिस्टम अनुप्रयोगों के प्रबंधन सेटिंग्स में सक्षम कर सकते हैं</string>
     <string name="msg_issue">कृपया समस्या का वर्णन करें और समस्या के समय से संकेत मिलता है:</string>
     <string name="msg_vpn_cancelled">VPN कनेक्शन रद्द\nक्या आपने किसी अन्य VPN को हमेशा चलने पर कॉन्फ़िगर किया है?</string>
-    <string name="msg_on">AmnShield AppControl के साथ अपने डिवाइस को बंद करने पर, आपके डिवाइस के शुरू होने के साथ AmnShield AppControl स्वचालित रूप से शुरू होगा।</string>
+    <string name="msg_on">AmniGuard AppControl के साथ अपने डिवाइस को बंद करने पर, आपके डिवाइस के शुरू होने के साथ AmniGuard AppControl स्वचालित रूप से शुरू होगा।</string>
     <string name="msg_unavailable">यह सुविधा इस एंड्रॉइड संस्करण पर उपलब्ध नहीं है</string>
     <string name="msg_always_on">अन्य VPN हमेशा चालू रहने लिए निर्धारित हैं</string>
-    <string name="msg_always_on_lockdown">फ़िल्टरिंग मोड में AmnShield AppControl का उपयोग करने के लिए Android VPN सेटिंग्स में \"VPN के बिना ब्लॉक कनेक्शन\" को बंद करें</string>
+    <string name="msg_always_on_lockdown">फ़िल्टरिंग मोड में AmniGuard AppControl का उपयोग करने के लिए Android VPN सेटिंग्स में \"VPN के बिना ब्लॉक कनेक्शन\" को बंद करें</string>
     <string name="msg_private_dns">फ़िल्टरिंग मोड में नेटगार्ड का उपयोग करने के लिए Android नेटवर्क सेटिंग्स में \"प्राइवेट DNS\" बंद करें</string>
     <string name="title_lockdown_enabled">आवागमन बंद है</string>
     <string name="title_unmetered_allowed">Unmetered यातायात की अनुमति है</string>

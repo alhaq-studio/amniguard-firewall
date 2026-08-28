@@ -1,10 +1,18 @@
 <resources>
 
-    <style name="TextLarge" parent="@android:style/TextAppearance.Material.Large" />
+    <style name="TextLarge" parent="TextAppearance.Material3.TitleLarge">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
 
-    <style name="TextMedium" parent="@android:style/TextAppearance.Material.Medium" />
+    <style name="TextMedium" parent="TextAppearance.Material3.BodyLarge">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
 
-    <style name="TextSmall" parent="@android:style/TextAppearance.Material.Small" />
+    <style name="TextSmall" parent="TextAppearance.Material3.BodySmall">
+        <item name="android:textColor">?android:attr/textColorSecondary</item>
+    </style>
 
-    <style name="TextTitle" parent="@android:style/TextAppearance.Material.Title" />
+    <style name="TextTitle" parent="TextAppearance.Material3.TitleMedium">
+        <item name="android:textColor">?android:attr/textColorPrimary</item>
+    </style>
 </resources>

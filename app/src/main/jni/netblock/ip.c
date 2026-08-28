@@ -294,7 +294,10 @@ void handle_ip(const struct arguments *args,
 
         if (get_sni(data, datalen, server_name)) {
             log_android(ANDROID_LOG_INFO, "TLS server name: %s", server_name);
-            uid = get_uid(version, protocol, saddr, sport, daddr, dport);
+            if (args->ctx->sdk <= 28)
+                uid = get_uid(version, protocol, saddr, sport, daddr, dport);
+            else
+                uid = get_uid_q(args, version, protocol, source, sport, dest, dport);
             dns_resolved(args, server_name, server_name, dest, -1, uid);
         }
     }

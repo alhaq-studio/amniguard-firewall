@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl tarjoaa yksinkertaisia ja edistyneitä keinoja estää yhteydet internettiin - ilman tarvetta root-oikeuksille. Sovelluksille ja osoitteille voi yksilöllisesti sallia tai estää pääsyn Wi-Fi- ja/tai mobiiliyhteyteesi.</string>
-    <string name="app_android">AmnShield AppControl edellyttää vähintään Android versiota 5.1</string>
-    <string name="app_xposed">Xposed aiheuttaa liikaa kaatumisia, minkä takia AmnShield AppControl saatetaan poistaa Google Play Kaupasta, joten AmnShield AppControl ei ole tuettu, kun Xposed on asennettuna</string>
+    <string name="app_description">AmniGuard AppControl tarjoaa yksinkertaisia ja edistyneitä keinoja estää yhteydet internettiin - ilman tarvetta root-oikeuksille. Sovelluksille ja osoitteille voi yksilöllisesti sallia tai estää pääsyn Wi-Fi- ja/tai mobiiliyhteyteesi.</string>
+    <string name="app_android">AmniGuard AppControl edellyttää vähintään Android versiota 5.1</string>
+    <string name="app_xposed">Xposed aiheuttaa liikaa kaatumisia, minkä takia AmniGuard AppControl saatetaan poistaa Google Play Kaupasta, joten AmniGuard AppControl ei ole tuettu, kun Xposed on asennettuna</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Tietosuojakäytäntö</a></string>
-    <string name="app_first">AmnShield AppControlia kehitettäessä ja testatessa on noudatettu suurta huolellisuutta, mutta on mahdotonta taata, että se toimii oikein kaikissa laitteissa.</string>
+    <string name="app_first">AmniGuard AppControlia kehitettäessä ja testatessa on noudatettu suurta huolellisuutta, mutta on mahdotonta taata, että se toimii oikein kaikissa laitteissa.</string>
     <string name="app_agree">Hyväksyn</string>
     <string name="app_disagree">En hyväksy</string>
-    <string name="app_support">AmnShield AppControl tarvitsee apuasi. Napauttamalla voit ostaa pro-ominaisuudet pitääksesi projektin käynnissä.</string>
+    <string name="app_support">AmniGuard AppControl tarvitsee apuasi. Napauttamalla voit ostaa pro-ominaisuudet pitääksesi projektin käynnissä.</string>
     <string name="channel_foreground">Käynnissä olevat palvelut</string>
     <string name="channel_notify">Yleiset ilmoitukset</string>
     <string name="channel_access">Yhteysilmoitukset</string>
@@ -124,13 +124,13 @@
     <string name="setting_technical_networks">Verkkoyhteydet</string>
     <string name="setting_technical_subscription">Tilaukset</string>
     <string name="summary_install">Näytä tilapalkki-ilmoitus muokataksesi suoraan asetuksia uusille asennetuille ohjelmille (pro-ominaisuus)</string>
-    <string name="summary_auto">Ota AmnShield AppControl automaattisesti käyttöön kytkettyäsi sen pois widgetillä (näin monen minuutin kuluttua, 0 kytkee toiminnon pois)</string>
+    <string name="summary_auto">Ota AmniGuard AppControl automaattisesti käyttöön kytkettyäsi sen pois widgetillä (näin monen minuutin kuluttua, 0 kytkee toiminnon pois)</string>
     <string name="summary_delay">Pidä näyttö päällä -asetuksia aktiivisina näytön sammuttua (näin monta minuuttia, 0 kytkee toiminnon pois)</string>
     <string name="summary_update">Tarkasta päivitykset kahdesti päivässä GitHubista</string>
     <string name="summary_tethering">Internetin jakaminen saattaa toimia Android-versiosta riippuen. Jaettua liikennettä ei voi suodattaa.</string>
     <string name="summary_subnet">Ota käyttöön aliverkon reititys; saattaa ottaa käyttöön Wi-Fi-puhelut, mutta saattaa myös aktivoida Androidissa olevia bugeja ja lisätä akun käyttöä</string>
     <string name="summary_lan">Salli ohjelmien yhdistää lähiverkon osoitteisiin, kuten 10.0.0.0/8, 172.16.0.0/12 ja 198.168.0.0/16</string>
-    <string name="summary_ip6">Reititä IPv6-liikenne AmnShield AppControliin, jotta se voidaan valikoiden sallia tai estää</string>
+    <string name="summary_ip6">Reititä IPv6-liikenne AmniGuard AppControliin, jotta se voidaan valikoiden sallia tai estää</string>
     <string name="summary_wifi_home">Käytä Wi-Fi-verkkojen sääntöjä vain valitulle verkolle (käytä mobiiliverkon sääntöjä muille Wi-Fi verkoille)</string>
     <string name="summary_metered">Käytä mobiiliverkkojen sääntöjä käytön mukaan laskutettaville (maksulliset, mobiilijako) Wi-Fi-verkoille</string>
     <string name="summary_metered_2g">Käytä Wi-Fi-verkon sääntöjä 2G-yhteyksille</string>
@@ -138,7 +138,7 @@
     <string name="summary_metered_4g">Käytä Wi-Fi-verkon sääntöjä LTE-yhteyksille</string>
     <string name="summary_national_roaming">Älä käytä verkkovierailun sääntöjä, kun SIM-kortti ja mobiiliverkko ovat samasta maasta</string>
     <string name="summary_eu_roaming">Älä käytä verkkovierailun sääntöjä, kun SIM-kortti ja mobiiliverkko ovat molemmat EU-maasta (kotimaanhintaiset verkkovierailut)</string>
-    <string name="summary_call">Laita AmnShield AppControl pois käytöstä puheluiden aikana. Tämä kiertää mahdollisia IP-/Wi-Fi-puheluongelmia.</string>
+    <string name="summary_call">Laita AmniGuard AppControl pois käytöstä puheluiden aikana. Tämä kiertää mahdollisia IP-/Wi-Fi-puheluongelmia.</string>
     <string name="summary_system">Määritä sääntöjä järjestelmäsovelluksille (kokeneille käyttäjille)</string>
     <string name="summary_log_app">Kirjaa lokiin yritykset yhdistää internetiin. Tämä saattaa lisätä akun käyttöä.</string>
     <string name="summary_access">Näytä tilapalkin ilmoitus, kun sovellukset yrittävät yhdistää uuteen internetosoitteeseen (vain estetyt yritykset näytetään, jos suodatus ei ole käytössä)</string>
@@ -148,25 +148,25 @@
     <string name="summary_rcode">Oletusarvo on 3 (NXDOMAIN), joka tarkoittaa \'verkkotunnusta ei ole olemassa\'.</string>
     <string name="summary_validate">Verkkotunnus, jonka porttiin 443 (https) yhdistämällä validoidaan internetyhteys.</string>
     <string name="summary_socks5_enabled">Vain TCP-liikenne lähetetään välityspalvelimelle</string>
-    <string name="summary_watchdog">Tarkasta väliajoin AmnShield AppControlin päälläolo (aseta 0 kytkeäksesi tämä pois käytöstä). Tämä saattaa lisätä akun käyttöä.</string>
+    <string name="summary_watchdog">Tarkasta väliajoin AmniGuard AppControlin päälläolo (aseta 0 kytkeäksesi tämä pois käytöstä). Tämä saattaa lisätä akun käyttöä.</string>
     <string name="summary_stats">Näytä verkkoyhteyden nopeuskuvaaja tilapalkin ilmoituksessa</string>
     <string name="msg_sure">Oletko varma?</string>
     <string name="msg_started">Toimeenpanee sääntöjä</string>
     <string name="msg_packages">%1$d sallittu, %2$d estetty</string>
     <string name="msg_hosts">%1$d sallittu, %2$d estetty, %3$d osoitetta</string>
     <string name="msg_waiting">Odottaa tapahtumaa</string>
-    <string name="msg_disabled">AmnShield AppControl ei ole käytössä, ota se käyttöön</string>
-    <string name="msg_revoked">AmnShield AppControl on poistettu käytöstä luultavasti käyttämällä toista VPN-sovellusta</string>
+    <string name="msg_disabled">AmniGuard AppControl ei ole käytössä, ota se käyttöön</string>
+    <string name="msg_revoked">AmniGuard AppControl on poistettu käytöstä luultavasti käyttämällä toista VPN-sovellusta</string>
     <string name="msg_installed">\'%1$s\' asennettu</string>
     <string name="msg_installed_n">On asennettu</string>
     <string name="msg_access">%1$s yritti ottaa yhteyttä internetiin</string>
     <string name="msg_access_n">Yritetty internetyhteyttä</string>
     <string name="msg_completed">Toiminto suoritettu</string>
-    <string name="msg_vpn">AmnShield AppControl käyttää paikallista VPN-yhteyttä internetyhteyksien suodattamiseen. Tämän takia tulee sallia VPN-yhteys seuraavassa valikossa. Verkkoliikennettäsi ei ohjata ulkoiselle VPN-palvelimelle.</string>
-    <string name="msg_autostart">AmnShield AppControl ei voinut käynnistyä automaattisesti. Tämä johtunee ohjelmistovirheestä Android-versiossasi.</string>
+    <string name="msg_vpn">AmniGuard AppControl käyttää paikallista VPN-yhteyttä internetyhteyksien suodattamiseen. Tämän takia tulee sallia VPN-yhteys seuraavassa valikossa. Verkkoliikennettäsi ei ohjata ulkoiselle VPN-palvelimelle.</string>
+    <string name="msg_autostart">AmniGuard AppControl ei voinut käynnistyä automaattisesti. Tämä johtunee ohjelmistovirheestä Android-versiossasi.</string>
     <string name="msg_error">Tapahtui odottamaton virhe: \'%s\'</string>
     <string name="msg_start_failed">Android esti VPN-yhteyden käynnistymisen. Tämä johtunee ohjelmistovirheestä Android-versiossasi.</string>
-    <string name="msg_try">Kokeile AmnShield AppControlia</string>
+    <string name="msg_try">Kokeile AmniGuard AppControlia</string>
     <string name="msg_terms">Lahjoittamalla hyväksyt <a href="http://www.netblock.me/#terms">terms &amp; ehdot</a></string>
     <string name="msg_dimming">Jos et voi valita OK seuraavassa kohdassa, jokin näyttöä hallinnoiva (himmentävä) sovellus luultavasti estää sen.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/päivä</string>
@@ -174,11 +174,11 @@
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">Androidin akun käytön optimointi tulisi sulkea AmnShield AppControlin osalta luotettavan toiminnan takaamiseksi.
-\n\nValitse seuraavassa valikossa ylhäältä \"Kaikki ohjelmat\", AmnShield AppControl ja valitse sekä hyväksy \"Älä optimoi\".</string>
-    <string name="msg_datasaving">Androidin dataa säästävät asetukset tulisi laittaa pois päältä AmnShield AppControlin osalta luotettavan toiminnan takaamiseksi.
+    <string name="msg_doze">Androidin akun käytön optimointi tulisi sulkea AmniGuard AppControlin osalta luotettavan toiminnan takaamiseksi.
+\n\nValitse seuraavassa valikossa ylhäältä \"Kaikki ohjelmat\", AmniGuard AppControl ja valitse sekä hyväksy \"Älä optimoi\".</string>
+    <string name="msg_datasaving">Androidin dataa säästävät asetukset tulisi laittaa pois päältä AmniGuard AppControlin osalta luotettavan toiminnan takaamiseksi.
 \n\nOta käyttöön seuraavassa valikossa vaihtoehdot \"Taustatiedonsiirto\" ja \"Rajoittamaton datan käyttö\"</string>
-    <string name="msg_filter">Verkkoliikenteen suodatus saa Androidin kohdistamaan datan ja akun käytön AmnShield AppControl-sovellukselle, eikä dataa ja akkua todellisuudessa käyttäville sovelluksille</string>
+    <string name="msg_filter">Verkkoliikenteen suodatus saa Androidin kohdistamaan datan ja akun käytön AmniGuard AppControl-sovellukselle, eikä dataa ja akkua todellisuudessa käyttäville sovelluksille</string>
     <string name="msg_filter4">Android 4 edellyttää suodatuksen kytkemistä päälle</string>
     <string name="msg_log_disabled">Verkkoliikenteen lokiin kirjaaminen ei ole käytössä. Kirjaamisen käyttäminen saattaa lisätä akun käyttöä.</string>
     <string name="msg_clear_rules">Tämä palauttaa säännöt ja ehdot oletusarvoihinsa</string>
@@ -191,20 +191,20 @@
     <string name="msg_stop_forward">Lopeta uudelleenohjaus osoitteen %1$s portista %2$d?</string>
     <string name="msg_metered">Verkko on käytön mukaan laskutettava</string>
     <string name="msg_inactive">Ei aktiivista internetyhteyttä</string>
-    <string name="msg_queue">AmnShield AppControl on varattu</string>
+    <string name="msg_queue">AmniGuard AppControl on varattu</string>
     <string name="msg_update">Päivitys saatavilla, valitse ladataksesi</string>
     <string name="msg_usage">Voit sallia (vihertävä) tai estää (punertava) sovelluksen pääsyn internetiin Wi-Fi- tai mobiiliverkon kautta sovelluksen vieressä olevista kuvakkeista</string>
-    <string name="msg_fairemail">Jos asensit AmnShield AppControlin suojellaksesi yksityisyyttäsi, voit olla kiinnostunut myös <a href="https://email.faircode.eu/">FairEmailista</a>, avoimen lähdekoodin, yksityisyysystävällisestä sähköpostisovelluksesta</string>
+    <string name="msg_fairemail">Jos asensit AmniGuard AppControlin suojellaksesi yksityisyyttäsi, voit olla kiinnostunut myös <a href="https://email.faircode.eu/">FairEmailista</a>, avoimen lähdekoodin, yksityisyysystävällisestä sähköpostisovelluksesta</string>
     <string name="msg_whitelist">Internetyhteys on sallittu oletuksena (musta lista -tila), tämän voi muuttaa asetuksista</string>
     <string name="msg_push">Järjestelmäsovellus Play Palvelut käsittelee pääsääntöisesti saapuvat (push) viestit ja sen pääsy internetiin on sallittu oletuksena</string>
     <string name="msg_system">Kaikkien sovellusten (myös järjestelmäsovellusten) hallinnoinnin voi ottaa käyttöön asetuksista</string>
     <string name="msg_issue">Kuvaile ongelmatilanne ja ilmoita milloin ongelma ilmenee:</string>
     <string name="msg_vpn_cancelled">VPN-yhteys on peruttu\n Oletko asettanut toisen VPN-yhteyden aina käytössä olevaksi?</string>
-    <string name="msg_on">Laitteen sammuttaminen, kun AmnShield AppControl on käytössä, käynnistää AmnShield AppControlin automaattisesti laitteen käynnistyksen yhteydessä</string>
+    <string name="msg_on">Laitteen sammuttaminen, kun AmniGuard AppControl on käytössä, käynnistää AmniGuard AppControlin automaattisesti laitteen käynnistyksen yhteydessä</string>
     <string name="msg_unavailable">Tämä ominaisuus ei ole saatavilla tässä Android-versiossa</string>
     <string name="msg_always_on">Toinen VPN on asetettu aina käytössä olevaksi</string>
-    <string name="msg_always_on_lockdown">Kytke Androidin VPN-asetuksissa pois \"Estä yhteydet, jotka eivät käytä VPN:ää\" käyttääksesi AmnShield AppControlin suodatustilaa</string>
-    <string name="msg_private_dns">Kytke pois \"Yksityinen DNS\" Androidin verkkoasetuksissa käyttääksesi AmnShield AppControlin suodatustilaa</string>
+    <string name="msg_always_on_lockdown">Kytke Androidin VPN-asetuksissa pois \"Estä yhteydet, jotka eivät käytä VPN:ää\" käyttääksesi AmniGuard AppControlin suodatustilaa</string>
+    <string name="msg_private_dns">Kytke pois \"Yksityinen DNS\" Androidin verkkoasetuksissa käyttääksesi AmniGuard AppControlin suodatustilaa</string>
     <string name="title_lockdown_enabled">Liikenne on lukittu</string>
     <string name="title_unmetered_allowed">Liikenne, joka ei ole käytön mukaan laskutettava, on sallittu</string>
     <string name="title_unmetered_blocked">Liikenne, joka ei ole käytön mukaan laskutettava, on estetty</string>

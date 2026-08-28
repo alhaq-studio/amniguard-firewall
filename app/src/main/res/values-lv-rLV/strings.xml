@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl nodrošina vienkāršu un uzlabotu veidu, kā bloķēt piekļuvi internetam. Lietotnēm un adresēm var individuāli atļaut vai aizliegt piekļuvi internetam caur Wi-Fi un/vai mobilo datu savienojumu.</string>
-    <string name="app_android">AmnShield AppControl nepieciešams Android 5.1 vai jaunāks</string>
-    <string name="app_xposed">Xposed rada pārāk daudz avāriju, kas var radīt situāciju, ka AmnShield AppControl var tikt izņemts no Google Play veikala, tāpēc AmnShield AppControl netiek atbalstīs ar vienlaicīgi instalētu Xposed</string>
+    <string name="app_description">AmniGuard AppControl nodrošina vienkāršu un uzlabotu veidu, kā bloķēt piekļuvi internetam. Lietotnēm un adresēm var individuāli atļaut vai aizliegt piekļuvi internetam caur Wi-Fi un/vai mobilo datu savienojumu.</string>
+    <string name="app_android">AmniGuard AppControl nepieciešams Android 5.1 vai jaunāks</string>
+    <string name="app_xposed">Xposed rada pārāk daudz avāriju, kas var radīt situāciju, ka AmniGuard AppControl var tikt izņemts no Google Play veikala, tāpēc AmniGuard AppControl netiek atbalstīs ar vienlaicīgi instalētu Xposed</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Privātuma politika</a></string>
-    <string name="app_first">Liels darbs ir ieguldīts AmnShield AppControl izstrādē un testēšanā. Tai pat laikā nav iespējams garantēt, ka AmnShield AppControl darbosies korekti pilnīgi visās ierīcēs.</string>
+    <string name="app_first">Liels darbs ir ieguldīts AmniGuard AppControl izstrādē un testēšanā. Tai pat laikā nav iespējams garantēt, ka AmniGuard AppControl darbosies korekti pilnīgi visās ierīcēs.</string>
     <string name="app_agree">Es piekrītu</string>
     <string name="app_disagree">Nepiekrītu</string>
-    <string name="app_support">AmnShield AppControl ir vajadzīga Tava palīdzība. Spied Pirkt PRO funkcijas, lai nodrošinātu projekta turpmāku attīstību.</string>
+    <string name="app_support">AmniGuard AppControl ir vajadzīga Tava palīdzība. Spied Pirkt PRO funkcijas, lai nodrošinātu projekta turpmāku attīstību.</string>
     <string name="channel_foreground">Servisi, kas darbojās</string>
     <string name="channel_notify">Vispārīgie paziņojumi</string>
     <string name="channel_access">Piekļuves paziņojumi</string>
@@ -124,13 +124,13 @@
     <string name="setting_technical_networks">Tīkli</string>
     <string name="setting_technical_subscription">Abonējumi</string>
     <string name="summary_install">Parādīt statusa joslā paziņojumu par jauno instalēto lietotni, lai pa tiešo veiktu konfigurāciju (PRO versija)</string>
-    <string name="summary_auto">Pēc atspējošanas ar logrīku, atkal iespējot AmnShield AppControl pēc noteikta minūšu skaita (nulle atspējo šo funkciju)</string>
+    <string name="summary_auto">Pēc atspējošanas ar logrīku, atkal iespējot AmniGuard AppControl pēc noteikta minūšu skaita (nulle atspējo šo funkciju)</string>
     <string name="summary_delay">Izslēdzot ekrānu, saglabāt ieslēgta ekrāna noteikumus norādītās minūtes (nulle atspējo šo funkciju)</string>
     <string name="summary_update">Divreiz dienā meklēt jaunāko versiju uz GitHub</string>
     <string name="summary_tethering">Atkarībā no Android versijas, Tīklājs var darboties vai nedarboties. Tīklāja datu plūsmu nav iespējams filtrēt.</string>
     <string name="summary_subnet">Apakštīkla maršrutēšanas iespējošana; var ļaut veikt Wi-Fi zvanus, bet var arī radīt Android sistēmā kļūdas un palielināt baterijas noslodzi</string>
     <string name="summary_lan">Ļauj lietotnēm pieslēgties iekšējā tīkla adresēm. Tādām kā 10.0.0.0/8, 172.16.0.0/12 un 192.168.0.0/16</string>
-    <string name="summary_ip6">Maršrutēt IPv6 datu plūsmu uz AmnShield AppControl, lai to izlases kārtā varētu atļaut vai bloķēt</string>
+    <string name="summary_ip6">Maršrutēt IPv6 datu plūsmu uz AmniGuard AppControl, lai to izlases kārtā varētu atļaut vai bloķēt</string>
     <string name="summary_wifi_home">Piemēro Wi-Fi tīkla noteikumus tikai izvēlētajam tīklam (piemēro mobilā tīkla noteikumus visiem pārējiem Wi-Fi tīkliem)</string>
     <string name="summary_metered">Piemērot mobilo tīklu noteikumus mērītajiem (maksas, Tīklāja) Wi-Fi tīkliem</string>
     <string name="summary_metered_2g">Pielietot Wi-Fi tīkla noteikumus arī 2G datu savienojumiem</string>
@@ -138,7 +138,7 @@
     <string name="summary_metered_4g">Pielietot Wi-Fi tīkla noteikumus arī LTE datu savienojumiem</string>
     <string name="summary_national_roaming">Nepiemērot viesabonēšanas noteikumus, kad SIM kartes un mobilā tīkla valstis ir vienādas</string>
     <string name="summary_eu_roaming">Nepiemērot viesabonēšanas noteikumus, kad SIM kartes un mobilā tīkla valstis ir Eiropas Savienībā (viesabonēšana kā mājās)</string>
-    <string name="summary_call">Atspējot AmnShield AppControl ienākošo un izejošo telefona zvanu laikā. Tā var novērst IP/Wi-Fi zvanu problēmas.</string>
+    <string name="summary_call">Atspējot AmniGuard AppControl ienākošo un izejošo telefona zvanu laikā. Tā var novērst IP/Wi-Fi zvanu problēmas.</string>
     <string name="summary_system">Definēt noteikumus sistēmas lietotnēm (ekspertiem)</string>
     <string name="summary_log_app">Žurnālot lietotņu mēģinājumus piekļūt internetam. Tas var palielināt baterijas noslodzi.</string>
     <string name="summary_access">Parāda statusa laukā paziņojumu, kad lietotne mēģina piekļūt jaunai interneta adresei (kad filtrēšana ir atspējota, tikai bloķētie interneta piekļuves mēģinājumi tiks parādīti)</string>
@@ -148,27 +148,27 @@
     <string name="summary_rcode">Noklusētā vērtība ir 3 (NXDOMAIN), kas nozīmē \'neeksistējošs domēns\'.</string>
     <string name="summary_validate">Domēna vārds, ko izmanto, lai apstiprinātu interneta savienojumu 443. portā (https).</string>
     <string name="summary_socks5_enabled">Tikai TCP datu plūsma tiks sūtīta uz proxy serveri</string>
-    <string name="summary_watchdog">Periodiski pārbauda, vai AmnShield AppControl vēl joprojām darbojas (nulle atspējo šo funkciju). Var palielināt baterijas noslodzi.</string>
+    <string name="summary_watchdog">Periodiski pārbauda, vai AmniGuard AppControl vēl joprojām darbojas (nulle atspējo šo funkciju). Var palielināt baterijas noslodzi.</string>
     <string name="summary_stats">Parāda tīkla ātruma grafiku statusa joslā</string>
     <string name="msg_sure">Vai esi pārliecināts?</string>
     <string name="msg_started">Noteikumu izpilde</string>
     <string name="msg_packages">%1$d atļauts, %2$d bloķēts</string>
     <string name="msg_hosts">%1$d atļauts, %2$d bloķēts, %3$d hosti</string>
     <string name="msg_waiting">Gaidām notikumu</string>
-    <string name="msg_disabled">AmnShield AppControl ir izslēgts. Lieto slēdzi augšpusē, lai ieslēgtu AmnShield AppControl</string>
-    <string name="msg_revoked">AmnShield AppControl tika izslēgts, iespējams, ar kādu citu VPN programmu</string>
+    <string name="msg_disabled">AmniGuard AppControl ir izslēgts. Lieto slēdzi augšpusē, lai ieslēgtu AmniGuard AppControl</string>
+    <string name="msg_revoked">AmniGuard AppControl tika izslēgts, iespējams, ar kādu citu VPN programmu</string>
     <string name="msg_installed">\'%1$s\' instalēts</string>
     <string name="msg_installed_n">Tika instalēts</string>
     <string name="msg_access">%1$s mēģināja piekļūt internetam</string>
     <string name="msg_access_n">Mēģinājums piekļūt internetam</string>
     <string name="msg_completed">Darbība pabeigta</string>
-    <string name="msg_vpn">AmnShield AppControl lieto lokālu VPN, lai filtrētu interneta datu plūsmu.
+    <string name="msg_vpn">AmniGuard AppControl lieto lokālu VPN, lai filtrētu interneta datu plūsmu.
 Šī iemesla dēļ, lūdzu, atļauj VPN savienojumu nākošajā dialoga logā.
 Tava interneta datu plūsma netiks sūtīta uz kādu ārējo VPN serveri.</string>
-    <string name="msg_autostart">AmnShield AppControl nevar startētēties automātiski. Tas, iespējams, ir Andriod versijas kļūdas dēļ.</string>
+    <string name="msg_autostart">AmniGuard AppControl nevar startētēties automātiski. Tas, iespējams, ir Andriod versijas kļūdas dēļ.</string>
     <string name="msg_error">Ir radusies neparedzēta kļūda \'%s\'</string>
     <string name="msg_start_failed">Android patreiz neļauj startēt VPN servisu. Iespējams, tas ir Android versijas kļūdas dēļ.</string>
-    <string name="msg_try">Izmēģini AmnShield AppControl</string>
+    <string name="msg_try">Izmēģini AmniGuard AppControl</string>
     <string name="msg_terms">Ziedojot Tu piekrītu <a href="http://www.netblock.me/#terms">noteikumiem un nosacījumiem</a></string>
     <string name="msg_dimming">Ja nākamajā dialog logā nevari nospiest OK, tad visticamākais kāda cita (ekrāna aptumšošanas) lietotne patreiz lieto ekrānu.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/dienā</string>
@@ -176,11 +176,11 @@ Tava interneta datu plūsma netiks sūtīta uz kādu ārējo VPN serveri.</strin
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">Lai nodrošinātu stabilu rezultātu, Android baterijas optimizēšana lietotnei AmnShield AppControl ir jābūt atslēgtai.
-\n\nNākamajā dialoglogā augšā izvēlies \"Visas lietotnes\", no saraksta izvēlies AmnShield AppControl, izvēlies \"Neoptimizēt\", un to pastiprini.</string>
-    <string name="msg_datasaving">Lai iegūtu stabilu rezultātu, Android datu lietojuma samazinātājam uz AmnShield AppControl jābūt izslēgtam.
-\n\nNākamajā dialoglogā lietotnei AmnShield AppControl iespējo \"Fona dati\" un \"Neierobežots datu lietojums\"</string>
-    <string name="msg_filter">Filtrēšanas funkcija liks Android sistēmai datu plūsmas un baterijas patēriņu piedēvēt AmnShield AppControl lietotnei un nevis patiesajām datu plūsmas un baterijas patērējošajām lietotnēm</string>
+    <string name="msg_doze">Lai nodrošinātu stabilu rezultātu, Android baterijas optimizēšana lietotnei AmniGuard AppControl ir jābūt atslēgtai.
+\n\nNākamajā dialoglogā augšā izvēlies \"Visas lietotnes\", no saraksta izvēlies AmniGuard AppControl, izvēlies \"Neoptimizēt\", un to pastiprini.</string>
+    <string name="msg_datasaving">Lai iegūtu stabilu rezultātu, Android datu lietojuma samazinātājam uz AmniGuard AppControl jābūt izslēgtam.
+\n\nNākamajā dialoglogā lietotnei AmniGuard AppControl iespējo \"Fona dati\" un \"Neierobežots datu lietojums\"</string>
+    <string name="msg_filter">Filtrēšanas funkcija liks Android sistēmai datu plūsmas un baterijas patēriņu piedēvēt AmniGuard AppControl lietotnei un nevis patiesajām datu plūsmas un baterijas patērējošajām lietotnēm</string>
     <string name="msg_filter4">Android 4 nepieciešams, lai filtrēšana būtu iespējota</string>
     <string name="msg_log_disabled">Datu plūsmas žurnālošana ir izslēgta. Lieto slēdzi loga augšā, lai ieslēgtu žurnālošanu. Datu plūsmas žurnālošana var palielināt baterijas noslodzi.</string>
     <string name="msg_clear_rules">Tas atiestatīs visus noteikumus un parametrus uz sākotnējām vērtībām</string>
@@ -193,20 +193,20 @@ Tava interneta datu plūsma netiks sūtīta uz kādu ārējo VPN serveri.</strin
     <string name="msg_stop_forward">Beigt pāradresāciju%1$s port %2$d?</string>
     <string name="msg_metered">Tīkls tiek mērīts</string>
     <string name="msg_inactive">Nav savienojuma ar internetu</string>
-    <string name="msg_queue">AmnShield AppControl ir aizņemts</string>
+    <string name="msg_queue">AmniGuard AppControl ir aizņemts</string>
     <string name="msg_update">Atjauninājums ir pieejams, spied, lai lejuplādētu</string>
     <string name="msg_usage">Tu vari atļaut (zaļš simbols) vai aizliegt (sārts simbols) Wi-Fi vai mabilo datu plūsmu pārslēdzot tīkla simbolus pretī katrai lietotnei</string>
-    <string name="msg_fairemail">Ja esi instalējis AmnShield AppControl, lai aizsargātu savu privātumu, Tu varētu būt ieinteresēts arī <a href="https://email.faircode.eu/">FairEmail</a>, draudzīgā, atvērtā koda e-pasta lietotnē</string>
+    <string name="msg_fairemail">Ja esi instalējis AmniGuard AppControl, lai aizsargātu savu privātumu, Tu varētu būt ieinteresēts arī <a href="https://email.faircode.eu/">FairEmail</a>, draudzīgā, atvērtā koda e-pasta lietotnē</string>
     <string name="msg_whitelist">Interneta piekļuve ir iespējota pēc noklusējuma (melnā saraksta režīms), to var mainīt iestatījumos</string>
     <string name="msg_push">Ienākošos (push) paziņojumus pārsvarā gadījumu apstrādā sistēmas komponente \"Play services\", kurai interneta piekļuve pēc noklusējuma ir atļauta</string>
     <string name="msg_system">Iestatījumos ir iespējama visu (sistēmas) lietotņu pārvaldība</string>
     <string name="msg_issue">Lūdzu apraksti problēmu un kad tā radās:</string>
     <string name="msg_vpn_cancelled">VPN savienojums atcelts\nVai vēlies iestatīt vēl vienu VPN, kas vienmēr būs ieslēgts?</string>
-    <string name="msg_on">Izslēdzot savu ierīci ar iespējotu AmnShield AppControl, nākamajā ierīces startēšanas reizē AmnShield AppControl tiks palaists automātiski</string>
+    <string name="msg_on">Izslēdzot savu ierīci ar iespējotu AmniGuard AppControl, nākamajā ierīces startēšanas reizē AmniGuard AppControl tiks palaists automātiski</string>
     <string name="msg_unavailable">Šī funkcija nav pieejama šai Android versijai</string>
     <string name="msg_always_on">Vēl viens VPN ir iestatīts kā \"Vienmēr ieslēgts VPN\"</string>
-    <string name="msg_always_on_lockdown">Lai lietotu AmnShield AppControl filtrēšanas režīmā, Android VPN iestatījumos izslēdz iestatījumu \"Bloķēt savienojumus bez VPN\"</string>
-    <string name="msg_private_dns">Lai lietotu AmnShield AppControl filtrēšanas režīmā, Android VPN iestatījumos izslēdz iestatījumu \"Privātais DNS\"</string>
+    <string name="msg_always_on_lockdown">Lai lietotu AmniGuard AppControl filtrēšanas režīmā, Android VPN iestatījumos izslēdz iestatījumu \"Bloķēt savienojumus bez VPN\"</string>
+    <string name="msg_private_dns">Lai lietotu AmniGuard AppControl filtrēšanas režīmā, Android VPN iestatījumos izslēdz iestatījumu \"Privātais DNS\"</string>
     <string name="title_lockdown_enabled">Dataplūsma ir slēgta</string>
     <string name="title_unmetered_allowed">Nemērītā datu plūsma ir atļauta</string>
     <string name="title_unmetered_blocked">Nemērītā datu plūsma ir bloķēta</string>

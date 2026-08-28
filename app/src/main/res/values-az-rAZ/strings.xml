@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl, root-a ehtiyac olmadan internetə müraciəti əngəlləmək üçün sadə və qabaqcıl yolları təqdim edir. Wi-Fi və/və ya mobil bağlantı üzərindən tətbiqlər və ünvanlar üçün internetə müraciəti tək-tək ləğv edə bilərsiniz.</string>
-    <string name="app_android">AmnShield AppControl, Android 5.1 və daha yuxarı versiyanı tələb edir</string>
-    <string name="app_xposed">Xposed, AmnShield AppControl-ın Google Play Store-dan çıxarılmasına səbəb ola biləcək bir çox çökməyə səbəb ola bilər. Buna görə də, AmnShield AppControl, Xposed quraşdırılarkən dəstəklənmir</string>
+    <string name="app_description">AmniGuard AppControl, root-a ehtiyac olmadan internetə müraciəti əngəlləmək üçün sadə və qabaqcıl yolları təqdim edir. Wi-Fi və/və ya mobil bağlantı üzərindən tətbiqlər və ünvanlar üçün internetə müraciəti tək-tək ləğv edə bilərsiniz.</string>
+    <string name="app_android">AmniGuard AppControl, Android 5.1 və daha yuxarı versiyanı tələb edir</string>
+    <string name="app_xposed">Xposed, AmniGuard AppControl-ın Google Play Store-dan çıxarılmasına səbəb ola biləcək bir çox çökməyə səbəb ola bilər. Buna görə də, AmniGuard AppControl, Xposed quraşdırılarkən dəstəklənmir</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Gizlilik siyasəti</a></string>
-    <string name="app_first">AmnShield AppControl-ı tərtib etmək və sınaqdan keçirmək üçün böyük diqqət göstərilmişdir, ancaq AmnShield AppControl-ın hər cihazda düzgün işləməyinə zəmanət vermək mümkünsüzdür.</string>
+    <string name="app_first">AmniGuard AppControl-ı tərtib etmək və sınaqdan keçirmək üçün böyük diqqət göstərilmişdir, ancaq AmniGuard AppControl-ın hər cihazda düzgün işləməyinə zəmanət vermək mümkünsüzdür.</string>
     <string name="app_agree">Razıyam</string>
     <string name="app_disagree">Razı deyiləm</string>
-    <string name="app_support">AmnShield AppControl-ın köməyinizə ehtiyacı var. Pro özəllikləri satın alaraq layihəni davam etdirmək üçün toxunun.</string>
+    <string name="app_support">AmniGuard AppControl-ın köməyinizə ehtiyacı var. Pro özəllikləri satın alaraq layihəni davam etdirmək üçün toxunun.</string>
     <string name="app_qap">        Google, bütün tətbiqləri sorğulamaq məqsədilə icazə istədiyi üçün tətbiqi Play Store-dan siləcəkdi.
         Bu icazənin nə üçün lazım olduğuna dair yaxşı bir əsaslandırma təqdim edən beş etiraz rədd edildi.
         Tətbiqin bu versiyası artıq bu icazəni tələb etmir, buna baxmayaraq
@@ -132,13 +132,13 @@
     <string name="setting_technical_networks">Şəbəkələr</string>
     <string name="setting_technical_subscription">Abunəliklər</string>
     <string name="summary_install">Yeni quraşdırılmış tətbiqləri birbaşa konfiqurasiya etmək üçün vəziyyət sətrində bildiriş göstər (pro özəllik)</string>
-    <string name="summary_auto">Vicetin istifadəsini ləğv etdikdən sonra, seçilmiş dəqiqə sayından sonra AmnShield AppControl-ı təkrar avtomatik fəallaşdır (bu seçimi ləğv etmək üçün 0 yazın)</string>
+    <string name="summary_auto">Vicetin istifadəsini ləğv etdikdən sonra, seçilmiş dəqiqə sayından sonra AmniGuard AppControl-ı təkrar avtomatik fəallaşdır (bu seçimi ləğv etmək üçün 0 yazın)</string>
     <string name="summary_delay">Ekran sönəndə, seçilmiş dəqiqə üçün aktiv qaydalarla ekranı açıq saxla (bu seçimi ləğv etmək üçün sıfır daxil edin)</string>
     <string name="summary_update">Yeni versiyaları GitHub-da gündə iki dəfə yoxlayın</string>
     <string name="summary_tethering">Android versiyasından asılı olaraq, internet paylaşımı işləyə və ya işləməyə bilər. Paylaşılan trafik filtrlənə bilməz.</string>
     <string name="summary_subnet">Subnet marşrutunu fəallaşdır; Wi-Fi zəngi fəallaşdırıla bilər, ancaq Android-də xətaları işə sala və batareya istifadəsini artıra bilər</string>
     <string name="summary_lan">Tətbiqlərin 10.0.0.0/8, 172.16.0.0/12 və 192.168.0.0/16 kimi lokal şəbəkə ünvanları ilə bağlantı qurmasına icazə verər</string>
-    <string name="summary_ip6">IPv6 trafikini, icazə verilən və ya əngəllənən olaraq seçilə bilməsi üçün AmnShield AppControl-a yönləndir</string>
+    <string name="summary_ip6">IPv6 trafikini, icazə verilən və ya əngəllənən olaraq seçilə bilməsi üçün AmniGuard AppControl-a yönləndir</string>
     <string name="summary_wifi_home">Yalnız seçilmiş şəbəkə üçün Wi-Fi şəbəkə qaydalarını tətbiq et (digər Wi-Fi şəbəkələri üçün mobil şəbəkə qaydalarını tətbiq et)</string>
     <string name="summary_metered">Mobil şəbəkə qaydalarını kvotalı Wi-Fi şəbəkələrinə (ödənişli, paylaşılan) tətbiq et</string>
     <string name="summary_metered_2g">2G bağlantıları üçün Wi-Fi şəbəkə qaydalarını tətbiq et</string>
@@ -146,7 +146,7 @@
     <string name="summary_metered_4g">LTE bağlantıları üçün Wi-Fi şəbəkə qaydalarını tətbiq et</string>
     <string name="summary_national_roaming">SIM kart və mobil şəbəkə ölkəsi eyni olduqda rouminq qaydalarını tətbiq etmə</string>
     <string name="summary_eu_roaming">SIM kart və mobil şəbəkə ölkəsi Avropa Birliyində olduqda rouminq qaydalarını tətbiq etmə</string>
-    <string name="summary_call">Gələn və ya gedən telefon zənglərində AmnShield AppControl-ı ləğv et. Bu, IP/Wi-Fi zəng problemlərini həll etmək üçün istifadə edilə bilər.</string>
+    <string name="summary_call">Gələn və ya gedən telefon zənglərində AmniGuard AppControl-ı ləğv et. Bu, IP/Wi-Fi zəng problemlərini həll etmək üçün istifadə edilə bilər.</string>
     <string name="summary_system">Sistem tətbiqləri üçün qaydalar təyin edin (mütəxəssislər üçün)</string>
     <string name="summary_log_app">Jurnal, tətbiqlər üçün internetə müraciətət cəhd edir. Bu, batareya istifadəsini artıra bilər.</string>
     <string name="summary_access">Bir tətbiq yeni bir ünvana müraciət etməyə cəhd edəndə vəziyyət sətrində bir bildiriş göstər (filtrləmə ləğv ediləndə, yalnız əngəllənən cəhdlərin bildirişi göstəriləcək)</string>
@@ -156,28 +156,28 @@
     <string name="summary_rcode">İlkin dəyər 3 (NXDOMAIN), yəni \'mövcud olmayan domen\'.</string>
     <string name="summary_validate">443 (https) portundakı internet bağlantısını təsdiqləmək üçün istifadə olunan domen adı.</string>
     <string name="summary_socks5_enabled">Yalnız TCP trafiki proksi serverə göndəriləcək</string>
-    <string name="summary_watchdog">AmnShield AppControl-ın işlədiyini müntəzəm olaraq yoxla (bu seçimi ləğv etmək üçün sıfır yazın). Batareya istifadəsini artıra bilər.</string>
+    <string name="summary_watchdog">AmniGuard AppControl-ın işlədiyini müntəzəm olaraq yoxla (bu seçimi ləğv etmək üçün sıfır yazın). Batareya istifadəsini artıra bilər.</string>
     <string name="summary_stats">Vəziyyət sətrində şəbəkə sürətinin qrafik bildirişini göstər</string>
     <string name="msg_sure">Əminsiniz?</string>
     <string name="msg_started">Qaydaları məcbur et</string>
     <string name="msg_packages">%1$d icazə verildi, %2$d əngəlləndi</string>
     <string name="msg_hosts">%1$d icazə verildi, %2$d əngəlləndi, %3$d hosts</string>
     <string name="msg_waiting">Tədbir gözlənilir</string>
-    <string name="msg_disabled">AmnShield AppControl ləğv edildi, yuxarıdan fəallaşdırın</string>
+    <string name="msg_disabled">AmniGuard AppControl ləğv edildi, yuxarıdan fəallaşdırın</string>
     <string name="msg_notifications">Bildiriş icazələrini aktivləşdirmək üçün toxunun (bildirişlərə müraciət cəhdləri, xəta mesajları və s.)</string>
-    <string name="msg_revoked">AmnShield AppControl ləğv edildi, yəqin ki, başqa bir VPN əsaslı tətbiq istifadə edilir</string>
+    <string name="msg_revoked">AmniGuard AppControl ləğv edildi, yəqin ki, başqa bir VPN əsaslı tətbiq istifadə edilir</string>
     <string name="msg_installed">\'%1$s\' quraşdırıldı</string>
     <string name="msg_installed_n">Quraşdırıldı</string>
     <string name="msg_access">%1$s internetə müraciət etməyə cəhd etdi</string>
     <string name="msg_access_n">Internetə müraciətə cəhd etdi</string>
     <string name="msg_completed">Əməliyyat tamamlandı</string>
-    <string name="msg_vpn">AmnShield AppControl, internet trafikini filtrləmək üçün lokal bir VPN istifadə edir.
+    <string name="msg_vpn">AmniGuard AppControl, internet trafikini filtrləmək üçün lokal bir VPN istifadə edir.
 Buna görə də, zəhmət olmasa növbəti dialoqda VPN bağlantısına icazə verin.
 İnternet trafikiniz heç bir VPN serverinə göndərilmir.</string>
-    <string name="msg_autostart">AmnShield AppControl avtomatik olaraq başladıla bilmədi. Yəqin ki, Android versiyanızda bir xəta buna səbəb olur.</string>
+    <string name="msg_autostart">AmniGuard AppControl avtomatik olaraq başladıla bilmədi. Yəqin ki, Android versiyanızda bir xəta buna səbəb olur.</string>
     <string name="msg_error">Gözlənilməz bir xəta baş verdi: \'%s\'</string>
     <string name="msg_start_failed">Android, hal-hazırda VPN xidmətini başlatmağı rədd etdi. Yəqin ki, Android versiyanızda bir xəta buna səbəb olur.</string>
-    <string name="msg_try">AmnShield AppControl-ı sınayın</string>
+    <string name="msg_try">AmniGuard AppControl-ı sınayın</string>
     <string name="msg_terms">İanə verərək <a href="http://www.netblock.me/#terms">şərtlər və qaydalarla</a> razılaşırsınız</string>
     <string name="msg_dimming">Əgər növbəti dialoqda \"Oldu\"ya basa bilmirsinizsə, başqa bir tətbiq (ekran qaraltma) ekranı idarə etmiş ola bilər.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/gün</string>
@@ -185,11 +185,11 @@ Buna görə də, zəhmət olmasa növbəti dialoqda VPN bağlantısına icazə v
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">Qərarlı nəticələr əldə etmək üçün, AmnShield AppControl üçün Android batareya optimallaşdırmaları ləğv edilməlidir.
-\n\nNövbəti dialoqda, yuxarıdan \"Bütün tətbiqlər\"i seçin, AmnShield AppControl-ı seçin və \"Optimallaşdırma\"nı təsdiqləyin.</string>
-    <string name="msg_datasaving">Qərarlı nəticələr əldə etmək üçün, AmnShield AppControl üçün Android internetə qənaət seçimi ləğv edilməlidir.
+    <string name="msg_doze">Qərarlı nəticələr əldə etmək üçün, AmniGuard AppControl üçün Android batareya optimallaşdırmaları ləğv edilməlidir.
+\n\nNövbəti dialoqda, yuxarıdan \"Bütün tətbiqlər\"i seçin, AmniGuard AppControl-ı seçin və \"Optimallaşdırma\"nı təsdiqləyin.</string>
+    <string name="msg_datasaving">Qərarlı nəticələr əldə etmək üçün, AmniGuard AppControl üçün Android internetə qənaət seçimi ləğv edilməlidir.
 \n\nNövbəti dialoqda, \"Arxaplanda internet\" və \"Məhdudiyyətsiz internet istifadəsi\" seçimlərini fəallaşdırın</string>
-    <string name="msg_filter">Filtrləməni istifadə etmək, Android-in internet və enerji istifadəsini AmnShield AppControl-a aid etməsinə səbəb olacaq - Android, internet və enerjinin orijinal tətbiqlər əvəzinə AmnShield AppControl tərəfindən istifadə edildiyini nəzərə alacaq</string>
+    <string name="msg_filter">Filtrləməni istifadə etmək, Android-in internet və enerji istifadəsini AmniGuard AppControl-a aid etməsinə səbəb olacaq - Android, internet və enerjinin orijinal tətbiqlər əvəzinə AmniGuard AppControl tərəfindən istifadə edildiyini nəzərə alacaq</string>
     <string name="msg_filter4">Android 4 filtrləmənin fəallaşdırılmasını tələb edir</string>
     <string name="msg_log_disabled">Trafikin jurnala yazılması ləğv edildi, fəallaşdırmaq üçün yuxarıdakı açarı istifadə edin. Trafikin jurnala yazılmasını fəallaşdırmaq batereya istifadəsini artıra bilər.</string>
     <string name="msg_clear_rules">Bu, qaydaların və şərtlərin dəyərlərini ilkin vəziyyətə qaytarar</string>
@@ -202,20 +202,20 @@ Buna görə də, zəhmət olmasa növbəti dialoqda VPN bağlantısına icazə v
     <string name="msg_stop_forward">%1$s:%2$d yönləndirilməsi dayandırılsın?</string>
     <string name="msg_metered">Şəbəkə ölçüldü</string>
     <string name="msg_inactive">Aktiv internet bağlantısı yoxdur</string>
-    <string name="msg_queue">AmnShield AppControl məşğuldur</string>
+    <string name="msg_queue">AmniGuard AppControl məşğuldur</string>
     <string name="msg_update">Güncəlləmə var, endirmək üçün toxunun</string>
     <string name="msg_usage">Tətbiqin yanındakı nişanlara toxunaraq Wi-Fi və ya mobil internet müraciətinə icazə verə (yaşılımtıl) və ya rədd edə (qırmızımtıl) bilərsiniz</string>
-    <string name="msg_fairemail">Gizliliyinizi qorumaq üçün AmnShield AppControl-ı quraşdırmısınızsa, açıq mənbəli, gizlilik dostu e-poçt tətbiqi olan <a href="https://email.faircode.eu/">FairEmail</a> ilə maraqlana bilərsiniz</string>
+    <string name="msg_fairemail">Gizliliyinizi qorumaq üçün AmniGuard AppControl-ı quraşdırmısınızsa, açıq mənbəli, gizlilik dostu e-poçt tətbiqi olan <a href="https://email.faircode.eu/">FairEmail</a> ilə maraqlana bilərsiniz</string>
     <string name="msg_whitelist">İlkin olaraq (qara siyahı rejimi) internetə müraciətə icazə verildi, bu, tənzimləmələrdə dəyişdirilə bilər</string>
     <string name="msg_push">Gələn (ani) mesajlar əsasən sistem komponenti olan Play xidmətləri tərəfindən idarə olunur və bu xidmətlərin ilkin olaraq internetə müraciətinə icazə verilir</string>
     <string name="msg_system">Bütün (sistem) tətbiqlərinin idarə edilməsi tənzimləmələrdə fəallaşdırıla bilər</string>
     <string name="msg_issue">Zəhmət olmasa probleminizi təsvir edin və problemin vaxtını göstərin:</string>
     <string name="msg_vpn_cancelled">VPN bağlantısı ləğv edildi\nBaşqa bir VPN-i həmişə açıq qalacaq formada konfiqurasiya etmisiniz?</string>
-    <string name="msg_on">AmnShield AppControl fəal ikən cihazınızı söndürsəniz, cihazınız açılanda AmnShield AppControl avtomatik olaraq başlayacaq</string>
+    <string name="msg_on">AmniGuard AppControl fəal ikən cihazınızı söndürsəniz, cihazınız açılanda AmniGuard AppControl avtomatik olaraq başlayacaq</string>
     <string name="msg_unavailable">Bu özəllik bu Android versiyasında əlçatmazdır</string>
     <string name="msg_always_on">Başqa VPN, Həmişə açıq VPN kimi tənzimləndi</string>
-    <string name="msg_always_on_lockdown">AmnShield AppControl-ı filtrləmə rejimində istifadə etmək üçün Android VPN tənzimləmələrində \"VPN-siz bağlantıları əngəllə\" seçimini söndürün</string>
-    <string name="msg_private_dns">AmnShield AppControl-ı filtrləmə rejimində istifadə etmək üçün Android şəbəkə tənzimləmələrində \"Özəl DNS\" seçimini söndürün</string>
+    <string name="msg_always_on_lockdown">AmniGuard AppControl-ı filtrləmə rejimində istifadə etmək üçün Android VPN tənzimləmələrində \"VPN-siz bağlantıları əngəllə\" seçimini söndürün</string>
+    <string name="msg_private_dns">AmniGuard AppControl-ı filtrləmə rejimində istifadə etmək üçün Android şəbəkə tənzimləmələrində \"Özəl DNS\" seçimini söndürün</string>
     <string name="title_lockdown_enabled">Trafik kilidləndi</string>
     <string name="title_unmetered_allowed">Ölçülməmiş trafikə icazə verildi</string>
     <string name="title_unmetered_blocked">Ölçülməmiş trafik əngəlləndi</string>

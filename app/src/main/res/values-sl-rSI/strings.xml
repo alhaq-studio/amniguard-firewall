@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl zagotavlja preprost in napreden način za blokiranje interneta - koren nu potreben. Aplikacije in naslovi so lahko posamično dovoljeni ali blokirani pri dostopanju do vašega Wi-Fi in/ali mobilne povezave.</string>
-    <string name="app_xposed">Xposed povzroča preveč zrušitev, ki lahko vodijo k odstranitvjiji AmnShield AppControl iz Google Play Store, zato AmnShield AppControl nemore delovati ko je Xposed naložen</string>
+    <string name="app_description">AmniGuard AppControl zagotavlja preprost in napreden način za blokiranje interneta - koren nu potreben. Aplikacije in naslovi so lahko posamično dovoljeni ali blokirani pri dostopanju do vašega Wi-Fi in/ali mobilne povezave.</string>
+    <string name="app_xposed">Xposed povzroča preveč zrušitev, ki lahko vodijo k odstranitvjiji AmniGuard AppControl iz Google Play Store, zato AmniGuard AppControl nemore delovati ko je Xposed naložen</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Politika zasebnosti</a></string>
     <string name="app_agree">Strinjam se</string>
     <string name="app_disagree">Ne strinjam se</string>
@@ -110,13 +110,13 @@
     <string name="setting_technical_networks">Omrežje</string>
     <string name="setting_technical_subscription">Naročnina</string>
     <string name="summary_install">Pokaži obvestila o novo nameščenih aplikacijah in njihovih configuracijah (profesionalne funkcije)</string>
-    <string name="summary_auto">Ko onemogočite uporabo widge samodejno vklopi AmnShield AppControl za izbrano število minut ( vnesite 0 za izklopitev te možnosti)</string>
+    <string name="summary_auto">Ko onemogočite uporabo widge samodejno vklopi AmniGuard AppControl za izbrano število minut ( vnesite 0 za izklopitev te možnosti)</string>
     <string name="summary_delay">Po izklopitvi zaslona pustite na zaslona pravila za določeno število minut ( vnesite 0 za izklopitev te možnosti)</string>
     <string name="summary_update">Poišči nove izdaje na GitHub dvakrat dnevno</string>
     <string name="summary_tethering">Odvisno od različice Androida bo vezanje delovalo ali pa tudi ne. Vezanje prometa ni mogoče filtrirati.</string>
     <string name="summary_subnet">Omogoči podmrežno usmerjanje; lahko omogoči Wi-Fi klicanje ampak lahko sproži hrošče v Androidu in poveča uporabo porabe baterije</string>
     <string name="summary_lan">Dovoli aplikacijam povezavo z naslovi lokalnih omrežji kot so 10.0.0.0/8, 172.16.0.0/12 in 192.168.0.0/16</string>
-    <string name="summary_ip6">Usmeri IP različice 6promet AmnShield AppControl tako da je lahko selektivno dovoljen ali blokiran</string>
+    <string name="summary_ip6">Usmeri IP različice 6promet AmniGuard AppControl tako da je lahko selektivno dovoljen ali blokiran</string>
     <string name="summary_wifi_home">Omogoči Wi-Fi pravila samo za izbrano omrežje (omogoči pravila mobilnega omrežja za ostala Wi-Fi omrežja)</string>
     <string name="summary_metered">Pravila mobilnega omrežja veljajo tudi za (plačana, pripeta) Wi-Fi omrežja</string>
     <string name="summary_metered_2g">Wi-Fi omrežna pravila veljajo za 2G podatkovne povezave</string>
@@ -124,21 +124,21 @@
     <string name="summary_metered_4g">Wi-Fi omrežna pravila veljajo za LTE podatkovne povezave</string>
     <string name="summary_national_roaming">Pravila gostovanje ne veljajo ko so SIM in moblna omrežja države enaka</string>
     <string name="summary_eu_roaming">Pravila gostovanja ne veljajo kadar so SIM in mobila omrežja v EU (gostuj kot doma)</string>
-    <string name="summary_call">Onemogoči AmnShield AppControl ob dohodnih klicih ali odhodnih klicih. To se lahko uporablja za delo okoli IP/Wi-Fi klicnih težav.</string>
+    <string name="summary_call">Onemogoči AmniGuard AppControl ob dohodnih klicih ali odhodnih klicih. To se lahko uporablja za delo okoli IP/Wi-Fi klicnih težav.</string>
     <string name="summary_system">Definirana pravila za sistem aplikacije (za strokovnjake)</string>
     <string name="msg_sure">Ali ste prepričani?</string>
     <string name="msg_started">Uveljavljanje pravil</string>
     <string name="msg_packages">%1$d dovoljen, %2$d blokiran</string>
     <string name="msg_hosts">%1$d dovoljen, %2$d blokiran, %3$d gostitelj</string>
     <string name="msg_waiting">Čakanje na dogodek</string>
-    <string name="msg_disabled">AmnShield AppControl je onemogočen uporabi stikalo zgoraj da omogočite AmnShield AppControl</string>
-    <string name="msg_revoked">AmnShield AppControl je bil onemogočen vrjetno z uporabo druge VPN aplikacije</string>
+    <string name="msg_disabled">AmniGuard AppControl je onemogočen uporabi stikalo zgoraj da omogočite AmniGuard AppControl</string>
+    <string name="msg_revoked">AmniGuard AppControl je bil onemogočen vrjetno z uporabo druge VPN aplikacije</string>
     <string name="msg_installed">%1$s je nameščen</string>
     <string name="msg_installed_n">Je bila nameščena</string>
     <string name="msg_access">%1$s poskus dostopa do interneta</string>
     <string name="msg_access_n">Poskus dostopa do interneta</string>
     <string name="msg_completed">Dejanje se je dokončalo</string>
-    <string name="msg_try">Poskusi AmnShield AppControl</string>
+    <string name="msg_try">Poskusi AmniGuard AppControl</string>
     <string name="msg_terms">Z doniranjem se strinjate z <a href="http://www.netblock.me/#terms"> &amp; pogoji</a></string>
     <string name="msg_dimming">Če v naslednjem pogovornem oknu ne morete pritisniti OK, po usej vrjetnosti druga aplikacija upravlja zaslon naprave (zatemnitev zaslona).</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/day</string>
@@ -154,7 +154,7 @@
     <string name="msg_stop_forward">Prenehajte s posredovanjem %1$s port %2$d?</string>
     <string name="msg_metered">Omrežje je merjeno</string>
     <string name="msg_inactive">Ni aktivne internetne povezave</string>
-    <string name="msg_queue">AmnShield AppControl je zaseden</string>
+    <string name="msg_queue">AmniGuard AppControl je zaseden</string>
     <string name="title_host_allowed">Naslov je dovoljen</string>
     <string name="title_host_blocked">Naslov je blokiran</string>
     <string name="title_interactive_allowed">Dovoli ko je zaslon vklopljen</string>

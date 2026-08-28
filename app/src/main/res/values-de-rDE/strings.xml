@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl bietet einfache und erweiterte Möglichkeiten, um Zugriffe auf das Internet zu blockieren – keine Root-Rechte erforderlich! Der Zugriff auf die WLAN- und/oder mobile Datenverbindung kann einzeln pro App und Internetadresse erlaubt oder blockiert werden.</string>
-    <string name="app_android">AmnShield AppControl erfordert Android 5.1 oder höher</string>
-    <string name="app_xposed">Xposed verursacht sehr viele Abstürze, was dazu führen kann, dass AmnShield AppControl aus dem Google Play Store entfernt werden könnte. Deshalb wird AmnShield AppControl nicht unterstützt, solange Xposed installiert ist</string>
+    <string name="app_description">AmniGuard AppControl bietet einfache und erweiterte Möglichkeiten, um Zugriffe auf das Internet zu blockieren – keine Root-Rechte erforderlich! Der Zugriff auf die WLAN- und/oder mobile Datenverbindung kann einzeln pro App und Internetadresse erlaubt oder blockiert werden.</string>
+    <string name="app_android">AmniGuard AppControl erfordert Android 5.1 oder höher</string>
+    <string name="app_xposed">Xposed verursacht sehr viele Abstürze, was dazu führen kann, dass AmniGuard AppControl aus dem Google Play Store entfernt werden könnte. Deshalb wird AmniGuard AppControl nicht unterstützt, solange Xposed installiert ist</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Datenschutzerklärung</a></string>
-    <string name="app_first">Die Entwicklung und das Testen von AmnShield AppControl wurden mit großer Sorgfalt durchgeführt, jedoch kann nicht garantiert werden, dass AmnShield AppControl auf jedem Gerät korrekt funktioniert.</string>
+    <string name="app_first">Die Entwicklung und das Testen von AmniGuard AppControl wurden mit großer Sorgfalt durchgeführt, jedoch kann nicht garantiert werden, dass AmniGuard AppControl auf jedem Gerät korrekt funktioniert.</string>
     <string name="app_agree">Zustimmen</string>
     <string name="app_disagree">Ablehnen</string>
-    <string name="app_support">AmnShield AppControl braucht Ihre Hilfe. Tippen Sie auf Pro-Funktion kaufen, um das Projekt weiterentwickeln zu können.</string>
+    <string name="app_support">AmniGuard AppControl braucht Ihre Hilfe. Tippen Sie auf Pro-Funktion kaufen, um das Projekt weiterentwickeln zu können.</string>
     <string name="app_qap">        Google hat die App aus dem Play Store entfernt, da es die Berechtigung zum Abfragen aller Apps angefordert hat.
         Fünf Appelle und eine gute Rechtfertigung dafür, warum diese Genehmigung benötigt wird, wurden abgelehnt.
         Diese Version der App fordert diese Berechtigung nicht mehr an
@@ -133,13 +133,13 @@
     <string name="setting_technical_networks">Netzwerke</string>
     <string name="setting_technical_subscription">Abos</string>
     <string name="summary_install">Benachrichtigung in der Statusleiste anzeigen, um neu installierte Apps direkt zu konfigurieren (Pro-Funktion)</string>
-    <string name="summary_auto">Nach dem Deaktivieren über das Widget wird AmnShield AppControl nach der festgelegten Anzahl von Minuten automatisch wieder aktiviert (Null eingeben zum Deaktivieren dieser Option)</string>
+    <string name="summary_auto">Nach dem Deaktivieren über das Widget wird AmniGuard AppControl nach der festgelegten Anzahl von Minuten automatisch wieder aktiviert (Null eingeben zum Deaktivieren dieser Option)</string>
     <string name="summary_delay">Nach Ausschalten des Bildschirms diesen während der festgelegten Anzahl von Minuten aktiviert lassen (Null eingeben zum Deaktivieren dieser Option)</string>
     <string name="summary_update">Es wird auf GitHub zweimal täglich nach neuen Versionen gesucht</string>
     <string name="summary_tethering">Abhängig von der Android-Version kann Tethering funktionieren. Dieser Datenverkehr kann nicht gefiltert werden.</string>
     <string name="summary_subnet">Subnet-Routing aktivieren; kann WLAN-Anrufe aktivieren, aber auch Fehler in Android auslösen und den Akkuverbrauch erhöhen</string>
     <string name="summary_lan">Apps den Zugriff auf lokale Netzwerkadressen wie 10.0.0.0/8, 172.16.0.0/12 und 192.168.0.0/16 erlauben.</string>
-    <string name="summary_ip6">IPv6-Datenverkehr an AmnShield AppControl weiterleiten, sodass er selektiv zugelassen oder blockiert werden kann</string>
+    <string name="summary_ip6">IPv6-Datenverkehr an AmniGuard AppControl weiterleiten, sodass er selektiv zugelassen oder blockiert werden kann</string>
     <string name="summary_wifi_home">WLAN-Regeln nur für ausgewähltes Netzwerk anwenden (Mobilfunknetz-Regeln für andere WLAN-Netzwerke anwenden)</string>
     <string name="summary_metered">Mobilfunk-Regeln auf volumenbeschränkte (kostenpflichtige, Tethering-) WLAN-Netzwerke anwenden</string>
     <string name="summary_metered_2g">WLAN-Regeln für 2G-Datenverbindungen anwenden</string>
@@ -147,7 +147,7 @@
     <string name="summary_metered_4g">WLAN-Regeln für LTE-Datenverbindungen anwenden</string>
     <string name="summary_national_roaming">Roaming-Regeln nicht anwenden, wenn die Nationalität für SIM und mobiles Netzwerk identisch sind</string>
     <string name="summary_eu_roaming">Roaming-Regeln nicht anwenden, wenn sich die Nationalitäten für SIM und mobiles Netzwerk innerhalb der EU befinden (Roaming wie Zuhause)</string>
-    <string name="summary_call">AmnShield AppControl bei ein- oder ausgehenden Anrufen deaktivieren. Dadurch können Probleme bei IP-/WLAN-Telefonie gelöst werden.</string>
+    <string name="summary_call">AmniGuard AppControl bei ein- oder ausgehenden Anrufen deaktivieren. Dadurch können Probleme bei IP-/WLAN-Telefonie gelöst werden.</string>
     <string name="summary_system">Regeln für System-Apps definieren (für Experten)</string>
     <string name="summary_log_app">Protokoll zeichnet den Internetzugriff von Apps auf. Das kann den Akkuverbrauch erhöhen!</string>
     <string name="summary_access">Benachrichtigung in der Statusleiste anzeigen, wenn eine App versucht, auf eine neue Internetadresse zuzugreifen (wenn das Filtern deaktiviert ist, werden nur blockierte Versuche auf den Internetzugriff angezeigt)</string>
@@ -157,26 +157,26 @@
     <string name="summary_rcode">Der Standardwert ist 3 (NXDOMAIN) und bedeutet »Nicht existierende Domain«.</string>
     <string name="summary_validate">Domainname, der verwendet wird, um die Internetverbindung unter Port 443 (HTTPS) zu validieren.</string>
     <string name="summary_socks5_enabled">Nur TCP-Datenverkehr wird an den Proxyserver gesendet</string>
-    <string name="summary_watchdog">In regelmäßigen Abständen überprüfen, ob AmnShield AppControl noch läuft (Null, um diese Option zu deaktivieren). Das kann den Akkuverbrauch erhöhen!</string>
+    <string name="summary_watchdog">In regelmäßigen Abständen überprüfen, ob AmniGuard AppControl noch läuft (Null, um diese Option zu deaktivieren). Das kann den Akkuverbrauch erhöhen!</string>
     <string name="summary_stats">Netzwerkgeschwindigkeitskurve in Statusleiste anzeigen</string>
     <string name="msg_sure">Sind Sie sicher?</string>
     <string name="msg_started">Regeln werden angewendet</string>
     <string name="msg_packages">%1$d erlaubt, %2$d blockiert</string>
     <string name="msg_hosts">%1$d erlaubt, %2$d blockiert, %3$d Hosts</string>
     <string name="msg_waiting">Auf Ereignis warten</string>
-    <string name="msg_disabled">AmnShield AppControl ist deaktiviert. Verwenden Sie den Schalter, um AmnShield AppControl zu aktivieren.</string>
+    <string name="msg_disabled">AmniGuard AppControl ist deaktiviert. Verwenden Sie den Schalter, um AmniGuard AppControl zu aktivieren.</string>
     <string name="msg_notifications">Tippen, um Benachrichtigungsberechtigungen zu erteilen (für Zugriffsversuchs-Benachrichtigungen, Fehlermeldungen usw.)</string>
-    <string name="msg_revoked">AmnShield AppControl wurde deaktiviert. Wahrscheinlich durch das Verwenden einer anderen VPN-App</string>
+    <string name="msg_revoked">AmniGuard AppControl wurde deaktiviert. Wahrscheinlich durch das Verwenden einer anderen VPN-App</string>
     <string name="msg_installed">\'%1$s\' installiert</string>
     <string name="msg_installed_n">Wurde installiert</string>
     <string name="msg_access">%1$s versucht Internetzugriff</string>
     <string name="msg_access_n">Versucht Internetzugriff</string>
     <string name="msg_completed">Aktion abgeschlossen</string>
-    <string name="msg_vpn">AmnShield AppControl verwendet ein lokales VPN, um den Internetverkehr zu filtern. Gestatten Sie aus diesem Grund im nächsten Dialog eine VPN-Verbindung. Ihr Internetverkehr wird nicht an einen VPN-Server gesendet!</string>
-    <string name="msg_autostart">AmnShield AppControl konnte aufgrund eines Fehlers Ihrer aktuellen Android-Version beim Booten nicht automatisch starten</string>
+    <string name="msg_vpn">AmniGuard AppControl verwendet ein lokales VPN, um den Internetverkehr zu filtern. Gestatten Sie aus diesem Grund im nächsten Dialog eine VPN-Verbindung. Ihr Internetverkehr wird nicht an einen VPN-Server gesendet!</string>
+    <string name="msg_autostart">AmniGuard AppControl konnte aufgrund eines Fehlers Ihrer aktuellen Android-Version beim Booten nicht automatisch starten</string>
     <string name="msg_error">Unerwarteter Fehler ist aufgetreten: \'%s\'</string>
     <string name="msg_start_failed">Android verhinderte den Start des VPN-Dienstes. Der Grund ist wahrscheinlich ein Fehler in der aktuellen Android-Version.</string>
-    <string name="msg_try">AmnShield AppControl ausprobieren</string>
+    <string name="msg_try">AmniGuard AppControl ausprobieren</string>
     <string name="msg_terms">Durch eine Spende stimmen Sie den <a href="http://www.netblock.me/#terms">AGB</a> zu.</string>
     <string name="msg_dimming">Falls Sie im nächsten Fenster nicht auf OK tippen können, manipuliert eine andere App Ihren Bildschirm.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/Tag</string>
@@ -184,10 +184,10 @@
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">Für konsistente Ergebnisse sollten für AmnShield AppControl die Android-Akkuoptimierungen deaktiviert werden.
-\n\nIm nächsten Dialog wählen Sie ganz oben »Alle Apps«, tippen auf AmnShield AppControl in der Liste und wählen »Nicht optimieren«. Anschließend bestätigen.</string>
-    <string name="msg_datasaving">Für konsistente Ergebnisse sollten die Android-Datenspeicheroptionen für AmnShield AppControl deaktiviert werden.\n\nIm nächsten Fenster aktivieren Sie die Optionen »Hintergrunddaten« und »Uneingeschränkte Datennutzung«.</string>
-    <string name="msg_filter">Das Verwenden von Filtern führt dazu, dass Android den Daten- und Akkuverbrauch AmnShield AppControl zuordnet. Android geht davon aus, dass die Daten und der Akku von AmnShield AppControl statt von den jeweiligen Apps verbraucht werden</string>
+    <string name="msg_doze">Für konsistente Ergebnisse sollten für AmniGuard AppControl die Android-Akkuoptimierungen deaktiviert werden.
+\n\nIm nächsten Dialog wählen Sie ganz oben »Alle Apps«, tippen auf AmniGuard AppControl in der Liste und wählen »Nicht optimieren«. Anschließend bestätigen.</string>
+    <string name="msg_datasaving">Für konsistente Ergebnisse sollten die Android-Datenspeicheroptionen für AmniGuard AppControl deaktiviert werden.\n\nIm nächsten Fenster aktivieren Sie die Optionen »Hintergrunddaten« und »Uneingeschränkte Datennutzung«.</string>
+    <string name="msg_filter">Das Verwenden von Filtern führt dazu, dass Android den Daten- und Akkuverbrauch AmniGuard AppControl zuordnet. Android geht davon aus, dass die Daten und der Akku von AmniGuard AppControl statt von den jeweiligen Apps verbraucht werden</string>
     <string name="msg_filter4">Android 4 erfordert das Aktivieren der Filterung.</string>
     <string name="msg_log_disabled">Der Datenverkehr wird nicht protokolliert. Zum Aktivieren den Schalter oben verwenden. Das Protokollieren kann den Akkuverbrauch erhöhen.</string>
     <string name="msg_clear_rules">Dadurch werden die Regeln und Bedingungen auf ihre Standardwerte zurückgesetzt</string>
@@ -200,20 +200,20 @@
     <string name="msg_stop_forward">Weiterleitung von %1$s Port %2$d anhalten?</string>
     <string name="msg_metered">Volumenbeschränktes Netzwerk</string>
     <string name="msg_inactive">Keine aktive Internetverbindung</string>
-    <string name="msg_queue">AmnShield AppControl ist beschäftigt</string>
+    <string name="msg_queue">AmniGuard AppControl ist beschäftigt</string>
     <string name="msg_update">Neue Version verfügbar, zum Herunterladen tippen</string>
     <string name="msg_usage">Sie können den WLAN- oder mobilen Internetzugang erlauben (grünlich) oder blockieren (rötlich), indem Sie auf die Symbole neben einer App tippen</string>
-    <string name="msg_fairemail">Falls Sie AmnShield AppControl installiert haben, um Ihre Privatsphäre zu schützen, könnten Sie auch an <a href="https://email.faircode.eu/">FairEmail</a>, einer quelloffenen und datenschutzfreundlichen E-Mail-App, interessiert sein</string>
+    <string name="msg_fairemail">Falls Sie AmniGuard AppControl installiert haben, um Ihre Privatsphäre zu schützen, könnten Sie auch an <a href="https://email.faircode.eu/">FairEmail</a>, einer quelloffenen und datenschutzfreundlichen E-Mail-App, interessiert sein</string>
     <string name="msg_whitelist">Internetzugang ist standardmäßig erlaubt. Das kann in den Einstellungen geändert werden</string>
     <string name="msg_push">Push-Nachrichten werden normalerweise durch die Systemkomponente Play-Dienste gesteuert, dieser ist standardmäßig der Internetzugang erlaubt</string>
     <string name="msg_system">Verwalten von System-Apps kann in den erweiterten Optionen aktiviert werden</string>
     <string name="msg_issue">Bitte beschreiben Sie Ihr Problem und geben Sie den Zeitpunkt an:</string>
     <string name="msg_vpn_cancelled">VPN-Verbindung abgebrochen\nHaben Sie ein anderes VPN für die Funktion »Durchgehend aktives VPN« konfiguriert?</string>
-    <string name="msg_on">Wenn AmnShield AppControl beim Ausschalten aktiv war, dann startet AmnShield AppControl beim Einschalten automatisch wieder.</string>
+    <string name="msg_on">Wenn AmniGuard AppControl beim Ausschalten aktiv war, dann startet AmniGuard AppControl beim Einschalten automatisch wieder.</string>
     <string name="msg_unavailable">Diese Funktion ist in dieser Android-Version nicht verfügbar</string>
     <string name="msg_always_on">Ein anderes VPN ist als »Durchgehend aktives VPN« festgelegt</string>
-    <string name="msg_always_on_lockdown">Um AmnShield AppControl im Filtermodus verwenden zu können, deaktivieren Sie in den Android-VPN-Einstellungen »Verbindungen ohne VPN blockieren«</string>
-    <string name="msg_private_dns">»Privates DNS« in den Android-Netzwerkeinstellungen deaktivieren, um AmnShield AppControl im Filtermodus zu verwenden</string>
+    <string name="msg_always_on_lockdown">Um AmniGuard AppControl im Filtermodus verwenden zu können, deaktivieren Sie in den Android-VPN-Einstellungen »Verbindungen ohne VPN blockieren«</string>
+    <string name="msg_private_dns">»Privates DNS« in den Android-Netzwerkeinstellungen deaktivieren, um AmniGuard AppControl im Filtermodus zu verwenden</string>
     <string name="title_lockdown_enabled">Datenverkehr ist eingeschränkt</string>
     <string name="title_unmetered_allowed">Netzwerkverkehr ohne Volumenbeschränkung ist erlaubt</string>
     <string name="title_unmetered_blocked">Nicht volumenbeschränkter Verkehr ist blockiert</string>

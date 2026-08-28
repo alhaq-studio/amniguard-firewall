@@ -1,10 +1,10 @@
-# Install AmnShield FireWall debug APK on connected Android device
+# Install AmniGuard FireWall debug APK on connected Android device
 # Prerequisites: USB debugging enabled, device connected
 
 $ErrorActionPreference = "Stop"
 $adb = "$env:LOCALAPPDATA\Android\Sdk\platform-tools\adb.exe"
 $apkDir = Join-Path $PSScriptRoot "app\build\outputs\apk\debug"
-$apk = Get-ChildItem -Path $apkDir -Filter "AmnShield FireWall-*-debug.apk" -ErrorAction SilentlyContinue | Select-Object -First 1
+$apk = Get-ChildItem -Path $apkDir -Filter "AmniGuard FireWall-*-debug.apk" -ErrorAction SilentlyContinue | Select-Object -First 1
 
 if (-not (Test-Path $adb)) {
     Write-Error "ADB not found at $adb. Install Android SDK platform-tools."
