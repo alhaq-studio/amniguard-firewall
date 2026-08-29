@@ -308,6 +308,10 @@ public class IAB implements PurchasesUpdatedListener {
                 if (prefs.getBoolean("debug_iab", false)) return false;
             }
 
+            if (LicenseValidator.isLicensed(context)) {
+                return true;
+            }
+
             SharedPreferences prefs = context.getSharedPreferences("IAB", Context.MODE_PRIVATE);
             return (prefs.getBoolean(sku, false) ||
                     prefs.getBoolean(SKU_PRO, false) ||
@@ -326,6 +330,10 @@ public class IAB implements PurchasesUpdatedListener {
             if (Util.isDebuggable(context)) {
                 SharedPreferences prefs = PreferenceManager.getDefaultSharedPreferences(context);
                 if (prefs.getBoolean("debug_iab", false)) return false;
+            }
+
+            if (LicenseValidator.isLicensed(context)) {
+                return true;
             }
 
             SharedPreferences prefs = context.getSharedPreferences("IAB", Context.MODE_PRIVATE);

@@ -16,7 +16,7 @@ package com.alhaq.amnishield.netblock;
     You should have received a copy of the GNU General Public License
     along with AmniGuard Firewall.  If not, see <http://www.gnu.org/licenses/>.
 
-    Copyright 2015-2026 by Marcel Bokhorst (M66B) & Alhaq Initiative
+    Copyright 2015-2026 by Alhaq Initiative
 */
 
 import android.content.ClipData;
@@ -24,33 +24,29 @@ import android.content.ClipboardManager;
 import android.content.Context;
 import android.content.Intent;
 import android.net.Uri;
-import android.os.Build;
 import android.os.Bundle;
-import android.provider.Settings;
-import android.text.Editable;
-import android.text.TextWatcher;
 import android.util.Log;
-import android.view.LayoutInflater;
-import android.view.Menu;
-import android.view.MenuInflater;
 import android.view.MenuItem;
 import android.view.View;
 import android.view.WindowManager;
 import android.widget.Button;
 import android.widget.EditText;
 import android.widget.ImageButton;
+import android.widget.ImageView;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
+import androidx.core.content.ContextCompat;
 
-import static android.content.ClipDescription.MIMETYPE_TEXT_PLAIN;
+import java.text.SimpleDateFormat;
+import java.util.Date;
+import java.util.Locale;
 
 public class ActivityPro extends AppCompatActivity {
     private static final String TAG = "AmniGuard.Pro";
-
-    private IAB iab;
+    private static final String URL_WEBSITE_PRO = "https://alhaq.uk/amniguard";
+    private static final String URL_GITHUB_REPO = "https://github.com/alhaq/AmniGuard-FireWall";
 
     public static final String SKU_LOG = "log";
     public static final String SKU_FILTER = "filter";
@@ -61,6 +57,16 @@ public class ActivityPro extends AppCompatActivity {
     public static final String SKU_SUPPORT1 = "support1";
     public static final String SKU_SUPPORT2 = "support2";
     public static final String SKU_DONATION = "donation";
+
+    private ImageView ivStatusIcon;
+    private TextView tvStatusBadge;
+    private TextView tvLicenseDetails;
+    private Button btnRemoveLicense;
+    private EditText etLicenseKey;
+    private ImageButton ibPasteKey;
+    private Button btnActivateLicense;
+    private Button btnGetLicense;
+    private Button btnGitHub;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -73,250 +79,142 @@ public class ActivityPro extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
         if (getSupportActionBar() != null) {
-            getSupportActionBar().setTitle(R.string.title_pro);
             getSupportActionBar().setDisplayHomeAsUpEnabled(true);
         }
 
         getWindow().setSoftInputMode(WindowManager.LayoutParams.SOFT_INPUT_STATE_HIDDEN);
 
-        updateState();
+        ivStatusIcon = findViewById(R.id.ivStatusIcon);
+        tvStatusBadge = findViewById(R.id.tvStatusBadge);
+        tvLicenseDetails = findViewById(R.id.tvLicenseDetails);
+        btnRemoveLicense = findViewById(R.id.btnRemoveLicense);
+        etLicenseKey = findViewById(R.id.etLicenseKey);
+        ibPasteKey = findViewById(R.id.ibPasteKey);
+        btnActivateLicense = findViewById(R.id.btnActivateLicense);
+        btnGetLicense = findViewById(R.id.btnGetLicense);
+        btnGitHub = findViewById(R.id.btnGitHub);
 
-        final Button btnLog = findViewById(R.id.btnLog);
-        final Button btnFilter = findViewById(R.id.btnFilter);
-        final Button btnNotify = findViewById(R.id.btnNotify);
-        final Button btnSpeed = findViewById(R.id.btnSpeed);
-        final Button btnTheme = findViewById(R.id.btnTheme);
-        final Button btnAll = findViewById(R.id.btnAll);
-        final Button btnDev1 = findViewById(R.id.btnDev1);
-        final Button btnDev2 = findViewById(R.id.btnDev2);
-
-        View.OnClickListener buyListener = new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                if (iab == null || !iab.isConnected()) {
-                    Toast.makeText(ActivityPro.this, "Connecting to Google Play...", Toast.LENGTH_SHORT).show();
-                    if (iab != null) iab.bind();
-                    return;
-                }
-
-                // Buy Lifetime Pro (Single one-time product unlocks everything)
-                boolean started = iab.launchPurchaseFlow(ActivityPro.this, IAB.SKU_PRO);
-                if (!started) {
-                    Toast.makeText(ActivityPro.this, "Unable to initiate purchase. Please check Google Play connection.", Toast.LENGTH_SHORT).show();
-                }
-            }
-        };
-
-        btnLog.setOnClickListener(buyListener);
-        btnFilter.setOnClickListener(buyListener);
-        btnNotify.setOnClickListener(buyListener);
-        btnSpeed.setOnClickListener(buyListener);
-        btnTheme.setOnClickListener(buyListener);
-        btnAll.setOnClickListener(buyListener);
-        btnDev1.setOnClickListener(buyListener);
-        btnDev2.setOnClickListener(buyListener);
-
-        iab = new IAB(new IAB.Delegate() {
-            @Override
-            public void onReady(final IAB iab) {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Log.i(TAG, "IAB is ready");
-                        String price = iab.getFormattedPrice(IAB.SKU_PRO);
-                        if (btnAll != null && price != null) {
-                            btnAll.setText(getString(R.string.title_pro_buy) + " (" + price + ")");
+        // Paste Key Listener
+        if (ibPasteKey != null) {
+            ibPasteKey.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
+                    if (clipboard != null && clipboard.hasPrimaryClip() && clipboard.getPrimaryClip().getItemCount() > 0) {
+                        CharSequence text = clipboard.getPrimaryClip().getItemAt(0).getText();
+                        if (text != null && etLicenseKey != null) {
+                            etLicenseKey.setText(text.toString().trim());
+                            Toast.makeText(ActivityPro.this, "License key pasted from clipboard", Toast.LENGTH_SHORT).show();
                         }
-                        updateState();
                     }
-                });
-            }
-
-            @Override
-            public void onPurchased(String productId) {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Toast.makeText(ActivityPro.this, "🎉 AmniGuard Pro Unlocked! Thank you for your support.", Toast.LENGTH_LONG).show();
-                        updateState();
-                    }
-                });
-            }
-
-            @Override
-            public void onError(final String message) {
-                runOnUiThread(new Runnable() {
-                    @Override
-                    public void run() {
-                        Log.w(TAG, "IAB error: " + message);
-                    }
-                });
-            }
-        }, this);
-
-        iab.bind();
-    }
-
-    @Override
-    protected void onDestroy() {
-        Log.i(TAG, "Destroy ActivityPro");
-        if (iab != null) {
-            iab.unbind();
-            iab = null;
+                }
+            });
         }
-        super.onDestroy();
+
+        // Activate Key Listener
+        if (btnActivateLicense != null) {
+            btnActivateLicense.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    if (etLicenseKey == null) return;
+                    String key = etLicenseKey.getText().toString().trim();
+                    if (key.isEmpty()) {
+                        Toast.makeText(ActivityPro.this, "Please enter a valid ECDSA license key", Toast.LENGTH_SHORT).show();
+                        return;
+                    }
+
+                    boolean success = LicenseValidator.saveLicense(ActivityPro.this, key);
+                    if (success) {
+                        etLicenseKey.setText("");
+                        updateLicenseUI();
+                        Toast.makeText(ActivityPro.this, "[SUCCESS] AmniGuard Pro Activated Successfully", Toast.LENGTH_LONG).show();
+                    } else {
+                        Toast.makeText(ActivityPro.this, "[ERROR] Invalid or Expired ECDSA License Key", Toast.LENGTH_LONG).show();
+                    }
+                }
+            });
+        }
+
+        // Deactivate Key Listener
+        if (btnRemoveLicense != null) {
+            btnRemoveLicense.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    LicenseValidator.clearLicense(ActivityPro.this);
+                    updateLicenseUI();
+                    Toast.makeText(ActivityPro.this, "License removed", Toast.LENGTH_SHORT).show();
+                }
+            });
+        }
+
+        // External Links
+        if (btnGetLicense != null) {
+            btnGetLicense.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(URL_WEBSITE_PRO));
+                    startActivity(browserIntent);
+                }
+            });
+        }
+
+        if (btnGitHub != null) {
+            btnGitHub.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View v) {
+                    Intent browserIntent = new Intent(Intent.ACTION_VIEW, Uri.parse(URL_GITHUB_REPO));
+                    startActivity(browserIntent);
+                }
+            });
+        }
+
+        updateLicenseUI();
     }
 
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        MenuInflater inflater = getMenuInflater();
-        inflater.inflate(R.menu.pro, menu);
-        return true;
+    private void updateLicenseUI() {
+        LicensePayload payload = LicenseValidator.getActiveLicense(this);
+        boolean isPro = payload != null && !payload.isExpired();
+
+        if (isPro) {
+            if (ivStatusIcon != null) {
+                ivStatusIcon.setColorFilter(ContextCompat.getColor(this, R.color.colorSuccess));
+            }
+            if (tvStatusBadge != null) {
+                tvStatusBadge.setText("Active — Pro Supporter Pass");
+                tvStatusBadge.setTextColor(ContextCompat.getColor(this, R.color.colorSuccess));
+            }
+            if (tvLicenseDetails != null) {
+                String expiryText = payload.isLifetime() ? "Lifetime Access" :
+                        new SimpleDateFormat("yyyy-MM-dd HH:mm", Locale.getDefault()).format(new Date(payload.getExpires()));
+                String text = "Licensed to: " + payload.getEmail() + "\nType: " + payload.getType().toUpperCase(Locale.ROOT) + "\nValid Until: " + expiryText;
+                tvLicenseDetails.setText(text);
+            }
+            if (btnRemoveLicense != null) {
+                btnRemoveLicense.setVisibility(View.VISIBLE);
+            }
+        } else {
+            if (ivStatusIcon != null) {
+                ivStatusIcon.setColorFilter(ContextCompat.getColor(this, R.color.colorGrayed));
+            }
+            if (tvStatusBadge != null) {
+                tvStatusBadge.setText("Free & Open-Source Core");
+                tvStatusBadge.setTextColor(ContextCompat.getColor(this, R.color.colorGrayed));
+            }
+            if (tvLicenseDetails != null) {
+                tvLicenseDetails.setText("No active supporter license key found. Core filtering and firewall protection remain 100% free and open-source forever.");
+            }
+            if (btnRemoveLicense != null) {
+                btnRemoveLicense.setVisibility(View.GONE);
+            }
+        }
     }
 
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        switch (item.getItemId()) {
-            case android.R.id.home:
-                finish();
-                return true;
-            case R.id.menu_challenge:
-                menu_challenge();
-                return true;
-            default:
-                return super.onOptionsItemSelected(item);
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+            return true;
         }
-    }
-
-    @Override
-    public boolean onPrepareOptionsMenu(Menu menu) {
-        if (Util.isPlayStoreInstall(this)) {
-            // Keep challenge for offline fallback or remove if desired
-        }
-        return super.onPrepareOptionsMenu(menu);
-    }
-
-    private void menu_challenge() {
-        if (IAB.isPurchased(SKU_DONATION, this)) {
-            Toast.makeText(this, getString(R.string.title_pro_already), Toast.LENGTH_LONG).show();
-            return;
-        }
-
-        LayoutInflater inflater = LayoutInflater.from(this);
-        View view = inflater.inflate(R.layout.challenge, null, false);
-
-        final AlertDialog dialog = new AlertDialog.Builder(this)
-                .setView(view)
-                .setCancelable(true)
-                .create();
-
-        String android_id = Settings.Secure.getString(getContentResolver(), Settings.Secure.ANDROID_ID);
-        final String challenge = (Build.VERSION.SDK_INT < Build.VERSION_CODES.O ? Build.SERIAL : "O3" + android_id);
-        String seed = (Build.VERSION.SDK_INT < Build.VERSION_CODES.O ? "AmniGuard Firewall2" : "AmniGuard Firewall3");
-
-        TextView tvChallenge = view.findViewById(R.id.tvChallenge);
-        tvChallenge.setText(challenge);
-
-        ImageButton ibCopy = view.findViewById(R.id.ibCopy);
-        ibCopy.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-                ClipData clip = ClipData.newPlainText(getString(R.string.title_pro_challenge), challenge);
-                if (clipboard != null) clipboard.setPrimaryClip(clip);
-                Toast.makeText(ActivityPro.this, android.R.string.copy, Toast.LENGTH_LONG).show();
-            }
-        });
-
-        final EditText etResponse = view.findViewById(R.id.etResponse);
-        try {
-            final String response = Util.md5(challenge, seed);
-            etResponse.addTextChangedListener(new TextWatcher() {
-                @Override
-                public void beforeTextChanged(CharSequence s, int start, int count, int after) {}
-
-                @Override
-                public void onTextChanged(CharSequence s, int start, int before, int count) {}
-
-                @Override
-                public void afterTextChanged(Editable editable) {
-                    if (response.equalsIgnoreCase(editable.toString().trim())) {
-                        IAB.setBought(SKU_DONATION, ActivityPro.this);
-                        dialog.dismiss();
-                        invalidateOptionsMenu();
-                        updateState();
-                        Toast.makeText(ActivityPro.this, "🎉 AmniGuard Pro Activated!", Toast.LENGTH_LONG).show();
-                    }
-                }
-            });
-        } catch (Throwable ex) {
-            Log.e(TAG, ex.toString() + "\n" + Log.getStackTraceString(ex));
-        }
-
-        ImageButton ibPaste = view.findViewById(R.id.ibPaste);
-        ibPaste.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                ClipboardManager clipboard = (ClipboardManager) getSystemService(Context.CLIPBOARD_SERVICE);
-                if (clipboard != null &&
-                        clipboard.hasPrimaryClip() &&
-                        clipboard.getPrimaryClipDescription() != null &&
-                        clipboard.getPrimaryClipDescription().hasMimeType(MIMETYPE_TEXT_PLAIN)) {
-                    ClipData.Item item = clipboard.getPrimaryClip().getItemAt(0);
-                    if (item != null && item.getText() != null) {
-                        etResponse.setText(item.getText().toString());
-                    }
-                }
-            }
-        });
-
-        dialog.show();
-    }
-
-    private void updateState() {
-        Button btnLog = findViewById(R.id.btnLog);
-        Button btnFilter = findViewById(R.id.btnFilter);
-        Button btnNotify = findViewById(R.id.btnNotify);
-        Button btnSpeed = findViewById(R.id.btnSpeed);
-        Button btnTheme = findViewById(R.id.btnTheme);
-        Button btnAll = findViewById(R.id.btnAll);
-        Button btnDev1 = findViewById(R.id.btnDev1);
-        Button btnDev2 = findViewById(R.id.btnDev2);
-
-        TextView tvLog = findViewById(R.id.tvLog);
-        TextView tvFilter = findViewById(R.id.tvFilter);
-        TextView tvNotify = findViewById(R.id.tvNotify);
-        TextView tvSpeed = findViewById(R.id.tvSpeed);
-        TextView tvTheme = findViewById(R.id.tvTheme);
-        TextView tvAll = findViewById(R.id.tvAll);
-        TextView tvDev1 = findViewById(R.id.tvDev1);
-        TextView tvDev2 = findViewById(R.id.tvDev2);
-
-        TextView tvLogUnavailable = findViewById(R.id.tvLogUnavailable);
-        TextView tvFilterUnavailable = findViewById(R.id.tvFilterUnavailable);
-
-        boolean isPro = IAB.isPurchased(SKU_PRO1, this);
-        boolean can = Util.canFilter(this);
-
-        if (btnLog != null) btnLog.setVisibility(isPro || !can ? View.GONE : View.VISIBLE);
-        if (btnFilter != null) btnFilter.setVisibility(isPro || !can ? View.GONE : View.VISIBLE);
-        if (btnNotify != null) btnNotify.setVisibility(isPro ? View.GONE : View.VISIBLE);
-        if (btnSpeed != null) btnSpeed.setVisibility(isPro ? View.GONE : View.VISIBLE);
-        if (btnTheme != null) btnTheme.setVisibility(isPro ? View.GONE : View.VISIBLE);
-        if (btnAll != null) btnAll.setVisibility(isPro ? View.GONE : View.VISIBLE);
-        if (btnDev1 != null) btnDev1.setVisibility(isPro ? View.GONE : View.VISIBLE);
-        if (btnDev2 != null) btnDev2.setVisibility(isPro ? View.GONE : View.VISIBLE);
-
-        if (tvLog != null) tvLog.setVisibility(isPro && can ? View.VISIBLE : View.GONE);
-        if (tvFilter != null) tvFilter.setVisibility(isPro && can ? View.VISIBLE : View.GONE);
-        if (tvNotify != null) tvNotify.setVisibility(isPro ? View.VISIBLE : View.GONE);
-        if (tvSpeed != null) tvSpeed.setVisibility(isPro ? View.VISIBLE : View.GONE);
-        if (tvTheme != null) tvTheme.setVisibility(isPro ? View.VISIBLE : View.GONE);
-        if (tvAll != null) tvAll.setVisibility(isPro ? View.VISIBLE : View.GONE);
-        if (tvDev1 != null) tvDev1.setVisibility(isPro ? View.VISIBLE : View.GONE);
-        if (tvDev2 != null) tvDev2.setVisibility(isPro ? View.VISIBLE : View.GONE);
-
-        if (tvLogUnavailable != null) tvLogUnavailable.setVisibility(can ? View.GONE : View.VISIBLE);
-        if (tvFilterUnavailable != null) tvFilterUnavailable.setVisibility(can ? View.GONE : View.VISIBLE);
+        return super.onOptionsItemSelected(item);
     }
 }
