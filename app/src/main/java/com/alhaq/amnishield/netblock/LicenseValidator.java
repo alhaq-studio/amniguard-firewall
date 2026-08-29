@@ -187,33 +187,46 @@ public final class LicenseValidator {
     }
 
     /**
-     * Converts IEEE P1363 64-byte raw signature (r[32] || s[32]) into ASN.1 DER format
-     * expected by Java's SHA256withECDSA verifier.
+     * Converts IEEE P1363 64-byte raw signature (r[32] || s[32]) from WebCrypto/Deno
+     * into ASN.1 DER format expected by Java's SHA256withECDSA verifier.
      */
-    private static byte[] p1363ToDer(byte[] p1363) {
-        if (p1363.length != 64) return p1363;
+    private static byte[] p1363ToDer(byte[] signature) {
+        if (signature == null || signature.length != 64) {
+            return signature; // Already ASN.1 DER formatted
+        }
+        byte[] r = extractUnsignedArray(signature, 0, 32);
+        byte[] s = extractUnsignedArray(signature, 32, 32);
 
-        byte[] rBytes = Arrays.copyOfRange(p1363, 0, 32);
-        byte[] sBytes = Arrays.copyOfRange(p1363, 32, 64);
+        java.io.ByteArrayOutputStream baos = new java.io.ByteArrayOutputStream();
+        baos.write(0x02); // ASN.1 INTEGER tag
+        baos.write(r.length);
+        baos.write(r, 0, r.length);
+        baos.write(0x02); // ASN.1 INTEGER tag
+        baos.write(s.length);
+        baos.write(s, 0, s.length);
 
-        byte[] r = new BigInteger(1, rBytes).toByteArray();
-        byte[] s = new BigInteger(1, sBytes).toByteArray();
+        byte[] body = baos.toByteArray();
+        java.io.ByteArrayOutputStream der = new java.io.ByteArrayOutputStream();
+        der.write(0x30); // ASN.1 SEQUENCE tag
+        der.write(body.length);
+        der.write(body, 0, body.length);
+        return der.toByteArray();
+    }
 
-        int totalLen = 2 + r.length + 2 + s.length;
-        byte[] der = new byte[2 + totalLen];
-        der[0] = 0x30; // ASN.1 SEQUENCE
-        der[1] = (byte) totalLen;
-
-        int offset = 2;
-        der[offset++] = 0x02; // ASN.1 INTEGER
-        der[offset++] = (byte) r.length;
-        System.arraycopy(r, 0, der, offset, r.length);
-        offset += r.length;
-
-        der[offset++] = 0x02; // ASN.1 INTEGER
-        der[offset++] = (byte) s.length;
-        System.arraycopy(s, 0, der, offset, s.length);
-
-        return der;
+    private static byte[] extractUnsignedArray(byte[] src, int offset, int len) {
+        int start = offset;
+        while (start < offset + len && src[start] == 0) {
+            start++;
+        }
+        boolean needsPad = (start < offset + len) && ((src[start] & 0x80) != 0);
+        int bodyLen = (offset + len) - start;
+        byte[] res = new byte[bodyLen + (needsPad ? 1 : 0)];
+        if (needsPad) {
+            res[0] = 0x00;
+            System.arraycopy(src, start, res, 1, bodyLen);
+        } else {
+            System.arraycopy(src, start, res, 0, bodyLen);
+        }
+        return res;
     }
 }
