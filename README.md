@@ -65,6 +65,14 @@ The compiled APKs will be located in:
 - `app/build/outputs/apk/debug/`
 - `app/build/outputs/apk/play/`
 
+Build the F-Droid release variant without Google Play Billing:
+```bash
+./gradlew :app:assembleFdroidRelease :app:lintFdroidRelease
+```
+
+See [FDROID_PUBLISHING_GUIDE.md](FDROID_PUBLISHING_GUIDE.md) for the
+fdroiddata metadata and release submission workflow.
+
 ---
 
 ## 🚀 CI / CD & Releases

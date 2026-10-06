@@ -47,9 +47,9 @@ jobs:
       - name: Make Gradlew Executable
         run: chmod +x gradlew
 
-      - name: Build Debug & Play APKs
+      - name: Build Debug, F-Droid & Play APKs
         run: |
-          ./gradlew assembleDebug assemblePlay --stacktrace
+          ./gradlew assembleDebug assembleFdroidRelease assemblePlay --stacktrace
 
       - name: Organize Output Artifacts
         run: |
