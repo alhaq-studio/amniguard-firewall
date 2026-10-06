@@ -91,6 +91,14 @@ android {
         }
     }
 
+    flavorDimensions "distribution"
+    productFlavors {
+        fdroid {
+            dimension "distribution"
+            buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
+        }
+    }
+
     compileOptions {
         sourceCompatibility JavaVersion.VERSION_1_8
         targetCompatibility JavaVersion.VERSION_1_8

@@ -1,4 +1,4 @@
-# AmnShield Testing Guide
+# AmniGuard Firewall Testing Guide
 
 ## Quick Start Testing
 
@@ -9,6 +9,11 @@
 
 # Install on connected device/emulator
 adb install app\build\outputs\apk\debug\app-debug.apk
+```
+
+For the F-Droid distribution build, run:
+```powershell
+.\gradlew.bat :app:assembleFdroidRelease :app:lintFdroidRelease --no-daemon
 ```
 
 ### Step 2: Initial Setup
