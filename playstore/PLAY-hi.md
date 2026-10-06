@@ -56,7 +56,7 @@ Long description
 
 आप लोगों को अंग्रेजी में धाराप्रवाह कम में मदद करना चाहते हैं, तो आप मदद कर सकते हैं अपनी भाषा में अनुवाद कर AmnShield FireWall: https://crowdin.com/project/netblock/
 
-आप नई सुविधाओं का परीक्षण करना चाहते हैं, तो आप परीक्षण कार्यक्रम में भाग ले सकते हैं: https://play.google.com/apps/testing/org.alhaq.AmnShield.netblock
+आप नई सुविधाओं का परीक्षण करना चाहते हैं, तो आप परीक्षण कार्यक्रम में भाग ले सकते हैं: https://play.google.com/apps/testing/com.alhaq.AmnShield.netblock
 
 सभी आवश्यक अनुमतियों यहाँ वर्णित हैं: https://github.com/M66B/AmnShield FireWall/blob/master/FAQ.md#FAQ42
 

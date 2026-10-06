@@ -1,0 +1,18 @@
+AmniGuard Firewall is a free and open-source no-root firewall for Android.
+
+Control internet access for individual applications and addresses over Wi-Fi
+and mobile connections. The app uses Android's local VPN service to apply
+rules on the device without routing traffic through a remote server.
+
+Features:
+
+* Allow or block internet access per application.
+* Configure separate rules for Wi-Fi and mobile connections.
+* Support IPv4 and IPv6 TCP and UDP traffic.
+* Optional scheduled rules, lockdown mode, and boot-time startup.
+* Optional traffic logging and per-address rules.
+* Optional DNS and host-based blocking.
+* Light and dark themes.
+
+AmniGuard Firewall does not include advertising or analytics and does not
+transmit network traffic to external services.

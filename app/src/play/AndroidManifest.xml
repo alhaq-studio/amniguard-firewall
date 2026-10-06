@@ -57,15 +57,16 @@
             <action android:name="android.intent.action.SENDTO" />
             <category android:name="android.intent.category.DEFAULT" />
         </intent>
+        <package android:name="com.alhaq.amnshield" />
     </queries>
 
     <permission
-        android:name="org.alhaq.deenshield.netblock.permission.ADMIN"
+        android:name="${applicationId}.permission.ADMIN"
         android:description="@string/app_description"
         android:label="@string/app_name"
         android:protectionLevel="signature" />
 
-    <uses-permission android:name="org.alhaq.deenshield.netblock.permission.ADMIN" />
+    <uses-permission android:name="${applicationId}.permission.ADMIN" />
 
     <uses-feature
         android:name="android.hardware.wifi"
@@ -81,7 +82,7 @@
         android:required="false" />
 
     <application
-        android:name="ApplicationEx"
+        android:name="com.alhaq.amnshield.netblock.ApplicationEx"
         android:allowBackup="false"
         android:appCategory="productivity"
         android:description="@string/app_description"
@@ -195,8 +196,8 @@
             android:label="@string/app_name"
             android:theme="@style/AppDialog">
             <intent-filter>
-                <action android:name="org.alhaq.deenshield.netblock.START_PORT_FORWARD" />
-                <action android:name="org.alhaq.deenshield.netblock.STOP_PORT_FORWARD" />
+                <action android:name="com.alhaq.amnshield.netblock.START_PORT_FORWARD" />
+                <action android:name="com.alhaq.amnshield.netblock.STOP_PORT_FORWARD" />
             </intent-filter>
         </activity>
 
@@ -208,7 +209,7 @@
             android:permission="android.permission.BIND_VPN_SERVICE">
             <property
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-                android:value="DeenShield AppControl is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
+                android:value="AmniGuard Firewall is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
             <intent-filter>
                 <action android:name="android.net.VpnService" />
             </intent-filter>
@@ -221,9 +222,9 @@
             android:label="@string/app_name">
             <property
                 android:name="android.app.PROPERTY_SPECIAL_USE_FGS_SUBTYPE"
-                android:value="DeenShield AppControl is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
+                android:value="AmniGuard Firewall is a firewall app using the Android VPN service to filter traffic on the device. A foreground service is required to process internet traffic in real-time to be able to allow and block traffic as configured by the user of the app. There is no other way to do this, and other foreground service types are either too limited or not appropriate."  />
             <intent-filter>
-                <action android:name="org.alhaq.deenshield.netblock.DOWNLOAD_HOSTS_FILE" />
+                <action android:name="com.alhaq.amnshield.netblock.DOWNLOAD_HOSTS_FILE" />
             </intent-filter>
         </service>
 
@@ -315,15 +316,26 @@
         </receiver>
 
         <receiver
-            android:name=".WidgetAdmin"
+            android:name="com.alhaq.amnshield.netblock.WidgetAdmin"
             android:exported="true"
             android:label="@string/app_name"
-            android:permission="org.alhaq.deenshield.netblock.permission.ADMIN">
+            android:permission="${applicationId}.permission.ADMIN">
             <intent-filter>
-                <action android:name="org.alhaq.deenshield.netblock.ON" />
-                <action android:name="org.alhaq.deenshield.netblock.OFF" />
-                <action android:name="org.alhaq.deenshield.netblock.LOCKDOWN_ON" />
-                <action android:name="org.alhaq.deenshield.netblock.LOCKDOWN_OFF" />
+                <action android:name="com.alhaq.amnshield.netblock.ON" />
+                <action android:name="com.alhaq.amnshield.netblock.OFF" />
+                <action android:name="com.alhaq.amnshield.netblock.LOCKDOWN_ON" />
+                <action android:name="com.alhaq.amnshield.netblock.LOCKDOWN_OFF" />
+            </intent-filter>
+        </receiver>
+
+        <!-- AmnShield Rules Sync Broadcast Receiver -->
+        <receiver
+            android:name="com.alhaq.amnshield.netblock.AmnShieldSyncReceiver"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="amnshield.refresh.appblocker" />
+                <action android:name="amnshield.refresh.focusmode" />
+                <action android:name="com.alhaq.amnshield.SYNC_RULES" />
             </intent-filter>
         </receiver>
     </application>

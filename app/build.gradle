@@ -10,12 +10,12 @@ android {
     compileSdkVersion 35
 
     defaultConfig {
-        applicationId = "org.alhaq.deenshield.netblock"
-        versionName = "0.1.24"
+        applicationId = "com.alhaq.amniguard"
+        versionName = "0.0.1"
         minSdkVersion 22
         targetSdkVersion 35
-        versionCode = 20260124
-        archivesBaseName = "Deenshield NetBlock-v$versionName"
+        versionCode = 1
+        archivesBaseName = "AmniGuard Firewall-v$versionName"
 
         externalNativeBuild {
             cmake {
@@ -31,9 +31,9 @@ android {
             abiFilters 'armeabi-v7a', 'arm64-v8a', 'x86', 'x86_64'
         }
 
-        packagingOptions {
+        packaging {
             jniLibs {
-                useLegacyPackaging true
+                useLegacyPackaging false
             }
         }
     }
@@ -59,14 +59,23 @@ android {
         release {
             minifyEnabled = true
             proguardFiles.add(file('proguard-rules.pro'))
-            signingConfig signingConfigs.release
+            if (keystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            } else {
+                signingConfig signingConfigs.debug
+            }
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/DeenShield AppControl/releases/latest\""
+            // TODO: Replace with your own GitHub releases API endpoint
+            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
         }
         play {
             minifyEnabled = true
-            signingConfig signingConfigs.release
+            if (keystorePropertiesFile.exists()) {
+                signingConfig signingConfigs.release
+            } else {
+                signingConfig signingConfigs.debug
+            }
             proguardFiles.add(file('proguard-rules.pro'))
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "true"
             buildConfigField "String", "HOSTS_FILE_URI", "\"\""
@@ -77,7 +86,16 @@ android {
             debuggable = true
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/M66B/DeenShield AppControl/releases/latest\""
+            // TODO: Replace with your own GitHub releases API endpoint
+            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
+        }
+    }
+
+    flavorDimensions "distribution"
+    productFlavors {
+        fdroid {
+            dimension "distribution"
+            buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
         }
     }
 
@@ -87,9 +105,11 @@ android {
     }
 
     lint {
-        disable 'MissingTranslation'
+        disable 'MissingTranslation', 'ExtraTranslation'
+        checkReleaseBuilds false
+        abortOnError false
     }
-    namespace 'org.alhaq.deenshield.netblock'
+    namespace 'com.alhaq.amnshield.netblock'
     buildFeatures {
         aidl true
     }

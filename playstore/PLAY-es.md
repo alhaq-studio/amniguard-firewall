@@ -56,7 +56,7 @@ Si tienes preguntas o problemas, puedes enviar un correo electrónico a marcel+A
 
 Si te gusta ayudar a personas con menor fluidez de Inglés, puedes ayudar a traducir AmnShield FireWall en tu idioma: https://crowdin.com/project/netblock/
 
-Si te gusta probar las nuevas características, puedes participar en el programa de prueba: https://play.google.com/apps/testing/org.alhaq.AmnShield.netblock
+Si te gusta probar las nuevas características, puedes participar en el programa de prueba: https://play.google.com/apps/testing/com.alhaq.AmnShield.netblock
 
 Todos los permisos requeridos se detallan aquí: https://github.com/M66B/AmnShield FireWall/blob/master/FAQ.md#FAQ42
 
