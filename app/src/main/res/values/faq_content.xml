@@ -2,14 +2,14 @@
 <resources>
     <string name="faq_title">Frequently Asked Questions</string>
     
-    <string name="faq_q1">Q: Do I need root access to use AmnShield AppControl?</string>
-    <string name="faq_a1">A: No! AmnShield AppControl uses the Android VPN service to monitor and control internet traffic without requiring root access. This makes it safer and easier to use.</string>
+    <string name="faq_q1">Q: Do I need root access to use AmniGuard AppControl?</string>
+    <string name="faq_a1">A: No! AmniGuard AppControl uses the Android VPN service to monitor and control internet traffic without requiring root access. This makes it safer and easier to use.</string>
     
     <string name="faq_q2">Q: Is my data safe and private?</string>
-    <string name="faq_a2">A: Yes. AmnShield AppControl is open source, contains no tracking, and all data is processed locally on your device. We do not collect or send any personal information to external servers.</string>
+    <string name="faq_a2">A: Yes. AmniGuard AppControl is open source, contains no tracking, and all data is processed locally on your device. We do not collect or send any personal information to external servers.</string>
     
-    <string name="faq_q3">Q: Can I use AmnShield AppControl with other VPN apps?</string>
-    <string name="faq_a3">A: No. Android does not allow running multiple VPN services simultaneously. You must disable other VPN apps or VPN profiles to use AmnShield AppControl.</string>
+    <string name="faq_q3">Q: Can I use AmniGuard AppControl with other VPN apps?</string>
+    <string name="faq_a3">A: No. Android does not allow running multiple VPN services simultaneously. You must disable other VPN apps or VPN profiles to use AmniGuard AppControl.</string>
     
     <string name="faq_q4">Q: How do I know which apps have internet access?</string>
     <string name="faq_a4">A: Check the color indicators next to each app. Green/Teal = access allowed, Red/Orange = access denied. Tap an app to see detailed access information.</string>
@@ -29,10 +29,10 @@
     <string name="faq_q9">Q: What if the app crashes or doesn\'t respond?</string>
     <string name="faq_a9">A: Try restarting the app or your device. Check Settings to ensure everything is configured correctly. Report issues with detailed information if the problem persists.</string>
     
-    <string name="faq_q10">Q: Is AmnShield AppControl free?</string>
-    <string name="faq_a10">A: Yes. AmnShield AppControl is completely free and open source. All features are available at no cost.</string>
+    <string name="faq_q10">Q: Is AmniGuard AppControl free?</string>
+    <string name="faq_a10">A: Yes. AmniGuard AppControl is completely free and open source. All features are available at no cost.</string>
     
-    <string name="faq_q11">Q: How do I uninstall AmnShield AppControl?</string>
+    <string name="faq_q11">Q: How do I uninstall AmniGuard AppControl?</string>
     <string name="faq_a11">A: Simply uninstall like any other app. The VPN connection will be automatically disabled. All settings and logs will be removed.</string>
     
     <string name="faq_q12">Q: Can I export my logs?</string>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl tilbyder enkle og avancerede metoder til blokering af Internetadgang - ingen Root-rettighed krævet. Apps og adresser kan individuelt tillades eller nægtes adgang til din Wi-Fi- og/eller mobilforbindelse.</string>
-    <string name="app_android">AmnShield AppControl kræver Android 5.1 eller senere</string>
-    <string name="app_xposed">Xposed forårsager for mange nedbrud, som kan medføre, at AmnShield AppControl fjernes fra Google Play Butik. Derfor understøttes AmnShield AppControl er ikke, så længe Xposed er installeret</string>
+    <string name="app_description">AmniGuard AppControl tilbyder enkle og avancerede metoder til blokering af Internetadgang - ingen Root-rettighed krævet. Apps og adresser kan individuelt tillades eller nægtes adgang til din Wi-Fi- og/eller mobilforbindelse.</string>
+    <string name="app_android">AmniGuard AppControl kræver Android 5.1 eller senere</string>
+    <string name="app_xposed">Xposed forårsager for mange nedbrud, som kan medføre, at AmniGuard AppControl fjernes fra Google Play Butik. Derfor understøttes AmniGuard AppControl er ikke, så længe Xposed er installeret</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Fortrolighedspolitik</a></string>
-    <string name="app_first">Stor omhu er lagt i at udvikle og teste AmnShield AppControl, men det er umuligt at garanterer, at AmnShield AppControl vil fungere korrekt på alle eksisterende enheder.</string>
+    <string name="app_first">Stor omhu er lagt i at udvikle og teste AmniGuard AppControl, men det er umuligt at garanterer, at AmniGuard AppControl vil fungere korrekt på alle eksisterende enheder.</string>
     <string name="app_agree">Jeg accepterer</string>
     <string name="app_disagree">Jeg accepterer ikke</string>
-    <string name="app_support">AmnShield AppControl behøver din hjælp. Tryk for at købe pro funktioner for at holde projektet igang.</string>
+    <string name="app_support">AmniGuard AppControl behøver din hjælp. Tryk for at købe pro funktioner for at holde projektet igang.</string>
     <string name="app_qap">        Google agtede at fjerne appen fra Play Butik, fordi den anmodede om tilladelse til at forespørge alle apps.
          Fem appeller og en god begrundelse for, hvorfor denne tilladelse er nødvendig, blev afvist.
          Denne version af appen anmoder ikke længere om denne tilladelse,
@@ -132,13 +132,13 @@
     <string name="setting_technical_networks">Netværk</string>
     <string name="setting_technical_subscription">Abonnementer</string>
     <string name="summary_install">Vis statusbjælkenotifikation for direkte opsætning af nyligt installerede apps (Pro-funktion)</string>
-    <string name="summary_auto">Efter deaktivering vha. widget\'en, genaktivér automatisk AmnShield AppControl efter det valgte antal minutter (angiv 0 for at deaktivere denne funktion)</string>
+    <string name="summary_auto">Efter deaktivering vha. widget\'en, genaktivér automatisk AmniGuard AppControl efter det valgte antal minutter (angiv 0 for at deaktivere denne funktion)</string>
     <string name="summary_delay">Efter slukning af skærm, bevar skærmen aktiv i det valgte antal minutter (angiv 0 for at deaktivere denne funktion)</string>
     <string name="summary_update">Søg to gange dagligt efter nye udgivelser på GitHub</string>
     <string name="summary_tethering">Afhængig af Android-version, vil kabling muligvis, eller muligvis ikke, fungere. Kablet trafik kan ikke filtreres.</string>
     <string name="summary_subnet">Aktivering af subnet routing aktiverer muligvis også Wi-Fi-opkald, men kan ligeledes fremprovokere fejl i Android og forøge batteriforbruget</string>
     <string name="summary_lan">Tillad apps at oprette forbindelse til lokale netværksadresser såsom 10.0.0.0/8, 172.16.0.0/12 og 192.168.0.0/16</string>
-    <string name="summary_ip6">Route IP V6-trafik til AmnShield AppControl, så denne selektivt kan blive tilladt eller blokeret</string>
+    <string name="summary_ip6">Route IP V6-trafik til AmniGuard AppControl, så denne selektivt kan blive tilladt eller blokeret</string>
     <string name="summary_wifi_home">Anvend kun Wi-Fi-netværksregler på udvalgte netværk (anvend mobilnetværksregler på andre Wi-Fi-netværk)</string>
     <string name="summary_metered">Anvend mobilenetværksregler på forbrugsafregnede (betalte, kablede) Wi-Fi-netværk</string>
     <string name="summary_metered_2g">Anvend Wi-Fi-netværksregler på 2G-dataforbindelser</string>
@@ -146,7 +146,7 @@
     <string name="summary_metered_4g">Anvend Wi-Fi-netværksregler på LTE-dataforbindelser</string>
     <string name="summary_national_roaming">Anvend ikke roaming-regler, når SIM-korts- og mobilnetværksland er det samme</string>
     <string name="summary_eu_roaming">Anvend ikke roaming-regler, når SIM- og mobilnetværksland er indenfor EU (roam som i hjemlandet)</string>
-    <string name="summary_call">Deaktivér AmnShield AppControl ved ind- eller udgående telefonopkald. Dette kan benyttes som en løsning ved IP/Wi-Fi-opkaldsproblemer.</string>
+    <string name="summary_call">Deaktivér AmniGuard AppControl ved ind- eller udgående telefonopkald. Dette kan benyttes som en løsning ved IP/Wi-Fi-opkaldsproblemer.</string>
     <string name="summary_system">Definér regler for system-apps (avanceret)</string>
     <string name="summary_log_app">Log forsøg på Internetadgang for apps. Dette kan medføre forøget strømforbrug.</string>
     <string name="summary_access">Vis en statusbjælkenotifikation, når en app forsøger at tilgå en ny Internetadresse (er filtrering inaktiv, vil kun blokerede Internetadgangsforsøg generere notifikationer)</string>
@@ -156,28 +156,28 @@
     <string name="summary_rcode">Standardværdien er 3 (NXDOMAIN), som betyder \'ikke-eksisterende domæne\'.</string>
     <string name="summary_validate">Domænenavn benyttet til validering af Internetforbindelsen på port 443 (HTTPS).</string>
     <string name="summary_socks5_enabled">Kun TCP-trafik sendes til proxy-serveren</string>
-    <string name="summary_watchdog">Kontrollér periodisk at AmnShield AppControl stadig kører (angiv 0 for at deaktivere denne funktion). Dette kan medføre forøget strømforbrug.</string>
+    <string name="summary_watchdog">Kontrollér periodisk at AmniGuard AppControl stadig kører (angiv 0 for at deaktivere denne funktion). Dette kan medføre forøget strømforbrug.</string>
     <string name="summary_stats">Vis netværkshastighedsgraf i statusbjælkenotifikation</string>
     <string name="msg_sure">Er du sikker?</string>
     <string name="msg_started">Håndhæver regler</string>
     <string name="msg_packages">%1$d tilladt, %2$d blokeret</string>
     <string name="msg_hosts">%1$d tilladt, %2$d blokeret, %3$d hosts</string>
     <string name="msg_waiting">Afventer begivenhed</string>
-    <string name="msg_disabled">AmnShield AppControl er inaktiv. Benyt kontakten ovenfor for at aktivere AmnShield AppControl</string>
+    <string name="msg_disabled">AmniGuard AppControl er inaktiv. Benyt kontakten ovenfor for at aktivere AmniGuard AppControl</string>
     <string name="msg_notifications">Tryk for at tildele notifikationstilladelser (for at tilgå notifikationer, fejlmeddelelser mv.)</string>
-    <string name="msg_revoked">AmnShield AppControl er blevet deaktiveret formentlig grundet brug af anden VPN-baseret app</string>
+    <string name="msg_revoked">AmniGuard AppControl er blevet deaktiveret formentlig grundet brug af anden VPN-baseret app</string>
     <string name="msg_installed">\'%1$s\' installeret</string>
     <string name="msg_installed_n">Er blevet installeret</string>
     <string name="msg_access">%1$s internetadgangsforsøg</string>
     <string name="msg_access_n">Internetadgangsforsøg</string>
     <string name="msg_completed">Handling fuldført</string>
-    <string name="msg_vpn">AmnShield AppControl benytter et lokalt VPN for at filtrere Internettrafik.
+    <string name="msg_vpn">AmniGuard AppControl benytter et lokalt VPN for at filtrere Internettrafik.
 Af samme årsag bedes VPN-forbindelsen tillades i næste dialog.
 Din Internettrafik sendes ikke til en ekstern VPN-server.</string>
-    <string name="msg_autostart">AmnShield AppControl kunne ikke starte automatisk. Dette beror sandsynligvis på en fejl i din Android-version.</string>
+    <string name="msg_autostart">AmniGuard AppControl kunne ikke starte automatisk. Dette beror sandsynligvis på en fejl i din Android-version.</string>
     <string name="msg_error">En uventet fejl er opstået: %s</string>
     <string name="msg_start_failed">Android nægter i øjeblikket at starte VPN-tjenesten. Dette beror sandsynligvis på en fejl i din Android-version.</string>
-    <string name="msg_try">Prøv AmnShield AppControl</string>
+    <string name="msg_try">Prøv AmniGuard AppControl</string>
     <string name="msg_terms">Ved at donere, accepterer du <a href="http://www.netblock.me/#terms">vilkårene og betingelserne</a></string>
     <string name="msg_dimming">Kan du ikke trykke OK i næste dialog, så håndteres skærmen sandsynligvis af en anden (skærmnedtonings-) app.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/dag</string>
@@ -185,11 +185,11 @@ Din Internettrafik sendes ikke til en ekstern VPN-server.</string>
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">Med henblik på ensartethed i resultaterne, bør Androids batterioptimering ikke inkludere AmnShield AppControl.\n\n
-Vælg \"Alle apps\" øverst i den næste dialog, tryk på AmnShield AppControl på listen og vælg - og bekræft - \"Optimér ikke\".</string>
-    <string name="msg_datasaving">Med henblik på ensartethed i resultaterne, bør Androids datasparefunktion ikke inkludere AmnShield AppControl.\n\n
+    <string name="msg_doze">Med henblik på ensartethed i resultaterne, bør Androids batterioptimering ikke inkludere AmniGuard AppControl.\n\n
+Vælg \"Alle apps\" øverst i den næste dialog, tryk på AmniGuard AppControl på listen og vælg - og bekræft - \"Optimér ikke\".</string>
+    <string name="msg_datasaving">Med henblik på ensartethed i resultaterne, bør Androids datasparefunktion ikke inkludere AmniGuard AppControl.\n\n
 Aktivér venligst indstillingerne \"Baggrundsdata\" og \"Ubegrænset dataforbrug\" i næste dialog</string>
-    <string name="msg_filter">Anvendelse af filtrering vil foranledige Android til at antage, at data- og strømforbrug hidrører fra AmnShield AppControl og ikke fra de oprindelige apps</string>
+    <string name="msg_filter">Anvendelse af filtrering vil foranledige Android til at antage, at data- og strømforbrug hidrører fra AmniGuard AppControl og ikke fra de oprindelige apps</string>
     <string name="msg_filter4">Android 4 kræver, at filtrering er aktiv</string>
     <string name="msg_log_disabled">Trafik-logning er inaktiv. Benyt kontakten ovenfor for at aktivere logning. Trafik-logning kan medføre forøget strømforbrug.</string>
     <string name="msg_clear_rules">Dette vil nulstille regler og betingelser til deres standardværdier</string>
@@ -202,20 +202,20 @@ Aktivér venligst indstillingerne \"Baggrundsdata\" og \"Ubegrænset dataforbrug
     <string name="msg_stop_forward">Stop viderestilling af %1$s port %2$d?</string>
     <string name="msg_metered">Netværk er forbrugsafregnet</string>
     <string name="msg_inactive">Ingen aktiv Internetforbindelse</string>
-    <string name="msg_queue">AmnShield AppControl er optaget</string>
+    <string name="msg_queue">AmniGuard AppControl er optaget</string>
     <string name="msg_update">Opdatering tilgængelig, tryk for at downloade</string>
     <string name="msg_usage">Du kan tillade (grønlig) eller nægte (rødlig) Wi-Fi eller mobil Internetadgang ved at trykke på ikonet ved siden af en app</string>
-    <string name="msg_fairemail">Installerede du AmnShield AppControl for at beskytte dit privatliv, kan <a href="https://email.faircode.eu/">FairEmail</a>, en open source, privatlivsorienteret e-mail app, måske også have din interesse</string>
+    <string name="msg_fairemail">Installerede du AmniGuard AppControl for at beskytte dit privatliv, kan <a href="https://email.faircode.eu/">FairEmail</a>, en open source, privatlivsorienteret e-mail app, måske også have din interesse</string>
     <string name="msg_whitelist">Internetadgang er som standard tilladt (sortlistetilstand), hvilket dog kan ændres i indstillingerne</string>
     <string name="msg_push">Push-beskeder håndteres primært af systemkomponenten Play-tjenester, der som standard tillader Internetadgang</string>
     <string name="msg_system">Håndtering af alle (system-)apps kan aktiveres i indstillingerne</string>
     <string name="msg_issue">Beskriv venligst problemet og angiv tidspunkt for problemet:</string>
     <string name="msg_vpn_cancelled">VPN-forbindelse annulleret\nHar du opsat en anden VPN til at være en \'altid aktiv VPN\'?</string>
-    <string name="msg_on">Nedlukning af din enhed med AmnShield AppControl aktiv vil automatisk starte AmnShield AppControl ved genopstart af din enhed</string>
+    <string name="msg_on">Nedlukning af din enhed med AmniGuard AppControl aktiv vil automatisk starte AmniGuard AppControl ved genopstart af din enhed</string>
     <string name="msg_unavailable">Funktionen er utilgængelig i denne Android-version</string>
     <string name="msg_always_on">En anden VPN er opsat som Altid Aktiv-VPN</string>
-    <string name="msg_always_on_lockdown">Slå \"Blokér forbindelser uden VPN\" fra i Android VPN-indstillinger for at benytte AmnShield AppControl i filtreringstilstand</string>
-    <string name="msg_private_dns">Slå \"Private DNS\" fra i networksindstillinger for at benytte AmnShield AppControl i filtreringstilstand</string>
+    <string name="msg_always_on_lockdown">Slå \"Blokér forbindelser uden VPN\" fra i Android VPN-indstillinger for at benytte AmniGuard AppControl i filtreringstilstand</string>
+    <string name="msg_private_dns">Slå \"Private DNS\" fra i networksindstillinger for at benytte AmniGuard AppControl i filtreringstilstand</string>
     <string name="title_lockdown_enabled">Trafik er aflåst</string>
     <string name="title_unmetered_allowed">Ikke-forbrugsafregnet trafik er tilladt</string>
     <string name="title_unmetered_blocked">Ikke-forbrugsafregnet trafik er blokeret</string>

@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <!-- Live Logging Switch Bar -->
+    <LinearLayout
+        android:id="@+id/llLiveBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        android:elevation="1dp"
+        android:gravity="center_vertical"
+        android:orientation="horizontal"
+        android:paddingStart="16dp"
+        android:paddingTop="8dp"
+        android:paddingEnd="16dp"
+        android:paddingBottom="8dp">
+
+        <TextView
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:text="@string/title_log_live"
+            android:textColor="?android:attr/textColorPrimary"
+            android:textSize="14sp"
+            android:textStyle="bold" />
+
+        <!-- Log Filter Options Button -->
+        <ImageButton
+            android:id="@+id/btnLogFilter"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/menu_log_filter"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_tune_24dp"
+            app:tint="?attr/colorPrimary" />
+
+        <!-- Export / Copy Logs Button -->
+        <ImageButton
+            android:id="@+id/btnExportLogs"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/menu_export_logs"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_share_24dp"
+            app:tint="?attr/colorPrimary" />
+
+        <!-- Retention Period Button -->
+        <ImageButton
+            android:id="@+id/btnRetention"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="6dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/menu_log_retention"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_hourglass_empty_white_24dp"
+            app:tint="?attr/colorPrimary" />
+
+        <!-- Clear Logs Button -->
+        <ImageButton
+            android:id="@+id/btnClearLogs"
+            android:layout_width="36dp"
+            android:layout_height="36dp"
+            android:layout_marginEnd="10dp"
+            android:background="?attr/selectableItemBackgroundBorderless"
+            android:contentDescription="@string/menu_clear_logs"
+            android:padding="6dp"
+            android:scaleType="fitCenter"
+            android:src="@drawable/ic_delete_24dp"
+            app:tint="#FF8A80" />
+
+        <androidx.appcompat.widget.SwitchCompat
+            android:id="@+id/swLive"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:checked="true" />
+    </LinearLayout>
+
+    <!-- Horizontal Filter Chips Bar -->
+    <HorizontalScrollView
+        android:id="@+id/hsvFilterChips"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="?attr/colorSurface"
+        android:overScrollMode="never"
+        android:paddingStart="12dp"
+        android:paddingTop="2dp"
+        android:paddingEnd="12dp"
+        android:paddingBottom="6dp"
+        android:scrollbars="none">
+
+        <com.google.android.material.chip.ChipGroup
+            android:id="@+id/cgFilters"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            app:singleLine="true">
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAll"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_all"
+                android:textSize="12sp"
+                app:chipCornerRadius="16dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipBlocked"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_blocked"
+                android:textSize="12sp"
+                app:chipCornerRadius="16dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipAllowed"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_allowed"
+                android:textSize="12sp"
+                app:chipCornerRadius="16dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipUdp"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_udp"
+                android:textSize="12sp"
+                app:chipCornerRadius="16dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipTcp"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_tcp"
+                android:textSize="12sp"
+                app:chipCornerRadius="16dp" />
+
+            <com.google.android.material.chip.Chip
+                android:id="@+id/chipOther"
+                style="@style/Widget.Material3.Chip.Filter"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/filter_other"
+                android:textSize="12sp"
+                app:chipCornerRadius="16dp" />
+
+        </com.google.android.material.chip.ChipGroup>
+    </HorizontalScrollView>
+
+    <TextView
+        android:id="@+id/tvDisabled"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#1AE53935"
+        android:padding="10dp"
+        android:text="@string/msg_log_disabled"
+        android:textAppearance="@style/TextMedium"
+        android:textColor="?attr/colorOff"
+        android:visibility="gone" />
+
+    <ListView
+        android:id="@+id/lvLog"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1"
+        android:clipToPadding="false"
+        android:divider="?attr/dividerHorizontal"
+        android:dividerHeight="1dp"
+        android:paddingBottom="12dp"
+        android:scrollbarStyle="insideOverlay"
+        android:scrollbars="vertical" />
+
+    <View
+        android:id="@+id/vwPopupAnchor"
+        android:layout_width="0dp"
+        android:layout_height="0dp" />
+
+</LinearLayout>

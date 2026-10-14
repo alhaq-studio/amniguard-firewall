@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl ger enkla och avancerade sätt att blockera åtkomst till internet - ingen root krävs. Appar och adresser kan individuellt tillåtas eller nekas åtkomst till din Wi-Fi- och/eller mobildata-anslutning.</string>
-    <string name="app_android">AmnShield AppControl kräver Android 5.1 eller senare</string>
-    <string name="app_xposed">Xposed orsakar alltför många krascher, vilket kan resultera i AmnShield AppControl tas bort från Google Play Store, därför stöds inte AmnShield AppControl medan Xposed är installerat</string>
+    <string name="app_description">AmniGuard AppControl ger enkla och avancerade sätt att blockera åtkomst till internet - ingen root krävs. Appar och adresser kan individuellt tillåtas eller nekas åtkomst till din Wi-Fi- och/eller mobildata-anslutning.</string>
+    <string name="app_android">AmniGuard AppControl kräver Android 5.1 eller senare</string>
+    <string name="app_xposed">Xposed orsakar alltför många krascher, vilket kan resultera i AmniGuard AppControl tas bort från Google Play Store, därför stöds inte AmniGuard AppControl medan Xposed är installerat</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Sekretesspolicy</a></string>
-    <string name="app_first">Stor omsorg har tagits för att utveckla och testa AmnShield AppControl, men det är omöjligt att garantera att AmnShield AppControl fungerar korrekt på alla enheter.</string>
+    <string name="app_first">Stor omsorg har tagits för att utveckla och testa AmniGuard AppControl, men det är omöjligt att garantera att AmniGuard AppControl fungerar korrekt på alla enheter.</string>
     <string name="app_agree">Jag godkänner</string>
     <string name="app_disagree">Jag godkänner inte</string>
-    <string name="app_support">AmnShield AppControl behöver din hjälp. Tryck för att köpa pro-funktioner för att hålla projektet igång.</string>
+    <string name="app_support">AmniGuard AppControl behöver din hjälp. Tryck för att köpa pro-funktioner för att hålla projektet igång.</string>
     <string name="channel_foreground">Aktiva tjänster</string>
     <string name="channel_notify">Allmänna aviseringar</string>
     <string name="channel_access">Tillgång meddelanden</string>
@@ -124,13 +124,13 @@
     <string name="setting_technical_networks">Nätverk</string>
     <string name="setting_technical_subscription">Prenumerationer</string>
     <string name="summary_install">Visa statusfält aviseringar för att direkt konfigurera nyinstallerade appar (pro-funktion)</string>
-    <string name="summary_auto">När du har inaktiverat gränssnittskomponenten aktiverar du automatiskt AmnShield AppControl igen efter det valda antalet minuter (ange noll för att inaktivera det här alternativet)</string>
+    <string name="summary_auto">När du har inaktiverat gränssnittskomponenten aktiverar du automatiskt AmniGuard AppControl igen efter det valda antalet minuter (ange noll för att inaktivera det här alternativet)</string>
     <string name="summary_delay">När du har stängt av skärmen, behåll regler för skärmen på aktiva för det valda antalet minuter (ange noll för att inaktivera det här alternativet)</string>
     <string name="summary_update">Sök efter nya utgåvor på GitHub två gånger dagligen</string>
     <string name="summary_tethering">Beroende på Android-versionen, kan sammanlänkning fungera eller inte fungera. Sammanlänkad trafik kan inte filtreras.</string>
     <string name="summary_subnet">Aktivera subnätsrouting; kan aktivera Wi-Fi-samtal, men kan också utlösa buggar i Android och öka batterianvändningen</string>
     <string name="summary_lan">Tillåt apparna att ansluta till LAN-adresser, som 10.0.0.0/8, 172.16.0.0/12 och 192.168.0.0/16</string>
-    <string name="summary_ip6">Vidarebefodra IP-version 6 trafik till AmnShield AppControl så det kan selektivt tillåtas eller blockeras</string>
+    <string name="summary_ip6">Vidarebefodra IP-version 6 trafik till AmniGuard AppControl så det kan selektivt tillåtas eller blockeras</string>
     <string name="summary_wifi_home">Tillämpa Wi-Fi-nätverksregler endast för valt nätverk (tillämpa regler för mobilt nätverk för andra Wi-Fi-nätverk)</string>
     <string name="summary_metered">Tillämpa regler för mobilnät på uppmätta (betalda, bundna) Wi-Fi-nätverk</string>
     <string name="summary_metered_2g">Använd Wi-Fi-nätverksregler för 2G dataanslutningar</string>
@@ -138,7 +138,7 @@
     <string name="summary_metered_4g">Använd Wi-Fi nätverksregler för LTE dataanslutningar</string>
     <string name="summary_national_roaming">Använd inte roamingregler när SIM-kortet och mobilnätets land är desamma</string>
     <string name="summary_eu_roaming">Tillämpa inte roamingregler när SIM-kortet och mobilnätet är inom EU (använd roaming som hemma)</string>
-    <string name="summary_call">Inaktivera AmnShield AppControl för inkommande eller utgående telefonsamtal. Detta kan användas för att arbeta runt IP/Wi-Fi-samtalsproblem.</string>
+    <string name="summary_call">Inaktivera AmniGuard AppControl för inkommande eller utgående telefonsamtal. Detta kan användas för att arbeta runt IP/Wi-Fi-samtalsproblem.</string>
     <string name="summary_system">Definiera regler för systemappar (för experter)</string>
     <string name="summary_log_app">Logga försök att ansluta till internet för appar. Detta kan resultera i extra batterianvändning.</string>
     <string name="summary_access">Visa ett meddelande i statusfältet när en app försöker komma åt en ny Internetadress (när filtrering är inaktiverad kommer endast blockerade försök till Internetanslutning att meddelas)</string>
@@ -148,27 +148,27 @@
     <string name="summary_rcode">Standardvärdet är 3 (NXDOMAIN), vilket betyder \"obefintlig domän\".</string>
     <string name="summary_validate">Domännamn som används för att validera internetanslutningen vid port 443 (https).</string>
     <string name="summary_socks5_enabled">Endast TCP-trafik kommer att sändas till proxyservern</string>
-    <string name="summary_watchdog">Kontrollera regelbundet om AmnShield AppControl fortfarande körs (ange noll för att inaktivera det här alternativet). Detta kan leda till extra batterianvändning.</string>
+    <string name="summary_watchdog">Kontrollera regelbundet om AmniGuard AppControl fortfarande körs (ange noll för att inaktivera det här alternativet). Detta kan leda till extra batterianvändning.</string>
     <string name="summary_stats">Visa nätverkshastighetsdiagram i statusfältet</string>
     <string name="msg_sure">Är du säker?</string>
     <string name="msg_started">Tvingande regler</string>
     <string name="msg_packages">%1$d tillåtna, %2$d blockerade</string>
     <string name="msg_hosts">%1$d tillåtna, %2$d blockerade, %3$d värdar</string>
     <string name="msg_waiting">Väntar på händelse</string>
-    <string name="msg_disabled">AmnShield AppControl är inaktiverad, använd skjutreglage ovan för att aktivera AmnShield AppControl</string>
-    <string name="msg_revoked">AmnShield AppControl har inaktiverats, sannolikt för att en annan VPN-baserade app används</string>
+    <string name="msg_disabled">AmniGuard AppControl är inaktiverad, använd skjutreglage ovan för att aktivera AmniGuard AppControl</string>
+    <string name="msg_revoked">AmniGuard AppControl har inaktiverats, sannolikt för att en annan VPN-baserade app används</string>
     <string name="msg_installed">\'%1$s\' installerad</string>
     <string name="msg_installed_n">Har installerats</string>
     <string name="msg_access">%1$s försökte få tillgång till internet</string>
     <string name="msg_access_n">Försökte få tillgång till internet</string>
     <string name="msg_completed">Åtgärdad</string>
-    <string name="msg_vpn">AmnShield AppControl använder en lokal VPN för att filtrera internettrafik.
+    <string name="msg_vpn">AmniGuard AppControl använder en lokal VPN för att filtrera internettrafik.
 Av denna anledning, vänligen tillåt en VPN-anslutning i nästa dialogruta.
 Din internettrafik skickas inte till en avlägsen VPN-server.</string>
-    <string name="msg_autostart">AmnShield AppControl kunde inte starta automatiskt. Detta är sannolikt på grund av ett fel i din Android-version.</string>
+    <string name="msg_autostart">AmniGuard AppControl kunde inte starta automatiskt. Detta är sannolikt på grund av ett fel i din Android-version.</string>
     <string name="msg_error">Ett oväntat fel har inträffat: \'%s\'</string>
     <string name="msg_start_failed">Android vägrade att starta VPN-tjänsten just nu. Detta är sannolikt på grund av ett fel i din Android-version.</string>
-    <string name="msg_try">Prova AmnShield AppControl</string>
+    <string name="msg_try">Prova AmniGuard AppControl</string>
     <string name="msg_terms">Genom att donera samtycker du till <a href="http://www.netblock.me/#terms">villkor</a></string>
     <string name="msg_dimming">Om du inte kan klicka på OK i nästa dialogruta kommer en annan (skärmdimnings)app sannolikt att manipulera skärmen.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/dag</string>
@@ -176,11 +176,11 @@ Din internettrafik skickas inte till en avlägsen VPN-server.</string>
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">För konsekventa resultat bör Android-batterioptimeringarna inaktiveras för AmnShield AppControl.
-\n\nI nästa dialogruta väljer du \"Alla appar\" högst upp, tryck på AmnShield AppControl i listan och välj och bekräfta \"Optimera inte\".</string>
-    <string name="msg_datasaving">För konsekventa resultat ska Android-databesparingsalternativen inaktiveras för AmnShield AppControl
+    <string name="msg_doze">För konsekventa resultat bör Android-batterioptimeringarna inaktiveras för AmniGuard AppControl.
+\n\nI nästa dialogruta väljer du \"Alla appar\" högst upp, tryck på AmniGuard AppControl i listan och välj och bekräfta \"Optimera inte\".</string>
+    <string name="msg_datasaving">För konsekventa resultat ska Android-databesparingsalternativen inaktiveras för AmniGuard AppControl
 \n\nI nästa dialogruta, aktivera alternativen \"Bakgrundsdata\" och \"Obegränsad dataanvändning\"</string>
-    <string name="msg_filter">Genom att använda filtrering kommer Android att tillskriva data och strömförbrukning till AmnShield AppControl - Android förutsätter att data och ström används av AmnShield AppControl, snarare än de ursprungliga apparna</string>
+    <string name="msg_filter">Genom att använda filtrering kommer Android att tillskriva data och strömförbrukning till AmniGuard AppControl - Android förutsätter att data och ström används av AmniGuard AppControl, snarare än de ursprungliga apparna</string>
     <string name="msg_filter4">Android 4 kräver att filtrering är aktiverat</string>
     <string name="msg_log_disabled">Trafikloggning är inaktiverad, använd reglage ovan för att aktivera loggning. Trafikloggning kan resultera i extra batterianvändning.</string>
     <string name="msg_clear_rules">Detta kommer att återställa regler och villkor till deras standardvärden</string>
@@ -193,20 +193,20 @@ Din internettrafik skickas inte till en avlägsen VPN-server.</string>
     <string name="msg_stop_forward">Sluta vidarebefordra %1$s port %2$d?</string>
     <string name="msg_metered">Nätverket är uppmätt</string>
     <string name="msg_inactive">Ingen aktiv internetanslutning</string>
-    <string name="msg_queue">AmnShield AppControl är upptagen</string>
+    <string name="msg_queue">AmniGuard AppControl är upptagen</string>
     <string name="msg_update">Uppdatering tillgänglig, tryck för att hämta</string>
     <string name="msg_usage">Du kan tillåta (grön) eller neka (röd) Wi-Fi eller mobilt Internet genom att trycka på ikonerna bredvid en app</string>
-    <string name="msg_fairemail">Om du har installerat AmnShield AppControl för att skydda din integritet kan du också vara intresserad av <a href="https://email.faircode.eu/">FairEmail</a>, e-postapp med öppen källkod som respekterar din integritet</string>
+    <string name="msg_fairemail">Om du har installerat AmniGuard AppControl för att skydda din integritet kan du också vara intresserad av <a href="https://email.faircode.eu/">FairEmail</a>, e-postapp med öppen källkod som respekterar din integritet</string>
     <string name="msg_whitelist">Internetåtkomst är tillåtet som standard (svartlistläge), detta kan ändras i inställningarna</string>
     <string name="msg_push">Inkommande (push) meddelanden hanteras mestadels av systemkomponenten Play-tjänster, vilket är tillåten Internetåtkomst som standard</string>
     <string name="msg_system">Hantering av alla (system)appar kan aktiveras i inställningarna</string>
     <string name="msg_issue">Beskriv problemet och ange tidpunkten för problemet:</string>
     <string name="msg_vpn_cancelled">VPN-anslutning annulleras\nHar du konfigurerat en annan VPN för att vara en alltid-på VPN?</string>
-    <string name="msg_on">Stänga av enheten med AmnShield AppControl aktiverat, startar automatiskt AmnShield AppControl när du startar enheten</string>
+    <string name="msg_on">Stänga av enheten med AmniGuard AppControl aktiverat, startar automatiskt AmniGuard AppControl när du startar enheten</string>
     <string name="msg_unavailable">Denna funktion är tillgänglig för denna Android-version</string>
     <string name="msg_always_on">En annan VPN är inställd som alltid-på VPN</string>
-    <string name="msg_always_on_lockdown">Stäng av \"blockera anslutningar utan VPN\" i Android VPN-inställningar för att använda AmnShield AppControl i filtreringsläge</string>
-    <string name="msg_private_dns">Stäng av \"Private DNS\" i Android-nätverksinställningar för att använda AmnShield AppControl i filtreringsläge</string>
+    <string name="msg_always_on_lockdown">Stäng av \"blockera anslutningar utan VPN\" i Android VPN-inställningar för att använda AmniGuard AppControl i filtreringsläge</string>
+    <string name="msg_private_dns">Stäng av \"Private DNS\" i Android-nätverksinställningar för att använda AmniGuard AppControl i filtreringsläge</string>
     <string name="title_lockdown_enabled">Trafiken är låst</string>
     <string name="title_unmetered_allowed">Ouppmätt trafik är tillåten</string>
     <string name="title_unmetered_blocked">Ouppmätt trafik är blockerad</string>

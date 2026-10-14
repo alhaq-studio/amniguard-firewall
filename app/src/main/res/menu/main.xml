@@ -8,81 +8,19 @@
         netblock:actionViewClass="androidx.appcompat.widget.SearchView"
         netblock:showAsAction="always|collapseActionView"/>
     <item
-        android:id="@+id/menu_filter"
-        android:icon="@drawable/ic_filter_list_white_24dp"
-        android:title="@string/menu_filter"
-        netblock:showAsAction="always|collapseActionView">
-        <menu>
-            <item
-                android:id="@+id/menu_app_user"
-                android:checkable="true"
-                android:title="@string/menu_app_user"/>
-            <item
-                android:id="@+id/menu_app_system"
-                android:checkable="true"
-                android:title="@string/menu_app_system"/>
-            <item
-                android:id="@+id/menu_app_nointernet"
-                android:checkable="true"
-                android:title="@string/menu_app_nointernet"/>
-            <item
-                android:id="@+id/menu_app_disabled"
-                android:checkable="true"
-                android:title="@string/menu_app_disabled"/>
-        </menu>
-    </item>
-    <item
-        android:id="@+id/menu_sort"
-        android:icon="@drawable/ic_sort_white_24dp"
-        android:title="@string/menu_sort"
-        netblock:showAsAction="always|collapseActionView">
-        <menu>
-            <group android:checkableBehavior="single">
-                <item
-                    android:id="@+id/menu_sort_name"
-                    android:title="@string/menu_sort_name"/>
-                <item
-                    android:id="@+id/menu_sort_uid"
-                    android:title="@string/menu_sort_uid"/>
-            </group>
-        </menu>
-    </item>
-    <item
         android:id="@+id/menu_lockdown"
         android:checkable="true"
         android:title="@string/setting_lockdown"/>
     <item
-        android:id="@+id/menu_malware"
-        android:checkable="true"
-        android:title="@string/setting_malware"/>
-    <item
-        android:id="@+id/menu_log"
-        android:title="@string/menu_log"/>
-    <item
-        android:id="@+id/menu_guide"
-        android:title="@string/menu_guide"/>
-    <item
-        android:id="@+id/menu_faq"
-        android:title="@string/menu_faq"/>
-    <item
-        android:id="@+id/menu_settings"
-        android:title="@string/menu_settings"/>
-    <item
-        android:id="@+id/menu_pro"
-        android:title="@string/title_pro"/>
+        android:id="@+id/menu_legend"
+        android:title="@string/menu_legend"/>
     <item
         android:id="@+id/menu_invite"
         android:title="@string/menu_invite"/>
-    <item
-        android:id="@+id/menu_legend"
-        android:title="@string/menu_legend"/>
     <item
         android:id="@+id/menu_support"
         android:title="@string/menu_support"/>
     <item
         android:id="@+id/menu_about"
         android:title="@string/menu_about"/>
-    <item
-        android:id="@+id/menu_apps"
-        android:title="@string/menu_apps"/>
 </menu>

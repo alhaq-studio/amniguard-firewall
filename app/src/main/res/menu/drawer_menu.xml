@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <group
+        android:id="@+id/group_core_nav"
+        android:checkableBehavior="single">
+        <item
+            android:id="@+id/drawer_apps"
+            android:icon="@drawable/ic_shield_24dp"
+            android:title="@string/drawer_firewall_rules" />
+        <item
+            android:id="@+id/drawer_domains"
+            android:icon="@drawable/ic_public_24dp"
+            android:title="@string/drawer_domain_blocker" />
+        <item
+            android:id="@+id/drawer_logs"
+            android:icon="@drawable/ic_list_24dp"
+            android:title="@string/drawer_traffic_logs" />
+        <item
+            android:id="@+id/drawer_settings"
+            android:icon="@drawable/ic_settings_24dp"
+            android:title="@string/drawer_settings" />
+    </group>
+
+    <item android:title="@string/drawer_category_tools">
+        <menu>
+            <item
+                android:id="@+id/drawer_speed_graph"
+                android:icon="@drawable/ic_equalizer_24dp"
+                android:title="@string/drawer_speed_graph" />
+            <item
+                android:id="@+id/drawer_port_forwarding"
+                android:icon="@drawable/ic_call_split_24dp"
+                android:title="@string/drawer_port_forwarding" />
+            <item
+                android:id="@+id/drawer_legend"
+                android:icon="@drawable/ic_info_24dp"
+                android:title="@string/drawer_legend" />
+        </menu>
+    </item>
+
+    <item android:title="@string/drawer_category_about">
+        <menu>
+            <item
+                android:id="@+id/drawer_faq"
+                android:icon="@drawable/ic_help_outline_24dp"
+                android:title="@string/drawer_faq" />
+            <item
+                android:id="@+id/drawer_github"
+                android:icon="@drawable/ic_code_24dp"
+                android:title="@string/drawer_github" />
+            <item
+                android:id="@+id/drawer_about"
+                android:icon="@drawable/ic_shield_24dp"
+                android:title="@string/drawer_about" />
+        </menu>
+    </item>
+</menu>

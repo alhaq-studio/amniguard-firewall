@@ -108,7 +108,7 @@
     <string name="setting_technical_networks">تور</string>
     <string name="setting_technical_subscription">زاكاس</string>
     <string name="summary_install">ئىستون ئوقتۇرشىدا كۆرۈنۈش يېڭى قاچىلانغان ئەپلەرگە ئىشلىتىلدۇ (Pro نەشر)</string>
-    <string name="summary_auto">قوشۇمچە ئەپچىنى ئىشلىتىشنى چەكلىگەندىن كېيىن،تاللىغان ۋاقىتتىن كېيىن AmnShield AppControl ئاپتۇماتىك قوزغىلىدۇ(0 نى كىرگۈزۈپ بۇ ئىقتىدارنى چەكلەش)</string>
+    <string name="summary_auto">قوشۇمچە ئەپچىنى ئىشلىتىشنى چەكلىگەندىن كېيىن،تاللىغان ۋاقىتتىن كېيىن AmniGuard AppControl ئاپتۇماتىك قوزغىلىدۇ(0 نى كىرگۈزۈپ بۇ ئىقتىدارنى چەكلەش)</string>
     <string name="summary_delay">ئېكران ئۆچكەندىن كېيىن، ئېكراندىكى تاللىغان ۋاقىتىنىڭ ئاكتىپ ھالىتىنى ساقلاڭ(0 نى كىرگۈزۈپ بۇ ئىقتىدارنى چەكلەش)</string>
     <string name="summary_update">كۈندە GitHub يېڭى نەشرنى تەكشۈرۈش</string>
     <string name="summary_tethering">Android نەشرى ئوخشىماسلىقىشا ئاساسەن،باشقۇرىدۇ.</string>
@@ -127,27 +127,27 @@
     <string name="summary_track_usage">ھەر بىر ئەپنىڭ ئىشلىتىش ۋە يوللاش خاتىرسىنى تەكشۈرۈش توكنى كۆپ ئىسراپ قىلىدۇ.</string>
     <string name="summary_rcode">سۈكۈتتىكى قىممەت 3 (NXDOMAIN)،\"يوق ئادىرس\" نى بىلدۈرىدۇ.</string>
     <string name="summary_socks5_enabled">پەقەت TCP ئېقىم مىقدارى ۋاكالىتەن مۇلازىمەتچى ئەۋەتىپ بېرىلىدۇ</string>
-    <string name="summary_watchdog">ۋاقىت بەلگىلەپ AmnShield AppControl نىڭ ھەرىكىتىنى تەكشۈرۈش.(0 نى كىرگۈزۈپ بۇ تاللاشنى چەكلەش)، بۇ بەلكىم توك ئىسراپچىلىقىنى كەلتۈرۈپ چېقىرىشى مومكىن.</string>
+    <string name="summary_watchdog">ۋاقىت بەلگىلەپ AmniGuard AppControl نىڭ ھەرىكىتىنى تەكشۈرۈش.(0 نى كىرگۈزۈپ بۇ تاللاشنى چەكلەش)، بۇ بەلكىم توك ئىسراپچىلىقىنى كەلتۈرۈپ چېقىرىشى مومكىن.</string>
     <string name="summary_stats">ئىستوندا تور سۈرئىتى كۆرۈنۈش</string>
     <string name="msg_sure">جەزىملەشتۈرەمسىز?</string>
     <string name="msg_started">ئىجرا قانۇقى</string>
     <string name="msg_packages">%1$d تول قويۇلدى, %2$d توسۇلدى</string>
     <string name="msg_hosts">%1$d يول قويۇلدى, %2$d توسۇلدىd, %3$d hosts</string>
     <string name="msg_waiting">يېڭى پائالىيەتنى ساقلاش</string>
-    <string name="msg_disabled">AmnShield AppControl توسۇلدى،ئۈستىدىن قوزغىتىڭ</string>
-    <string name="msg_revoked">AmnShield AppControl چەكلەندى،بەلكىم باشقا بىر ئەپ تەرپىدىن بولغان</string>
+    <string name="msg_disabled">AmniGuard AppControl توسۇلدى،ئۈستىدىن قوزغىتىڭ</string>
+    <string name="msg_revoked">AmniGuard AppControl چەكلەندى،بەلكىم باشقا بىر ئەپ تەرپىدىن بولغان</string>
     <string name="msg_installed">\'%1$s\' قاچىلاندى</string>
     <string name="msg_installed_n">قاچىلانغان</string>
     <string name="msg_access">%1$s تور چىقىشنى سىناش</string>
     <string name="msg_access_n">تور چىقىشنى سىناش</string>
     <string name="msg_completed">تامام</string>
-    <string name="msg_vpn">AmnShield AppControl uses a local VPN to filter internet traffic.
+    <string name="msg_vpn">AmniGuard AppControl uses a local VPN to filter internet traffic.
 For this reason, please allow a VPN connection in the next dialog.
 VPN مۇلازىمىتى چېقىرۋىتىش يوللانمىغان.</string>
-    <string name="msg_autostart">AmnShield AppControl ئاپتۇماتىك قوزغىلالمىدى،سىزنىڭ تېلېىفونىڭىزنىڭ نەشردىكى مەسلە بولشى مومكىن.</string>
+    <string name="msg_autostart">AmniGuard AppControl ئاپتۇماتىك قوزغىلالمىدى،سىزنىڭ تېلېىفونىڭىزنىڭ نەشردىكى مەسلە بولشى مومكىن.</string>
     <string name="msg_error">ئويلىمغان خاتالىق: \'%s\'</string>
     <string name="msg_start_failed">VPN مۇلازىمتىنى رەت قىلدى،سىزنىڭ تېلېىفونىڭىزنىڭ نەشردىكى مەسلە بولشى مومكىن.</string>
-    <string name="msg_try">سىناش AmnShield AppControl</string>
+    <string name="msg_try">سىناش AmniGuard AppControl</string>
     <string name="msg_terms">قوشۇلسىڭىز <a href="http://www.netblock.me/#terms">terms &amp; conditions</a></string>
     <string name="msg_dimming">ئەگەر سىز مۇقۇملاشنى باسالمىسىڭىز. يەنە بىر (كۆزنەك) ئەپ ئىجرا بولىدۇ.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/كۈن</string>
@@ -173,7 +173,7 @@ VPN مۇلازىمىتى چېقىرۋىتىش يوللانمىغان.</string>
     <string name="msg_system">بارلىق (سىستېما) ئەپنى تەڭشەكتىن باشقۇرغىلى بولىدۇ</string>
     <string name="msg_issue">خاتالىق يۈز بەرگەندىكى مەسلىنى دوكلات قىلىڭ:</string>
     <string name="msg_vpn_cancelled">VPN ئۇلاش بىكار قىلىندى\nيەنە بىر VPN تەڭشەكنى مەڭگۈلۈك ئىشلىتەمسىز?</string>
-    <string name="msg_on">AmnShield AppControl نى ئىشلىتىپ توك مەنبەسىنى ئېتىشنى قوزغىتىش،تېلېفون قوزغالغاندا AmnShield AppControl ئاپتۇماتىك قوزغىلىدۇ</string>
+    <string name="msg_on">AmniGuard AppControl نى ئىشلىتىپ توك مەنبەسىنى ئېتىشنى قوزغىتىش،تېلېفون قوزغالغاندا AmniGuard AppControl ئاپتۇماتىك قوزغىلىدۇ</string>
     <string name="msg_unavailable">Android نەشىر بۇ ئىقتىدار ئىشلەيدۇ</string>
     <string name="title_lockdown_enabled">قۇلۇپلاندى</string>
     <string name="title_unmetered_allowed">يول قويۇلدى</string>

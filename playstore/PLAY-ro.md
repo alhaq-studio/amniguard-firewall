@@ -1,63 +1,68 @@
-Play store
-==========
+# Magazinul Google Play: Firewall AmniGuard
 
-Title
------
-AmnShield FireWall - firewall fara root
+## Numele aplicației (29 / 30)
 
+AmniGuard: Firewall Fără Root
 
-Short description
------------------
-Un mod simplu de a bloca accesul aplicatiilor la internet
+## Descriere scurtă (68 / 80)
 
+Blocați accesul la internet per aplicație, filtrați domenii și date.
 
-Long description
-----------------
-AmnShield FireWall ofera modalitati simple si avansate de a bloca accesul la internet, ce nu necesita acces root.
+## Descriere completă
 
-Accesul aplicatiilor la conexiunile Wi-Fi si/sau mobile poate fi permis sau blocat atat la nivel individual cat si la nivel de adresa.
+AmniGuard Firewall oferă modalități simple și avansate de a controla accesul la internet și de a bloca conținutul web pe Android — complet fără acces root.
 
-Blocarea accesului la internet poate ajuta la:
+Stabiliți individual ce aplicații și domenii pot accesa rețeaua Wi-Fi, datele mobile sau conexiunile din fundal. Protejați dispozitivul, reduceți consumul de date și prelungiți autonomia bateriei cu confidențialitate deplină.
 
-&bull; reducerea consumului de date mobile
-&bull; reducerea consumului bateriei
-&bull; protejarea mai buna a intimitatii
+--------------------------------------------------
 
-Caracteristici:
+FUNCȚII PRINCIPALE
+--------------------------------------------------
 
-&bull; Simplu de utilizat
-&bull; Nu necesita acces root
-&bull; 100% software cu sursa deschisa
-&bull; Nu transmite datele nicaieri
-&bull; Nu urmareste activitatea si nici nu o analizeaza
-&bull; Dezvoltare si asistenta continuua
-&bull; Suporta Android 5.0 si ulterior
-&bull; Suporta IPv4/IPv6 TCP/UDP
-&bull; Suporta partajarea conexiunii
-&bull; Suporta utilizatori multiplii
-&bull; Optional permite cand ecranul este pornit
-&bull; Optional blocheaza in roaming
-&bull; Optional blocheaza aplicatiile de sistem
-&bull; Optional notifica la accesarea internetului
-&bull; Optional inregistreaza utilizarea conexiunii per aplicatie si per adresa
-&bull; Design Material cu tema deschisa si inchisa
+• Ușor de utilizat: Interfață modernă Material 3 cu teme luminoase și întunecate.
+• Fără Root: Funcționează local prin interfața standard VpnService din Android.
+• 100% Open Source: Cod transparent, auditabil și susținut de comunitate.
+• Zero Telemetrie: Fără module de urmărire, fără analitice și fără transmitere de date.
+• Procesare 100% Locală: Inspectarea pachetelor și regulile DNS rulează pe dispozitivul dvs.
+• Control de rețea per aplicație: Permiteți sau blocați accesul Wi-Fi și de date pentru fiecare aplicație.
+• Economisire de baterie și date: Previne scurgerile de date în fundal.
+• Suport complet pentru protocoale: Filtrare IPv4, IPv6, TCP, UDP și ICMP.
+• Filtre ecran pornit și roaming: Restricționați conexiunile când ecranul este blocat sau în roaming.
+• Control aplicații de sistem: Gestionați atât aplicațiile utilizator, cât și pe cele de sistem.
+• Suport pentru Hotspot / Tethering și rețele locale (LAN).
 
-Caracteristici PRO:
+--------------------------------------------------
 
-&bull; Jurnal de trafic; cauta si filtreaza lista de accesari; exporta fisiere PCAP pentru analiza traficului
-&bull; Permite/blocheaza accesul per aplicatie si per domeniu
-&bull; Notificare aplicatie noua instalata; configureaza AmnShield FireWall direct din notificare
-&bull; Grafic viteza conexiune intr-o notificare
-&bull; Alege din cele 5 teme aditionale atat in versiune deschisa cat si inchisa
+FILTRARE LOCALĂ DE DOMENII ȘI CONȚINUT
+--------------------------------------------------
 
-Nu există nici un alt firewall, ce nu necesita root, care sa ofere toate aceste caracteristici.
+• Protecție împotriva site-urilor pentru adulți: Blocare DNS locală și instantanee pentru peste 80.000 de domenii explicite.
+• Blocare conținut distractiv și rețele sociale: Blocați platformele care distrag atenția conform programului.
+• Reguli personalizate: Adăugați liste negre, liste albe și reguli wildcard (*.example.com).
+• Prevenire scurgeri DoT: Oprește tentativele neautorizate de ocolire prin DNS criptat.
 
-Pentru intrebari sau probleme puteti trimite un email la marcel+AmnShield FireWall@faircode.eu
+--------------------------------------------------
 
-Daca vrei sa ii ajuti pe cei ce nu vorbesc limba engleza, poti ajuta la traducerea AmnShield FireWall in limba ta materna: https://crowdin.com/project/netblock/
+DIAGNOZĂ ȘI INSTRUMENTE PRO
+--------------------------------------------------
 
-Daca doriti sa testati caracteristile in dezvoltare ale aplicatiei, va puteti alatura programului de testare: https://play.google.com/apps/testing/com.alhaq.AmnShield.netblock
+• Jurnal de trafic în timp real: Inspectați conexiunile cu IP de destinație, port și gazdă.
+• Export PCAP: Exportați pachetele de date pentru analiză avansată în Wireshark.
+• Grafic de viteză în timp real: Afișați viteza rețelei direct în bara de stare.
+• Alerte de conectare: Primiți notificări instant când o aplicație nouă încearcă să se conecteze.
 
-Toate permisiunile necesare sunt detaliate aici: https://github.com/M66B/AmnShield FireWall/blob/master/FAQ.md#FAQ42
+--------------------------------------------------
 
-Codul sursa este disponibil aici: https://github.com/M66B/AmnShield FireWall
+CONFIDENȚIALITATE ȘI TRANSPARENȚĂ
+--------------------------------------------------
+
+AmniGuard folosește API-ul VpnService din Android exclusiv pentru a crea un filtru local loopback pe dispozitiv. Traficul dvs. de rețea nu este trimis niciodată către servere externe sau terți.
+
+--------------------------------------------------
+
+SUPORT ȘI OPEN SOURCE
+--------------------------------------------------
+
+Dezvoltat de Alhaq Initiative ca parte a ecosistemului Amn.
+Cod sursă: <https://github.com/alhaq-studio/amniguard-firewall>
+Suport: <support@alhaq.uk>

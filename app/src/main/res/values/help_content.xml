@@ -1,10 +1,10 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <string name="help_title">User Guide</string>
-    <string name="help_subtitle">Learn how to use AmnShield AppControl</string>
+    <string name="help_subtitle">Learn how to use AmniGuard AppControl</string>
     
     <string name="help_section1_title">Getting Started</string>
-    <string name="help_section1_content">AmnShield AppControl is a powerful no-root firewall that allows you to monitor and control internet access for individual apps.\n\n1. Enable the firewall using the toggle switch in the top bar\n2. Your installed apps will appear in the list\n3. Use the Wi-Fi and mobile icons to control access for each app</string>
+    <string name="help_section1_content">AmniGuard AppControl is a powerful no-root firewall that allows you to monitor and control internet access for individual apps.\n\n1. Enable the firewall using the toggle switch in the top bar\n2. Your installed apps will appear in the list\n3. Use the Wi-Fi and mobile icons to control access for each app</string>
     
     <string name="help_section2_title">Understanding Colors</string>
     <string name="help_section2_content">Color indicators show the network access status:\n\n• RED - Internet access denied\n• ORANGE - Partially restricted\n• YELLOW - Limited access\n• GREEN/TEAL - Internet access allowed\n• GREY - System app</string>

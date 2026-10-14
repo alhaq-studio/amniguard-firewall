@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl proveeix una forma simple i avançada per blocar l\'accés a internet sense requerir privilegis d\'administració. Es pot denegar o permetre l\'accés al vostre Wi-Fi i/o connexió mòbil a les aplicacions i adreces individualment.</string>
-    <string name="app_android">AmnShield AppControl requerix d\'Android 5.1 o posterior</string>
-    <string name="app_xposed">Xposed provoca massa errors que podria portar l\'eliminació de AmnShield AppControl a la botiga del Google Play, per tant, AmnShield AppControl no està suportat mentre Xposed estiga instal·lat</string>
+    <string name="app_description">AmniGuard AppControl proveeix una forma simple i avançada per blocar l\'accés a internet sense requerir privilegis d\'administració. Es pot denegar o permetre l\'accés al vostre Wi-Fi i/o connexió mòbil a les aplicacions i adreces individualment.</string>
+    <string name="app_android">AmniGuard AppControl requerix d\'Android 5.1 o posterior</string>
+    <string name="app_xposed">Xposed provoca massa errors que podria portar l\'eliminació de AmniGuard AppControl a la botiga del Google Play, per tant, AmniGuard AppControl no està suportat mentre Xposed estiga instal·lat</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Política de privacitat</a></string>
-    <string name="app_first">S\'ha pres bona cura al desenvolupar i provar AmnShield AppControl, tot i així no és possible garantir un correcte funcionament en tots els aparells.</string>
+    <string name="app_first">S\'ha pres bona cura al desenvolupar i provar AmniGuard AppControl, tot i així no és possible garantir un correcte funcionament en tots els aparells.</string>
     <string name="app_agree">Accepte</string>
     <string name="app_disagree">Rebutge</string>
-    <string name="app_support">AmnShield AppControl us necessita. Polseu a comprar característiques pro per mantindre el projecte en marxa.</string>
+    <string name="app_support">AmniGuard AppControl us necessita. Polseu a comprar característiques pro per mantindre el projecte en marxa.</string>
     <string name="channel_foreground">Serveis en execució</string>
     <string name="channel_notify">Notificacions generals</string>
     <string name="channel_access">Accés a notificacions</string>

@@ -20,7 +20,7 @@
 -renamesourcefileattribute SourceFile
 -keepattributes SourceFile,LineNumberTable
 
-#AmnShield FireWall
+#AmniGuard FireWall
 -keepnames class com.guardpro.alhaq.** { *; }
 
 #JNI

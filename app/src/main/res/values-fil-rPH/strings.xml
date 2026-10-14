@@ -1,8 +1,8 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">Ang AmnShield AppControl ang nagbibigay ng simple at pinahusay na mga paraan para harangan ang akses sa internet - ang root ay hindi kinakailangan. Ang mga App at mga adres ay isa-isang pinapayagan o tinatanggihan ang akses sa iyong Wi-Fi at/o sa iyong mobile koneksyon.</string>
-    <string name="app_android">AmnShield AppControl requires Android 5.1 or later</string>
-    <string name="app_xposed">Ang Xposed ang nagiging dahilan kung bakit masyadong maraming salpukan, kung saan ay nagiging resulta na ang AmnShield AppControl ay tinatanggal mula sa Google Play Store, kaya ang AmnShield AppControl at hindi suportado habang ang Xposed ay naka-install</string>
+    <string name="app_description">Ang AmniGuard AppControl ang nagbibigay ng simple at pinahusay na mga paraan para harangan ang akses sa internet - ang root ay hindi kinakailangan. Ang mga App at mga adres ay isa-isang pinapayagan o tinatanggihan ang akses sa iyong Wi-Fi at/o sa iyong mobile koneksyon.</string>
+    <string name="app_android">AmniGuard AppControl requires Android 5.1 or later</string>
+    <string name="app_xposed">Ang Xposed ang nagiging dahilan kung bakit masyadong maraming salpukan, kung saan ay nagiging resulta na ang AmniGuard AppControl ay tinatanggal mula sa Google Play Store, kaya ang AmniGuard AppControl at hindi suportado habang ang Xposed ay naka-install</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Ang patakaran sa pagiging pribado</a></string>
     <string name="app_agree">Ako ay sumasang-ayon</string>
     <string name="app_disagree">Ako ay hindi sumasang-ayon</string>
@@ -116,13 +116,13 @@
     <string name="setting_technical_networks">Ang mag network</string>
     <string name="setting_technical_subscription">Ang mga subskripsyon</string>
     <string name="summary_install">Ipakita ang notipikasyon ng estado ng bar para direktang kumpigurahin ang mga bagong na-install na mga aplikasyon (tampok ang mahuhusay)</string>
-    <string name="summary_auto">Pagkatapos na i-disable gamit ang widget, awtomatikong ma-enable uli ang AmnShield AppControl pagkatapos piliin ang numero ng mga minuto (ilagay ang bokya para i-disable ang opsyong ito)</string>
+    <string name="summary_auto">Pagkatapos na i-disable gamit ang widget, awtomatikong ma-enable uli ang AmniGuard AppControl pagkatapos piliin ang numero ng mga minuto (ilagay ang bokya para i-disable ang opsyong ito)</string>
     <string name="summary_delay">Pagkatapos patayin ang iskrin, panatilihing nakabukas ang mga alituntunin ng iskrin para sa mga napiling bilang ng mga minuto (ilagay ang bokya para i-disable ang opsyong ito)</string>
     <string name="summary_update">Tignan ng dalawang beses sa isang araw ang mga bagong nilalabas sa Github</string>
     <string name="summary_tethering">Depende sa beryon ng Android, kung ang pagte-tether ay gagana o hindi gagana. Ang daloy ng tether ay hindi pwedeng salain.</string>
     <string name="summary_subnet">Ang subnet routing ay naka-enable; baka mapagana ang Wi-Fi sa pagtawag, pero maaari din itong pagmulan ng mga bug sa pagdagdag ng gamit ng baterya ng Android</string>
     <string name="summary_lan">Payagan ang mga aplikasyon para makakonekta sa lokal na area network na mga address, gaya ng 0.0.0.0/8, 172.16.0.0/12 at 192.168.0.0/16</string>
-    <string name="summary_ip6">Ang bersyon IP 6 sa Rota ng dalot para sa AmnShield AppControl ito ay maaaring payagan o i-block</string>
+    <string name="summary_ip6">Ang bersyon IP 6 sa Rota ng dalot para sa AmniGuard AppControl ito ay maaaring payagan o i-block</string>
     <string name="summary_wifi_home">I-aplay ang mga alituntunin ang Wi-Fi network para sa napiling network lamang (i-aplay ang mga alituntunin ng mobile network sa ibang Wi-Fi na mga network)</string>
     <string name="summary_metered">I-aplay ang alituntunin ng mobile network para makwenta ang (bayad na, tethered) at Wi-Fi networks</string>
     <string name="summary_metered_2g">I-aplay ang mga alituntunin ng Wi-Fi network para sa datus ng mga koneksyong 2G</string>
@@ -130,7 +130,7 @@
     <string name="summary_metered_4g">I-aplay ang mga alituntunin ng Wi-Fi network para sa datus ng mga koneksyong LTE</string>
     <string name="summary_national_roaming">Huwag i-aplay ang alituntunin ang roaming kapag ang SIM at network ng mobile ay pareha ng bansa</string>
     <string name="summary_eu_roaming">Huwag i-aplay ang alituntunin ang roaming kapag ang SIM at network ng mobile network kapag ang bansa ay malapit sa EU (ang roam katulad sa bahay)</string>
-    <string name="summary_call">I-disable ang AmnShield AppControl sa papasok o kaya ay papalabas na tawag sa telepeno. Pwede itong magamit para mapagana sa palibot ng IP/Wi-Fi na mga problema sa pagtawag.</string>
+    <string name="summary_call">I-disable ang AmniGuard AppControl sa papasok o kaya ay papalabas na tawag sa telepeno. Pwede itong magamit para mapagana sa palibot ng IP/Wi-Fi na mga problema sa pagtawag.</string>
     <string name="summary_system">Bigyan ng kahulugan ang mga alituntunin para sa sistema ng mga aplikasyon (para sa mga eksperto)</string>
     <string name="summary_log_app">Tinangkang mag log para ma-akses ang internet para sa mga aplikasyon. Ito ay maaaring magkaresulta ng dagdag gamit sa baterya.</string>
     <string name="summary_access">Ipakita ang notipikasyon ng estado na bar kapag ang aplikasyon ay sinusubukang ma-akses ang baging adres ng internet (naka-disable kapag sinasala, yung mga nablock na internet lamang ang subukan at i-akses at mag-nonotipikasyon)</string>
@@ -139,27 +139,27 @@
     <string name="summary_block_domains">Romesponde sa pagkukumpigura sa DNS tumugod sa kowd para i-block ang mga pangalan ng domain. Ang pindutang ito ay naka-disable kapag walang mga payl na host ang pwede.</string>
     <string name="summary_rcode">Ang default na mga halaga ay 3 (NXDOMAIN), ang ibig sabihin \'walang-sumobrang domain\'.</string>
     <string name="summary_socks5_enabled">Ang daloy ng TCP lamang ang ipapadala sa serber ng proksi</string>
-    <string name="summary_watchdog">Pana-panahon ang pagtsi-tsek kung ang AmnShield AppControl ay nanatiling tumatakbo parin (ilagay ang bokya para i-disable ang opsyong ito). ito ay maaaring magkaresulta ng dagdag gamit sa baterya.</string>
+    <string name="summary_watchdog">Pana-panahon ang pagtsi-tsek kung ang AmniGuard AppControl ay nanatiling tumatakbo parin (ilagay ang bokya para i-disable ang opsyong ito). ito ay maaaring magkaresulta ng dagdag gamit sa baterya.</string>
     <string name="summary_stats">Ipakita ang bilis ng network sa talangguhitan at sa notipikasyon ng bar na estado</string>
     <string name="msg_sure">Ikaw ba ay sigurado?</string>
     <string name="msg_started">Ang pagpapatupad ng mga patakaran</string>
     <string name="msg_packages">%1$d payagan, %2$d i-block</string>
     <string name="msg_hosts">%1$d payagan, %2$d i-block, %3$d ang mga host</string>
     <string name="msg_waiting">Naghahantay para sa kaganapan</string>
-    <string name="msg_disabled">Ang AmnShield AppControl ay naka-disable, gamitin ang pindutan sa itaas para i-enable ang AmnShield AppControl</string>
-    <string name="msg_revoked">Ang AmnShield AppControl ay dinisable, kagaya ng paggamit sa ibang VPN base sa aplikasyon</string>
+    <string name="msg_disabled">Ang AmniGuard AppControl ay naka-disable, gamitin ang pindutan sa itaas para i-enable ang AmniGuard AppControl</string>
+    <string name="msg_revoked">Ang AmniGuard AppControl ay dinisable, kagaya ng paggamit sa ibang VPN base sa aplikasyon</string>
     <string name="msg_installed">\'%1$s\' naka-install</string>
     <string name="msg_installed_n">Ay naka-install</string>
     <string name="msg_access">%1$s tinangka ang akses para sa internet</string>
     <string name="msg_access_n">Tinangka ang akses para sa internet</string>
     <string name="msg_completed">Kumpleto na ang aksyon</string>
-    <string name="msg_vpn">Ginamit ang AmnShield AppControl ang lokal na VPN para salain ang daloy ng internet.
+    <string name="msg_vpn">Ginamit ang AmniGuard AppControl ang lokal na VPN para salain ang daloy ng internet.
 Para sa dahilang ito, pakiusap payagan ang VPN na koneksyon sa susunod na diyalogo.
 Ang iyong daloy ng internet ay hindi naipadala sa malayong serber ng VPN.</string>
-    <string name="msg_autostart">Ang AmnShield AppControl ay hindi awtomatikong magbubukas. Dahil ito ay malamang na bug sa iyong bersyon ng Android.</string>
+    <string name="msg_autostart">Ang AmniGuard AppControl ay hindi awtomatikong magbubukas. Dahil ito ay malamang na bug sa iyong bersyon ng Android.</string>
     <string name="msg_error">May hindi inaasahang mali na naganap: \'%s\'</string>
     <string name="msg_start_failed">Ang android ay tinanggihan na magsimula ang serbisyo ng VPN sa mga sandaling ito. Ito ay dahil sa malamang sa bug sa iyong bersyon ng Android.</string>
-    <string name="msg_try">Subukan ang AmnShield AppControl</string>
+    <string name="msg_try">Subukan ang AmniGuard AppControl</string>
     <string name="msg_terms">Kapag mag-aambag ay sang-ayon kaba sa mga <a href="http://www.netblock.me/#terms">alituntunin at &amp; mga kondisyon</a></string>
     <string name="msg_dimming">Kung hindi mo pipindutin ang OK sa susunod na diyalogo, may bago na namang (iskrin dimming) na aplikasyon na magninipula sa iskrin.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ ang MB/kada-araw</string>
@@ -167,9 +167,9 @@ Ang iyong daloy ng internet ay hindi naipadala sa malayong serber ng VPN.</strin
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">Para sa tuloy-tuloy na mga resulta, ang pag-ooptimize sa baterya ng Android ay idi-disable para sa AmnShield AppControl. \n\nSa susunod na diyalogo, piliin \"Ang lahat ng aplikasyon\" duon sa itaas, Tapikin ang AmnShield AppControl sa listahan at piliin at kumpirmahin at \"Huwag i-optimize\".</string>
-    <string name="msg_datasaving">Para sa tuloy-tuloy na mga resulta, ang mga opsyon para sa pagsi-seyb ng datus sa Android ay idi-disable para sa AmnShield AppControl \n\nSa susunod na diyalogo, i-enable ang mga opsyon ng \"Datus ng background\" ay \"Huwag higpitan ang gamit ng datus\"</string>
-    <string name="msg_filter">Ang paggamit ng pagsasala ay magiging dahilan sa Android para katangian ng datus at ang gamit ng kapangayarihan ng AmnShield AppControl - Ang Android ay pinapalagay na ang datus ay kapangyarihan ay ginagamit ayon sa AmnShield AppControl, kumpara sa orihinal na mga aplikasyon</string>
+    <string name="msg_doze">Para sa tuloy-tuloy na mga resulta, ang pag-ooptimize sa baterya ng Android ay idi-disable para sa AmniGuard AppControl. \n\nSa susunod na diyalogo, piliin \"Ang lahat ng aplikasyon\" duon sa itaas, Tapikin ang AmniGuard AppControl sa listahan at piliin at kumpirmahin at \"Huwag i-optimize\".</string>
+    <string name="msg_datasaving">Para sa tuloy-tuloy na mga resulta, ang mga opsyon para sa pagsi-seyb ng datus sa Android ay idi-disable para sa AmniGuard AppControl \n\nSa susunod na diyalogo, i-enable ang mga opsyon ng \"Datus ng background\" ay \"Huwag higpitan ang gamit ng datus\"</string>
+    <string name="msg_filter">Ang paggamit ng pagsasala ay magiging dahilan sa Android para katangian ng datus at ang gamit ng kapangayarihan ng AmniGuard AppControl - Ang Android ay pinapalagay na ang datus ay kapangyarihan ay ginagamit ayon sa AmniGuard AppControl, kumpara sa orihinal na mga aplikasyon</string>
     <string name="msg_filter4">Ang Android 4 ay nangangailangn ang pagsasala para mapagana</string>
     <string name="msg_log_disabled">Naka-disable ang daloy para sa paglo-log, gamitin ang pindutan sa itaas upang ma-enable ang paglo-log. Ang daloy sa paglo-log ay maaaring magka resulta sa ekstrang paggamit sa baterya.</string>
     <string name="msg_clear_rules">Ito ay ang pag rerest sa mga alintuntunin at ang mga kondisyon sa mga hala ng default</string>
@@ -190,7 +190,7 @@ Ang iyong daloy ng internet ay hindi naipadala sa malayong serber ng VPN.</strin
     <string name="msg_system">Pamahalaan ang lahat na (sistema) ng mga aplikasyon para ma-enable ang mga seting</string>
     <string name="msg_issue">Pakiusap ipaliwanag ang problema at isaan ang oras ng mga problema:</string>
     <string name="msg_vpn_cancelled">Kinansela ang koneksyon ng VPN\nKinumpigara mo ba ang ibang VPN para maging laging-bukas ang VPN?</string>
-    <string name="msg_on">Ang kapangyarahin ay ibaba ang iyong gamit kasama ang AmnShield AppControl ay naka-enable, gagawin nameng awtomato ang pagbukas ng AmnShield AppControl para sa pagpapataas ng kapangyarahin sa iyong gamit</string>
+    <string name="msg_on">Ang kapangyarahin ay ibaba ang iyong gamit kasama ang AmniGuard AppControl ay naka-enable, gagawin nameng awtomato ang pagbukas ng AmniGuard AppControl para sa pagpapataas ng kapangyarahin sa iyong gamit</string>
     <string name="msg_unavailable">Ang katangiang ito ay hindi pwede sa iyong beryon ng Android</string>
     <string name="msg_always_on">Ang panibagong VPN ay nakatakda para maging laging-bukas ang VPN</string>
     <string name="title_lockdown_enabled">Ang daloy ay naka-lock down</string>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl راهکارهای ساده و پیشرفته‌ای برای مسدود کردن دسترسی به اینترنت فراهم می‌کند - بدون نیاز به روت بودن گوشی. هرکدام از برنامه‌ها و سایتها می‌توانند جداگانه به وای‌فای/داده موبایل دسترسی مجاز یا غیر مجاز داشته باشند.</string>
-    <string name="app_android">AmnShield AppControl نیاز به اندروید 5.1 یا بالاتر دارد</string>
-    <string name="app_xposed">Xposed موجب خطاهای زیاد می‌شود، که شاید موجب حذف شدن AmnShield AppControl از گوگل پلی استور شود، برای همین AmnShield AppControl هنگامی که Xposed نصب شده است ، پشتیبانی نمی‌شود</string>
+    <string name="app_description">AmniGuard AppControl راهکارهای ساده و پیشرفته‌ای برای مسدود کردن دسترسی به اینترنت فراهم می‌کند - بدون نیاز به روت بودن گوشی. هرکدام از برنامه‌ها و سایتها می‌توانند جداگانه به وای‌فای/داده موبایل دسترسی مجاز یا غیر مجاز داشته باشند.</string>
+    <string name="app_android">AmniGuard AppControl نیاز به اندروید 5.1 یا بالاتر دارد</string>
+    <string name="app_xposed">Xposed موجب خطاهای زیاد می‌شود، که شاید موجب حذف شدن AmniGuard AppControl از گوگل پلی استور شود، برای همین AmniGuard AppControl هنگامی که Xposed نصب شده است ، پشتیبانی نمی‌شود</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">سیاست حفظ حریم خصوصی</a></string>
-    <string name="app_first">مراقبتی عالی برای توسعه و آزمایش AmnShield AppControl بکار برده شده است، با این حال تضمین اینکه AmnShield AppControl بر روی هر دستگاهی به درستی کار خواد کرد غیرممکن است.</string>
+    <string name="app_first">مراقبتی عالی برای توسعه و آزمایش AmniGuard AppControl بکار برده شده است، با این حال تضمین اینکه AmniGuard AppControl بر روی هر دستگاهی به درستی کار خواد کرد غیرممکن است.</string>
     <string name="app_agree">می‌پذیرم</string>
     <string name="app_disagree">نمی‌پذیرم</string>
-    <string name="app_support">AmnShield AppControl به کمک شما نیاز دارد. برای خرید ویژگی‌های حرفه‌ای به‌خاطر یاری پروژه ضربه بزنید.</string>
+    <string name="app_support">AmniGuard AppControl به کمک شما نیاز دارد. برای خرید ویژگی‌های حرفه‌ای به‌خاطر یاری پروژه ضربه بزنید.</string>
     <string name="app_qap">گوگل این برنامه را از فروشگاه Play حذف می‌کند، زیرا می‌خواهد مجوز جستجوی همه برنامه‌ها را داشته باشد.
          پنج ایراد که توجیه خوبی برای لزوم این مجوز ارائه می کرد، رد شد.
          با این حال، این نسخه از برنامه دیگر به این مجوز نیاز ندارد
@@ -136,7 +136,7 @@
     <string name="summary_metered_4g">قوانین شبکه وای‌فای را برای اتصال‌های داده LTE اعمال کن</string>
     <string name="summary_national_roaming">قوانین رومینگ را زمانیکه شبکه‌ی کشور سیم‌کارت و همراه مشابه‌اند اِعمال نکن</string>
     <string name="summary_eu_roaming">قوانین رومینگ را زمانیکه شبکه‌ی کشور سیم‌کارت و همراه درون اروپا هستند اِعمال نکن (رومینگ شبیه داخلی)</string>
-    <string name="summary_call">غیرفعال کردن AmnShield AppControl برای تماس‌های تلفنی ورودی یا خروجی. این تنظیم میتواند برای استفاده از مشکلات تماس‌های آی‌پی/وای‌فای استفاده شود.</string>
+    <string name="summary_call">غیرفعال کردن AmniGuard AppControl برای تماس‌های تلفنی ورودی یا خروجی. این تنظیم میتواند برای استفاده از مشکلات تماس‌های آی‌پی/وای‌فای استفاده شود.</string>
     <string name="summary_system">تعیین قوانین برای برنامه‌های سیستم (برای کارشناسان)</string>
     <string name="summary_log_app">تلاش‌های دسترسی به اینترنت برای برنامه‌ها را ثبت کن. این ممکن است منجر به مصرف باتری اضافی شود.</string>
     <string name="summary_access">هنگام تلاش برای دستیابی به یک آدرس اینترنتی جدید ، اعلان نوار وضعیت را نشان بده (وقتی فیلتر غیرفعال است ، فقط به تلاشهای دسترسی به اینترنت مسدود شده اطلاع داده می‌شود)</string>
@@ -152,20 +152,20 @@
     <string name="msg_packages">%1$d مجازشد، %2$d مسدود شد</string>
     <string name="msg_hosts">%1$d مجازشد، %2$d مسدود شد، %3$d هاست</string>
     <string name="msg_waiting">در حال انتظار برای رویداد</string>
-    <string name="msg_disabled">AmnShield AppControl غیرفعال است، از کلید بالا برای فعال‌سازی AmnShield AppControl استفاده کنید</string>
-    <string name="msg_revoked">AmnShield AppControl غیرفعال شده است، به احتمال زیاد به خاطر استفاده از یک برنامه مبتنی بر VPN</string>
+    <string name="msg_disabled">AmniGuard AppControl غیرفعال است، از کلید بالا برای فعال‌سازی AmniGuard AppControl استفاده کنید</string>
+    <string name="msg_revoked">AmniGuard AppControl غیرفعال شده است، به احتمال زیاد به خاطر استفاده از یک برنامه مبتنی بر VPN</string>
     <string name="msg_installed">\'%1$s\' نصب شد</string>
     <string name="msg_installed_n">نصب شده است</string>
     <string name="msg_access">%1$s تلاش برای دسترسی به اینترنت</string>
     <string name="msg_access_n">تلاش برای دسترسی به اینترنت</string>
     <string name="msg_completed">کنش کامل شد</string>
-    <string name="msg_vpn">AmnShield AppControl از یک VPN محلی برای فیلتر کردن ترافیک اینترنت استفاده می کند.
+    <string name="msg_vpn">AmniGuard AppControl از یک VPN محلی برای فیلتر کردن ترافیک اینترنت استفاده می کند.
  به همین دلیل ، لطفاً در گفتگوی بعدی اتصال VPN را مجاز کنید.
  ترافیک اینترنت شما به یک سرور VPN از راه دور ارسال نمی‌شود.</string>
-    <string name="msg_autostart">AmnShield AppControl نمی‌تواند خودکار اجرا شود. این شاید به‌خاطر یک باگ در نگارش اندروید شماست.</string>
+    <string name="msg_autostart">AmniGuard AppControl نمی‌تواند خودکار اجرا شود. این شاید به‌خاطر یک باگ در نگارش اندروید شماست.</string>
     <string name="msg_error">یک خطای غیر منتظره رخ داده است: \'%s\'</string>
     <string name="msg_start_failed">اندروید در این لحظه از شروع سرویس VPN خودداری کرد. این به احتمال زیاد به دلیل اشکال در نسخه اندروید شما است.</string>
-    <string name="msg_try">AmnShield AppControl را بیازمایید</string>
+    <string name="msg_try">AmniGuard AppControl را بیازمایید</string>
     <string name="msg_terms">با اهداء شما با <a href="http://www.netblock.me/#terms"> شرایط و مقررات &amp; موافقت می‌کنید</a></string>
     <string name="msg_dimming">اگر در گفتگوی بعدی نمی‌توانید OK را فشار دهید ، احتمالاً برنامه دیگری (کم رنگ کننده صفحه) صفحه را دستکاری می‌کند.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼مگابایت/روز</string>
@@ -173,11 +173,11 @@
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼مگابایت</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ گیگابایت</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">برای عملکرد درست ، بهینه سازی باتری اندروید باید برای AmnShield AppControl غیرفعال شود.
-\n\n در گفتگوی بعدی ، \"همه برنامه ها\" را در بالا انتخاب کنید ، روی AmnShield AppControl در لیست ضربه بزنید و \"بهینه سازی نکنید\" را انتخاب و تأیید کنید.</string>
-    <string name="msg_datasaving">برای نتایج مداوم ، گزینه های ذخیره داده اندرویدی باید برای AmnShield AppControl غیرفعال شود
+    <string name="msg_doze">برای عملکرد درست ، بهینه سازی باتری اندروید باید برای AmniGuard AppControl غیرفعال شود.
+\n\n در گفتگوی بعدی ، \"همه برنامه ها\" را در بالا انتخاب کنید ، روی AmniGuard AppControl در لیست ضربه بزنید و \"بهینه سازی نکنید\" را انتخاب و تأیید کنید.</string>
+    <string name="msg_datasaving">برای نتایج مداوم ، گزینه های ذخیره داده اندرویدی باید برای AmniGuard AppControl غیرفعال شود
 \n\n در گفتگوی بعدی گزینه های \"داده پس زمینه\" و \"استفاده از داده های بدون محدودیت\" را فعال کنید</string>
-    <string name="msg_filter">استفاده از فیلتر باعث می‌شود انتقال داده اندروید و مصرف برق را به AmnShield AppControl نسبت دهد - اندروید فرض می‌کند که داده‌ها و قدرت توسط AmnShield AppControl استفاده می‌شود ، نه برنامه های اصلی</string>
+    <string name="msg_filter">استفاده از فیلتر باعث می‌شود انتقال داده اندروید و مصرف برق را به AmniGuard AppControl نسبت دهد - اندروید فرض می‌کند که داده‌ها و قدرت توسط AmniGuard AppControl استفاده می‌شود ، نه برنامه های اصلی</string>
     <string name="msg_filter4">در اندروید ۴ فیلتر باید فعال باشد</string>
     <string name="msg_import_last">آخرین واردکردن: %s</string>
     <string name="msg_downloading">درحال بارگیری\n%1s</string>
@@ -185,15 +185,15 @@
     <string name="msg_download_last">آخرین بارگیری: %s</string>
     <string name="msg_metered">شبکه اندازه‌گیری می‌شود</string>
     <string name="msg_inactive">اتصال فعال اینترنت موجود نیست</string>
-    <string name="msg_queue">AmnShield AppControl مشغول است</string>
+    <string name="msg_queue">AmniGuard AppControl مشغول است</string>
     <string name="msg_update">به‌روزرسانی موجود است، برای بارگیری لمس کنید</string>
-    <string name="msg_fairemail">اگر شما AmnShield AppControl را برای حفاظت از حریم خصوصی خود نصب کرده‌اید شاید به <a href="https://email.faircode.eu/">FairEmail</a> نیز علاقه مند باشید، یک برنامه ایمیل، منبع باز و نیز دوستدار حریم خصوصی</string>
+    <string name="msg_fairemail">اگر شما AmniGuard AppControl را برای حفاظت از حریم خصوصی خود نصب کرده‌اید شاید به <a href="https://email.faircode.eu/">FairEmail</a> نیز علاقه مند باشید، یک برنامه ایمیل، منبع باز و نیز دوستدار حریم خصوصی</string>
     <string name="msg_issue">لطفاً مشکل را شرح داده و به زمان مشکل نیز اشاره کنید:</string>
     <string name="msg_vpn_cancelled">اتصال VPN لغو شد\n آیا شما یک VPN دیگر را به عنوان همیشه-روشن پیکربندی کرده‌اید؟</string>
     <string name="msg_unavailable">این ویژگی در این نسخه اندروید در دسترس نیست</string>
     <string name="msg_always_on">VPN دیگری به عنوان VPN همیشه-فعال تنظیم شده است</string>
-    <string name="msg_always_on_lockdown">\"اتصال اتصالات بدون VPN\" را در تنظیمات VPN اندروید خاموش کنید تا از AmnShield AppControl در حالت فیلتر استفاده کنید</string>
-    <string name="msg_private_dns">\"DNS خصوصی\" را در تنظیمات شبکه اندروید خاموش کنید تا از AmnShield AppControl در حالت فیلتر استفاده کنید</string>
+    <string name="msg_always_on_lockdown">\"اتصال اتصالات بدون VPN\" را در تنظیمات VPN اندروید خاموش کنید تا از AmniGuard AppControl در حالت فیلتر استفاده کنید</string>
+    <string name="msg_private_dns">\"DNS خصوصی\" را در تنظیمات شبکه اندروید خاموش کنید تا از AmniGuard AppControl در حالت فیلتر استفاده کنید</string>
     <string name="title_lockdown_enabled">ترافیک قفل شد</string>
     <string name="title_unmetered_allowed">ترافیکِ اندازه‌گیری نشده مجاز شد</string>
     <string name="title_unmetered_blocked">ترافیک اندازه‌گیری نشده مسدود شد</string>

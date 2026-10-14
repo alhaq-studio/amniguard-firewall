@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl menyediakan cara sederhana dan canggih untuk memblokir akses internet — root tidak dibutuhkan. Izinkan atau tolak koneksi Wi-Fi dan/atau seluler untuk setiap apl dan alamat situs.</string>
-    <string name="app_android">AmnShield AppControl membutuhkan Android 5.1 atau lebih baru</string>
-    <string name="app_xposed">Xposed menyebabkan terlalu banyak crash, yang mungkin menyebabkan AmnShield AppControl dihapus dari Google Play Store, oleh karena itu AmnShield AppControl tidak didukung saat Xposed terpasang</string>
+    <string name="app_description">AmniGuard AppControl menyediakan cara sederhana dan canggih untuk memblokir akses internet — root tidak dibutuhkan. Izinkan atau tolak koneksi Wi-Fi dan/atau seluler untuk setiap apl dan alamat situs.</string>
+    <string name="app_android">AmniGuard AppControl membutuhkan Android 5.1 atau lebih baru</string>
+    <string name="app_xposed">Xposed menyebabkan terlalu banyak crash, yang mungkin menyebabkan AmniGuard AppControl dihapus dari Google Play Store, oleh karena itu AmniGuard AppControl tidak didukung saat Xposed terpasang</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Kebijakan privasi</a></string>
-    <string name="app_first">AmnShield AppControl dikembangkan dan diuji coba dengan sangat hati-hati, meskipun demikian, tidak mungkin menjamin AmnShield AppControl akan bekerja dengan benar pada setiap perangkat.</string>
+    <string name="app_first">AmniGuard AppControl dikembangkan dan diuji coba dengan sangat hati-hati, meskipun demikian, tidak mungkin menjamin AmniGuard AppControl akan bekerja dengan benar pada setiap perangkat.</string>
     <string name="app_agree">Setuju</string>
     <string name="app_disagree">Tolak</string>
-    <string name="app_support">AmnShield AppControl butuh bantuan anda. Sentuh untuk membeli fitur pro agar proyek bisa terus dikembangkan.</string>
+    <string name="app_support">AmniGuard AppControl butuh bantuan anda. Sentuh untuk membeli fitur pro agar proyek bisa terus dikembangkan.</string>
     <string name="channel_foreground">Layanan yang berjalan</string>
     <string name="channel_notify">Notifikasi umum</string>
     <string name="channel_access">Notifikasi akses</string>
@@ -124,13 +124,13 @@
     <string name="setting_technical_networks">Jaringan</string>
     <string name="setting_technical_subscription">Langganan</string>
     <string name="summary_install">Tampilkan notifikasi bilah status untuk langsung mengkonfigurasi apl yang baru dipasang (fitur pro)</string>
-    <string name="summary_auto">Setelah menonaktifkan menggunakan widget, otomatis aktifkan AmnShield AppControl lagi setelah jumlah menit yang dipilih (masukkan nol untuk menonaktifkan opsi ini)</string>
+    <string name="summary_auto">Setelah menonaktifkan menggunakan widget, otomatis aktifkan AmniGuard AppControl lagi setelah jumlah menit yang dipilih (masukkan nol untuk menonaktifkan opsi ini)</string>
     <string name="summary_delay">Setelah mematikan layar, jaga aturan layar nyala aktif selama jumlah menit yang dipilih (masukkan nol untuk menonaktifkan opsi ini)</string>
     <string name="summary_update">Periksa rilis baru di GitHub dua kali sehari</string>
     <string name="summary_tethering">Tergantung pada versi Android, tethering mungkin bisa atau tidak bisa berfungsi. Lalu lintas tethering tidak bisa disaring.</string>
     <string name="summary_subnet">Aktifkan routing subnet; mungkin mengaktifkan panggilan Wi-Fi, tetapi mungkin juga memicu bug di Android dan meningkatkan penggunaan baterai</string>
     <string name="summary_lan">Izinkan apl terhubung ke alamat jaringan area lokal, seperti 10.0.0.0/8, 172.16.0.0/12 dan 192.168.0.0/16</string>
-    <string name="summary_ip6">Arahkan lalu lintas IP versi 6 ke AmnShield AppControl sehingga bisa selektif diizinkan atau diblokir</string>
+    <string name="summary_ip6">Arahkan lalu lintas IP versi 6 ke AmniGuard AppControl sehingga bisa selektif diizinkan atau diblokir</string>
     <string name="summary_wifi_home">Terapkan aturan jaringan Wi-Fi untuk jaringan yang dipilih saja (terapkan aturan jaringan seluler untuk jaringan Wi-Fi lainnya)</string>
     <string name="summary_metered">Terapkan aturan jaringan seluler ke jaringan Wi-Fi terbatas (berbayar, tether)</string>
     <string name="summary_metered_2g">Terapkan aturan jaringan Wi-Fi untuk koneksi data 2G</string>
@@ -138,7 +138,7 @@
     <string name="summary_metered_4g">Terapkan aturan jaringan Wi-Fi untuk koneksi data LTE</string>
     <string name="summary_national_roaming">Jangan terapkan aturan roaming saat negara jaringan SIM dan seluler sama</string>
     <string name="summary_eu_roaming">Jangan terapkan aturan roaming saat negara jaringan SIM dan seluler berada di dalam UE (roam seperti di rumah)</string>
-    <string name="summary_call">Nonaktifkan AmnShield AppControl pada panggilan telepon masuk atau keluar. Ini bisa digunakan untuk mengatasi masalah panggilan IP/Wi-Fi.</string>
+    <string name="summary_call">Nonaktifkan AmniGuard AppControl pada panggilan telepon masuk atau keluar. Ini bisa digunakan untuk mengatasi masalah panggilan IP/Wi-Fi.</string>
     <string name="summary_system">Tentukan aturan untuk apl sistem (untuk ahli)</string>
     <string name="summary_log_app">Catat upaya akses internet untuk apl. Hal ini mungkin menyebabkan penggunaan baterai ekstra.</string>
     <string name="summary_access">Tampilkan notifikasi bilah status saat apl mencoba mengakses alamat internet baru (saat penyaringan dinonaktifkan, hanya akses internet yang diblokir yang akan diberitahu)</string>
@@ -148,27 +148,27 @@
     <string name="summary_rcode">Nilai bawaannya adalah 3 (NXDOMAIN), yang berarti \'tidak ada domain\'.</string>
     <string name="summary_validate">Nama domain digunakan untuk memvalidasi sambungan internet pada port 443 (https).</string>
     <string name="summary_socks5_enabled">Hanya lalu lintas TCP yang akan dikirim ke server proksi</string>
-    <string name="summary_watchdog">Periksa secara berkala apakah AmnShield AppControl masih berjalan (masukkan nol untuk menonaktifkan opsi ini). Hal ini mungkin menyebabkan penggunaan baterai ekstra.</string>
+    <string name="summary_watchdog">Periksa secara berkala apakah AmniGuard AppControl masih berjalan (masukkan nol untuk menonaktifkan opsi ini). Hal ini mungkin menyebabkan penggunaan baterai ekstra.</string>
     <string name="summary_stats">Tampilkan grafik kecepatan jaringan di notifikasi bilah status</string>
     <string name="msg_sure">Apakah Anda yakin?</string>
     <string name="msg_started">Memaksa aturan</string>
     <string name="msg_packages">%1$d diizinkan, %2$d diblokir</string>
     <string name="msg_hosts">%1$d diizinkan, %2$d diblokir, %3$d hos</string>
     <string name="msg_waiting">Menunggu acara</string>
-    <string name="msg_disabled">AmnShield AppControl dinonaktifkan, gunakan opsi di atas untuk mengaktifkan AmnShield AppControl</string>
-    <string name="msg_revoked">AmnShield AppControl telah dinonaktifkan, kemungkinan karena menggunakan apl berbasis VPN lainnya</string>
+    <string name="msg_disabled">AmniGuard AppControl dinonaktifkan, gunakan opsi di atas untuk mengaktifkan AmniGuard AppControl</string>
+    <string name="msg_revoked">AmniGuard AppControl telah dinonaktifkan, kemungkinan karena menggunakan apl berbasis VPN lainnya</string>
     <string name="msg_installed">\'%1$s\' terpasang</string>
     <string name="msg_installed_n">Telah terpasang</string>
     <string name="msg_access">%1$s mencoba akses internet</string>
     <string name="msg_access_n">Mencoba akses internet</string>
     <string name="msg_completed">Tindakan selesai</string>
-    <string name="msg_vpn">AmnShield AppControl menggunakan VPN lokal untuk menyaring lalu lintas internet.
+    <string name="msg_vpn">AmniGuard AppControl menggunakan VPN lokal untuk menyaring lalu lintas internet.
 Untuk alasan ini, silakan izinkan koneksi VPN di dialog berikutnya.
 Lalu lintas internet Anda tidak akan dikirim ke server VPN eksternal.</string>
-    <string name="msg_autostart">AmnShield AppControl tidak bisa memulai secara otomatis. Hal ini mungkin karena adanya bug di versi Android Anda.</string>
+    <string name="msg_autostart">AmniGuard AppControl tidak bisa memulai secara otomatis. Hal ini mungkin karena adanya bug di versi Android Anda.</string>
     <string name="msg_error">Terjadi kesalahan tak terduga: \'%s\'</string>
     <string name="msg_start_failed">Android menolak untuk memulai layanan VPN saat ini. Hal ini mungkin karena adanya bug di versi Android Anda.</string>
-    <string name="msg_try">Coba AmnShield AppControl</string>
+    <string name="msg_try">Coba AmniGuard AppControl</string>
     <string name="msg_terms">Dengan menyumbang Anda setuju dengan <a href="http://www.netblock.me/#terms"> persyaratan &amp; kondisi</a></string>
     <string name="msg_dimming">Jika Anda tidak bisa menekan OKE pada dialog berikutnya, apl (peredup layar) lain mungkin sedang memanipulasi layar.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/hari</string>
@@ -176,11 +176,11 @@ Lalu lintas internet Anda tidak akan dikirim ke server VPN eksternal.</string>
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">Agar hasil konsisten, pengoptimalan baterai Android harus dinonaktifkan untuk AmnShield AppControl.
-\n\nPada dialog berikutnya, pilih \"Semua aplikasi\" dibagian atas, ketuk AmnShield AppControl dalam daftar dan pilih \"Jangan optimalkan\".</string>
-    <string name="msg_datasaving">Agar hasil konsisten, opsi penghemat data Android harus dinonaktifkan untuk AmnShield AppControl
+    <string name="msg_doze">Agar hasil konsisten, pengoptimalan baterai Android harus dinonaktifkan untuk AmniGuard AppControl.
+\n\nPada dialog berikutnya, pilih \"Semua aplikasi\" dibagian atas, ketuk AmniGuard AppControl dalam daftar dan pilih \"Jangan optimalkan\".</string>
+    <string name="msg_datasaving">Agar hasil konsisten, opsi penghemat data Android harus dinonaktifkan untuk AmniGuard AppControl
 \n\nPada dialog berikutnya, aktifkan opsi \"Data latar belakang\" dan \"Penggunaan data tak terbatas\"</string>
-    <string name="msg_filter">Munggunakan penyaringan akan membuat Android mengaitkan penggunaan data dan daya ke AmnShield AppControl - Android berasumsi kalau data dan daya sedang digunakan oleh AmnShield AppControl, bukan apl aslinya</string>
+    <string name="msg_filter">Munggunakan penyaringan akan membuat Android mengaitkan penggunaan data dan daya ke AmniGuard AppControl - Android berasumsi kalau data dan daya sedang digunakan oleh AmniGuard AppControl, bukan apl aslinya</string>
     <string name="msg_filter4">Android 4 membutuhkan penyaringan diaktifkan</string>
     <string name="msg_log_disabled">Pencatatan lalu lintas dinonaktifkan, gunakan opsi di atas untuk mengaktifkan pencatatan. Pencatatan lalu lintas mungkin menyebabkan penggunaan baterai ekstra.</string>
     <string name="msg_clear_rules">Ini akan mengatur ulang kondisi dan aturan ke nilai bawaannya</string>
@@ -193,20 +193,20 @@ Lalu lintas internet Anda tidak akan dikirim ke server VPN eksternal.</string>
     <string name="msg_stop_forward">Hentikan penerusan %1$s port %2$d?</string>
     <string name="msg_metered">Jaringan terukur</string>
     <string name="msg_inactive">Tidak ada koneksi internet aktif</string>
-    <string name="msg_queue">AmnShield AppControl sedang sibuk</string>
+    <string name="msg_queue">AmniGuard AppControl sedang sibuk</string>
     <string name="msg_update">Pembaruan tersedia, ketuk untuk mengunduh</string>
     <string name="msg_usage">Anda dapat mengizinkan (hijau kehijauan) atau menolak (kemerahan) Wi-Fi atau akses internet seluler dengan mengetuk ikon di sebelah aplikasi</string>
-    <string name="msg_fairemail">Jika Anda memasang AmnShield AppControl untuk melindungi privasi Anda, Anda mungkin juga tertarik dengan <a href="https://email.faircode.eu/">FairEmail</a>, aplikasi surel sumber terbuka ramah privasi</string>
+    <string name="msg_fairemail">Jika Anda memasang AmniGuard AppControl untuk melindungi privasi Anda, Anda mungkin juga tertarik dengan <a href="https://email.faircode.eu/">FairEmail</a>, aplikasi surel sumber terbuka ramah privasi</string>
     <string name="msg_whitelist">Akses internet diizinkan secara bawaan (mode daftar hitam), ini bisa diubah di pengaturan</string>
     <string name="msg_push">Pesan masuk (push) umumnya ditangani oleh komponen sistem layanan Play, yang secara bawaan diizinkan mengakses internet</string>
     <string name="msg_system">Mengelola semua apl (sistem) bisa diaktifkan di pengaturan</string>
     <string name="msg_issue">Silakan jelaskan masalahnya dan waktu terjadinya masalah:</string>
     <string name="msg_vpn_cancelled">Koneksi VPN dibatalkan\nApakah Anda mengonfigurasi VPN lain untuk tetap nyala?</string>
-    <string name="msg_on">Mematikan perangkat Anda dengan AmnShield AppControl aktif, akan secara otomatis memulai AmnShield AppControl saat menyalakan perangkat Anda</string>
+    <string name="msg_on">Mematikan perangkat Anda dengan AmniGuard AppControl aktif, akan secara otomatis memulai AmniGuard AppControl saat menyalakan perangkat Anda</string>
     <string name="msg_unavailable">Fitur ini tidak tersedia pada versi Android ini</string>
     <string name="msg_always_on">VPN lain diatur untuk tetap nyala</string>
-    <string name="msg_always_on_lockdown">Nonaktifkan \"Blokir koneksi tanpa VPN\" di pengaturan VPN Android untuk menggunakan AmnShield AppControl dalam mode penyaringan</string>
-    <string name="msg_private_dns">Nonaktifkan \"DNS Pribadi\" di pengaturan jaringan Android untuk menggunakan AmnShield AppControl dalam mode penyaringan</string>
+    <string name="msg_always_on_lockdown">Nonaktifkan \"Blokir koneksi tanpa VPN\" di pengaturan VPN Android untuk menggunakan AmniGuard AppControl dalam mode penyaringan</string>
+    <string name="msg_private_dns">Nonaktifkan \"DNS Pribadi\" di pengaturan jaringan Android untuk menggunakan AmniGuard AppControl dalam mode penyaringan</string>
     <string name="title_lockdown_enabled">Lalu lintas dikunci</string>
     <string name="title_unmetered_allowed">Lalu lintas tak terukur diizinkan</string>
     <string name="title_unmetered_blocked">Lalu lintas tak terukur diblokir</string>

@@ -8,7 +8,7 @@
         android:shortcutShortLabel="@string/menu_settings">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.alhaq.amnshield.netblock.ActivitySettings"
+            android:targetClass="com.alhaq.amnishield.netblock.ActivitySettings"
                android:targetPackage="com.alhaq.amniguard" />
         <categories android:name="android.shortcut.settings" />
     </shortcut>
@@ -21,7 +21,7 @@
         android:shortcutShortLabel="@string/menu_log">
         <intent
             android:action="android.intent.action.VIEW"
-            android:targetClass="com.alhaq.amnshield.netblock.ActivityLog"
+            android:targetClass="com.alhaq.amnishield.netblock.ActivityLog"
                android:targetPackage="com.alhaq.amniguard" />
         <categories android:name="android.shortcut.log" />
     </shortcut>

@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl-ek internet sarbidea blokeatzeko modu sinple eta aurreratuak ematen dizkizu - ez da root behar. Aplikazio eta helbideko banaka baimendu edo ukatu daiteke Wi-Fi edo sare mugikorraren bitarteko konexioa.</string>
-    <string name="app_android">AmnShield AppControlek Android 5.1 edo berriagoa behar du</string>
-    <string name="app_xposed">Xposed kraskatze gehiegi eragiten ditu, eta horregatik AmnShield AppControl kendu zezaketen Google Play Store-tik, beraz AmnShield AppControl-ek ez du euskarririk Xposed instalatuta badago</string>
+    <string name="app_description">AmniGuard AppControl-ek internet sarbidea blokeatzeko modu sinple eta aurreratuak ematen dizkizu - ez da root behar. Aplikazio eta helbideko banaka baimendu edo ukatu daiteke Wi-Fi edo sare mugikorraren bitarteko konexioa.</string>
+    <string name="app_android">AmniGuard AppControlek Android 5.1 edo berriagoa behar du</string>
+    <string name="app_xposed">Xposed kraskatze gehiegi eragiten ditu, eta horregatik AmniGuard AppControl kendu zezaketen Google Play Store-tik, beraz AmniGuard AppControl-ek ez du euskarririk Xposed instalatuta badago</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">Pribatutasun politika</a></string>
-    <string name="app_first">Kontu handiz garatu eta probatu da AmnShield AppControl, baina ezin dugu bermatu gailu guztietan ibiliko dela.</string>
+    <string name="app_first">Kontu handiz garatu eta probatu da AmniGuard AppControl, baina ezin dugu bermatu gailu guztietan ibiliko dela.</string>
     <string name="app_agree">Ados nago</string>
     <string name="app_disagree">Ez nago ados</string>
-    <string name="app_support">AmnShield AppControl proiektuak zure laguntza behar du. Sakatu ordainpeko ezaugarriak erosi eta proiektua babesteko.</string>
+    <string name="app_support">AmniGuard AppControl proiektuak zure laguntza behar du. Sakatu ordainpeko ezaugarriak erosi eta proiektua babesteko.</string>
     <string name="channel_foreground">Zerbitzuak abian</string>
     <string name="channel_notify">Jakinarazpen orokorrak</string>
     <string name="channel_access">Sarbide-jakinarazpenak</string>
@@ -124,7 +124,7 @@
     <string name="setting_technical_networks">Sareak</string>
     <string name="setting_technical_subscription">Harpidetzak</string>
     <string name="summary_install">Erakutsi egoera barrako jakinarazpena berriki instalatutako aplikazioak zuzenean konfiguratzeko (ordainpeko ezaugarria)</string>
-    <string name="summary_auto">Trepeta erabiltzea desgaitu eta gero, automatikoki gaitu AmnShield AppControl berriro esandako minutu kopurua igarotzean (idatzi 0 ezaugarri hau desgaitzeko)</string>
+    <string name="summary_auto">Trepeta erabiltzea desgaitu eta gero, automatikoki gaitu AmniGuard AppControl berriro esandako minutu kopurua igarotzean (idatzi 0 ezaugarri hau desgaitzeko)</string>
     <string name="summary_delay">Pantaila itzali eta gero, mantendu pantaila piztuta dagoeneko arauak aktibo esandako minutu kopuru batez (idatzi zero aukera hau desgaitzeko)</string>
     <string name="summary_update">Egiaztatu bertsio berririk dagoen GitHub-en egunean birritan</string>
     <string name="summary_tethering">Android bertsioaren arabera, tethering ibili daiteke ala ez. Tethering bidezko trafikoa ezin da iragazi.</string>
@@ -138,7 +138,7 @@
     <string name="summary_metered_4g">Aplikatu Wi-Fi sare arauak LTE datu konexioetan ere</string>
     <string name="summary_national_roaming">Ez aplikatu ibiltaritza arauak SIM eta sarearen herrialdea bera direnean</string>
     <string name="summary_eu_roaming">Ez aplikatu ibiltaritza arauak SIM eta sarearen herrialdeak biak Europar Batasunean badaude (ibiltaritza nazionala bezala)</string>
-    <string name="summary_call">Desgaitu AmnShield AppControl telefono deiak jaso edo egitean. Hau IP/Wi-Fi deiekin arazoak daudenean erabili daiteke.</string>
+    <string name="summary_call">Desgaitu AmniGuard AppControl telefono deiak jaso edo egitean. Hau IP/Wi-Fi deiekin arazoak daudenean erabili daiteke.</string>
     <string name="summary_system">Zehaztu sistemako aplikazioen arauak (adituentzat)</string>
     <string name="summary_log_app">Gorde aplikazioek Internet atzitzeko egindako saiakeren egunkaria. Honek bateria kontsumoa areagotu dezake.</string>
     <string name="summary_access">Erakutsi egoera barrako jakinarazpena aplikazioak Internet helbide berri bat atzitzen saiatzean (Iragaztea desgaituta dagoenean, bakarrik blokeatutako Internet sarbide saiakerak gordeko dira)</string>
@@ -155,20 +155,20 @@
     <string name="msg_packages">%1$d baimenduta, %2$d blokeatuta</string>
     <string name="msg_hosts">%1$d baimenduta, %2$d blokeatuta, %3$d ostalari</string>
     <string name="msg_waiting">Gertaeraren zain</string>
-    <string name="msg_disabled">AmnShield AppControl desgaituta dago, erabili goiko etengailua AmnShield AppControl gaitzeko</string>
-    <string name="msg_revoked">AmnShield AppControl desgaitua izan da, litekeena beste VPN motako aplikazio bat erabiltzeagatik</string>
+    <string name="msg_disabled">AmniGuard AppControl desgaituta dago, erabili goiko etengailua AmniGuard AppControl gaitzeko</string>
+    <string name="msg_revoked">AmniGuard AppControl desgaitua izan da, litekeena beste VPN motako aplikazio bat erabiltzeagatik</string>
     <string name="msg_installed">\'%1$s\' instalatuta</string>
     <string name="msg_installed_n">Instalatu da</string>
     <string name="msg_access">%1$s internet atzitzen saiatu da</string>
     <string name="msg_access_n">Internet atzitzen saiatu da</string>
     <string name="msg_completed">Ekintza burututa</string>
-    <string name="msg_vpn">AmnShield AppControl-ek VPN lokal bat darabil internet trafikoa iragazteko.
+    <string name="msg_vpn">AmniGuard AppControl-ek VPN lokal bat darabil internet trafikoa iragazteko.
 Horregatik, baimendu VPN konexioa hurrengo elkarrizketa koadroan mesedez.
 Zure internet trafikoa ez da kanpo VPN zerbitzari batera bidaltzen.</string>
-    <string name="msg_autostart">AmnShield AppControl ezin izan da automatikoki abiatu. Litekeena zure Android bertsioaren akats baten erruz.</string>
+    <string name="msg_autostart">AmniGuard AppControl ezin izan da automatikoki abiatu. Litekeena zure Android bertsioaren akats baten erruz.</string>
     <string name="msg_error">Ustekabeko errorea gertatu da: \'%s\'</string>
     <string name="msg_start_failed">Androidek uko egin dio VPN zerbitzua orain abiatzeari. Litekeena zure Android bertsioak akats bat duelako.</string>
-    <string name="msg_try">Probatu AmnShield AppControl</string>
+    <string name="msg_try">Probatu AmniGuard AppControl</string>
     <string name="msg_terms">Dohaintza eginez <a href="http://www.netblock.me/#terms">termino eta baldintzak</a> onartzen dituzu</string>
     <string name="msg_dimming">Ezin baduzu \'Ados\' zapaldu hurrengo elkarrizketa-koadroan, beste aplikazio bat pantaila manipulatzen dago.</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/egunean</string>
@@ -176,11 +176,11 @@ Zure internet trafikoa ez da kanpo VPN zerbitzari batera bidaltzen.</string>
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">Emaitza egokiak izateko, Android sistemako bateria optimizazioak desgaitu behar dira AmnShield AppControl aplikazioarentzat.
-\n\nHurrengo elkarrizketa-koadroan, hautatu \"Aplikazio guztiak\" goian, sakatu AmnShield AppControl zerrendan eta berretsi \"Ez optimizatu\".</string>
-    <string name="msg_datasaving">Emaitza egokiak izateko, Android sistemako datuak aurrezteko optimizazioak desgaitu behar dira AmnShield AppControl aplikazioarentzat.
+    <string name="msg_doze">Emaitza egokiak izateko, Android sistemako bateria optimizazioak desgaitu behar dira AmniGuard AppControl aplikazioarentzat.
+\n\nHurrengo elkarrizketa-koadroan, hautatu \"Aplikazio guztiak\" goian, sakatu AmniGuard AppControl zerrendan eta berretsi \"Ez optimizatu\".</string>
+    <string name="msg_datasaving">Emaitza egokiak izateko, Android sistemako datuak aurrezteko optimizazioak desgaitu behar dira AmniGuard AppControl aplikazioarentzat.
 \n\nHurrengo elkarrizketa-koadroan, gaitu \"bigarren planoko datuak\" eta \"mugagabeko datu erabilera\"</string>
-    <string name="msg_filter">Iragaztea erabiltzean Androiden AmnShield AppControl-i egotziko dio datu eta bateria erabilera - Androidek uste du AmnShield AppControl-ek erabiltzen duela datuak eta bateria, ez jatorrizko aplikazioek</string>
+    <string name="msg_filter">Iragaztea erabiltzean Androiden AmniGuard AppControl-i egotziko dio datu eta bateria erabilera - Androidek uste du AmniGuard AppControl-ek erabiltzen duela datuak eta bateria, ez jatorrizko aplikazioek</string>
     <string name="msg_filter4">Android 4-k iragaztea gaitzera behartzen du</string>
     <string name="msg_log_disabled">Trafifoaren egunkaria desgaituta dago, erabili goiko etengailua egunkaria gaitzeko. Trafikoaren egunkariak bateria kontsumoa areagotu dezake.</string>
     <string name="msg_clear_rules">Honek arauak eta baldintzak lehenetsitako balioetara berrezarriko ditu</string>
@@ -193,20 +193,20 @@ Zure internet trafikoa ez da kanpo VPN zerbitzari batera bidaltzen.</string>
     <string name="msg_stop_forward">Utzi %1$s ataka %2$d birbidaltzeari?</string>
     <string name="msg_metered">Sarea neurtutakoa da</string>
     <string name="msg_inactive">Internet konexio aktiborik ez</string>
-    <string name="msg_queue">AmnShield AppControl lanpetuta dago</string>
+    <string name="msg_queue">AmniGuard AppControl lanpetuta dago</string>
     <string name="msg_update">Eguneraketa eskuragarri, sakatu deskargatzeko</string>
     <string name="msg_usage">Wi-Fi edo mugikor bidez Internetera sarbidea baimendu (berde) edo ukatu (gorri) aplikazioaren ondoan dauden ikonoak sakatuz</string>
-    <string name="msg_fairemail">AmnShield AppControl zure pribatutasuna babesteko instalatu baduzu, agian <a href="https://email.faircode.eu/">FairEmail</a> interesatuko zaizu, e-mail bezero librea eta pribatutasuna aintzat duena</string>
+    <string name="msg_fairemail">AmniGuard AppControl zure pribatutasuna babesteko instalatu baduzu, agian <a href="https://email.faircode.eu/">FairEmail</a> interesatuko zaizu, e-mail bezero librea eta pribatutasuna aintzat duena</string>
     <string name="msg_whitelist">Internet sarbidea lehenetsita baimenduta dago (zerrenda beltza modua), hau ezarpenetan aldatu daiteke</string>
     <string name="msg_push">Jasotako (push) mezuak gehienbat Play Services osagaiak kudeatzen ditu, eta Internet sarbidea baimentzen zaio lehenetsita</string>
     <string name="msg_system">Aplikazio guztiak (sistemakoak) kudeatzea ezarpenetan gaitu daiteke</string>
     <string name="msg_issue">Azaldu arazoa eta aipatu arazoaren data eta ordua mesedez:</string>
     <string name="msg_vpn_cancelled">VPN konexioa ezeztatuta\nBeste VPN bat ezarri duzu beti gaituta dagoen VPN gisa?</string>
-    <string name="msg_on">AmnShield AppControl gaituta dagoela gailua itzaltzen baduzu, AmnShield AppControl automatikoki abiatuko da gailua berriro piztean</string>
+    <string name="msg_on">AmniGuard AppControl gaituta dagoela gailua itzaltzen baduzu, AmniGuard AppControl automatikoki abiatuko da gailua berriro piztean</string>
     <string name="msg_unavailable">Ezaugarri hau ez dago eskuragarri Android bertsio honetan</string>
     <string name="msg_always_on">Beste VPN bat ezarri da beti gaituta dagoen VPN gisa</string>
-    <string name="msg_always_on_lockdown">Itzali \'Blokeatu VPN gabeko konexioak\' Android VPN ezarpenetan AmnShield AppControl iragazte moduan erabiltzeko</string>
-    <string name="msg_private_dns">Itzali \'DNS pribatua\' Android sare ezarpenetan AmnShield AppControl iragazte moduan erabiltzeko</string>
+    <string name="msg_always_on_lockdown">Itzali \'Blokeatu VPN gabeko konexioak\' Android VPN ezarpenetan AmniGuard AppControl iragazte moduan erabiltzeko</string>
+    <string name="msg_private_dns">Itzali \'DNS pribatua\' Android sare ezarpenetan AmniGuard AppControl iragazte moduan erabiltzeko</string>
     <string name="title_lockdown_enabled">Trafikoa blokeatuta dago</string>
     <string name="title_unmetered_allowed">Neurtu gabeko trafikoa onartzen da</string>
     <string name="title_unmetered_blocked">Neurtu gabeko trafikoa blokeatzen da</string>

@@ -11,12 +11,40 @@
     <attr name="iconPlay" format="reference" />
     <attr name="iconPause" format="reference" />
 
-    <style name="AppDialog" parent="Theme.AppCompat.Dialog">
-        <item name="windowActionBar">false</item>
-        <item name="android:windowNoTitle">true</item>
+    <style name="AppDialog" parent="Theme.Material3.DayNight.Dialog.Alert">
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.AmniGuard.DialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.AmniGuard.DialogButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.AmniGuard.DialogButton</item>
     </style>
 
-    <style name="BaseThemeDark" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="ThemeOverlay.AmniGuard.MaterialAlertDialog" parent="ThemeOverlay.Material3.MaterialAlertDialog">
+        <item name="buttonBarPositiveButtonStyle">@style/Widget.AmniGuard.DialogButton</item>
+        <item name="buttonBarNegativeButtonStyle">@style/Widget.AmniGuard.DialogButton</item>
+        <item name="buttonBarNeutralButtonStyle">@style/Widget.AmniGuard.DialogButton</item>
+    </style>
+
+    <style name="Widget.AmniGuard.DialogButton" parent="Widget.Material3.Button.TextButton">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="Widget.AmniGuard.PopupMenu" parent="Widget.Material3.PopupMenu">
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+    </style>
+
+    <style name="ThemeOverlay.AmniGuard.PopupMenu" parent="ThemeOverlay.Material3">
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/colorCosmicTextSecondary</item>
+    </style>
+
+    <style name="Widget.AmniGuard.Spinner" parent="Widget.AppCompat.Spinner">
+        <item name="android:background">@drawable/bg_input_field</item>
+        <item name="android:paddingStart">12dp</item>
+        <item name="android:paddingEnd">12dp</item>
+        <item name="android:popupBackground">@drawable/bg_popup_menu</item>
+    </style>
+
+    <!-- Base Light Theme (High Contrast Emerald/Sand Style) -->
+    <style name="BaseThemeDark" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="expander">@drawable/expander_black</item>
         <item name="iconQueue">@drawable/ic_hourglass_empty_black_24dp</item>
         <item name="iconMetered">@drawable/ic_attach_money_black_24dp</item>
@@ -28,9 +56,38 @@
         <item name="iconPause">@drawable/ic_pause_black_24dp</item>
         <item name="android:windowDisablePreview">true</item>
         <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+
+        <!-- Strong Contrast Text Colors -->
+        <item name="android:textColorPrimary">@color/md_theme_onBackground</item>
+        <item name="android:textColorSecondary">@color/md_theme_onSurfaceVariant</item>
+        <item name="android:textColorTertiary">@color/md_theme_outline</item>
+
+        <!-- Surface and Background Colors -->
+        <item name="android:windowBackground">@color/md_theme_background</item>
+        <item name="android:colorBackground">@color/md_theme_background</item>
+        <item name="colorSurface">@color/md_theme_surface</item>
+        <item name="colorOnSurface">@color/md_theme_onSurface</item>
+        <item name="colorSurfaceVariant">@color/md_theme_surfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/md_theme_onSurfaceVariant</item>
+        <item name="colorOutline">@color/md_theme_outline</item>
+        <item name="colorOutlineVariant">@color/md_theme_outlineVariant</item>
+
+        <!-- Dialogs & Menus -->
+        <item name="alertDialogTheme">@style/ThemeOverlay.AmniGuard.MaterialAlertDialog</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.AmniGuard.MaterialAlertDialog</item>
+        <item name="popupMenuStyle">@style/Widget.AmniGuard.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.AmniGuard.PopupMenu</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AmniGuard.PopupMenu</item>
+        <item name="popupTheme">@style/ThemeOverlay.AmniGuard.PopupMenu</item>
+        <item name="spinnerStyle">@style/Widget.AmniGuard.Spinner</item>
+
+        <!-- Navigation Styles -->
+        <item name="bottomNavigationStyle">@style/Widget.AmniGuard.BottomNavigation</item>
+        <item name="navigationViewStyle">@style/Widget.AmniGuard.NavigationDrawer</item>
     </style>
 
-    <style name="BaseThemeLight" parent="Theme.AppCompat">
+    <!-- Base Dark Theme (High Contrast Cosmic/Deep Tech Style) -->
+    <style name="BaseThemeLight" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="expander">@drawable/expander_white</item>
         <item name="iconQueue">@drawable/ic_hourglass_empty_white_24dp</item>
         <item name="iconMetered">@drawable/ic_attach_money_white_24dp</item>
@@ -42,6 +99,55 @@
         <item name="iconPause">@drawable/ic_pause_white_24dp</item>
         <item name="android:windowDisablePreview">true</item>
         <item name="android:windowOptOutEdgeToEdgeEnforcement">true</item>
+
+        <!-- Strong Contrast Text Colors -->
+        <item name="android:textColorPrimary">@color/white</item>
+        <item name="android:textColorSecondary">@color/colorCosmicTextSecondary</item>
+        <item name="android:textColorTertiary">@color/colorCosmicTextTertiary</item>
+
+        <!-- Surface and Background Colors -->
+        <item name="android:windowBackground">@color/colorCosmicBg</item>
+        <item name="android:colorBackground">@color/colorCosmicBg</item>
+        <item name="colorSurface">@color/colorCosmicSurface</item>
+        <item name="colorOnSurface">@color/white</item>
+        <item name="colorSurfaceVariant">@color/colorCosmicSurfaceVariant</item>
+        <item name="colorOnSurfaceVariant">@color/colorCosmicOnSurfaceVariant</item>
+        <item name="colorOutline">@color/colorCosmicOutline</item>
+        <item name="colorOutlineVariant">@color/colorCosmicOutlineVariant</item>
+
+        <!-- Dialogs & Menus -->
+        <item name="alertDialogTheme">@style/ThemeOverlay.AmniGuard.MaterialAlertDialog</item>
+        <item name="materialAlertDialogTheme">@style/ThemeOverlay.AmniGuard.MaterialAlertDialog</item>
+        <item name="popupMenuStyle">@style/Widget.AmniGuard.PopupMenu</item>
+        <item name="actionOverflowMenuStyle">@style/Widget.AmniGuard.PopupMenu</item>
+        <item name="actionBarPopupTheme">@style/ThemeOverlay.AmniGuard.PopupMenu</item>
+        <item name="popupTheme">@style/ThemeOverlay.AmniGuard.PopupMenu</item>
+        <item name="spinnerStyle">@style/Widget.AmniGuard.Spinner</item>
+
+        <!-- Navigation Styles -->
+        <item name="bottomNavigationStyle">@style/Widget.AmniGuard.BottomNavigation</item>
+        <item name="navigationViewStyle">@style/Widget.AmniGuard.NavigationDrawer</item>
+    </style>
+
+    <style name="Widget.AmniGuard.BottomNavigation" parent="Widget.Material3.BottomNavigationView">
+        <item name="elevation">8dp</item>
+        <item name="itemIconSize">24dp</item>
+        <item name="labelVisibilityMode">labeled</item>
+        <item name="android:background">?attr/colorSurface</item>
+    </style>
+
+    <style name="Widget.AmniGuard.NavigationDrawer" parent="Widget.Material3.NavigationView">
+        <item name="elevation">16dp</item>
+        <item name="android:background">?attr/colorSurface</item>
+        <item name="itemTextColor">?android:attr/textColorPrimary</item>
+        <item name="itemIconTint">?attr/colorPrimary</item>
+    </style>
+
+    <style name="Widget.AmniGuard.Card" parent="Widget.Material3.CardView.Elevated">
+        <item name="cardCornerRadius">16dp</item>
+        <item name="cardElevation">2dp</item>
+        <item name="strokeWidth">1dp</item>
+        <item name="strokeColor">@color/card_stroke_color</item>
     </style>
 
     <style name="AppThemeTeal" parent="BaseThemeDark">
@@ -53,10 +159,10 @@
     </style>
 
     <style name="AppThemeTealDark" parent="BaseThemeLight">
-        <item name="colorPrimary">@color/colorTealPrimary</item>
+        <item name="colorPrimary">@color/colorTealAccent</item>
         <item name="colorPrimaryDark">@color/colorTealPrimaryDark</item>
         <item name="colorAccent">@color/colorTealAccent</item>
-        <item name="colorOn">@color/colorTealOn</item>
+        <item name="colorOn">@color/colorTealAccent</item>
         <item name="colorOff">@color/colorTealOff</item>
     </style>
 
@@ -69,10 +175,10 @@
     </style>
 
     <style name="AppThemeBlueDark" parent="BaseThemeLight">
-        <item name="colorPrimary">@color/colorBluePrimary</item>
+        <item name="colorPrimary">@color/colorBlueAccent</item>
         <item name="colorPrimaryDark">@color/colorBluePrimaryDark</item>
         <item name="colorAccent">@color/colorBlueAccent</item>
-        <item name="colorOn">@color/colorBlueOn</item>
+        <item name="colorOn">@color/colorBlueAccent</item>
         <item name="colorOff">@color/colorBlueOff</item>
     </style>
 
@@ -85,10 +191,10 @@
     </style>
 
     <style name="AppThemePurpleDark" parent="BaseThemeLight">
-        <item name="colorPrimary">@color/colorPurplePrimary</item>
+        <item name="colorPrimary">@color/colorPurpleAccent</item>
         <item name="colorPrimaryDark">@color/colorPurplePrimaryDark</item>
         <item name="colorAccent">@color/colorPurpleAccent</item>
-        <item name="colorOn">@color/colorPurpleOn</item>
+        <item name="colorOn">@color/colorPurpleAccent</item>
         <item name="colorOff">@color/colorPurpleOff</item>
     </style>
 
@@ -133,14 +239,14 @@
     </style>
 
     <style name="AppThemeGreenDark" parent="BaseThemeLight">
-        <item name="colorPrimary">@color/colorGreenPrimary</item>
+        <item name="colorPrimary">@color/colorGreenAccent</item>
         <item name="colorPrimaryDark">@color/colorGreenPrimaryDark</item>
         <item name="colorAccent">@color/colorGreenAccent</item>
-        <item name="colorOn">@color/colorGreenOn</item>
+        <item name="colorOn">@color/colorGreenAccent</item>
         <item name="colorOff">@color/colorGreenOff</item>
     </style>
 
-    <!-- AmnShield Brand Theme Styles -->
+    <!-- AmniGuard Canonical Brand Theme Styles -->
     <!-- 1. Sunset Glow (Warm Sand & Terracotta - Light Theme) -->
     <style name="AppThemeSunset" parent="BaseThemeDark">
         <item name="colorPrimary">@color/colorSunsetPrimary</item>
@@ -149,6 +255,7 @@
         <item name="colorOn">@color/colorSunsetPrimary</item>
         <item name="colorOff">@color/colorTealOff</item>
         <item name="android:windowBackground">@color/colorSunsetBg</item>
+        <item name="android:colorBackground">@color/colorSunsetBg</item>
     </style>
 
     <!-- 2. Emerald Calm (Pearl Teal & Sage - Light Theme) -->
@@ -158,16 +265,18 @@
         <item name="colorAccent">@color/colorEmeraldAccent</item>
         <item name="colorOn">@color/colorEmeraldPrimary</item>
         <item name="colorOff">@color/colorTealOff</item>
-        <item name="android:windowBackground">@color/colorEmeraldBg</item>
+        <item name="android:windowBackground">@color/md_theme_background</item>
+        <item name="android:colorBackground">@color/md_theme_background</item>
     </style>
 
     <!-- 3. Cosmic Night (Deep Violet Tech - Dark Theme) -->
     <style name="AppThemeCosmic" parent="BaseThemeLight">
-        <item name="colorPrimary">@color/colorCosmicAccent</item>
+        <item name="colorPrimary">@color/colorCosmicPrimary</item>
         <item name="colorPrimaryDark">@color/colorCosmicPrimaryDark</item>
-        <item name="colorAccent">@color/colorCosmicPrimary</item>
+        <item name="colorAccent">@color/colorCosmicAccent</item>
         <item name="colorOn">@color/colorCosmicPrimary</item>
         <item name="colorOff">@color/colorTealOff</item>
         <item name="android:windowBackground">@color/colorCosmicBg</item>
+        <item name="android:colorBackground">@color/colorCosmicBg</item>
     </style>
 </resources>

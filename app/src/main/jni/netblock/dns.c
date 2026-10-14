@@ -177,8 +177,10 @@ void parse_dns_response(const struct arguments *args, const struct ng_session *s
             }
         }
 
-        if (qcount > 0 &&
-            (svcb || is_domain_blocked(args, qname))) {
+        jboolean blocked = (qcount > 0 && is_domain_blocked(args, qname));
+        jboolean svcb_query = (qcount > 0 && (qtype == DNS_SVCB || qtype == DNS_HTTPS));
+
+        if (blocked || svcb_query) {
             dns->qr = 1;
             dns->aa = 0;
             dns->tc = 0;
@@ -187,7 +189,7 @@ void parse_dns_response(const struct arguments *args, const struct ng_session *s
             dns->z = 0;
             dns->ad = 0;
             dns->cd = 0;
-            dns->rcode = (uint16_t) args->rcode;
+            dns->rcode = (uint16_t) (blocked ? args->rcode : 0); // 0 (NOERROR) for SVCB query to prevent DoH bypass safely
             dns->ans_count = 0;
             dns->auth_count = 0;
             dns->add_count = 0;
@@ -229,7 +231,7 @@ void parse_dns_response(const struct arguments *args, const struct ng_session *s
             jobject objPacket = create_packet(
                     args, version, s->protocol, "",
                     source, sport, dest, dport,
-                    name, 0, 0);
+                    name, 0, (dns->rcode == 0));
             log_packet(args, objPacket);
         }
     } else if (acount > 0)

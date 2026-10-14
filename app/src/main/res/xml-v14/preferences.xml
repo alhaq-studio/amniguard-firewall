@@ -74,37 +74,63 @@
     </PreferenceScreen>
 
     <PreferenceScreen
-        android:key="screen_domain_filter"
-        android:summary="@string/summary_domain_filter"
-        android:title="@string/setting_domain_filter">
+        android:key="screen_logging"
+        android:summary="@string/summary_logging_settings"
+        android:title="@string/setting_logging_settings">
         <PreferenceCategory
-            android:key="category_domain_filter"
-            android:title="@string/setting_domain_filter">
+            android:key="category_logging"
+            android:title="@string/setting_logging_settings">
             <CheckBoxPreference
                 android:defaultValue="true"
-                android:key="domain_blocker_enabled"
-                android:summary="@string/summary_domain_blocker_enabled"
-                android:title="@string/setting_domain_blocker_enabled" />
+                android:key="log_app"
+                android:summary="@string/summary_log_app"
+                android:title="@string/setting_log_app" />
             <CheckBoxPreference
                 android:defaultValue="true"
-                android:dependency="domain_blocker_enabled"
-                android:key="block_adult"
-                android:summary="@string/summary_block_adult"
-                android:title="@string/setting_block_adult" />
+                android:key="filter"
+                android:summary="@string/summary_filter"
+                android:title="@string/setting_filter" />
             <CheckBoxPreference
                 android:defaultValue="false"
-                android:dependency="domain_blocker_enabled"
-                android:key="block_social"
-                android:summary="@string/summary_block_social"
-                android:title="@string/setting_block_social" />
-            <Preference
-                android:key="manage_blacklist"
-                android:summary="@string/summary_custom_blacklist"
-                android:title="@string/setting_custom_blacklist" />
-            <Preference
-                android:key="manage_whitelist"
-                android:summary="@string/summary_custom_whitelist"
-                android:title="@string/setting_custom_whitelist" />
+                android:dependency="log_app"
+                android:key="notify_access"
+                android:summary="@string/summary_access"
+                android:title="@string/setting_access" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="proto_udp"
+                android:title="@string/setting_proto_udp" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="proto_tcp"
+                android:title="@string/setting_proto_tcp" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="proto_other"
+                android:title="@string/setting_proto_other" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="traffic_allowed"
+                android:title="@string/setting_traffic_allowed" />
+            <CheckBoxPreference
+                android:defaultValue="true"
+                android:key="traffic_blocked"
+                android:title="@string/setting_traffic_blocked" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="resolve"
+                android:summary="@string/summary_resolve"
+                android:title="@string/setting_resolve" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="organization"
+                android:summary="@string/summary_organization"
+                android:title="@string/setting_organization" />
+            <CheckBoxPreference
+                android:defaultValue="false"
+                android:key="pcap"
+                android:summary="@string/summary_pcap"
+                android:title="@string/setting_pcap" />
         </PreferenceCategory>
     </PreferenceScreen>
 

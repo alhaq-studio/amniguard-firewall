@@ -1,63 +1,68 @@
-Play store
-==========
+# Ficha de Google Play: Cortafuegos AmniGuard
 
-Title
------
-AmnShield FireWall - cortafuegos sin root
+## Nombre de la aplicación (30 / 30)
 
+AmniGuard: Cortafuegos No Root
 
-Short description
------------------
-Una forma simple de bloquear el acceso a Internet por aplicación
+## Descripción corta (74 / 80)
 
+Bloquea Internet por app y filtra dominios sin root. 100% privado y local.
 
-Long description
-----------------
-AmnShield FireWall proporciona formas simples y avanzadas de bloquear el acceso a Internet - No requiere root.
+## Descripción completa
 
-Las aplicaciones y direcciones, permiten o denegan individualmente el acceso a tu Wi-Fi y/o conexión móvil.
+El Cortafuegos AmniGuard proporciona formas simples y avanzadas de controlar el acceso a Internet y bloquear contenido web en Android, totalmente sin root.
 
-Bloquear el acceso a Internet ayuda a:
+Decide individualmente qué aplicaciones y dominios pueden acceder a tu red Wi-Fi, datos móviles o conexiones en segundo plano. Protege tu dispositivo contra conexiones no deseadas, reduce el consumo de datos y ahorra batería con privacidad absoluta.
 
-&bull; reducir tu uso de datos
-&bull; ahorrar tu batería
-&bull; incrementar tu privacidad
+--------------------------------------------------
 
-Características:
+CARACTERÍSTICAS PRINCIPALES
+--------------------------------------------------
 
-&bull; Simple de usar
-&bull; No requiere root
-&bull; 100% código abierto
-&bull; No calling home
-&bull; Sin seguimiento o análisis integrado
-&bull; Desarrollado y soportado activamente
-&bull; Soporta Android 5.0 o superior
-&bull; Soporta IPv4/IPv6, TCP/UDP
-&bull; Soporta anclaje a red (tethering)
-&bull; Soporta múltiples dispositivos de usuarios
-&bull; (Opcional) permite con la pantalla encendida
-&bull; (Opcional) bloquea con roaming
-&bull; (Opcional) bloquea aplicaciones del sistema
-&bull; (Opcional) notifica cuando una aplicación accede a Internet
-&bull; (Opcional) registra el uso de la red por aplicación por dirección
-&bull; Apariencia material design con tema claro y oscuro
+• Fácil de usar: Interfaz Material 3 intuitiva con soporte de tema claro y oscuro.
+• Sin necesidad de root: Funciona localmente mediante la interfaz VpnService estándar de Android.
+• 100% Código Abierto: Software auditable, transparente y desarrollado por la comunidad.
+• Cero telemetría: Sin rastreadores, sin analíticas y sin llamadas a servidores externos.
+• Procesamiento 100% local: El análisis de paquetes y las reglas DNS se ejecutan sin latencia en tu dispositivo.
+• Control de red por aplicación: Permite o bloquea Wi-Fi y datos móviles individualmente para cada app.
+• Ahorro de datos y batería: Evita fugas de datos en segundo plano y reduce el consumo celular innecesario.
+• Compatibilidad total de protocolos: Filtrado integral de IPv4, IPv6, TCP, UDP e ICMP.
+• Filtros de pantalla encendida y roaming: Restringe el acceso con la pantalla apagada o en itinerancia.
+• Control de apps del sistema: Administra tanto aplicaciones instaladas por el usuario como del sistema.
+• Compatibilidad con Hotspot / Tethering y redes locales LAN.
 
-Características de pago (PRO):
+--------------------------------------------------
 
-&bull; Registra todo el tráfico saliente; busca y filtra intentos de acceso; exporta archivos PCAP para analizar el tráfico
-&bull; Permite/bloquea direcciones individuales por aplicación
-&bull; Nueva aplicación de notificaciones; configura AmnShield FireWall directamente en la notificación
-&bull; Muestra un gráfico de velocidad de red en una notificación en la barra de estado
-&bull; Selecciona entre 5 temas adicionales en versiones claras y oscuras
+FILTRADO LOCAL DE DOMINIOS Y CONTENIDO
+--------------------------------------------------
 
-No existe otro cortafuegos sin-root que ofrezca todas estas características.
+• Protección contra sitios para adultos: Bloqueo DNS local sin latencia para más de 80.000 dominios y subdominios explícitos.
+• Bloqueador de distracciones y redes sociales: Bloquea plataformas según tus horarios programados.
+• Reglas personalizadas: Añade listas negras, listas blancas y reglas comodín (*.example.com) directamente en el dispositivo.
+• Prevención de fugas DoT: Intercepta intentos de elusión por DNS cifrado para mantener las reglas activas.
 
-Si tienes preguntas o problemas, puedes enviar un correo electrónico a marcel+AmnShield FireWall@faircode.eu
+--------------------------------------------------
 
-Si te gusta ayudar a personas con menor fluidez de Inglés, puedes ayudar a traducir AmnShield FireWall en tu idioma: https://crowdin.com/project/netblock/
+HERRAMIENTAS AVANZADAS Y DIAGNÓSTICO (PRO)
+--------------------------------------------------
 
-Si te gusta probar las nuevas características, puedes participar en el programa de prueba: https://play.google.com/apps/testing/com.alhaq.AmnShield.netblock
+• Registro de tráfico en tiempo real: Inspecciona intentos de conexión con IP de destino, puerto y nombre de host.
+• Exportación PCAP: Exporta paquetes para su análisis detallado en Wireshark.
+• Gráfico de velocidad en directo: Muestra el rendimiento de la red en la barra de estado.
+• Notificaciones de acceso: Recibe avisos instantáneos cuando una nueva app intenta conectarse.
 
-Todos los permisos requeridos se detallan aquí: https://github.com/M66B/AmnShield FireWall/blob/master/FAQ.md#FAQ42
+--------------------------------------------------
 
-El código fuente está disponible aquí: https://github.com/M66B/AmnShield FireWall
+PRIVACIDAD Y TRANSPARENCIA
+--------------------------------------------------
+
+AmniGuard utiliza la API VpnService de Android únicamente como un filtro loopback local en tu propio dispositivo. El tráfico nunca se envía a servidores remotos, intermediarios ni proxies externos.
+
+--------------------------------------------------
+
+SOPORTE Y CÓDIGO ABIERTO
+--------------------------------------------------
+
+Desarrollado por Alhaq Initiative como parte del ecosistema Amn.
+Código fuente: <https://github.com/alhaq-studio/amniguard-firewall>
+Soporte: <support@alhaq.uk>

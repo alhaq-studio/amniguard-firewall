@@ -14,7 +14,7 @@ android {
         versionName = "0.0.1"
         minSdkVersion 22
         targetSdkVersion 35
-        versionCode = 1
+        versionCode = 2
         archivesBaseName = "AmniGuard Firewall-v$versionName"
 
         externalNativeBuild {
@@ -40,10 +40,16 @@ android {
     signingConfigs {
         release {
             if (keystorePropertiesFile.exists()) {
-                storeFile file(keystoreProperties['storeFile'])
+                def kFile = rootProject.file(keystoreProperties['storeFile'])
+                if (!kFile.exists()) {
+                    kFile = file(keystoreProperties['storeFile'])
+                }
+                storeFile kFile
                 storePassword keystoreProperties['storePassword']
                 keyAlias keystoreProperties['keyAlias']
                 keyPassword keystoreProperties['keyPassword']
+                v1SigningEnabled true
+                v2SigningEnabled true
             }
         }
     }
@@ -66,8 +72,7 @@ android {
             }
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            // TODO: Replace with your own GitHub releases API endpoint
-            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
+            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/alhaq/AmniGuard-FireWall/releases/latest\""
         }
         play {
             minifyEnabled = true
@@ -79,15 +84,14 @@ android {
             proguardFiles.add(file('proguard-rules.pro'))
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "true"
             buildConfigField "String", "HOSTS_FILE_URI", "\"\""
-            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
+            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/alhaq/AmniGuard-FireWall/releases/latest\""
         }
         debug {
             minifyEnabled = false
             debuggable = true
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            // TODO: Replace with your own GitHub releases API endpoint
-            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
+            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/alhaq/AmniGuard-FireWall/releases/latest\""
         }
     }
 
@@ -109,17 +113,20 @@ android {
         checkReleaseBuilds false
         abortOnError false
     }
-    namespace 'com.alhaq.amnshield.netblock'
-    buildFeatures {
-        aidl true
-    }
+    namespace 'com.alhaq.amnishield.netblock'
 }
 
 dependencies {
     implementation fileTree(dir: 'libs', include: ['*.jar'])
 
+    // Google Play Billing Library 7.x
+    implementation 'com.android.billingclient:billing:7.1.1'
+
     // https://developer.android.com/jetpack/androidx/releases/
     implementation 'androidx.appcompat:appcompat:1.6.1'
+    implementation 'com.google.android.material:material:1.12.0'
+    implementation 'androidx.constraintlayout:constraintlayout:2.1.4'
+    implementation 'androidx.cardview:cardview:1.0.0'
     implementation 'androidx.swiperefreshlayout:swiperefreshlayout:1.1.0'
     implementation 'androidx.recyclerview:recyclerview:1.3.1'
     implementation 'androidx.preference:preference:1.2.1'
@@ -131,4 +138,8 @@ dependencies {
         exclude group: "com.android.support"
     }
     annotationProcessor 'com.github.bumptech.glide:compiler:4.14.2'
+}
+
+if (file("google-services.json").exists()) {
+    apply plugin: 'com.google.gms.google-services'
 }

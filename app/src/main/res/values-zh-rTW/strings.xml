@@ -1,13 +1,13 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <string name="app_description">AmnShield AppControl 提供簡易與進階方式封鎖網際網路存取 - 無須 root 權限。您可以個別允許或拒絕 apps 與網址存取您的 Wi-Fi 和/或行動數據連線。</string>
-    <string name="app_android">AmnShield AppControl 需要 5.1 版以上的 Android</string>
-    <string name="app_xposed">Xpose 框架會引發過多崩潰，那會導致 Google Play 商店將 AmnShield AppControl 移除，因此當您安裝 Xposed 框架時，AmnShield AppControl 將不被支援。</string>
+    <string name="app_description">AmniGuard AppControl 提供簡易與進階方式封鎖網際網路存取 - 無須 root 權限。您可以個別允許或拒絕 apps 與網址存取您的 Wi-Fi 和/或行動數據連線。</string>
+    <string name="app_android">AmniGuard AppControl 需要 5.1 版以上的 Android</string>
+    <string name="app_xposed">Xpose 框架會引發過多崩潰，那會導致 Google Play 商店將 AmniGuard AppControl 移除，因此當您安裝 Xposed 框架時，AmniGuard AppControl 將不被支援。</string>
     <string name="app_privacy"><a href="https://www.netblock.me/privacy/">隱私權政策</a></string>
-    <string name="app_first">雖然我們已花費許多心力維護及開發 AmnShield AppControl，但我們無法保證 AmnShield AppControl 能在每種裝置上正常運作。</string>
+    <string name="app_first">雖然我們已花費許多心力維護及開發 AmniGuard AppControl，但我們無法保證 AmniGuard AppControl 能在每種裝置上正常運作。</string>
     <string name="app_agree">我同意</string>
     <string name="app_disagree">我不同意</string>
-    <string name="app_support">AmnShield AppControl 需要您的協助。請點選購買 Pro 版本，使這個專案能繼續開發下去。</string>
+    <string name="app_support">AmniGuard AppControl 需要您的協助。請點選購買 Pro 版本，使這個專案能繼續開發下去。</string>
     <string name="app_qap">        Google 本來要從 Play Store 上移除本應用程式，因為它要求能夠查詢所有應用程式的權限。
         儘管我們已經提出了五次申訴，並清楚說明需要此權限的理由，但仍然遭到拒絕。
         在目前這個版本中，我們將不再要求這項權限，
@@ -132,13 +132,13 @@
     <string name="setting_technical_networks">網路</string>
     <string name="setting_technical_subscription">訂閱</string>
     <string name="summary_install">顯示狀態列通知，並可直接修改新安裝 apps 的配置 (Pro 版功能)</string>
-    <string name="summary_auto">透過小工具停用 AmnShield AppControl 後，在選定的分鐘數後自動啟用 (輸入 0 停用此選項)</string>
+    <string name="summary_auto">透過小工具停用 AmniGuard AppControl 後，在選定的分鐘數後自動啟用 (輸入 0 停用此選項)</string>
     <string name="summary_delay">在關閉螢幕後，在選定的分鐘數後啟用 \"保持螢幕開啟規則\" (輸入 0 停用此選項)</string>
     <string name="summary_update">每日檢查 GitHub 上的新版本二次</string>
     <string name="summary_tethering">依 Android 版本而定，網路共用 (tethering) 或許可用，或許不可用。共用流量將無法過濾。</string>
     <string name="summary_subnet">啟用子網路路由；也許能啟用 Wi-Fi 通話，但也有可能會觸發 Android 當中的臭蟲，導致耗電量增加。</string>
     <string name="summary_lan">允許 apps 連接到 LAN 網址，例如 10.0.0.0/8、172.16.0.0/12 以及 192.168.0.0/16</string>
-    <string name="summary_ip6">將 IPv6 流量路由至 AmnShield AppControl，使流量能選擇性地被允許或封鎖</string>
+    <string name="summary_ip6">將 IPv6 流量路由至 AmniGuard AppControl，使流量能選擇性地被允許或封鎖</string>
     <string name="summary_wifi_home">僅將 Wi-Fi 網路規則套用到選定的網路 (對其他 Wi-Fi 網路套用行動網路規則)</string>
     <string name="summary_metered">套用行動網路規則到計量型 (付費、共用) Wi-Fi 網路</string>
     <string name="summary_metered_2g">套用 Wi-Fi 網路規則到 2G 數據連線</string>
@@ -146,7 +146,7 @@
     <string name="summary_metered_4g">套用 Wi-Fi 網路規則到 LTE 數據連線</string>
     <string name="summary_national_roaming">當 SIM 卡與行動網路的國家不相同時不要套用漫遊規則</string>
     <string name="summary_eu_roaming">當 SIM 卡與行動網路屬於歐盟 (EU) 國家時，不要套用漫遊規則 (即配合歐盟取消境內收取漫遊費的 roam like at home 新政策)。</string>
-    <string name="summary_call">在接聽或撥打電話時停用 AmnShield AppControl。這可以解決 IP/Wi-Fi 網路電話的通話問題。</string>
+    <string name="summary_call">在接聽或撥打電話時停用 AmniGuard AppControl。這可以解決 IP/Wi-Fi 網路電話的通話問題。</string>
     <string name="summary_system">為系統 apps 程式定義規則 (專家用)</string>
     <string name="summary_log_app">記錄 apps 存取網際網路的嘗試。這可能會導致額外的耗電量。</string>
     <string name="summary_access">當某個 app 試圖存取新的網際網路位址時顯示狀態列通知 (當過濾停用時，只有被封鎖的網際網路存取嘗試，才會顯示通知)</string>
@@ -156,28 +156,28 @@
     <string name="summary_rcode">預設值是 3 (NXDOMAIN)，意思是 “不存在的網域”。</string>
     <string name="summary_validate">用於驗證埠號 443 (https) 網際網路連線的網域名稱。</string>
     <string name="summary_socks5_enabled">僅 TCP 流量會被送到代理伺服器</string>
-    <string name="summary_watchdog">定時檢查 AmnShield AppControl 是否仍在運行 (輸入 0 停用此選項)。這可能導致額外的耗電量。</string>
+    <string name="summary_watchdog">定時檢查 AmniGuard AppControl 是否仍在運行 (輸入 0 停用此選項)。這可能導致額外的耗電量。</string>
     <string name="summary_stats">在狀態欄通知列上顯示網路速度圖</string>
     <string name="msg_sure">您確定？</string>
     <string name="msg_started">執行規則</string>
     <string name="msg_packages">已允許 %1$d，已封鎖 %2$d</string>
     <string name="msg_hosts">已允許 %1$d，已封鎖 %2$d，%3$d hosts</string>
     <string name="msg_waiting">等待事件</string>
-    <string name="msg_disabled">AmnShield AppControl 已停用，請透過上方開關切換成啟用 AmnShield AppControl</string>
+    <string name="msg_disabled">AmniGuard AppControl 已停用，請透過上方開關切換成啟用 AmniGuard AppControl</string>
     <string name="msg_notifications">輕觸以授與「通知」權限（以利存取嘗試通知、錯誤訊息等）。</string>
-    <string name="msg_revoked">AmnShield AppControl 已停用，很可能是使用其他具 VPN 功能的 app 所致</string>
+    <string name="msg_revoked">AmniGuard AppControl 已停用，很可能是使用其他具 VPN 功能的 app 所致</string>
     <string name="msg_installed">已安裝 \'%1$s\'</string>
     <string name="msg_installed_n">已經安裝了</string>
     <string name="msg_access">%1$s 試圖存取網際網路</string>
     <string name="msg_access_n">試圖存取網際網路</string>
     <string name="msg_completed">動作完成</string>
-    <string name="msg_vpn">AmnShield AppControl 使用本地端 VPN 來過濾網際網路流量。
+    <string name="msg_vpn">AmniGuard AppControl 使用本地端 VPN 來過濾網際網路流量。
 因此，請在下一個對話方塊允許 VPN 連線。
 您的網際網路流量不會被送到遠端的 VPN 伺服器。</string>
-    <string name="msg_autostart">AmnShield AppControl 無法在開機時自動執行。這很可能是您所用的 Android 版本中的臭蟲所致。</string>
+    <string name="msg_autostart">AmniGuard AppControl 無法在開機時自動執行。這很可能是您所用的 Android 版本中的臭蟲所致。</string>
     <string name="msg_error">發生未預期的錯誤：\'%s\'</string>
     <string name="msg_start_failed">Android 拒絕啟動 VPN 服務。這很可能是您所用的 Android 版本中的臭蟲所致。</string>
-    <string name="msg_try">請試試看 AmnShield AppControl</string>
+    <string name="msg_try">請試試看 AmniGuard AppControl</string>
     <string name="msg_terms">捐款代表你同意<a href="http://www.netblock.me/#terms">terms &amp; conditions</a></string>
     <string name="msg_dimming">如果您在下一個對話方塊無法按下 OK，很可能有其他 app (藍光過濾器) 在操控您的螢幕。</string>
     <string name="msg_mbday">± %1$.3f▲ %2$.3f▼ MB/日</string>
@@ -185,11 +185,11 @@
     <string name="msg_mb">%1$7.3f▲ %2$7.3f▼ MB</string>
     <string name="msg_gb">%1$7.3f▲ %2$7.3f▼ GB</string>
     <string name="msg_count">%dx</string>
-    <string name="msg_doze">為使結果一致，應將 AmnShield AppControl 的 Android 電池最佳化選項停用
-\n\n請在下一個對話方塊中，在上方選擇 \"所有應用程式\"，然後點選清單中的 AmnShield AppControl 並選擇 \"不要最佳化\" 並按下 \"完成\"</string>
-    <string name="msg_datasaving">為使結果一致，應將 AmnShield AppControl 的 Android 數據節省選項停用
+    <string name="msg_doze">為使結果一致，應將 AmniGuard AppControl 的 Android 電池最佳化選項停用
+\n\n請在下一個對話方塊中，在上方選擇 \"所有應用程式\"，然後點選清單中的 AmniGuard AppControl 並選擇 \"不要最佳化\" 並按下 \"完成\"</string>
+    <string name="msg_datasaving">為使結果一致，應將 AmniGuard AppControl 的 Android 數據節省選項停用
 \n\n請在下一個對話方塊中，啟用 \"背景數據\" 以及 \"數據用量不受限\"</string>
-    <string name="msg_filter">使用過濾功能將導致 Android 系統把數據用量與耗電量歸在 AmnShield AppControl 底下 -- 即 Android 會以為是 AmnShield AppControl 耗用這些數據用量及耗電量，而非那些被過濾的 apps 所致。</string>
+    <string name="msg_filter">使用過濾功能將導致 Android 系統把數據用量與耗電量歸在 AmniGuard AppControl 底下 -- 即 Android 會以為是 AmniGuard AppControl 耗用這些數據用量及耗電量，而非那些被過濾的 apps 所致。</string>
     <string name="msg_filter4">Android 4 需啟用過濾</string>
     <string name="msg_log_disabled">流量記錄已停用，請用上方的切換開關啟用記錄。流量記錄可能會導致額外的耗電量。</string>
     <string name="msg_clear_rules">這將使所有規則和狀態被重置為預設值</string>
@@ -202,20 +202,20 @@
     <string name="msg_stop_forward">停止轉送 %1$s 埠 %2$d？</string>
     <string name="msg_metered">此為計量型網路</string>
     <string name="msg_inactive">無網際網路連線</string>
-    <string name="msg_queue">AmnShield AppControl 正在忙</string>
+    <string name="msg_queue">AmniGuard AppControl 正在忙</string>
     <string name="msg_update">有更新版本，請點選下載</string>
     <string name="msg_usage">您可以點選 app 旁邊的圖示以允許 (綠色) 或禁止 (紅色)  app 存取 Wi-Fi 或行動網路</string>
-    <string name="msg_fairemail">如果您安裝 AmnShield AppControl 是為了保護您的隱私，那麼您對 <a href="https://email.faircode.eu/">FairEmail</a> 也許會感興趣，那是一種開原的、對隱私友善的 email app。</string>
+    <string name="msg_fairemail">如果您安裝 AmniGuard AppControl 是為了保護您的隱私，那麼您對 <a href="https://email.faircode.eu/">FairEmail</a> 也許會感興趣，那是一種開原的、對隱私友善的 email app。</string>
     <string name="msg_whitelist">預設允許存取網際網路 (黑名單模式)，這可以在設置中更改</string>
     <string name="msg_push">收到的 (推送) 訊息通常由系統元件 Play 服務所處理，那預設允許存取網際網路</string>
     <string name="msg_system">您可在進階選項中啟用所有 (包含系統) apps 之管理</string>
     <string name="msg_issue">請具體描述問題及問題發生的時間：</string>
     <string name="msg_vpn_cancelled">VPN 連接已取消\n您是否把另一個 VPN 連線配置為「永遠連線的 VPN」？</string>
-    <string name="msg_on">若您在執行 AmnShield AppControl 時關機，當您重新開機後，AmnShield AppControl 將會自動執行。</string>
+    <string name="msg_on">若您在執行 AmniGuard AppControl 時關機，當您重新開機後，AmniGuard AppControl 將會自動執行。</string>
     <string name="msg_unavailable">此功能無法在這個版本的 Android 上執行。</string>
     <string name="msg_always_on">另一個 VPN 連線被設定成 \"永遠連線的 VPN\"</string>
-    <string name="msg_always_on_lockdown">在 Android 的 VPN 設定中關閉 \"永遠連線的 VPN\"  以使用 AmnShield AppControl 的過濾模式</string>
-    <string name="msg_private_dns">在 Android 的網路設定中關閉 “Private DNS” 以使用 AmnShield AppControl 的過濾模式。</string>
+    <string name="msg_always_on_lockdown">在 Android 的 VPN 設定中關閉 \"永遠連線的 VPN\"  以使用 AmniGuard AppControl 的過濾模式</string>
+    <string name="msg_private_dns">在 Android 的網路設定中關閉 “Private DNS” 以使用 AmniGuard AppControl 的過濾模式。</string>
     <string name="title_lockdown_enabled">網路流量已全面封鎖</string>
     <string name="title_unmetered_allowed">已允許非計量型網路流量</string>
     <string name="title_unmetered_blocked">已封鎖非計量型網路流量</string>

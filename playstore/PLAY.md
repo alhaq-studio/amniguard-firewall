@@ -1,57 +1,68 @@
-Play store
-==========
+# Google Play Store Listing: AmniGuard Firewall
 
-Title
------
-AmniGuard Firewall — internet access blocker
+## App Name (27 / 30)
 
+AmniGuard: No-Root Firewall
 
-Short description
------------------
-Block internet per app; privacy-first, part of AmnShield
+## Short Description (76 / 80)
 
+Private no-root firewall to block apps, filter domains and save mobile data.
 
-Long description
-----------------
-AmniGuard Firewall provides simple and advanced ways to block access to the internet — no root required.
+## Full Description (Compliant, No Emojis, Structured for ASO & Policy)
 
-Applications and addresses can individually be allowed or denied access to your Wi‑Fi and/or mobile connection.
+AmniGuard Firewall provides simple, granular, and advanced ways to control internet access and block unwanted web content for Android — completely without root.
 
-Blocking access to the internet can help:
+Control which applications and domains can access your Wi-Fi, mobile data, or background network. Protect your device against unwanted connections, reduce data consumption, extend battery life, and safeguard your personal privacy.
 
-&bull; reduce your data usage
-&bull; save your battery
-&bull; increase your privacy
+--------------------------------------------------
 
-Features:
+KEY FEATURES
+--------------------------------------------------
 
-&bull; Simple to use
-&bull; No root required
-&bull; 100% open source
-&bull; No calling home
-&bull; No tracking or analytics
-&bull; Actively developed and supported
-&bull; Android 5.1 and later supported
-&bull; IPv4/IPv6 TCP/UDP supported
-&bull; Tethering supported
-&bull; Multiple device users supported
-&bull; Optionally allow when screen on
-&bull; Optionally block when roaming
-&bull; Optionally block system applications
-&bull; Optionally notify when an application accesses the internet
-&bull; Optionally record network usage per application per address
-&bull; Material design theme with light and dark theme
+• Simple to Use: Intuitive Material 3 interface with dark and light themes.
+• No Root Required: Operates locally using Android's standard VpnService.
+• 100% Open Source: Auditable, community-driven, and transparent code.
+• Zero Telemetry: No tracking, no analytics, no external servers, and no calling home.
+• Offline-First: All packet inspection and DNS rules execute 100% locally on your device.
+• Per-App Network Control: Individually allow or block Wi-Fi and mobile data access for any installed app.
+• Battery & Data Saver: Prevent background data leakage and reduce unnecessary cellular bandwidth usage.
+• Protocol Support: Complete IPv4, IPv6, TCP, UDP, and ICMP filtering.
+• Screen-On & Roaming Filters: Optionally allow access only when the screen is active, or restrict data while roaming.
+• System App Filtering: Full control over both user-installed and pre-installed system applications.
+• Tethering & LAN Support: Manage hotspot traffic and local network subnet routing.
 
-PRO features:
+--------------------------------------------------
 
-&bull; Log all outgoing traffic; search and filter access attempts; export PCAP files to analyze traffic
-&bull; Allow/block individual addresses per application
-&bull; New application notifications; configure AmniGuard Firewall directly from the notification
-&bull; Display network speed graph in a status bar notification
-&bull; Select from five additional themes in both light and dark version
+ON-DEVICE CONTENT & DOMAIN FILTERING
+--------------------------------------------------
 
-There is no other no-root firewall offering all these features.
+• Adult & Explicit Site Protection: Instant, zero-latency local DNS blocking for 80,000+ explicit domains and subdomains.
+• Distraction & Social Feeds: Block distracting platforms on demand or on schedule.
+• Custom Rules: Add custom blacklists, whitelists, and wildcard domain rules (*.example.com) directly on your device.
+• DoT / Encrypted DNS Leak Prevention: Intercepts unauthorized DoT bypass attempts to keep protection strictly enforced.
 
-If you have a question or problem, contact support: support@alhaq-initiative.org
+--------------------------------------------------
 
-Developed by Alhaq Initiative. Original project: NetGuard by M66B.
+ADVANCED DIAGNOSTICS & PRO TOOLS
+--------------------------------------------------
+
+• Real-Time Traffic Logging: Inspect outgoing connection attempts with destination IP, port, and resolved hostname.
+• PCAP Packet Capture: Export network traffic to PCAP files for deep analysis in Wireshark.
+• Live Speed Graph: Display network throughput and speed statistics directly in the status bar.
+• Instant Access Notifications: Receive alerts when new applications attempt to access the network.
+
+--------------------------------------------------
+
+PRIVACY & POLICY TRANSPARENCY
+--------------------------------------------------
+
+AmniGuard utilizes Android's VpnService API solely to route your network traffic through a local, on-device loopback filter. No network traffic is ever redirected to remote servers, third parties, or external proxies.
+
+--------------------------------------------------
+
+SUPPORT & OPEN SOURCE
+--------------------------------------------------
+
+Developed by Alhaq Initiative as part of the Amn Ecosystem.
+Source Code: <https://github.com/alhaq-studio/amniguard-firewall>
+Support: <support@alhaq.uk>

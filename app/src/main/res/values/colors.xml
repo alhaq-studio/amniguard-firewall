@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
-    <!-- AmnShield Canonical Brand Theme Colors -->
+    <!-- AmniGuard Canonical Brand Theme Colors -->
     <!-- 1. Sunset Glow (Warm Sand & Terracotta) -->
     <color name="colorSunsetPrimary">#A45833</color>
     <color name="colorSunsetPrimaryDark">#8B4522</color>
@@ -20,7 +20,7 @@
     <color name="colorCosmicBg">#140D26</color>
     <color name="colorCosmicSurface">#241840</color>
 
-    <!-- AmnShield Primary Colors - Modern Islamic Blue/Green -->
+    <!-- AmniGuard Primary Colors - Modern Islamic Blue/Green -->
     <color name="colorTealPrimary">#1B6B5E</color>
     <color name="colorTealPrimaryDark">#0F4C42</color>
     <color name="colorTealAccent">#26D07C</color>
@@ -66,12 +66,58 @@
     <color name="colorSend">#FF6B6B</color>
     <color name="colorReceive">#1E88E5</color>
 
+    <!-- Material 3 Canonical Tokens (Amni Emerald Theme default) -->
+    <color name="md_theme_primary">#2E6B59</color>
+    <color name="md_theme_onPrimary">#FFFFFF</color>
+    <color name="md_theme_primaryContainer">#CFE5DB</color>
+    <color name="md_theme_onPrimaryContainer">#0A2118</color>
+    <color name="md_theme_secondary">#49665B</color>
+    <color name="md_theme_onSecondary">#FFFFFF</color>
+    <color name="md_theme_secondaryContainer">#D7E4DE</color>
+    <color name="md_theme_onSecondaryContainer">#12241D</color>
+    <color name="md_theme_tertiary">#546960</color>
+    <color name="md_theme_onTertiary">#FFFFFF</color>
+    <color name="md_theme_tertiaryContainer">#DAE5E0</color>
+    <color name="md_theme_onTertiaryContainer">#14251F</color>
+    <color name="md_theme_error">#BA1A1A</color>
+    <color name="md_theme_onError">#FFFFFF</color>
+    <color name="md_theme_errorContainer">#FFDAD6</color>
+    <color name="md_theme_onErrorContainer">#410002</color>
+    <color name="md_theme_background">#F0EDE6</color>
+    <color name="md_theme_onBackground">#111D18</color>
+    <color name="md_theme_surface">#FFFFFF</color>
+    <color name="md_theme_onSurface">#111D18</color>
+    <color name="md_theme_surfaceVariant">#E2DFD7</color>
+    <color name="md_theme_onSurfaceVariant">#2E4036</color>
+    <color name="md_theme_outline">#62756B</color>
+    <color name="md_theme_outlineVariant">#B0BBB4</color>
+    <color name="md_theme_surfaceContainerLowest">#FFFFFF</color>
+    <color name="md_theme_surfaceContainerLow">#F6F4EE</color>
+    <color name="md_theme_surfaceContainer">#ECE9E2</color>
+    <color name="md_theme_surfaceContainerHigh">#E4E1DA</color>
+    <color name="md_theme_surfaceContainerHighest">#DBD8D0</color>
+
     <!-- Utility Colors -->
+    <color name="white">#FFFFFF</color>
+    <color name="black">#000000</color>
     <color name="colorGrayed">#9E9E9E</color>
-    <color name="colorBackground">#F5F5F5</color>
+    <color name="colorBackground">#F0EDE6</color>
     <color name="colorSurface">#FFFFFF</color>
     <color name="colorError">#FF6B6B</color>
     <color name="colorSuccess">#4CAF50</color>
     <color name="colorWarning">#FFA726</color>
     <color name="colorInfo">#1E88E5</color>
+    <color name="nav_active_indicator">#CFE5DB</color>
+    <color name="drawer_scrim">#99000000</color>
+    <color name="card_stroke_color">#E0DBD2</color>
+    <color name="badge_adult">#E53935</color>
+    <color name="badge_social">#3949AB</color>
+    <color name="badge_whitelist">#2E7D32</color>
+    <color name="badge_blacklist">#C62828</color>
+    <color name="colorCosmicTextSecondary">#D9D5EC</color>
+    <color name="colorCosmicTextTertiary">#B0A8C7</color>
+    <color name="colorCosmicSurfaceVariant">#352658</color>
+    <color name="colorCosmicOnSurfaceVariant">#E2DCF0</color>
+    <color name="colorCosmicOutline">#7B69A3</color>
+    <color name="colorCosmicOutlineVariant">#493969</color>
 </resources>
