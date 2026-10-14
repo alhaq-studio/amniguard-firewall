@@ -37,7 +37,7 @@
                 android:id="@+id/tvProtocol"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#D0BCFF"
+                android:textColor="?attr/colorPrimary"
                 android:textSize="12sp"
                 android:textStyle="bold" />
 
@@ -45,7 +45,7 @@
                 android:id="@+id/tvFlags"
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:textColor="#9E99AA"
+                android:textColor="?android:attr/textColorSecondary"
                 android:textSize="10sp" />
         </LinearLayout>
 
@@ -71,7 +71,7 @@
                     android:layout_weight="1"
                     android:ellipsize="middle"
                     android:singleLine="true"
-                    android:textColor="#FFFFFF"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:textSize="14sp"
                     android:textStyle="bold" />
 
@@ -80,7 +80,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="4dp"
-                    android:textColor="#D0BCFF"
+                    android:textColor="?attr/colorPrimary"
                     android:textSize="12sp" />
             </LinearLayout>
 
@@ -95,7 +95,7 @@
                     android:id="@+id/tvUid"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#A09CB0"
+                    android:textColor="?android:attr/textColorSecondary"
                     android:textSize="11sp" />
 
                 <TextView
@@ -103,7 +103,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
-                    android:textColor="#858092"
+                    android:textColor="?android:attr/textColorSecondary"
                     android:textSize="11sp" />
 
                 <TextView
@@ -111,7 +111,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="2dp"
-                    android:textColor="#858092"
+                    android:textColor="?android:attr/textColorSecondary"
                     android:textSize="11sp" />
 
                 <TextView
@@ -119,7 +119,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginStart="6dp"
-                    android:textColor="#7A7588"
+                    android:textColor="?android:attr/textColorTertiary"
                     android:textSize="10sp"
                     android:visibility="gone" />
             </LinearLayout>
@@ -148,7 +148,7 @@
             android:layout_height="wrap_content"
             android:layout_gravity="center_vertical"
             android:layout_marginStart="8dp"
-            android:textColor="#A09CB0"
+            android:textColor="?android:attr/textColorSecondary"
             android:textSize="12sp" />
     </LinearLayout>
 
@@ -161,7 +161,7 @@
         android:layout_marginTop="2dp"
         android:ellipsize="end"
         android:maxLines="2"
-        android:textColor="#CAC4D0"
+        android:textColor="?android:attr/textColorSecondary"
         android:textSize="11sp"
         android:textStyle="italic" />
 

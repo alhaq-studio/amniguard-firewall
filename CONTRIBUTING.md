@@ -34,7 +34,7 @@ Never introduce telemetry, remote analytics, third-party advertising SDKs, or un
 ### Building Locally
 ```bash
 # Clone the repository
-git clone https://github.com/alhaq/AmniGuard-FireWall.git
+git clone https://github.com/alhaq-studio/amniguard-firewall.git
 cd AmniGuard-FireWall
 
 # Build Debug APK

@@ -36,7 +36,7 @@ AuthorName: Alhaq Initiative
 SourceCode: https://github.com/alhaq-studio/amniguard-firewall
 IssueTracker: https://github.com/alhaq-studio/amniguard-firewall/issues
 Changelog: https://github.com/alhaq-studio/amniguard-firewall/blob/main/CHANGELOG.md
-Donate: https://alhaq-initiative.org/donate
+Donate: https://alhaq-initiative.org/donate.html
 
 RepoType: git
 Repo: https://github.com/alhaq-studio/amniguard-firewall.git

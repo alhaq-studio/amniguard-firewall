@@ -60,7 +60,7 @@ AmniGuard utilizes Android's local `VpnService` interface to create a virtual ne
 ## 7. Open Source & Transparency
 
 AmniGuard is Free and Open-Source Software licensed under the **GNU General Public License v3.0 (GPL-3.0)**. The complete source code is publicly auditable at:
-https://github.com/alhaq/AmniGuard-FireWall
+https://github.com/alhaq-studio/amniguard-firewall
 
 ---
 
