@@ -37,7 +37,7 @@
                     android:id="@+id/tvDetailAppName"
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
-                    android:textColor="#FFFFFF"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:textSize="17sp"
                     android:textStyle="bold"
                     tools:text="WhatsApp" />
@@ -47,7 +47,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:textColor="#A09CB0"
+                    android:textColor="?android:attr/textColorSecondary"
                     android:textSize="12sp"
                     tools:text="UID 10337 • com.whatsapp" />
             </LinearLayout>
@@ -61,7 +61,7 @@
                 android:paddingTop="4dp"
                 android:paddingEnd="10dp"
                 android:paddingBottom="4dp"
-                android:textColor="#A6EE9A"
+                android:textColor="?attr/colorOn"
                 android:textSize="12sp"
                 android:textStyle="bold"
                 tools:text="ALLOWED" />
@@ -72,7 +72,7 @@
             android:layout_height="1dp"
             android:layout_marginTop="16dp"
             android:layout_marginBottom="16dp"
-            android:background="#2E2839" />
+            android:background="?attr/colorOutlineVariant" />
 
         <!-- Connection Information Grid -->
         <TextView
@@ -80,7 +80,7 @@
             android:layout_height="wrap_content"
             android:layout_marginBottom="10dp"
             android:text="Connection Telemetry"
-            android:textColor="#D0BCFF"
+            android:textColor="?attr/colorPrimary"
             android:textSize="13sp"
             android:textStyle="bold" />
 
@@ -96,7 +96,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Host / Domain"
-                android:textColor="#858092"
+                android:textColor="?android:attr/textColorSecondary"
                 android:textSize="11sp" />
 
             <TextView
@@ -104,7 +104,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:textColor="#FFFFFF"
+                android:textColor="?android:attr/textColorPrimary"
                 android:textSize="14sp"
                 android:textStyle="bold"
                 tools:text="edge-mqtt.facebook.com" />
@@ -121,7 +121,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Destination"
-                android:textColor="#858092"
+                android:textColor="?android:attr/textColorSecondary"
                 android:textSize="11sp" />
 
             <TextView
@@ -129,7 +129,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:textColor="#FFFFFF"
+                android:textColor="?android:attr/textColorPrimary"
                 android:textSize="13sp"
                 tools:text="157.240.225.20 : 443 (HTTPS)" />
         </LinearLayout>
@@ -145,7 +145,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Source"
-                android:textColor="#858092"
+                android:textColor="?android:attr/textColorSecondary"
                 android:textSize="11sp" />
 
             <TextView
@@ -153,7 +153,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:textColor="#FFFFFF"
+                android:textColor="?android:attr/textColorPrimary"
                 android:textSize="13sp"
                 tools:text="10.1.10.1 : 54742" />
         </LinearLayout>
@@ -175,7 +175,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Protocol"
-                    android:textColor="#858092"
+                    android:textColor="?android:attr/textColorSecondary"
                     android:textSize="11sp" />
 
                 <TextView
@@ -183,7 +183,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:textColor="#FFFFFF"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:textSize="13sp"
                     tools:text="TCP (IPv4)" />
             </LinearLayout>
@@ -198,7 +198,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Flags / State"
-                    android:textColor="#858092"
+                    android:textColor="?android:attr/textColorSecondary"
                     android:textSize="11sp" />
 
                 <TextView
@@ -206,7 +206,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:textColor="#FFFFFF"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:textSize="13sp"
                     tools:text="SYN, ACK" />
             </LinearLayout>
@@ -224,7 +224,7 @@
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
                 android:text="Packet Payload / Info"
-                android:textColor="#858092"
+                android:textColor="?android:attr/textColorSecondary"
                 android:textSize="11sp" />
 
             <TextView
@@ -232,7 +232,7 @@
                 android:layout_width="match_parent"
                 android:layout_height="wrap_content"
                 android:layout_marginTop="2dp"
-                android:textColor="#D0BCFF"
+                android:textColor="?attr/colorPrimary"
                 android:textSize="12sp"
                 tools:text="qtype 1 qname edge-mqtt.facebook.com rcode 3" />
         </LinearLayout>
@@ -254,7 +254,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Timestamp"
-                    android:textColor="#858092"
+                    android:textColor="?android:attr/textColorSecondary"
                     android:textSize="11sp" />
 
                 <TextView
@@ -262,7 +262,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:textColor="#FFFFFF"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:textSize="13sp"
                     tools:text="12:15:03 (Today)" />
             </LinearLayout>
@@ -277,7 +277,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:text="Screen State"
-                    android:textColor="#858092"
+                    android:textColor="?android:attr/textColorSecondary"
                     android:textSize="11sp" />
 
                 <TextView
@@ -285,7 +285,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_marginTop="2dp"
-                    android:textColor="#FFFFFF"
+                    android:textColor="?android:attr/textColorPrimary"
                     android:textSize="13sp"
                     tools:text="Screen On (Interactive)" />
             </LinearLayout>
@@ -296,7 +296,7 @@
             android:layout_height="1dp"
             android:layout_marginTop="12dp"
             android:layout_marginBottom="16dp"
-            android:background="#2E2839" />
+            android:background="?attr/colorOutlineVariant" />
 
         <!-- Action Buttons -->
         <LinearLayout
@@ -378,12 +378,12 @@
                 android:layout_marginStart="6dp"
                 android:layout_weight="1"
                 android:text="Clear App Logs"
-                android:textColor="#FF8A80"
+                android:textColor="?attr/colorError"
                 android:textSize="12sp"
                 app:icon="@drawable/ic_delete_24dp"
                 app:iconGravity="textStart"
                 app:iconSize="16dp"
-                app:iconTint="#FF8A80" />
+                app:iconTint="?attr/colorError" />
         </LinearLayout>
 
     </LinearLayout>

@@ -46,7 +46,7 @@ import java.util.Locale;
 public class ActivityPro extends AppCompatActivity {
     private static final String TAG = "AmniGuard.Pro";
     private static final String URL_WEBSITE_PRO = "https://alhaq.uk/amniguard";
-    private static final String URL_GITHUB_REPO = "https://github.com/alhaq/AmniGuard-FireWall";
+    private static final String URL_GITHUB_REPO = "https://github.com/alhaq-studio/amniguard-firewall";
 
     public static final String SKU_LOG = "log";
     public static final String SKU_FILTER = "filter";

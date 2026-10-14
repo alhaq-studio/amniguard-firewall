@@ -44,7 +44,7 @@
     </style>
 
     <!-- Base Light Theme (High Contrast Emerald/Sand Style) -->
-    <style name="BaseThemeDark" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="BaseThemeLight" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="expander">@drawable/expander_black</item>
         <item name="iconQueue">@drawable/ic_hourglass_empty_black_24dp</item>
         <item name="iconMetered">@drawable/ic_attach_money_black_24dp</item>
@@ -87,7 +87,7 @@
     </style>
 
     <!-- Base Dark Theme (High Contrast Cosmic/Deep Tech Style) -->
-    <style name="BaseThemeLight" parent="Theme.Material3.DayNight.NoActionBar">
+    <style name="BaseThemeDark" parent="Theme.Material3.DayNight.NoActionBar">
         <item name="expander">@drawable/expander_white</item>
         <item name="iconQueue">@drawable/ic_hourglass_empty_white_24dp</item>
         <item name="iconMetered">@drawable/ic_attach_money_white_24dp</item>
@@ -150,7 +150,7 @@
         <item name="strokeColor">@color/card_stroke_color</item>
     </style>
 
-    <style name="AppThemeTeal" parent="BaseThemeDark">
+    <style name="AppThemeTeal" parent="BaseThemeLight">
         <item name="colorPrimary">@color/colorTealPrimary</item>
         <item name="colorPrimaryDark">@color/colorTealPrimaryDark</item>
         <item name="colorAccent">@color/colorTealAccent</item>
@@ -158,7 +158,7 @@
         <item name="colorOff">@color/colorTealOff</item>
     </style>
 
-    <style name="AppThemeTealDark" parent="BaseThemeLight">
+    <style name="AppThemeTealDark" parent="BaseThemeDark">
         <item name="colorPrimary">@color/colorTealAccent</item>
         <item name="colorPrimaryDark">@color/colorTealPrimaryDark</item>
         <item name="colorAccent">@color/colorTealAccent</item>
@@ -166,7 +166,7 @@
         <item name="colorOff">@color/colorTealOff</item>
     </style>
 
-    <style name="AppThemeBlue" parent="BaseThemeDark">
+    <style name="AppThemeBlue" parent="BaseThemeLight">
         <item name="colorPrimary">@color/colorBluePrimary</item>
         <item name="colorPrimaryDark">@color/colorBluePrimaryDark</item>
         <item name="colorAccent">@color/colorBlueAccent</item>
@@ -174,7 +174,7 @@
         <item name="colorOff">@color/colorBlueOff</item>
     </style>
 
-    <style name="AppThemeBlueDark" parent="BaseThemeLight">
+    <style name="AppThemeBlueDark" parent="BaseThemeDark">
         <item name="colorPrimary">@color/colorBlueAccent</item>
         <item name="colorPrimaryDark">@color/colorBluePrimaryDark</item>
         <item name="colorAccent">@color/colorBlueAccent</item>
@@ -182,7 +182,7 @@
         <item name="colorOff">@color/colorBlueOff</item>
     </style>
 
-    <style name="AppThemePurple" parent="BaseThemeDark">
+    <style name="AppThemePurple" parent="BaseThemeLight">
         <item name="colorPrimary">@color/colorPurplePrimary</item>
         <item name="colorPrimaryDark">@color/colorPurplePrimaryDark</item>
         <item name="colorAccent">@color/colorPurpleAccent</item>
@@ -190,7 +190,7 @@
         <item name="colorOff">@color/colorPurpleOff</item>
     </style>
 
-    <style name="AppThemePurpleDark" parent="BaseThemeLight">
+    <style name="AppThemePurpleDark" parent="BaseThemeDark">
         <item name="colorPrimary">@color/colorPurpleAccent</item>
         <item name="colorPrimaryDark">@color/colorPurplePrimaryDark</item>
         <item name="colorAccent">@color/colorPurpleAccent</item>
@@ -198,7 +198,7 @@
         <item name="colorOff">@color/colorPurpleOff</item>
     </style>
 
-    <style name="AppThemeAmber" parent="BaseThemeDark">
+    <style name="AppThemeAmber" parent="BaseThemeLight">
         <item name="colorPrimary">@color/colorAmberPrimary</item>
         <item name="colorPrimaryDark">@color/colorAmberPrimaryDark</item>
         <item name="colorAccent">@color/colorAmberAccent</item>
@@ -206,7 +206,7 @@
         <item name="colorOff">@color/colorAmberOff</item>
     </style>
 
-    <style name="AppThemeAmberDark" parent="BaseThemeLight">
+    <style name="AppThemeAmberDark" parent="BaseThemeDark">
         <item name="colorPrimary">@color/colorAmberPrimary</item>
         <item name="colorPrimaryDark">@color/colorAmberPrimaryDark</item>
         <item name="colorAccent">@color/colorAmberAccent</item>
@@ -214,7 +214,7 @@
         <item name="colorOff">@color/colorAmberOff</item>
     </style>
 
-    <style name="AppThemeOrange" parent="BaseThemeDark">
+    <style name="AppThemeOrange" parent="BaseThemeLight">
         <item name="colorPrimary">@color/colorOrangePrimary</item>
         <item name="colorPrimaryDark">@color/colorOrangePrimaryDark</item>
         <item name="colorAccent">@color/colorOrangeAccent</item>
@@ -222,15 +222,15 @@
         <item name="colorOff">@color/colorOrangeOff</item>
     </style>
 
-    <style name="AppThemeOrangeDark" parent="BaseThemeLight">
+    <style name="AppThemeOrangeDark" parent="BaseThemeDark">
         <item name="colorPrimary">@color/colorOrangePrimary</item>
         <item name="colorPrimaryDark">@color/colorOrangePrimaryDark</item>
         <item name="colorAccent">@color/colorOrangeAccent</item>
-        <item name="colorOn">@color/colorOrangeOn</item>
+        <item name="colorOn">@color/colorOrangeOff</item>
         <item name="colorOff">@color/colorOrangeOff</item>
     </style>
 
-    <style name="AppThemeGreen" parent="BaseThemeDark">
+    <style name="AppThemeGreen" parent="BaseThemeLight">
         <item name="colorPrimary">@color/colorGreenPrimary</item>
         <item name="colorPrimaryDark">@color/colorGreenPrimaryDark</item>
         <item name="colorAccent">@color/colorGreenAccent</item>
@@ -238,7 +238,7 @@
         <item name="colorOff">@color/colorGreenOff</item>
     </style>
 
-    <style name="AppThemeGreenDark" parent="BaseThemeLight">
+    <style name="AppThemeGreenDark" parent="BaseThemeDark">
         <item name="colorPrimary">@color/colorGreenAccent</item>
         <item name="colorPrimaryDark">@color/colorGreenPrimaryDark</item>
         <item name="colorAccent">@color/colorGreenAccent</item>
@@ -248,7 +248,7 @@
 
     <!-- AmniGuard Canonical Brand Theme Styles -->
     <!-- 1. Sunset Glow (Warm Sand & Terracotta - Light Theme) -->
-    <style name="AppThemeSunset" parent="BaseThemeDark">
+    <style name="AppThemeSunset" parent="BaseThemeLight">
         <item name="colorPrimary">@color/colorSunsetPrimary</item>
         <item name="colorPrimaryDark">@color/colorSunsetPrimaryDark</item>
         <item name="colorAccent">@color/colorSunsetAccent</item>
@@ -259,7 +259,7 @@
     </style>
 
     <!-- 2. Emerald Calm (Pearl Teal & Sage - Light Theme) -->
-    <style name="AppThemeEmerald" parent="BaseThemeDark">
+    <style name="AppThemeEmerald" parent="BaseThemeLight">
         <item name="colorPrimary">@color/colorEmeraldPrimary</item>
         <item name="colorPrimaryDark">@color/colorEmeraldPrimaryDark</item>
         <item name="colorAccent">@color/colorEmeraldAccent</item>
@@ -270,7 +270,7 @@
     </style>
 
     <!-- 3. Cosmic Night (Deep Violet Tech - Dark Theme) -->
-    <style name="AppThemeCosmic" parent="BaseThemeLight">
+    <style name="AppThemeCosmic" parent="BaseThemeDark">
         <item name="colorPrimary">@color/colorCosmicPrimary</item>
         <item name="colorPrimaryDark">@color/colorCosmicPrimaryDark</item>
         <item name="colorAccent">@color/colorCosmicAccent</item>

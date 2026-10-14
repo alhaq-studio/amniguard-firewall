@@ -50,9 +50,9 @@ The AmniGuard Ecosystem must be:
 5. **Additional Support Information:**
    Display after granting access:
    > *"If you need further assistance or have questions:"*
-   > - Visit: **alhaq-initiative.org/AmniGuard/premium** for more information
-   > - Visit: **alhaq-initiative.org/AmniGuard/pay** if your situation changes and you wish to contribute
-   > - Email: **support@alhaq-initiative.org** with your App ID, email, and name for direct support
+   > - Visit: **alhaq.uk/amniguard** for more information
+   > - Visit: **alhaq-initiative.org/donate.html** if your situation changes and you wish to contribute
+   > - Email: **support@alhaq.uk** with your App ID, email, and name for direct support
 
 #### Implementation Requirements
 - **All Apps:** Must implement this flow in their premium/purchase screens

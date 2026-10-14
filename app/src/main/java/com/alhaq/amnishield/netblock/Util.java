@@ -509,7 +509,7 @@ public class Util {
         } else if (theme.equals("cosmic")) {
             context.setTheme(R.style.AppThemeCosmic);
         } else {
-            // Legacy fallback
+            // Legacy fallback - all themes reliably support both Light and Dark modes
             if (theme.equals("teal"))
                 context.setTheme(dark ? R.style.AppThemeTealDark : R.style.AppThemeTeal);
             else if (theme.equals("blue"))
