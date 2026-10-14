@@ -569,22 +569,36 @@ public class FragmentLogs extends Fragment implements SharedPreferences.OnShared
     }
 
     private void showLogDetailsDialog(Cursor cursor) {
-        if (getContext() == null) return;
+        if (getContext() == null || cursor == null) return;
         PackageManager pm = requireContext().getPackageManager();
 
-        int version = cursor.getInt(cursor.getColumnIndex("version"));
-        int protocol = cursor.getInt(cursor.getColumnIndex("protocol"));
-        final String saddr = cursor.getString(cursor.getColumnIndex("saddr"));
-        final int sport = (cursor.isNull(cursor.getColumnIndex("sport")) ? -1 : cursor.getInt(cursor.getColumnIndex("sport")));
-        final String daddr = cursor.getString(cursor.getColumnIndex("daddr"));
-        final int dport = (cursor.isNull(cursor.getColumnIndex("dport")) ? -1 : cursor.getInt(cursor.getColumnIndex("dport")));
-        final int uid = (cursor.isNull(cursor.getColumnIndex("uid")) ? -1 : cursor.getInt(cursor.getColumnIndex("uid")));
-        final String flags = cursor.getString(cursor.getColumnIndex("flags"));
-        final String dname = cursor.getString(cursor.getColumnIndex("dname"));
-        final String data = cursor.getString(cursor.getColumnIndex("data"));
-        final long time = cursor.getLong(cursor.getColumnIndex("time"));
-        final int interactive = (cursor.isNull(cursor.getColumnIndex("interactive")) ? -1 : cursor.getInt(cursor.getColumnIndex("interactive")));
-        final int allowed = (cursor.isNull(cursor.getColumnIndex("allowed")) ? -1 : cursor.getInt(cursor.getColumnIndex("allowed")));
+        int colVersion = cursor.getColumnIndex("version");
+        int colProtocol = cursor.getColumnIndex("protocol");
+        int colSaddr = cursor.getColumnIndex("saddr");
+        int colSport = cursor.getColumnIndex("sport");
+        int colDaddr = cursor.getColumnIndex("daddr");
+        int colDport = cursor.getColumnIndex("dport");
+        int colUid = cursor.getColumnIndex("uid");
+        int colFlags = cursor.getColumnIndex("flags");
+        int colDname = cursor.getColumnIndex("dname");
+        int colData = cursor.getColumnIndex("data");
+        int colTime = cursor.getColumnIndex("time");
+
+        int version = colVersion >= 0 ? cursor.getInt(colVersion) : 4;
+        int protocol = colProtocol >= 0 ? cursor.getInt(colProtocol) : 6;
+        final String saddr = colSaddr >= 0 ? cursor.getString(colSaddr) : "";
+        final int sport = (colSport < 0 || cursor.isNull(colSport)) ? -1 : cursor.getInt(colSport);
+        final String daddr = colDaddr >= 0 ? cursor.getString(colDaddr) : "";
+        final int dport = (colDport < 0 || cursor.isNull(colDport)) ? -1 : cursor.getInt(colDport);
+        final int uid = (colUid < 0 || cursor.isNull(colUid)) ? -1 : cursor.getInt(colUid);
+        final String flags = colFlags >= 0 ? cursor.getString(colFlags) : "";
+        final String dname = colDname >= 0 ? cursor.getString(colDname) : "";
+        final String data = colData >= 0 ? cursor.getString(colData) : "";
+        final long time = colTime >= 0 ? cursor.getLong(colTime) : 0L;
+        int colInteractive = cursor.getColumnIndex("interactive");
+        int colAllowed = cursor.getColumnIndex("allowed");
+        final int interactive = (colInteractive < 0 || cursor.isNull(colInteractive)) ? -1 : cursor.getInt(colInteractive);
+        final int allowed = (colAllowed < 0 || cursor.isNull(colAllowed)) ? -1 : cursor.getInt(colAllowed);
 
         InetAddress addr = null;
         try {

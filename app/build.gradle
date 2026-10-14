@@ -72,8 +72,7 @@ android {
             }
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            // TODO: Replace with your own GitHub releases API endpoint
-            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
+            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/alhaq/AmniGuard-FireWall/releases/latest\""
         }
         play {
             minifyEnabled = true
@@ -85,15 +84,14 @@ android {
             proguardFiles.add(file('proguard-rules.pro'))
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "true"
             buildConfigField "String", "HOSTS_FILE_URI", "\"\""
-            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
+            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/alhaq/AmniGuard-FireWall/releases/latest\""
         }
         debug {
             minifyEnabled = false
             debuggable = true
             buildConfigField "boolean", "PLAY_STORE_RELEASE", "false"
             buildConfigField "String", "HOSTS_FILE_URI", "\"https://raw.githubusercontent.com/StevenBlack/hosts/master/hosts\""
-            // TODO: Replace with your own GitHub releases API endpoint
-            buildConfigField "String", "GITHUB_LATEST_API", "\"\""
+            buildConfigField "String", "GITHUB_LATEST_API", "\"https://api.github.com/repos/alhaq/AmniGuard-FireWall/releases/latest\""
         }
     }
 

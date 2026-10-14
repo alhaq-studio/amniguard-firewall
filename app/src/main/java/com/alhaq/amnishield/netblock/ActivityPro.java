@@ -194,11 +194,11 @@ public class ActivityPro extends AppCompatActivity {
             }
         } else {
             if (ivStatusIcon != null) {
-                ivStatusIcon.setColorFilter(ContextCompat.getColor(this, R.color.colorGrayed));
+                ivStatusIcon.setColorFilter(ContextCompat.getColor(this, R.color.colorEmeraldPrimary));
             }
             if (tvStatusBadge != null) {
                 tvStatusBadge.setText("Free & Open-Source Core");
-                tvStatusBadge.setTextColor(ContextCompat.getColor(this, R.color.colorGrayed));
+                tvStatusBadge.setTextColor(ContextCompat.getColor(this, android.R.color.darker_gray));
             }
             if (tvLicenseDetails != null) {
                 tvLicenseDetails.setText("No active supporter license key found. Core filtering and firewall protection remain 100% free and open-source forever.");

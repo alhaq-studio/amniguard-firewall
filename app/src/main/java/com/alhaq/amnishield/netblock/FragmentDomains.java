@@ -20,6 +20,7 @@ import androidx.annotation.NonNull;
 import androidx.annotation.Nullable;
 import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.widget.SwitchCompat;
+import androidx.core.content.ContextCompat;
 import androidx.fragment.app.Fragment;
 import androidx.preference.PreferenceManager;
 
@@ -131,9 +132,9 @@ public class FragmentDomains extends Fragment {
     }
 
     private void updateMasterUI(boolean enabled) {
-        if (tvMasterStatus != null) {
+        if (tvMasterStatus != null && isAdded()) {
             tvMasterStatus.setText(enabled ? R.string.badge_active : R.string.badge_disabled);
-            tvMasterStatus.setTextColor(getResources().getColor(enabled ? R.color.colorSuccess : R.color.colorError));
+            tvMasterStatus.setTextColor(ContextCompat.getColor(requireContext(), enabled ? R.color.colorSuccess : R.color.colorError));
         }
         if (swBlockAdult != null) swBlockAdult.setEnabled(enabled);
         if (swBlockSocial != null) swBlockSocial.setEnabled(enabled);

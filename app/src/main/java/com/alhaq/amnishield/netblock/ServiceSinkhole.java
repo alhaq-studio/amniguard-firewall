@@ -119,7 +119,7 @@ import java.util.concurrent.locks.ReentrantReadWriteLock;
 import javax.net.ssl.HttpsURLConnection;
 
 public class ServiceSinkhole extends VpnService implements SharedPreferences.OnSharedPreferenceChangeListener {
-    private static final String TAG = "AmniGuard Firewall.Service";
+    private static final String TAG = "AmniGuard.Service";
 
     private boolean registeredUser = false;
     private boolean registeredIdleState = false;
@@ -1189,7 +1189,11 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
                 Log.d(TAG, "Start foreground state=" + state.toString());
             } else {
                 if (Util.canNotify(ServiceSinkhole.this))
-                    NotificationManagerCompat.from(ServiceSinkhole.this).notify(NOTIFY_TRAFFIC, builder.build());
+                    try {
+                        NotificationManagerCompat.from(ServiceSinkhole.this).notify(NOTIFY_TRAFFIC, builder.build());
+                    } catch (SecurityException ex) {
+                        Log.w(TAG, "Notification permission missing: " + ex.getMessage());
+                    }
             }
         }
     }
@@ -2333,7 +2337,7 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
     private BroadcastReceiver interactiveStateReceiver = new BroadcastReceiver() {
         @Override
         public void onReceive(final Context context, final Intent intent) {
-            Log.i(TAG, "Received " + intent);
+            Log.i("AmniGuard.Service", "Received " + intent);
             Util.logExtras(intent);
 
             executor.submit(new Runnable() {
@@ -2732,18 +2736,22 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
             builder.addAction(oAction);
 
             // Show notification
-            if (internet) {
-                if (Util.canNotify(this))
-                    NotificationManagerCompat.from(this).notify(uid, builder.build());
-            } else {
-                NotificationCompat.BigTextStyle expanded = new NotificationCompat.BigTextStyle(builder);
-                if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
-                    expanded.bigText(getString(R.string.msg_installed_n));
-                else
-                    expanded.bigText(getString(R.string.msg_installed, name));
-                expanded.setSummaryText(getString(R.string.title_internet));
-                if (Util.canNotify(this))
-                    NotificationManagerCompat.from(this).notify(uid, expanded.build());
+            try {
+                if (internet) {
+                    if (Util.canNotify(this))
+                        NotificationManagerCompat.from(this).notify(uid, builder.build());
+                } else {
+                    NotificationCompat.BigTextStyle expanded = new NotificationCompat.BigTextStyle(builder);
+                    if (Build.VERSION.SDK_INT >= Build.VERSION_CODES.N)
+                        expanded.bigText(getString(R.string.msg_installed_n));
+                    else
+                        expanded.bigText(getString(R.string.msg_installed, name));
+                    expanded.setSummaryText(getString(R.string.title_internet));
+                    if (Util.canNotify(this))
+                        NotificationManagerCompat.from(this).notify(uid, expanded.build());
+                }
+            } catch (SecurityException ex) {
+                Log.w(TAG, "Notification permission missing: " + ex.getMessage());
             }
 
         } catch (PackageManager.NameNotFoundException ex) {
@@ -3419,7 +3427,11 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         notification.bigText(getString(R.string.msg_revoked));
 
         if (Util.canNotify(this))
+            try {
             NotificationManagerCompat.from(this).notify(NOTIFY_DISABLED, notification.build());
+        } catch (SecurityException ex) {
+            Log.w(TAG, "Notification permission missing: " + ex.getMessage());
+        }
     }
 
     private void showLockdownNotification() {
@@ -3445,8 +3457,12 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         NotificationCompat.BigTextStyle notification = new NotificationCompat.BigTextStyle(builder);
         notification.bigText(getString(R.string.msg_always_on_lockdown));
 
-        if (Util.canNotify(this))
-            NotificationManagerCompat.from(this).notify(NOTIFY_LOCKDOWN, notification.build());
+        try {
+            if (Util.canNotify(this))
+                NotificationManagerCompat.from(this).notify(NOTIFY_LOCKDOWN, notification.build());
+        } catch (SecurityException ex) {
+            Log.w(TAG, "Notification permission missing: " + ex.getMessage());
+        }
     }
 
     private void removeLockdownNotification() {
@@ -3476,8 +3492,12 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         NotificationCompat.BigTextStyle notification = new NotificationCompat.BigTextStyle(builder);
         notification.bigText(getString(R.string.msg_autostart));
 
-        if (Util.canNotify(this))
-            NotificationManagerCompat.from(this).notify(NOTIFY_AUTOSTART, notification.build());
+        try {
+            if (Util.canNotify(this))
+                NotificationManagerCompat.from(this).notify(NOTIFY_AUTOSTART, notification.build());
+        } catch (SecurityException ex) {
+            Log.w(TAG, "Notification permission missing: " + ex.getMessage());
+        }
     }
 
     private void showErrorNotification(String message) {
@@ -3503,8 +3523,12 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
         notification.bigText(getString(R.string.msg_error, message));
         notification.setSummaryText(message);
 
-        if (Util.canNotify(this))
-            NotificationManagerCompat.from(this).notify(NOTIFY_ERROR, notification.build());
+        try {
+            if (Util.canNotify(this))
+                NotificationManagerCompat.from(this).notify(NOTIFY_ERROR, notification.build());
+        } catch (SecurityException ex) {
+            Log.w(TAG, "Notification permission missing: " + ex.getMessage());
+        }
     }
 
     private void showAccessNotification(int uid) {
@@ -3592,8 +3616,12 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
             }
         }
 
-        if (Util.canNotify(this))
-            NotificationManagerCompat.from(this).notify(uid + 10000, notification.build());
+        try {
+            if (Util.canNotify(this))
+                NotificationManagerCompat.from(this).notify(uid + 10000, notification.build());
+        } catch (SecurityException ex) {
+            Log.w(TAG, "Notification permission missing: " + ex.getMessage());
+        }
     }
 
     private void showUpdateNotification(String name, String url) {
@@ -3615,8 +3643,12 @@ public class ServiceSinkhole extends VpnService implements SharedPreferences.OnS
             builder.setCategory(NotificationCompat.CATEGORY_STATUS)
                     .setVisibility(NotificationCompat.VISIBILITY_SECRET);
 
-        if (Util.canNotify(this))
-            NotificationManagerCompat.from(this).notify(NOTIFY_UPDATE, builder.build());
+        try {
+            if (Util.canNotify(this))
+                NotificationManagerCompat.from(this).notify(NOTIFY_UPDATE, builder.build());
+        } catch (SecurityException ex) {
+            Log.w(TAG, "Notification permission missing: " + ex.getMessage());
+        }
     }
 
     private void removeWarningNotifications() {
