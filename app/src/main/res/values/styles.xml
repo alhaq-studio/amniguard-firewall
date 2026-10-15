@@ -247,7 +247,7 @@
     </style>
 
     <!-- AmniGuard Canonical Brand Theme Styles -->
-    <!-- 1. Sunset Glow (Warm Sand & Terracotta - Light Theme) -->
+    <!-- 1. Sunset Glow (Warm Sand & Terracotta) -->
     <style name="AppThemeSunset" parent="BaseThemeLight">
         <item name="colorPrimary">@color/colorSunsetPrimary</item>
         <item name="colorPrimaryDark">@color/colorSunsetPrimaryDark</item>
@@ -258,7 +258,15 @@
         <item name="android:colorBackground">@color/colorSunsetBg</item>
     </style>
 
-    <!-- 2. Emerald Calm (Pearl Teal & Sage - Light Theme) -->
+    <style name="AppThemeSunsetDark" parent="BaseThemeDark">
+        <item name="colorPrimary">@color/colorSunsetAccent</item>
+        <item name="colorPrimaryDark">@color/colorSunsetPrimaryDark</item>
+        <item name="colorAccent">@color/colorSunsetAccent</item>
+        <item name="colorOn">@color/colorSunsetAccent</item>
+        <item name="colorOff">@color/colorTealOff</item>
+    </style>
+
+    <!-- 2. Emerald Calm (Pearl Teal & Sage) -->
     <style name="AppThemeEmerald" parent="BaseThemeLight">
         <item name="colorPrimary">@color/colorEmeraldPrimary</item>
         <item name="colorPrimaryDark">@color/colorEmeraldPrimaryDark</item>
@@ -269,7 +277,15 @@
         <item name="android:colorBackground">@color/md_theme_background</item>
     </style>
 
-    <!-- 3. Cosmic Night (Deep Violet Tech - Dark Theme) -->
+    <style name="AppThemeEmeraldDark" parent="BaseThemeDark">
+        <item name="colorPrimary">@color/colorEmeraldPrimary</item>
+        <item name="colorPrimaryDark">@color/colorEmeraldPrimaryDark</item>
+        <item name="colorAccent">@color/colorEmeraldAccent</item>
+        <item name="colorOn">@color/colorEmeraldPrimary</item>
+        <item name="colorOff">@color/colorTealOff</item>
+    </style>
+
+    <!-- 3. Cosmic Night (Deep Violet Tech) -->
     <style name="AppThemeCosmic" parent="BaseThemeDark">
         <item name="colorPrimary">@color/colorCosmicPrimary</item>
         <item name="colorPrimaryDark">@color/colorCosmicPrimaryDark</item>
@@ -278,5 +294,13 @@
         <item name="colorOff">@color/colorTealOff</item>
         <item name="android:windowBackground">@color/colorCosmicBg</item>
         <item name="android:colorBackground">@color/colorCosmicBg</item>
+    </style>
+
+    <style name="AppThemeCosmicLight" parent="BaseThemeLight">
+        <item name="colorPrimary">@color/colorPurplePrimary</item>
+        <item name="colorPrimaryDark">@color/colorPurplePrimaryDark</item>
+        <item name="colorAccent">@color/colorPurpleAccent</item>
+        <item name="colorOn">@color/colorPurplePrimary</item>
+        <item name="colorOff">@color/colorTealOff</item>
     </style>
 </resources>

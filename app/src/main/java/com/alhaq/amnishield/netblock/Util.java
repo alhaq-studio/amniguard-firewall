@@ -503,27 +503,25 @@ public class Util {
         String theme = prefs.getString("theme", "emerald");
         
         if (theme.equals("sunset")) {
-            context.setTheme(dark ? R.style.AppThemeCosmic : R.style.AppThemeSunset);
+            context.setTheme(dark ? R.style.AppThemeSunsetDark : R.style.AppThemeSunset);
         } else if (theme.equals("emerald")) {
-            context.setTheme(dark ? R.style.AppThemeCosmic : R.style.AppThemeEmerald);
+            context.setTheme(dark ? R.style.AppThemeEmeraldDark : R.style.AppThemeEmerald);
         } else if (theme.equals("cosmic")) {
-            context.setTheme(R.style.AppThemeCosmic);
+            context.setTheme(dark ? R.style.AppThemeCosmic : R.style.AppThemeCosmicLight);
+        } else if (theme.equals("teal")) {
+            context.setTheme(dark ? R.style.AppThemeTealDark : R.style.AppThemeTeal);
+        } else if (theme.equals("blue")) {
+            context.setTheme(dark ? R.style.AppThemeBlueDark : R.style.AppThemeBlue);
+        } else if (theme.equals("purple")) {
+            context.setTheme(dark ? R.style.AppThemePurpleDark : R.style.AppThemePurple);
+        } else if (theme.equals("amber")) {
+            context.setTheme(dark ? R.style.AppThemeAmberDark : R.style.AppThemeAmber);
+        } else if (theme.equals("orange")) {
+            context.setTheme(dark ? R.style.AppThemeOrangeDark : R.style.AppThemeOrange);
+        } else if (theme.equals("green")) {
+            context.setTheme(dark ? R.style.AppThemeGreenDark : R.style.AppThemeGreen);
         } else {
-            // Legacy fallback - all themes reliably support both Light and Dark modes
-            if (theme.equals("teal"))
-                context.setTheme(dark ? R.style.AppThemeTealDark : R.style.AppThemeTeal);
-            else if (theme.equals("blue"))
-                context.setTheme(dark ? R.style.AppThemeBlueDark : R.style.AppThemeBlue);
-            else if (theme.equals("purple"))
-                context.setTheme(dark ? R.style.AppThemePurpleDark : R.style.AppThemePurple);
-            else if (theme.equals("amber"))
-                context.setTheme(dark ? R.style.AppThemeAmberDark : R.style.AppThemeAmber);
-            else if (theme.equals("orange"))
-                context.setTheme(dark ? R.style.AppThemeOrangeDark : R.style.AppThemeOrange);
-            else if (theme.equals("green"))
-                context.setTheme(dark ? R.style.AppThemeGreenDark : R.style.AppThemeGreen);
-            else
-                context.setTheme(dark ? R.style.AppThemeCosmic : R.style.AppThemeEmerald);
+            context.setTheme(dark ? R.style.AppThemeEmeraldDark : R.style.AppThemeEmerald);
         }
 
         if (context instanceof Activity && Build.VERSION.SDK_INT >= Build.VERSION_CODES.LOLLIPOP)
