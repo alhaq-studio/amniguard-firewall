@@ -161,16 +161,29 @@ public class ActivityLog extends AppCompatActivity implements SharedPreferences.
             public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
                 PackageManager pm = getPackageManager();
                 Cursor cursor = (Cursor) adapter.getItem(position);
-                long time = cursor.getLong(cursor.getColumnIndex("time"));
-                int version = cursor.getInt(cursor.getColumnIndex("version"));
-                int protocol = cursor.getInt(cursor.getColumnIndex("protocol"));
-                final String saddr = cursor.getString(cursor.getColumnIndex("saddr"));
-                final int sport = (cursor.isNull(cursor.getColumnIndex("sport")) ? -1 : cursor.getInt(cursor.getColumnIndex("sport")));
-                final String daddr = cursor.getString(cursor.getColumnIndex("daddr"));
-                final int dport = (cursor.isNull(cursor.getColumnIndex("dport")) ? -1 : cursor.getInt(cursor.getColumnIndex("dport")));
-                final String dname = cursor.getString(cursor.getColumnIndex("dname"));
-                final int uid = (cursor.isNull(cursor.getColumnIndex("uid")) ? -1 : cursor.getInt(cursor.getColumnIndex("uid")));
-                int allowed = (cursor.isNull(cursor.getColumnIndex("allowed")) ? -1 : cursor.getInt(cursor.getColumnIndex("allowed")));
+                if (cursor == null) return;
+
+                int colTime = cursor.getColumnIndex("time");
+                int colVersion = cursor.getColumnIndex("version");
+                int colProtocol = cursor.getColumnIndex("protocol");
+                int colSaddr = cursor.getColumnIndex("saddr");
+                int colSport = cursor.getColumnIndex("sport");
+                int colDaddr = cursor.getColumnIndex("daddr");
+                int colDport = cursor.getColumnIndex("dport");
+                int colDname = cursor.getColumnIndex("dname");
+                int colUid = cursor.getColumnIndex("uid");
+                int colAllowed = cursor.getColumnIndex("allowed");
+
+                long time = colTime >= 0 ? cursor.getLong(colTime) : 0L;
+                int version = colVersion >= 0 ? cursor.getInt(colVersion) : 4;
+                int protocol = colProtocol >= 0 ? cursor.getInt(colProtocol) : 6;
+                final String saddr = colSaddr >= 0 ? cursor.getString(colSaddr) : "";
+                final int sport = (colSport < 0 || cursor.isNull(colSport)) ? -1 : cursor.getInt(colSport);
+                final String daddr = colDaddr >= 0 ? cursor.getString(colDaddr) : "";
+                final int dport = (colDport < 0 || cursor.isNull(colDport)) ? -1 : cursor.getInt(colDport);
+                final String dname = colDname >= 0 ? cursor.getString(colDname) : "";
+                final int uid = (colUid < 0 || cursor.isNull(colUid)) ? -1 : cursor.getInt(colUid);
+                int allowed = (colAllowed < 0 || cursor.isNull(colAllowed)) ? -1 : cursor.getInt(colAllowed);
 
                 // Get external address
                 InetAddress addr = null;

@@ -1,6 +1,8 @@
 # AmniGuard Architecture & Technical Specifications
 
-This document outlines the system design, packet lifecycle, and cryptographic licensing subsystem of **AmniGuard Firewall & NetBlock**.
+This document outlines the software architecture, packet processing lifecycle, native JNI C engine, and zero-knowledge cryptographic licensing subsystem of **AmniGuard Firewall & NetBlock**.
+
+For file locations and component layouts, refer to [PROJECT.md](PROJECT.md).
 
 ---
 
@@ -63,7 +65,7 @@ This document outlines the system design, packet lifecycle, and cryptographic li
    - **DNS (UDP/TCP Port 53):** Handled by `dns.c`. Query domains (`qname`) are evaluated against `isDomainBlocked()`. Blocked domains are immediately sinkholed with synthetic `NXDOMAIN` / `REFUSED` responses. Standard `A` / `AAAA` responses are preserved cleanly even when modern `DNS_SVCB` (type 64) or `DNS_HTTPS` (type 65) queries are present.
    - **Encrypted DNS Enforcement (Port 853):** Port 853 (DNS over TLS) is intercepted and blocked to prevent applications from bypassing local DNS filtering.
    - **HTTPS / TLS (Port 443):** Handled by `ip.c`. The TLS Client Hello Server Name Indication (SNI) is parsed. If the target host matches a blocked domain, a `TCP RST` packet is returned, immediately terminating the connection.
-   - **Per-App Wi-Fi / Mobile Rules:** Per-application UID firewall rules configured in the UI are evaluated before socket creation.
+   - **Per-App Wi-Fi / Mobile Rules:** Per-application UID firewall rules configured in the UI (`FragmentApps.java`) are evaluated before socket creation.
 
 ---
 
@@ -83,8 +85,25 @@ AmniGuard implements the Amni Ecosystem's **Zero-Knowledge Cryptographic Offline
 
 ---
 
-## 4. Performance & Concurrency Model
+## 4. UI & Multi-Theme Architecture
+
+- **Material 3 Component System:** Structured around `ActivityMain` hosting tab fragments (`FragmentApps`, `FragmentDomains`, `FragmentLogs`, `FragmentSettingsHub`).
+- **Dynamic Multi-Theme System:** Supports 9 canonical color palettes (Sunset, Emerald, Cosmic, Teal, Blue, Purple, Amber, Orange, Green), resolved at runtime via `Util.setTheme(Context)` with matching Light and Dark mode style pairs in `styles.xml`.
+
+---
+
+## 5. Performance & Concurrency Model
 
 - **Lock-Free Fast Path:** Blocklists use `volatile Set<String>` immutable snapshots, eliminating read/write lock contention between JNI native packet loop workers and UI threads.
 - **Reload Debouncing:** Multiple consecutive network state changes (`onAvailable`, `onCapabilitiesChanged`, `onLinkPropertiesChanged`) are debounced with a 200ms buffer, preventing rapid tunnel restarts.
 - **Dynamic Underlying Networks:** Seamless handoff across Wi-Fi and mobile data networks via `setUnderlyingNetworks()` without dropping active TCP/UDP sockets.
+
+---
+
+## 6. Related Documentation
+
+- [Project Blueprint & Component Map](PROJECT.md)
+- [Building & Toolchain Requirements](BUILDING.md)
+- [Zero-Knowledge Privacy Policy](PRIVACY.md)
+- [F-Droid Publishing Guide](FDROID_PUBLISHING_GUIDE.md)
+- [Testing Guide](TESTING_GUIDE.md)
